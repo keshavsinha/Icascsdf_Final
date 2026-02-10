@@ -4,9 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Venue | ICACSDF 2026 | UPES Dehradun</title>
-<meta name="description" content="ICACSDF 2026 Venue — UPES Bidholi Campus, Dehradun, Uttarakhand. Sponsored by IEEE UP Section. 11–12 September 2026.">
-<meta name="keywords" content="ICACSDF 2026, Venue, UPES, Bidholi Campus, Dehradun, Uttarakhand, IEEE UP Section">
+<title>Registration | ICACSDF 2026 | UPES Dehradun</title>
+<meta name="description" content="ICACSDF 2026 Registration — UPES Dehradun. Sponsored by IEEE UP Section. 11–12 September 2026.">
+<meta name="keywords" content="ICACSDF 2026, Registration, UPES, Dehradun, Uttarakhand, IEEE UP Section, Cyber Security, Digital Forensics">
 
 <!-- Bootstrap 5 -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -42,7 +42,7 @@
     font-size:.92rem;
   }
   .top-bar a{ color: rgba(255,255,255,.92); text-decoration:none; }
-  .top-bar a:hover{ color:#fff; text-decoration: underline; }
+  .top-bar a:hover{ color: #fff; text-decoration: underline; }
 
   /* Navbar */
   .navbar{
@@ -74,14 +74,14 @@
   .hero{
     position: relative;
     overflow: hidden;
-    padding: 86px 0 52px;
+    padding: 86px 0 50px;
   }
   .hero::before{
     content:"";
     position:absolute; inset:0;
     background:
       linear-gradient(180deg, rgba(255,255,255,.32), rgba(255,255,255,.95)),
-      url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1800&q=80");
+      url("https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1800&q=80");
     background-size: cover;
     background-position: center;
     pointer-events:none;
@@ -113,7 +113,7 @@
   .chip i{ color: var(--forest); }
 
   .hero-title{
-    font-weight: 950;
+    font-weight: 900;
     line-height: 1.12;
     color: var(--slate);
     text-shadow: 0 10px 35px rgba(2,6,23,.12);
@@ -126,26 +126,26 @@
 
   .btn-saffron{
     background: linear-gradient(135deg, var(--sun), #ffb020);
-    border:0;
-    color:#1f2937;
+    border: 0;
+    color: #1f2937;
     font-weight: 900;
   }
-  .btn-saffron:hover{ filter: brightness(1.03); box-shadow: 0 0 0 6px rgba(245,158,11,.18); }
+  .btn-saffron:hover{
+    filter: brightness(1.03);
+    box-shadow: 0 0 0 6px rgba(245,158,11,.18);
+  }
   .btn-forest{
     background: linear-gradient(135deg, var(--forest), #0a7a4b);
-    border:0;
-    color:#fff;
+    border: 0;
+    color: #fff;
     font-weight: 900;
   }
-  .btn-forest:hover{ filter: brightness(1.03); box-shadow: 0 0 0 6px rgba(11,93,59,.16); }
-  .btn-outline-sky{
-    border: 2px solid rgba(30,136,229,.55);
-    color: var(--slate);
-    font-weight: 900;
+  .btn-forest:hover{
+    filter: brightness(1.03);
+    box-shadow: 0 0 0 6px rgba(11,93,59,.16);
   }
-  .btn-outline-sky:hover{ background: rgba(30,136,229,.10); }
 
-  .section-title{ font-weight: 950; color: var(--slate); }
+  .section-title{ font-weight: 900; color: var(--slate); }
   .section-subtitle{
     color: rgba(15,23,42,.70);
     max-width: 980px;
@@ -159,24 +159,6 @@
     box-shadow: 0 16px 40px rgba(2,6,23,.06);
   }
 
-  .icon-badge{
-    width: 44px; height: 44px;
-    border-radius: 14px;
-    display:flex; align-items:center; justify-content:center;
-    background: linear-gradient(135deg, rgba(30,136,229,.12), rgba(11,93,59,.12));
-    border: 1px solid rgba(15,23,42,.10);
-    color: var(--forest);
-  }
-
-  .info-card{
-    background: rgba(255,255,255,.86);
-    border: 1px solid rgba(15,23,42,.10);
-    border-radius: 18px;
-    padding: 16px;
-    height: 100%;
-  }
-  .info-card i{ color: var(--sky); }
-
   /* Countdown */
   .countdown-wrap{
     max-width: 980px;
@@ -187,7 +169,7 @@
     padding: 18px 18px;
     backdrop-filter: blur(10px);
   }
-  .countdown-label{ font-weight: 950; color: var(--slate); }
+  .countdown-label{ font-weight: 900; color: var(--slate); }
   .count-box{
     background: #fff;
     border: 1px solid rgba(15,23,42,.08);
@@ -197,7 +179,7 @@
   }
   .count-num{
     font-size: 1.55rem;
-    font-weight: 950;
+    font-weight: 900;
     color: var(--forest);
     line-height: 1;
   }
@@ -205,41 +187,97 @@
     font-size: .85rem;
     color: rgba(15,23,42,.65);
     margin-top: 4px;
-    font-weight: 850;
+    font-weight: 800;
   }
 
-  /* Map */
-  .map-frame{
-    width:100%;
-    height: 380px;
-    border:0;
-    border-radius: 18px;
-  }
-
-  /* Tiles */
-  .tile{
-    background: #fff;
+  /* Registration cards */
+  .fee-card{
+    background:#fff;
     border: 1px solid rgba(15,23,42,.08);
-    border-radius: 18px;
+    border-radius: 20px;
     padding: 18px;
     height: 100%;
     box-shadow: 0 14px 34px rgba(2,6,23,.06);
+    position: relative;
+    overflow: hidden;
   }
-  .tile h6{ font-weight: 950; color: var(--slate); }
-  .tile p{ color: rgba(15,23,42,.72); font-weight: 650; margin-bottom: 0; line-height: 1.75; }
+  .fee-card::before{
+    content:"";
+    position:absolute;
+    inset:-40px -40px auto auto;
+    width: 160px;
+    height: 160px;
+    border-radius: 999px;
+    background: radial-gradient(circle at 30% 30%, rgba(245,158,11,.22), rgba(30,136,229,.10), transparent 60%);
+    filter: blur(0px);
+  }
+  .fee-title{
+    font-weight: 900;
+    color: var(--slate);
+    margin-bottom: 6px;
+  }
+  .fee-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(15,23,42,.10);
+    background: rgba(255,255,255,.86);
+    font-weight: 900;
+  }
+  .fee-price{
+    font-size: 1.8rem;
+    font-weight: 950;
+    color: var(--forest);
+    letter-spacing: .2px;
+    margin: 12px 0 6px;
+  }
+  .fee-note{
+    color: rgba(15,23,42,.70);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .list-check{
+    margin:0;
+    padding-left: 1.1rem;
+    color: rgba(15,23,42,.78);
+    line-height: 1.75;
+    font-weight: 650;
+  }
+  .list-check i{ color: var(--forest); margin-right: .55rem; }
 
+  /* Steps */
+  .step{
+    display:flex;
+    gap: 12px;
+    align-items:flex-start;
+  }
+  .step-num{
+    width: 44px;height:44px;
+    border-radius: 14px;
+    display:flex;align-items:center;justify-content:center;
+    background: linear-gradient(135deg, rgba(30,136,229,.12), rgba(11,93,59,.12));
+    border: 1px solid rgba(15,23,42,.10);
+    color: var(--forest);
+    font-weight: 950;
+  }
+  .step h6{ font-weight: 900; margin-bottom: 4px; color: var(--slate); }
+  .step p{ margin:0; color: rgba(15,23,42,.74); font-weight: 650; line-height: 1.7; }
+
+  /* Footer */
   footer{
     background: linear-gradient(90deg, var(--slate), #0b2a1b);
     color: rgba(255,255,255,.85);
   }
   footer a{ color: rgba(255,255,255,.85); text-decoration:none; }
-  footer a:hover{ color:#fff; text-decoration: underline; }
+  footer a:hover{ color: #fff; text-decoration: underline; }
   .footer-date-row{
     border-bottom: 1px solid rgba(255,255,255,.20);
     padding: .55rem 0;
   }
 
-  .offcanvas{ background:#ffffff; }
+  .offcanvas{ background: #ffffff; }
 </style>
 </head>
 
@@ -328,28 +366,23 @@
     </div>
   </div>
 </div>
-
 <!-- HERO -->
 <section class="hero text-center">
   <div class="container">
     <div class="chip mb-3">
-      <i class="fa-solid fa-map-location-dot"></i>
-      Venue • UPES Bidholi Campus • Dehradun, Uttarakhand
+      <i class="fa-solid fa-ticket"></i>
+      Registration • ICACSDF 2026 • UPES Dehradun
     </div>
 
-    <h1 class="display-5 hero-title mb-3">Conference Venue</h1>
-
+    <h1 class="display-5 hero-title mb-3">Conference Registration</h1>
     <p class="lead hero-lead mb-3">
-      ICACSDF 2026 will be hosted at <strong>UPES, Bidholi Campus</strong>, nestled in the foothills of the Himalayas —
-      bringing a true Uttarakhand feel to a global cybersecurity and digital forensics conference.
+      Register to present your work, attend technical sessions, and connect with researchers and industry professionals
+      in cybersecurity and digital forensics.
     </p>
 
     <div class="d-flex justify-content-center flex-wrap gap-2 mb-3">
-      <a href="#map" class="btn btn-saffron btn-lg"><i class="fa-solid fa-location-crosshairs me-2"></i>View Map</a>
-      <a href="#travel" class="btn btn-forest btn-lg"><i class="fa-solid fa-route me-2"></i>Travel Guidance</a>
-      <a href="mailto:conference_socs@ddn.upes.ac.in" class="btn btn-outline-sky btn-lg">
-        <i class="fa-solid fa-envelope me-2"></i>Venue Helpdesk
-      </a>
+      <a href="#register-now" class="btn btn-saffron btn-lg"><i class="fa-solid fa-user-plus me-2"></i>Register Now</a>
+      <a href="#fees" class="btn btn-forest btn-lg"><i class="fa-solid fa-receipt me-2"></i>View Fees</a>
     </div>
 
     <!-- Countdown -->
@@ -390,251 +423,271 @@
         </div>
       </div>
 
-      <div class="mt-3 small text-muted fw-bold">
-        Note: Session halls / exact building details can be updated here once finalized.
+      <div class="mt-3 small text-muted">
+        For registration support, email <strong>conference_socs@ddn.upes.ac.in</strong>
       </div>
     </div>
-
-    <div class="row g-3 mt-4 text-start">
-      <div class="col-md-4">
-        <div class="info-card">
-          <div class="d-flex align-items-center gap-2 mb-1">
-            <i class="fa-solid fa-location-dot"></i>
-            <strong>Venue</strong>
-          </div>
-          <div class="small text-muted">UPES, Bidholi Campus, Dehradun</div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="info-card">
-          <div class="d-flex align-items-center gap-2 mb-1">
-            <i class="fa-solid fa-building-columns"></i>
-            <strong>Hosted By</strong>
-          </div>
-          <div class="small text-muted">School of Computer Science, UPES</div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="info-card">
-          <div class="d-flex align-items-center gap-2 mb-1">
-            <i class="fa-solid fa-certificate"></i>
-            <strong>Sponsorship</strong>
-          </div>
-          <div class="small text-muted">Sponsored by IEEE UP Section</div>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
-<!-- VENUE DETAILS -->
-<section class="py-5">
+<!-- FEES -->
+<section id="fees" class="py-5">
   <div class="container">
     <div class="text-center mb-4">
-      <h2 class="section-title">UPES Bidholi Campus</h2>
+      <h2 class="section-title">Registration Fees</h2>
       <p class="section-subtitle">
-        A modern academic campus with conference halls and facilities suitable for hybrid sessions.
+        Replace the prices below with your finalized ICACSDF 2026 fee structure.
+        You can keep this layout as-is.
       </p>
     </div>
 
     <div class="row g-4">
+      <!-- Indian Authors -->
+      <div class="col-lg-6">
+        <div class="fee-card">
+          <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+            <div>
+              <h4 class="fee-title"><i class="fa-solid fa-flag me-2 text-success"></i>Indian Participants</h4>
+              <div class="fee-note">For authors/attendees registering from India.</div>
+            </div>
+            <div class="fee-badge"><i class="fa-solid fa-indian-rupee-sign"></i> INR</div>
+          </div>
+
+          <div class="row g-3 mt-1">
+            <div class="col-md-6">
+              <div class="soft-panel p-3 h-100">
+                <div class="fw-bold" style="color:var(--slate);">Student / Research Scholar</div>
+                <div class="fee-price">₹ 3,500</div>
+                <div class="small text-muted fw-bold">Paper Presentation / Attendance</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="soft-panel p-3 h-100">
+                <div class="fw-bold" style="color:var(--slate);">Academician</div>
+                <div class="fee-price">₹ 5,000</div>
+                <div class="small text-muted fw-bold">Paper Presentation / Attendance</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="soft-panel p-3 h-100">
+                <div class="fw-bold" style="color:var(--slate);">Industry Professional</div>
+                <div class="fee-price">₹ 6,500</div>
+                <div class="small text-muted fw-bold">Attendance / Networking</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="soft-panel p-3 h-100 border border-warning border-2">
+                <div class="fw-bold" style="color:var(--slate);">IEEE Member (Discount)</div>
+                <div class="fee-price">₹ 4,500</div>
+                <div class="small text-muted fw-bold">Provide IEEE Membership ID</div>
+              </div>
+            </div>
+          </div>
+
+          <hr style="opacity:.12;">
+          <ul class="list-check">
+            <li><i class="fa-solid fa-check-circle"></i>Includes access to all sessions (hybrid where applicable).</li>
+            <li><i class="fa-solid fa-check-circle"></i>Certificate for authors who present papers.</li>
+            <li><i class="fa-solid fa-check-circle"></i>Conference kit (as applicable).</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- International Authors -->
+      <div class="col-lg-6">
+        <div class="fee-card">
+          <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+            <div>
+              <h4 class="fee-title"><i class="fa-solid fa-globe me-2 text-success"></i>International Participants</h4>
+              <div class="fee-note">For authors/attendees registering from outside India.</div>
+            </div>
+            <div class="fee-badge"><i class="fa-solid fa-dollar-sign"></i> USD</div>
+          </div>
+
+          <div class="row g-3 mt-1">
+            <div class="col-md-6">
+              <div class="soft-panel p-3 h-100">
+                <div class="fw-bold" style="color:var(--slate);">Student / Research Scholar</div>
+                <div class="fee-price">$ 120</div>
+                <div class="small text-muted fw-bold">Paper Presentation / Attendance</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="soft-panel p-3 h-100">
+                <div class="fw-bold" style="color:var(--slate);">Academician</div>
+                <div class="fee-price">$ 180</div>
+                <div class="small text-muted fw-bold">Paper Presentation / Attendance</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="soft-panel p-3 h-100">
+                <div class="fw-bold" style="color:var(--slate);">Industry Professional</div>
+                <div class="fee-price">$ 220</div>
+                <div class="small text-muted fw-bold">Attendance / Networking</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="soft-panel p-3 h-100 border border-warning border-2">
+                <div class="fw-bold" style="color:var(--slate);">IEEE Member (Discount)</div>
+                <div class="fee-price">$ 160</div>
+                <div class="small text-muted fw-bold">Provide IEEE Membership ID</div>
+              </div>
+            </div>
+          </div>
+
+          <hr style="opacity:.12;">
+          <ul class="list-check">
+            <li><i class="fa-solid fa-check-circle"></i>Hybrid participation where applicable.</li>
+            <li><i class="fa-solid fa-check-circle"></i>Presentation certificate for registered authors.</li>
+            <li><i class="fa-solid fa-check-circle"></i>Support for online presentation (if opted).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center mt-4 small text-muted fw-bold">
+      Note: The above fees are placeholders. Replace with official ICACSDF 2026 registration fees once finalized.
+    </p>
+  </div>
+</section>
+
+<!-- HOW TO REGISTER + PAYMENT -->
+<section id="register-now" class="py-5" style="background: linear-gradient(180deg, #f8fafc, #eef6ff);">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">How to Register</h2>
+      <p class="section-subtitle">
+        Follow these steps to complete your ICACSDF 2026 registration.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Steps -->
       <div class="col-lg-6">
         <div class="soft-panel p-4 h-100">
-          <div class="d-flex align-items-center gap-3 mb-2">
-            <div class="icon-badge"><i class="fa-solid fa-location-dot"></i></div>
-            <h5 class="mb-0 section-title fs-4">Address</h5>
+          <div class="step mb-3">
+            <div class="step-num">1</div>
+            <div>
+              <h6>Fill the Registration Form</h6>
+              <p>Complete the online registration form and enter correct paper ID (if applicable).</p>
+            </div>
           </div>
-          <p class="mb-0" style="color: rgba(15,23,42,.78); line-height: 1.85; font-weight: 650;">
-            <strong>UPES, Bidholi Campus</strong><br>
-            P.O. Bidholi Via Premnagar,<br>
-            Dehradun – 248007, Uttarakhand, India
-          </p>
 
-          <div class="d-flex flex-wrap gap-2 mt-3">
-            <a class="btn btn-saffron" href="#map"><i class="fa-solid fa-map me-2"></i>Open Map</a>
-            <a class="btn btn-outline-sky" href="mailto:conference_socs@ddn.upes.ac.in">
-              <i class="fa-solid fa-envelope me-2"></i>Ask Venue Help
+          <div class="step mb-3">
+            <div class="step-num">2</div>
+            <div>
+              <h6>Make the Payment</h6>
+              <p>Pay using bank transfer/UPI/online mode (details in the next panel). Save the receipt.</p>
+            </div>
+          </div>
+
+          <div class="step mb-3">
+            <div class="step-num">3</div>
+            <div>
+              <h6>Upload Proof & Confirmation</h6>
+              <p>Upload payment proof and wait for confirmation email from the organizing team.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">4</div>
+            <div>
+              <h6>Get Registered</h6>
+              <p>Once verified, you will receive registration confirmation and participation details.</p>
+            </div>
+          </div>
+
+          <hr style="opacity:.12;">
+          <div class="d-flex flex-wrap gap-2">
+            <a href="#" class="btn btn-saffron btn-lg">
+              <i class="fa-solid fa-user-plus me-2"></i> Open Registration Form
             </a>
+            <a href="mailto:conference_socs@ddn.upes.ac.in" class="btn btn-forest btn-lg">
+              <i class="fa-solid fa-envelope me-2"></i> Email Support
+            </a>
+          </div>
+
+          <div class="small text-muted mt-3 fw-bold">
+            Tip: Replace the “Open Registration Form” link with your official form URL.
           </div>
         </div>
       </div>
 
+      <!-- Payment Details -->
       <div class="col-lg-6">
         <div class="soft-panel p-4 h-100">
-          <div class="d-flex align-items-center gap-3 mb-2">
-            <div class="icon-badge"><i class="fa-solid fa-circle-info"></i></div>
-            <h5 class="mb-0 section-title fs-4">Quick Info</h5>
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="step-num"><i class="fa-solid fa-credit-card"></i></div>
+            <h5 class="mb-0 section-title fs-4">Payment Details</h5>
           </div>
+
+          <p class="text-muted fw-bold mb-3">
+            Replace the following placeholders with your official UPES / conference account details.
+          </p>
+
           <div class="row g-3">
-            <div class="col-12">
-              <div class="tile">
-                <h6><i class="fa-solid fa-wifi me-2 text-success"></i>Hybrid Support</h6>
-                <p>Streaming-ready halls (update exact setup after final AV confirmation).</p>
+            <div class="col-md-6">
+              <div class="p-3 bg-white rounded-4 border" style="border-color: rgba(15,23,42,.10) !important;">
+                <div class="small text-muted fw-bold">Account Name</div>
+                <div class="fw-bold">UPES / ICACSDF Conference</div>
               </div>
             </div>
+
+            <div class="col-md-6">
+              <div class="p-3 bg-white rounded-4 border" style="border-color: rgba(15,23,42,.10) !important;">
+                <div class="small text-muted fw-bold">Bank Name</div>
+                <div class="fw-bold">[Your Bank Name]</div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="p-3 bg-white rounded-4 border" style="border-color: rgba(15,23,42,.10) !important;">
+                <div class="small text-muted fw-bold">Account Number</div>
+                <div class="fw-bold">XXXX-XXXX-XXXX</div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="p-3 bg-white rounded-4 border" style="border-color: rgba(15,23,42,.10) !important;">
+                <div class="small text-muted fw-bold">IFSC / SWIFT</div>
+                <div class="fw-bold">XXXX0000000</div>
+              </div>
+            </div>
+
             <div class="col-12">
-              <div class="tile">
-                <h6><i class="fa-solid fa-mug-hot me-2 text-success"></i>Hospitality</h6>
-                <p>Tea/coffee breaks, lunch arrangements, and on-campus support team (as per schedule).</p>
+              <div class="p-3 bg-white rounded-4 border" style="border-color: rgba(15,23,42,.10) !important;">
+                <div class="small text-muted fw-bold">UPI ID (Optional)</div>
+                <div class="fw-bold">yourupi@bank</div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="p-3 bg-white rounded-4 border border-warning" style="border-width:2px !important;">
+                <div class="fw-bold mb-1" style="color:var(--slate);">
+                  <i class="fa-solid fa-circle-info me-2"></i>Payment Reference Format
+                </div>
+                <div class="text-muted fw-bold small">
+                  Use: <strong>ICACSDF26_YourName_PaperID</strong> (example: ICACSDF26_Rahul_123)
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-    </div>
-  </div>
-</section>
-
-<!-- MAP -->
-<section id="map" class="py-5" style="background: linear-gradient(180deg, #f8fafc, #eef6ff);">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h2 class="section-title">Location Map</h2>
-      <p class="section-subtitle">
-        Replace the map <strong>src</strong> below with your official Google Maps embed for UPES Bidholi Campus.
-      </p>
-    </div>
-
-    <div class="soft-panel p-3 p-lg-4">
-      <!-- ✅ Replace src with your final embed link -->
-      <iframe
-        class="map-frame"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=UPES%20Bidholi%20Campus%20Dehradun&output=embed">
-      </iframe>
-      <div class="small text-muted fw-bold mt-3">
-        Tip: Search UPES Bidholi Campus in Google Maps → Share → Embed a map → Copy HTML → paste src here.
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TRAVEL -->
-<section id="travel" class="py-5">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h2 class="section-title">How to Reach</h2>
-      <p class="section-subtitle">
-        Dehradun is well-connected by air, rail, and road. Use this guide to plan your travel.
-      </p>
-    </div>
-
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <div class="tile">
-          <h6><i class="fa-solid fa-plane-departure me-2 text-success"></i>By Air</h6>
-          <p>
-            Nearest airport: <strong>Dehradun Airport (Jolly Grant)</strong>.
-            From the airport, you can take a taxi/cab to UPES Bidholi Campus.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="tile">
-          <h6><i class="fa-solid fa-train-subway me-2 text-success"></i>By Rail</h6>
-          <p>
-            Major railhead: <strong>Dehradun Railway Station</strong>.
-            Local cabs and app-based taxis are available for campus commute.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="tile">
-          <h6><i class="fa-solid fa-bus me-2 text-success"></i>By Road</h6>
-          <p>
-            Dehradun has strong road connectivity from Delhi/NCR and nearby cities.
-            You can reach via bus, taxi, or self-drive.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="soft-panel p-4 p-lg-5 mt-4">
-      <div class="d-flex align-items-start gap-3">
-        <div class="icon-badge"><i class="fa-solid fa-mountain-sun"></i></div>
-        <div>
-          <h5 class="section-title fs-4 mb-2">Uttarakhand Experience</h5>
-          <p class="mb-0" style="color: rgba(15,23,42,.78); line-height: 1.85; font-weight: 650;">
-            Dehradun offers a calm Himalayan foothills vibe — ideal for focused research discussions.
-            If you’re planning extra days, you can explore nearby attractions (optional) like Mussoorie and local nature spots.
-            (Add your official itinerary/guide here if UPES provides one.)
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- NEARBY STAY (placeholders) -->
-<section class="py-5" style="background: linear-gradient(180deg, #f8fafc, #eef6ff);">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h2 class="section-title">Nearby Stay Options</h2>
-      <p class="section-subtitle">
-        Add recommended hotels/guest houses with distance and contact numbers once finalized.
-      </p>
-    </div>
-
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <div class="tile">
-          <h6><i class="fa-solid fa-hotel me-2 text-success"></i>Hotel Option 1</h6>
-          <p>Distance: — km • Contact: — • Notes: (Add details)</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="tile">
-          <h6><i class="fa-solid fa-hotel me-2 text-success"></i>Hotel Option 2</h6>
-          <p>Distance: — km • Contact: — • Notes: (Add details)</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="tile">
-          <h6><i class="fa-solid fa-house me-2 text-success"></i>Guest House / Budget Stay</h6>
-          <p>Distance: — km • Contact: — • Notes: (Add details)</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="py-5">
-  <div class="container">
-    <div class="soft-panel p-4 p-lg-5">
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-8">
-          <div class="d-flex align-items-center gap-3 mb-2">
-            <div class="icon-badge"><i class="fa-solid fa-headset"></i></div>
-            <h2 class="section-title mb-0">Need Venue Assistance?</h2>
+          <hr style="opacity:.12;">
+          <div class="small text-muted fw-bold">
+            After payment, email the transaction receipt to <strong>conference_socs@ddn.upes.ac.in</strong>
+            (or upload it in the registration form).
           </div>
-          <p class="mb-0" style="color: rgba(15,23,42,.78); line-height: 1.85; font-weight: 650;">
-            For travel queries, accommodation guidance, or campus navigation, contact the ICACSDF 2026 team.
-          </p>
-          <div class="d-flex flex-wrap gap-2 mt-3">
-            <a class="btn btn-saffron btn-lg" href="mailto:conference_socs@ddn.upes.ac.in">
-              <i class="fa-solid fa-envelope me-2"></i>Email Helpdesk
-            </a>
-            <a class="btn btn-forest btn-lg" href="index.html">
-              <i class="fa-solid fa-house me-2"></i>Back to Home
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-4 text-center">
-          <div class="p-3 bg-white rounded-4 border" style="border-color: rgba(15,23,42,.10) !important;">
-            <div class="fw-bold" style="color: var(--slate);">
-              <i class="fa-solid fa-location-dot me-2 text-success"></i>UPES, Bidholi Campus
-            </div>
-            <div class="small text-muted fw-bold mt-2">
-              Dehradun – 248007, Uttarakhand, India
+
+          <!-- Optional Google Form Embed -->
+          <!--
+          <div class="mt-4">
+            <h6 class="fw-bold" style="color:var(--slate);">Registration Form (Embedded)</h6>
+            <div class="ratio ratio-4x3 rounded-4 overflow-hidden border" style="border-color: rgba(15,23,42,.10) !important;">
+              <iframe src="PASTE_YOUR_GOOGLE_FORM_EMBED_LINK_HERE" loading="lazy"></iframe>
             </div>
           </div>
+          -->
         </div>
       </div>
     </div>
@@ -746,6 +799,7 @@
 </div>
 
 </footer>
+
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 

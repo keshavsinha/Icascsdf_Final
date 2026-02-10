@@ -4,9 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Venue | ICACSDF 2026 | UPES Dehradun</title>
-<meta name="description" content="ICACSDF 2026 Venue — UPES Bidholi Campus, Dehradun, Uttarakhand. Sponsored by IEEE UP Section. 11–12 September 2026.">
-<meta name="keywords" content="ICACSDF 2026, Venue, UPES, Bidholi Campus, Dehradun, Uttarakhand, IEEE UP Section">
+<title>Committee | ICACSDF 2026 | UPES Dehradun</title>
+<meta name="description" content="ICACSDF 2026 Committee — International Conference on Advances in Cyber Security and Digital Forensics. UPES Dehradun. Sponsored by IEEE UP Section. 11–12 September 2026.">
+<meta name="keywords" content="ICACSDF 2026, Committee, UPES, Dehradun, Uttarakhand, Cyber Security, Digital Forensics, IEEE UP Section">
 
 <!-- Bootstrap 5 -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -42,7 +42,7 @@
     font-size:.92rem;
   }
   .top-bar a{ color: rgba(255,255,255,.92); text-decoration:none; }
-  .top-bar a:hover{ color:#fff; text-decoration: underline; }
+  .top-bar a:hover{ color: #fff; text-decoration: underline; }
 
   /* Navbar */
   .navbar{
@@ -67,21 +67,23 @@
     height:44px; width:auto; object-fit:contain;
     filter: drop-shadow(0 8px 18px rgba(2,6,23,.10));
   }
-  .brand-logos .logo-divider{ width:1px; height:28px; background: rgba(15,23,42,.15); }
+  .brand-logos .logo-divider{
+    width:1px; height:28px; background: rgba(15,23,42,.15);
+  }
   @media (max-width: 992px){ .brand-logos img{ height:38px; } }
 
   /* Hero */
   .hero{
     position: relative;
     overflow: hidden;
-    padding: 86px 0 52px;
+    padding: 86px 0 46px;
   }
   .hero::before{
     content:"";
     position:absolute; inset:0;
     background:
       linear-gradient(180deg, rgba(255,255,255,.32), rgba(255,255,255,.95)),
-      url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1800&q=80");
+      url("https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1800&q=80");
     background-size: cover;
     background-position: center;
     pointer-events:none;
@@ -113,7 +115,7 @@
   .chip i{ color: var(--forest); }
 
   .hero-title{
-    font-weight: 950;
+    font-weight: 900;
     line-height: 1.12;
     color: var(--slate);
     text-shadow: 0 10px 35px rgba(2,6,23,.12);
@@ -124,58 +126,54 @@
     margin-inline: auto;
   }
 
-  .btn-saffron{
-    background: linear-gradient(135deg, var(--sun), #ffb020);
-    border:0;
-    color:#1f2937;
-    font-weight: 900;
-  }
-  .btn-saffron:hover{ filter: brightness(1.03); box-shadow: 0 0 0 6px rgba(245,158,11,.18); }
-  .btn-forest{
-    background: linear-gradient(135deg, var(--forest), #0a7a4b);
-    border:0;
-    color:#fff;
-    font-weight: 900;
-  }
-  .btn-forest:hover{ filter: brightness(1.03); box-shadow: 0 0 0 6px rgba(11,93,59,.16); }
-  .btn-outline-sky{
-    border: 2px solid rgba(30,136,229,.55);
-    color: var(--slate);
-    font-weight: 900;
-  }
-  .btn-outline-sky:hover{ background: rgba(30,136,229,.10); }
-
-  .section-title{ font-weight: 950; color: var(--slate); }
-  .section-subtitle{
-    color: rgba(15,23,42,.70);
-    max-width: 980px;
-    margin: 0 auto;
-  }
-
+  /* Panels & cards */
   .soft-panel{
     background: rgba(255,255,255,.92);
     border: 1px solid rgba(15,23,42,.08);
     border-radius: 20px;
     box-shadow: 0 16px 40px rgba(2,6,23,.06);
   }
+  .section-title{ font-weight: 900; color: var(--slate); }
+  .section-subtitle{
+    color: rgba(15,23,42,.70);
+    max-width: 980px;
+    margin: 0 auto;
+  }
 
-  .icon-badge{
-    width: 44px; height: 44px;
-    border-radius: 14px;
-    display:flex; align-items:center; justify-content:center;
+  .role-card{
+    background:#fff;
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 18px;
+    padding: 18px;
+    height: 100%;
+    box-shadow: 0 14px 34px rgba(2,6,23,.06);
+  }
+  .role-head{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom: 10px;
+  }
+  .role-icon{
+    width:44px;height:44px;
+    border-radius:14px;
+    display:flex;align-items:center;justify-content:center;
     background: linear-gradient(135deg, rgba(30,136,229,.12), rgba(11,93,59,.12));
     border: 1px solid rgba(15,23,42,.10);
     color: var(--forest);
   }
-
-  .info-card{
-    background: rgba(255,255,255,.86);
-    border: 1px solid rgba(15,23,42,.10);
-    border-radius: 18px;
-    padding: 16px;
-    height: 100%;
+  .role-title{
+    margin:0;
+    font-weight: 900;
+    color: var(--slate);
   }
-  .info-card i{ color: var(--sky); }
+  .people-list{
+    margin:0;
+    padding-left: 1.1rem;
+    color: rgba(15,23,42,.78);
+    line-height: 1.8;
+    font-weight: 600;
+  }
 
   /* Countdown */
   .countdown-wrap{
@@ -187,7 +185,7 @@
     padding: 18px 18px;
     backdrop-filter: blur(10px);
   }
-  .countdown-label{ font-weight: 950; color: var(--slate); }
+  .countdown-label{ font-weight: 900; color: var(--slate); }
   .count-box{
     background: #fff;
     border: 1px solid rgba(15,23,42,.08);
@@ -197,7 +195,7 @@
   }
   .count-num{
     font-size: 1.55rem;
-    font-weight: 950;
+    font-weight: 900;
     color: var(--forest);
     line-height: 1;
   }
@@ -205,41 +203,22 @@
     font-size: .85rem;
     color: rgba(15,23,42,.65);
     margin-top: 4px;
-    font-weight: 850;
+    font-weight: 800;
   }
 
-  /* Map */
-  .map-frame{
-    width:100%;
-    height: 380px;
-    border:0;
-    border-radius: 18px;
-  }
-
-  /* Tiles */
-  .tile{
-    background: #fff;
-    border: 1px solid rgba(15,23,42,.08);
-    border-radius: 18px;
-    padding: 18px;
-    height: 100%;
-    box-shadow: 0 14px 34px rgba(2,6,23,.06);
-  }
-  .tile h6{ font-weight: 950; color: var(--slate); }
-  .tile p{ color: rgba(15,23,42,.72); font-weight: 650; margin-bottom: 0; line-height: 1.75; }
-
+  /* Footer */
   footer{
     background: linear-gradient(90deg, var(--slate), #0b2a1b);
     color: rgba(255,255,255,.85);
   }
   footer a{ color: rgba(255,255,255,.85); text-decoration:none; }
-  footer a:hover{ color:#fff; text-decoration: underline; }
+  footer a:hover{ color: #fff; text-decoration: underline; }
   .footer-date-row{
     border-bottom: 1px solid rgba(255,255,255,.20);
     padding: .55rem 0;
   }
 
-  .offcanvas{ background:#ffffff; }
+  .offcanvas{ background: #ffffff; }
 </style>
 </head>
 
@@ -333,24 +312,15 @@
 <section class="hero text-center">
   <div class="container">
     <div class="chip mb-3">
-      <i class="fa-solid fa-map-location-dot"></i>
-      Venue • UPES Bidholi Campus • Dehradun, Uttarakhand
+      <i class="fa-solid fa-people-group"></i>
+      Committee • School of Computer Science, UPES Dehradun, India
     </div>
 
-    <h1 class="display-5 hero-title mb-3">Conference Venue</h1>
-
+    <h1 class="display-5 hero-title mb-3">Organizing & Technical Committee</h1>
     <p class="lead hero-lead mb-3">
-      ICACSDF 2026 will be hosted at <strong>UPES, Bidholi Campus</strong>, nestled in the foothills of the Himalayas —
-      bringing a true Uttarakhand feel to a global cybersecurity and digital forensics conference.
+      The ICACSDF 2026 committee comprises academic leaders, researchers, and coordinators driving the conference vision,
+      review process, industry engagement, and on-ground execution.
     </p>
-
-    <div class="d-flex justify-content-center flex-wrap gap-2 mb-3">
-      <a href="#map" class="btn btn-saffron btn-lg"><i class="fa-solid fa-location-crosshairs me-2"></i>View Map</a>
-      <a href="#travel" class="btn btn-forest btn-lg"><i class="fa-solid fa-route me-2"></i>Travel Guidance</a>
-      <a href="mailto:conference_socs@ddn.upes.ac.in" class="btn btn-outline-sky btn-lg">
-        <i class="fa-solid fa-envelope me-2"></i>Venue Helpdesk
-      </a>
-    </div>
 
     <!-- Countdown -->
     <div class="countdown-wrap">
@@ -390,254 +360,309 @@
         </div>
       </div>
 
-      <div class="mt-3 small text-muted fw-bold">
-        Note: Session halls / exact building details can be updated here once finalized.
+      <div class="mt-3 small text-muted">
+        Interested in joining as reviewer/volunteer? Write to <strong>conference_socs@ddn.upes.ac.in</strong>
       </div>
     </div>
-
-    <div class="row g-3 mt-4 text-start">
-      <div class="col-md-4">
-        <div class="info-card">
-          <div class="d-flex align-items-center gap-2 mb-1">
-            <i class="fa-solid fa-location-dot"></i>
-            <strong>Venue</strong>
-          </div>
-          <div class="small text-muted">UPES, Bidholi Campus, Dehradun</div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="info-card">
-          <div class="d-flex align-items-center gap-2 mb-1">
-            <i class="fa-solid fa-building-columns"></i>
-            <strong>Hosted By</strong>
-          </div>
-          <div class="small text-muted">School of Computer Science, UPES</div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="info-card">
-          <div class="d-flex align-items-center gap-2 mb-1">
-            <i class="fa-solid fa-certificate"></i>
-            <strong>Sponsorship</strong>
-          </div>
-          <div class="small text-muted">Sponsored by IEEE UP Section</div>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
-<!-- VENUE DETAILS -->
+<!-- COMMITTEE SECTION -->
 <section class="py-5">
   <div class="container">
     <div class="text-center mb-4">
-      <h2 class="section-title">UPES Bidholi Campus</h2>
-      <p class="section-subtitle">
-        A modern academic campus with conference halls and facilities suitable for hybrid sessions.
-      </p>
+      <h2 class="section-title">Organizing Committee</h2>
+      <p class="section-subtitle">Leadership and coordination team supporting ICACSDF 2026 planning and execution.</p>
     </div>
 
     <div class="row g-4">
+      <!-- Chief Patrons -->
       <div class="col-lg-6">
-        <div class="soft-panel p-4 h-100">
-          <div class="d-flex align-items-center gap-3 mb-2">
-            <div class="icon-badge"><i class="fa-solid fa-location-dot"></i></div>
-            <h5 class="mb-0 section-title fs-4">Address</h5>
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-crown"></i></div>
+            <h5 class="role-title">Chief Patrons</h5>
           </div>
-          <p class="mb-0" style="color: rgba(15,23,42,.78); line-height: 1.85; font-weight: 650;">
-            <strong>UPES, Bidholi Campus</strong><br>
-            P.O. Bidholi Via Premnagar,<br>
-            Dehradun – 248007, Uttarakhand, India
-          </p>
-
-          <div class="d-flex flex-wrap gap-2 mt-3">
-            <a class="btn btn-saffron" href="#map"><i class="fa-solid fa-map me-2"></i>Open Map</a>
-            <a class="btn btn-outline-sky" href="mailto:conference_socs@ddn.upes.ac.in">
-              <i class="fa-solid fa-envelope me-2"></i>Ask Venue Help
-            </a>
-          </div>
+          <ul class="people-list">
+            <li>Dr. Sunil Rai, Chancellor, UPES, India</li>
+            <li>Dr. Ram Sharma, Vice Chancellor, UPES, India</li>
+          </ul>
         </div>
       </div>
 
+      <!-- Patrons -->
       <div class="col-lg-6">
-        <div class="soft-panel p-4 h-100">
-          <div class="d-flex align-items-center gap-3 mb-2">
-            <div class="icon-badge"><i class="fa-solid fa-circle-info"></i></div>
-            <h5 class="mb-0 section-title fs-4">Quick Info</h5>
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-star"></i></div>
+            <h5 class="role-title">Patrons</h5>
           </div>
-          <div class="row g-3">
-            <div class="col-12">
-              <div class="tile">
-                <h6><i class="fa-solid fa-wifi me-2 text-success"></i>Hybrid Support</h6>
-                <p>Streaming-ready halls (update exact setup after final AV confirmation).</p>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="tile">
-                <h6><i class="fa-solid fa-mug-hot me-2 text-success"></i>Hospitality</h6>
-                <p>Tea/coffee breaks, lunch arrangements, and on-campus support team (as per schedule).</p>
-              </div>
-            </div>
-          </div>
+          <ul class="people-list">
+            <li>Dr. Jayasankar Variyar, Pro Vice Chancellor, UPES, Dehradun, India</li>
+            <li>Dr. Veena Dutta, Vice Provost, Chancery, UPES, Dehradun, India</li>
+            <li>Mr. Manish Madaan, Registrar, UPES Dehradun, India</li>
+          </ul>
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
+      <!-- General Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-user-tie"></i></div>
+            <h5 class="role-title">General Chairs</h5>
+          </div>
+          <ul class="people-list">
+            <li>Mr. Rajiv Nandwani, Senior Director, UPES, Dehradun, India</li>
+          </ul>
+        </div>
+      </div>
 
-<!-- MAP -->
-<section id="map" class="py-5" style="background: linear-gradient(180deg, #f8fafc, #eef6ff);">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h2 class="section-title">Location Map</h2>
-      <p class="section-subtitle">
-        Replace the map <strong>src</strong> below with your official Google Maps embed for UPES Bidholi Campus.
-      </p>
-    </div>
+      <!-- Organizing Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-sitemap"></i></div>
+            <h5 class="role-title">Organizing Chairs (Convenors)</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Rajib Banerjee, UPES, India</li>
+            <li>Dr. Sushabhan Chodhury, UPES, Dehradun</li>
+          </ul>
+        </div>
+      </div>
 
-    <div class="soft-panel p-3 p-lg-4">
-      <!-- ✅ Replace src with your final embed link -->
-      <iframe
-        class="map-frame"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=UPES%20Bidholi%20Campus%20Dehradun&output=embed">
-      </iframe>
-      <div class="small text-muted fw-bold mt-3">
-        Tip: Search UPES Bidholi Campus in Google Maps → Share → Embed a map → Copy HTML → paste src here.
+      <!-- Organizing Co-Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-people-arrows"></i></div>
+            <h5 class="role-title">Organizing Co-Chairs</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Keshav Sinha, Secretary</li>
+            <li>Dr. Sandip Kumar Chaurasiya, UPES, India</li>
+            <li>Prof. Shubhi Sharma, UPES, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Organizing Coordinators -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h5 class="role-title">Organizing Co-ordinators</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Arjun Arora, UPES India</li>
+            <li>Dr. Kaushik Ghosh, UPES, India</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- TRAVEL -->
-<section id="travel" class="py-5">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h2 class="section-title">How to Reach</h2>
-      <p class="section-subtitle">
-        Dehradun is well-connected by air, rail, and road. Use this guide to plan your travel.
-      </p>
+    <div class="text-center mt-5 mb-4">
+      <h2 class="section-title">Technical Program Committee</h2>
+      <p class="section-subtitle">Chairs and members responsible for review, selection, and technical quality.</p>
     </div>
 
     <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <div class="tile">
-          <h6><i class="fa-solid fa-plane-departure me-2 text-success"></i>By Air</h6>
-          <p>
-            Nearest airport: <strong>Dehradun Airport (Jolly Grant)</strong>.
-            From the airport, you can take a taxi/cab to UPES Bidholi Campus.
-          </p>
+      <!-- TPC Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-gears"></i></div>
+            <h5 class="role-title">Technical Program Chairs</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Rakesh Ranjan, UPES, India</li>
+            <li>Dr. Shiladitya Bhattacharjee, UPES, India</li>
+            <li>Dr. Gagandeep Singh, UPES, India</li>
+            <li>Dr. Ajay Prasad</li>
+          </ul>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="tile">
-          <h6><i class="fa-solid fa-train-subway me-2 text-success"></i>By Rail</h6>
-          <p>
-            Major railhead: <strong>Dehradun Railway Station</strong>.
-            Local cabs and app-based taxis are available for campus commute.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="tile">
-          <h6><i class="fa-solid fa-bus me-2 text-success"></i>By Road</h6>
-          <p>
-            Dehradun has strong road connectivity from Delhi/NCR and nearby cities.
-            You can reach via bus, taxi, or self-drive.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="soft-panel p-4 p-lg-5 mt-4">
-      <div class="d-flex align-items-start gap-3">
-        <div class="icon-badge"><i class="fa-solid fa-mountain-sun"></i></div>
-        <div>
-          <h5 class="section-title fs-4 mb-2">Uttarakhand Experience</h5>
-          <p class="mb-0" style="color: rgba(15,23,42,.78); line-height: 1.85; font-weight: 650;">
-            Dehradun offers a calm Himalayan foothills vibe — ideal for focused research discussions.
-            If you’re planning extra days, you can explore nearby attractions (optional) like Mussoorie and local nature spots.
-            (Add your official itinerary/guide here if UPES provides one.)
-          </p>
+      <!-- TPC Members -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-users-gear"></i></div>
+            <h5 class="role-title">Technical Program Committee Members</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Neelu Jyothi Ahuja, UPES, India</li>
+            <li>Dr. Vinod Patidar, UPES, India</li>
+            <li>Dr. Hanumat Sastry, UPES, India</li>
+            <li>Dr. Tanupriya Choudhury, UPES, India</li>
+            <li>Dr. Anish Kumar Vishwakarma, UPES, India</li>
+            <li>Dr. Panduranga Raviteja, UPES, India</li>
+            <li>Dr. Virender Kadyan, UPES, India</li>
+            <li>Dr. Anil Kumar, UPES, India</li>
+            <li>Dr. Bhupendra Singh, UPES, India</li>
+            <li>Dr. Christalin Nelson, UPES, India</li>
+            <li>Dr. Ayush Agarwal, UPES, India</li>
+          </ul>
         </div>
       </div>
     </div>
 
-  </div>
-</section>
-
-<!-- NEARBY STAY (placeholders) -->
-<section class="py-5" style="background: linear-gradient(180deg, #f8fafc, #eef6ff);">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h2 class="section-title">Nearby Stay Options</h2>
-      <p class="section-subtitle">
-        Add recommended hotels/guest houses with distance and contact numbers once finalized.
-      </p>
+    <div class="text-center mt-5 mb-4">
+      <h2 class="section-title">Chairs & Committees</h2>
+      <p class="section-subtitle">Functional teams handling industry, publication, publicity, finance, global and local coordination.</p>
     </div>
 
     <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <div class="tile">
-          <h6><i class="fa-solid fa-hotel me-2 text-success"></i>Hotel Option 1</h6>
-          <p>Distance: — km • Contact: — • Notes: (Add details)</p>
+      <!-- Industry Chair -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-industry"></i></div>
+            <h5 class="role-title">Industry Chair</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Amit Kumar Khandelwal (Prof. Practices)</li>
+            <li>Dr. Hitesh Kumar Sharma, UPES, India</li>
+            <li>Dr. Akashdeep Bhardwaj, UPES, India</li>
+            <li>Dr. Pankaj Badoni, UPES, India</li>
+            <li>Dr. Deepika Sachdev</li>
+          </ul>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="tile">
-          <h6><i class="fa-solid fa-hotel me-2 text-success"></i>Hotel Option 2</h6>
-          <p>Distance: — km • Contact: — • Notes: (Add details)</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="tile">
-          <h6><i class="fa-solid fa-house me-2 text-success"></i>Guest House / Budget Stay</h6>
-          <p>Distance: — km • Contact: — • Notes: (Add details)</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- CTA -->
-<section class="py-5">
-  <div class="container">
-    <div class="soft-panel p-4 p-lg-5">
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-8">
-          <div class="d-flex align-items-center gap-3 mb-2">
-            <div class="icon-badge"><i class="fa-solid fa-headset"></i></div>
-            <h2 class="section-title mb-0">Need Venue Assistance?</h2>
+      <!-- Publication Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-book"></i></div>
+            <h5 class="role-title">Publication Chairs</h5>
           </div>
-          <p class="mb-0" style="color: rgba(15,23,42,.78); line-height: 1.85; font-weight: 650;">
-            For travel queries, accommodation guidance, or campus navigation, contact the ICACSDF 2026 team.
-          </p>
-          <div class="d-flex flex-wrap gap-2 mt-3">
-            <a class="btn btn-saffron btn-lg" href="mailto:conference_socs@ddn.upes.ac.in">
-              <i class="fa-solid fa-envelope me-2"></i>Email Helpdesk
-            </a>
-            <a class="btn btn-forest btn-lg" href="index.html">
-              <i class="fa-solid fa-house me-2"></i>Back to Home
-            </a>
-          </div>
+          <ul class="people-list">
+            <li>Dr. Sumitra, UPES, India</li>
+            <li>Dr. Deepa Rani, UPES, India</li>
+          </ul>
         </div>
-        <div class="col-lg-4 text-center">
-          <div class="p-3 bg-white rounded-4 border" style="border-color: rgba(15,23,42,.10) !important;">
-            <div class="fw-bold" style="color: var(--slate);">
-              <i class="fa-solid fa-location-dot me-2 text-success"></i>UPES, Bidholi Campus
-            </div>
-            <div class="small text-muted fw-bold mt-2">
-              Dehradun – 248007, Uttarakhand, India
-            </div>
+      </div>
+
+      <!-- Publicity Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-bullhorn"></i></div>
+            <h5 class="role-title">Publicity Chairs</h5>
           </div>
+          <ul class="people-list">
+            <li>Prof. Rahul Kumar, UPES, India</li>
+            <li>Dr. Ved Prakash Bharadwaj, UPES, India</li>
+          </ul>
+          <hr style="opacity:.15;">
+          <h6 class="fw-bold mb-2" style="color:var(--slate);">Publicity Co-Chairs</h6>
+          <ul class="people-list">
+            <li>Dr. Khushboo Jain, UPES, India</li>
+            <li>Dr. Pavinder, UPES, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Finance Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-coins"></i></div>
+            <h5 class="role-title">Finance Chair</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Abhijit Kumar, UPES, India</li>
+            <li>Dr. Sanoj Kumar, UPES, India</li>
+            <li>Dr. Rahul Singh, UPES, India</li>
+          </ul>
+          <hr style="opacity:.15;">
+          <h6 class="fw-bold mb-2" style="color:var(--slate);">Finance Co-Chairs</h6>
+          <ul class="people-list">
+            <li>Dr. Swati Rastogi, UPES, India</li>
+            <li>Dr. Kapil Gupta, UPES, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Global Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-globe"></i></div>
+            <h5 class="role-title">Global Chairs</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Roohi Sille, UPES, India</li>
+            <li>Ms. Sugandha Sharma, UPES, India</li>
+          </ul>
+          <hr style="opacity:.15;">
+          <h6 class="fw-bold mb-2" style="color:var(--slate);">Global Co-Chair</h6>
+          <ul class="people-list">
+            <li>Dr. Richa Kumari, UPES, India</li>
+            <li>Dr. Silky Goel, UPES, India</li>
+            <li>Dr. Shaurya Gupta, UPES, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Local Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <h5 class="role-title">Local Chairs</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Saurabh Jain, UPES, India</li>
+            <li>Prof. Alok Jhaldiyal, UPES, India</li>
+          </ul>
+          <hr style="opacity:.15;">
+          <h6 class="fw-bold mb-2" style="color:var(--slate);">Local Co-Chairs</h6>
+          <ul class="people-list">
+            <li>Dr. Shahina Anwarul, UPES, India</li>
+            <li>Dr. Bhavana Kaushik, UPES, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Digital Media Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-photo-film"></i></div>
+            <h5 class="role-title">Digital Media Chairs</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Archana Kumari, UPES, India</li>
+            <li>Dr. Surbhi Saraswat, UPES, India</li>
+          </ul>
+          <hr style="opacity:.15;">
+          <h6 class="fw-bold mb-2" style="color:var(--slate);">Digital Media Co-Chairs</h6>
+          <ul class="people-list">
+            <li>Dr. Vidyanand Mishra, UPES, India</li>
+            <li>Prof. Dhiviya Rose J, UPES, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Coordination Committee -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+            <h5 class="role-title">Coordination Committee</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Amarendra Tripathi, UPES, India</li>
+            <li>Mr. Nakul Ahuja, UPES, India</li>
+            <li>Ms. Poonam Bhandari, UPES, India</li>
+          </ul>
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -746,6 +771,7 @@
 </div>
 
 </footer>
+
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -756,7 +782,7 @@
    11 Sep 2026 09:00 IST = 11 Sep 2026 03:30 UTC
 ================================ */
 (function(){
-  const targetUTC = Date.UTC(2026, 8, 11, 3, 30, 0);
+  const targetUTC = Date.UTC(2026, 8, 11, 3, 30, 0); // 8 = September
   const elDays  = document.getElementById("cd-days");
   const elHours = document.getElementById("cd-hours");
   const elMins  = document.getElementById("cd-mins");
