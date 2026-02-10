@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Conference Themes | ICACSDF 2026 | UPES Dehradun</title>
+<meta name="description" content="ICACSDF 2026 Conference Themes and Topics — International Conference on Advances in Cyber Security and Digital Forensics, UPES Dehradun. Sponsored by IEEE UP Section. 11–12 September 2026.">
+<meta name="keywords" content="ICACSDF 2026, Conference Themes, Topics, UPES, Dehradun, Uttarakhand, Cyber Security, Digital Forensics, IEEE UP Section">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --sky:#1e88e5;
+    --forest:#0b5d3b;
+    --slate:#0f172a;
+    --sun:#f59e0b;
+    --snow:#f8fafc;
+  }
+
+  body{
+    font-family:'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    color:#0b1220;
+    background:
+      radial-gradient(900px 500px at 10% 0%, rgba(30,136,229,.10), transparent 60%),
+      radial-gradient(900px 600px at 90% 20%, rgba(11,93,59,.10), transparent 60%),
+      linear-gradient(180deg, #ffffff, #f6fbff);
+  }
+
+  /* Top bar */
+  .top-bar{
+    background: linear-gradient(90deg, var(--slate), #0b2a1b);
+    color: rgba(255,255,255,.92);
+    font-size:.92rem;
+  }
+  .top-bar a{ color: rgba(255,255,255,.92); text-decoration:none; }
+  .top-bar a:hover{ color:#fff; text-decoration: underline; }
+
+  /* Navbar */
+  .navbar{
+    background: rgba(255,255,255,.88) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(15,23,42,.08);
+  }
+  .navbar-brand{ font-weight: 800; letter-spacing:.2px; }
+  .brand-pill{
+    display:inline-flex;
+    align-items:center;
+    gap:.55rem;
+    padding:.45rem .75rem;
+    border-radius:999px;
+    background: linear-gradient(135deg, rgba(30,136,229,.10), rgba(11,93,59,.10));
+    border: 1px solid rgba(15,23,42,.10);
+  }
+
+  /* Logos */
+  .brand-logos{ display:flex; align-items:center; gap:14px; }
+  .brand-logos img{
+    height:44px; width:auto; object-fit:contain;
+    filter: drop-shadow(0 8px 18px rgba(2,6,23,.10));
+  }
+  .brand-logos .logo-divider{ width:1px; height:28px; background: rgba(15,23,42,.15); }
+  @media (max-width: 992px){ .brand-logos img{ height:38px; } }
+
+  /* Hero */
+  .hero{
+    position: relative;
+    overflow: hidden;
+    padding: 86px 0 52px;
+  }
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.32), rgba(255,255,255,.95)),
+      url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1800&q=80");
+    background-size: cover;
+    background-position: center;
+    pointer-events:none;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;
+    left:0; right:0; bottom:-2px;
+    height:160px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200' preserveAspectRatio='none'%3E%3Cpath d='M0 160 L120 120 L220 150 L340 80 L420 140 L520 60 L640 145 L760 90 L860 160 L980 110 L1200 160 L1200 200 L0 200 Z' fill='%230b5d3b' opacity='0.20'/%3E%3Cpath d='M0 170 L140 130 L250 165 L360 105 L460 155 L560 75 L680 165 L820 115 L940 175 L1200 135 L1200 200 L0 200 Z' fill='%231e88e5' opacity='0.14'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events:none;
+  }
+  .hero .container{ position:relative; z-index:1; }
+
+  .chip{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    padding:.45rem .85rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,.88);
+    border: 1px solid rgba(15,23,42,.10);
+    color: var(--slate);
+    font-weight: 800;
+    font-size: .92rem;
+  }
+  .chip i{ color: var(--forest); }
+
+  .hero-title{
+    font-weight: 950;
+    line-height: 1.12;
+    color: var(--slate);
+    text-shadow: 0 10px 35px rgba(2,6,23,.12);
+  }
+  .hero-lead{
+    color: rgba(15,23,42,.78);
+    max-width: 980px;
+    margin-inline: auto;
+  }
+
+  .btn-saffron{
+    background: linear-gradient(135deg, var(--sun), #ffb020);
+    border:0;
+    color:#1f2937;
+    font-weight: 900;
+  }
+  .btn-saffron:hover{ filter: brightness(1.03); box-shadow: 0 0 0 6px rgba(245,158,11,.18); }
+  .btn-forest{
+    background: linear-gradient(135deg, var(--forest), #0a7a4b);
+    border:0;
+    color:#fff;
+    font-weight: 900;
+  }
+  .btn-forest:hover{ filter: brightness(1.03); box-shadow: 0 0 0 6px rgba(11,93,59,.16); }
+  .btn-outline-sky{
+    border: 2px solid rgba(30,136,229,.55);
+    color: var(--slate);
+    font-weight: 900;
+  }
+  .btn-outline-sky:hover{ background: rgba(30,136,229,.10); }
+
+  .section-title{ font-weight: 950; color: var(--slate); }
+  .section-subtitle{
+    color: rgba(15,23,42,.70);
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .soft-panel{
+    background: rgba(255,255,255,.92);
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 20px;
+    box-shadow: 0 16px 40px rgba(2,6,23,.06);
+  }
+
+  .icon-badge{
+    width: 44px; height: 44px;
+    border-radius: 14px;
+    display:flex; align-items:center; justify-content:center;
+    background: linear-gradient(135deg, rgba(30,136,229,.12), rgba(11,93,59,.12));
+    border: 1px solid rgba(15,23,42,.10);
+    color: var(--forest);
+  }
+
+  /* Countdown */
+  .countdown-wrap{
+    max-width: 980px;
+    margin: 16px auto 0;
+    background: rgba(255,255,255,.82);
+    border: 1px solid rgba(15,23,42,.10);
+    border-radius: 18px;
+    padding: 18px 18px;
+    backdrop-filter: blur(10px);
+  }
+  .countdown-label{ font-weight: 950; color: var(--slate); }
+  .count-box{
+    background: #fff;
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 16px;
+    padding: 14px 10px;
+    box-shadow: 0 12px 28px rgba(2,6,23,.06);
+  }
+  .count-num{
+    font-size: 1.55rem;
+    font-weight: 950;
+    color: var(--forest);
+    line-height: 1;
+  }
+  .count-text{
+    font-size: .85rem;
+    color: rgba(15,23,42,.65);
+    margin-top: 4px;
+    font-weight: 850;
+  }
+
+  /* Accordion */
+  .accordion-item{
+    border: 1px solid rgba(15,23,42,.08) !important;
+    border-radius: 16px !important;
+    overflow: hidden;
+    box-shadow: 0 14px 34px rgba(2,6,23,.06);
+    background: #fff;
+  }
+  .accordion-button{
+    font-weight: 900;
+    color: var(--slate);
+    background: linear-gradient(135deg, rgba(30,136,229,.08), rgba(11,93,59,.08));
+  }
+  .accordion-button:not(.collapsed){
+    color: var(--slate);
+    background: linear-gradient(135deg, rgba(245,158,11,.14), rgba(11,93,59,.10));
+    box-shadow: none;
+  }
+  .topic-list li{
+    margin-bottom: .45rem;
+    color: rgba(15,23,42,.78);
+    font-weight: 650;
+  }
+  .topic-list i{
+    color: var(--forest);
+    margin-right: .55rem;
+  }
+
+  footer{
+    background: linear-gradient(90deg, var(--slate), #0b2a1b);
+    color: rgba(255,255,255,.85);
+  }
+  footer a{ color: rgba(255,255,255,.85); text-decoration:none; }
+  footer a:hover{ color:#fff; text-decoration: underline; }
+  .footer-date-row{
+    border-bottom: 1px solid rgba(255,255,255,.20);
+    padding: .55rem 0;
+  }
+
+  .offcanvas{ background:#ffffff; }
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar py-2">
+  <div class="container d-flex justify-content-between flex-wrap gap-2">
+    <div class="small">
+      <i class="fa-solid fa-calendar-days"></i> <strong>11–12 September 2026</strong> &nbsp;|&nbsp;
+      <i class="fa-solid fa-location-dot"></i> UPES Dehradun, Uttarakhand &nbsp;|&nbsp;
+      <!-- <i class="fa-solid fa-globe"></i> Hybrid Conference -->
+    </div>
+    <div class="small">
+      <span class="me-3"><i class="fa-solid fa-certificate"></i> Sponsored by <strong>IEEE UP Section</strong></span>
+      <a href="mailto:conference_socs@ddn.upes.ac.in"> <i class="fa-solid fa-envelope me-2"></i>conference_socs@ddn.upes.ac.in </a>
+         
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <span class="brand-pill">
+        <i class="fa-solid fa-mountain-sun text-success"></i>
+        ICACSDF 2026
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto gap-lg-2 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
+        <li class="nav-item"><a class="nav-link" href="conferencetheme.html">Conference Themes</a></li>
+        <li class="nav-item"><a class="nav-link" href="committee.html">Committee</a></li>
+        <li class="nav-item"><a class="nav-link" href="registration.html">Registration</a></li>
+        <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+        <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
+		<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+        <!-- ✅ LOGOS (Best place: navbar right side) -->
+        <li class="nav-item ms-lg-3 d-none d-lg-block">
+          <div class="brand-logos">
+            <div class="logo-divider"></div>
+            <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- OFFCANVAS MOBILE MENU -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title fw-bold">ICACSDF 2026</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  
+  <div class="offcanvas-body">
+    <!-- ✅ Logos in mobile -->
+    <div class="d-flex align-items-center gap-3 mb-3">
+      <img src="assets/upes-logo.png" alt="UPES Logo" style="height:40px;width:auto;">
+      <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo" style="height:40px;width:auto;">
+    </div>
+
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html"><strong>Home</strong></a></li>
+      <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
+      <li class="nav-item"><a class="nav-link" href="conferencetheme.html">Conference Themes</a></li>
+      <li class="nav-item"><a class="nav-link" href="committee.html">Committee</a></li>
+      <li class="nav-item"><a class="nav-link" href="registration.html">Registration</a></li>
+      <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+      <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+    <hr>
+    <div class="small text-muted">
+      Sponsored by <strong>IEEE UP Section</strong>
+    </div>
+  </div>
+</div>
+<!-- HERO -->
+<section class="hero text-center">
+  <div class="container">
+    <div class="chip mb-3">
+      <i class="fa-solid fa-layer-group"></i>
+      Themes & Topics • ICACSDF 2026
+    </div>
+
+    <h1 class="display-5 hero-title mb-3">Conference Themes</h1>
+
+    <p class="lead hero-lead mb-3">
+      ICACSDF 2026 invites high-quality original contributions related to <strong>Cyber Security</strong> and
+      <strong>Digital Forensics</strong>. The topics listed below are indicative (not limited to).
+      The conference is <strong>sponsored by IEEE UP Section</strong>.
+    </p>
+
+    <div class="d-flex justify-content-center flex-wrap gap-2 mb-3">
+      <a href="cfp.html" class="btn btn-saffron btn-lg"><i class="fa-solid fa-paper-plane me-2"></i>Call for Papers</a>
+      <a href="registration.html" class="btn btn-forest btn-lg"><i class="fa-solid fa-ticket me-2"></i>Register</a>
+      <a href="#topics" class="btn btn-outline-sky btn-lg"><i class="fa-solid fa-list-check me-2"></i>Explore Topics</a>
+    </div>
+
+    <!-- Countdown -->
+    <div class="countdown-wrap">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+        <div class="countdown-label">
+          <i class="fa-solid fa-stopwatch me-2"></i> Countdown to ICACSDF 2026
+        </div>
+        <div class="small text-muted">
+          Conference starts: <strong>11 September 2026</strong>
+        </div>
+      </div>
+
+      <div class="row g-2 g-md-3">
+        <div class="col-6 col-md-3">
+          <div class="count-box">
+            <div class="count-num" id="cd-days">--</div>
+            <div class="count-text">Days</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="count-box">
+            <div class="count-num" id="cd-hours">--</div>
+            <div class="count-text">Hours</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="count-box">
+            <div class="count-num" id="cd-mins">--</div>
+            <div class="count-text">Minutes</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="count-box">
+            <div class="count-num" id="cd-secs">--</div>
+            <div class="count-text">Seconds</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-3 small text-muted fw-bold">
+        Submit your best work and present it at UPES Dehradun, Uttarakhand.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOPICS -->
+<section id="topics" class="py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">Conference Topics</h2>
+      <p class="section-subtitle">
+        The theme areas below reflect the evolving landscape of cybersecurity, privacy, and digital forensics.
+      </p>
+    </div>
+
+    <div class="soft-panel p-4 p-lg-5">
+      <div class="accordion" id="topicsAccordion">
+
+        <!-- 1 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="t1h">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#t1" aria-expanded="true" aria-controls="t1">
+              <i class="fa-solid fa-user-shield me-2 text-success"></i> 1. Privacy and Information Security
+            </button>
+          </h2>
+          <div id="t1" class="accordion-collapse collapse show" aria-labelledby="t1h" data-bs-parent="#topicsAccordion">
+            <div class="accordion-body">
+              <ul class="topic-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-check-circle"></i>Authentication and authorization of users, systems, and applications</li>
+                <li><i class="fa-solid fa-check-circle"></i>Business models with security and privacy requirements</li>
+                <li><i class="fa-solid fa-check-circle"></i>Case studies in security and privacy</li>
+                <li><i class="fa-solid fa-check-circle"></i>Computer worms and viruses</li>
+                <li><i class="fa-solid fa-check-circle"></i>Cryptographic techniques and protocols</li>
+                <li><i class="fa-solid fa-check-circle"></i>Database issues in privacy protection</li>
+                <li><i class="fa-solid fa-check-circle"></i>Electronic commerce, banking, and payment protocols</li>
+                <li><i class="fa-solid fa-check-circle"></i>Encryption, authentication, and access control</li>
+                <li><i class="fa-solid fa-check-circle"></i>File and file system security and privacy</li>
+                <li><i class="fa-solid fa-check-circle"></i>Firewall technologies, policies, and trends</li>
+                <li><i class="fa-solid fa-check-circle"></i>Hacking, cyber-terrorism, intrusion detection</li>
+                <li><i class="fa-solid fa-check-circle"></i>Network security protocols</li>
+                <li><i class="fa-solid fa-check-circle"></i>Security/privacy techniques, management, and protocols</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="t2h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t2" aria-expanded="false" aria-controls="t2">
+              <i class="fa-solid fa-key me-2 text-success"></i> 2. Advancements in Cryptography
+            </button>
+          </h2>
+          <div id="t2" class="accordion-collapse collapse" aria-labelledby="t2h" data-bs-parent="#topicsAccordion">
+            <div class="accordion-body">
+              <ul class="topic-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-check-circle"></i>Identity and privacy confidentiality</li>
+                <li><i class="fa-solid fa-check-circle"></i>Applied cryptography in the cloud</li>
+                <li><i class="fa-solid fa-check-circle"></i>Anonymity and authentication</li>
+                <li><i class="fa-solid fa-check-circle"></i>Cryptographic implementation and testing</li>
+                <li><i class="fa-solid fa-check-circle"></i>Cryptanalysis and attacks</li>
+                <li><i class="fa-solid fa-check-circle"></i>Key distribution and management</li>
+                <li><i class="fa-solid fa-check-circle"></i>Identity-based cryptography</li>
+                <li><i class="fa-solid fa-check-circle"></i>Digital signatures and secure voting</li>
+                <li><i class="fa-solid fa-check-circle"></i>Trust management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="t3h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t3" aria-expanded="false" aria-controls="t3">
+              <i class="fa-solid fa-radar me-2 text-success"></i> 3. Cyber Threat Intelligence (CTI) and Mitigation
+            </button>
+          </h2>
+          <div id="t3" class="accordion-collapse collapse" aria-labelledby="t3h" data-bs-parent="#topicsAccordion">
+            <div class="accordion-body">
+              <ul class="topic-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-check-circle"></i>Threat modeling and vulnerability analysis</li>
+                <li><i class="fa-solid fa-check-circle"></i>AI/ML-based cyber threat analysis</li>
+                <li><i class="fa-solid fa-check-circle"></i>CTI sharing, consumption, interoperability</li>
+                <li><i class="fa-solid fa-check-circle"></i>Deception technologies</li>
+                <li><i class="fa-solid fa-check-circle"></i>Dynamic risk management analysis</li>
+                <li><i class="fa-solid fa-check-circle"></i>Threat hunting and curation</li>
+                <li><i class="fa-solid fa-check-circle"></i>Dark Web CTI exploration</li>
+                <li><i class="fa-solid fa-check-circle"></i>Threat analysis for cyber-physical systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="t4h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t4" aria-expanded="false" aria-controls="t4">
+              <i class="fa-solid fa-atom me-2 text-success"></i> 4. Quantum Cryptography
+            </button>
+          </h2>
+          <div id="t4" class="accordion-collapse collapse" aria-labelledby="t4h" data-bs-parent="#topicsAccordion">
+            <div class="accordion-body">
+              <ul class="topic-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-check-circle"></i>Quantum Key Distribution (QKD)</li>
+                <li><i class="fa-solid fa-check-circle"></i>Secure quantum computing</li>
+                <li><i class="fa-solid fa-check-circle"></i>Quantum cryptanalysis</li>
+                <li><i class="fa-solid fa-check-circle"></i>Quantum hacking</li>
+                <li><i class="fa-solid fa-check-circle"></i>Quantum Internet</li>
+                <li><i class="fa-solid fa-check-circle"></i>Device-independent cryptography</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="t5h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t5" aria-expanded="false" aria-controls="t5">
+              <i class="fa-solid fa-link me-2 text-success"></i> 5. Blockchain Technology: Innovations and Applications
+            </button>
+          </h2>
+          <div id="t5" class="accordion-collapse collapse" aria-labelledby="t5h" data-bs-parent="#topicsAccordion">
+            <div class="accordion-body">
+              <ul class="topic-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-check-circle"></i>Securing smart contracts</li>
+                <li><i class="fa-solid fa-check-circle"></i>Blockchain vulnerabilities and threats</li>
+                <li><i class="fa-solid fa-check-circle"></i>Privacy solutions in blockchain</li>
+                <li><i class="fa-solid fa-check-circle"></i>Identity management and blockchain security</li>
+                <li><i class="fa-solid fa-check-circle"></i>Consensus mechanisms and security</li>
+                <li><i class="fa-solid fa-check-circle"></i>Incident response in blockchain environments</li>
+                <li><i class="fa-solid fa-check-circle"></i>Fraud detection and financial crime prevention</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="t6h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t6" aria-expanded="false" aria-controls="t6">
+              <i class="fa-solid fa-brain me-2 text-success"></i> 6. AI & ML in Cybersecurity
+            </button>
+          </h2>
+          <div id="t6" class="accordion-collapse collapse" aria-labelledby="t6h" data-bs-parent="#topicsAccordion">
+            <div class="accordion-body">
+              <ul class="topic-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-check-circle"></i>Deep learning / reinforcement learning for cyber defenses</li>
+                <li><i class="fa-solid fa-check-circle"></i>Cyber vulnerability prioritization and remediation</li>
+                <li><i class="fa-solid fa-check-circle"></i>Network intrusion detection and mitigation</li>
+                <li><i class="fa-solid fa-check-circle"></i>Adversarial behavior modeling</li>
+                <li><i class="fa-solid fa-check-circle"></i>Interpretable and robust cyber-systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="t7h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t7" aria-expanded="false" aria-controls="t7">
+              <i class="fa-solid fa-clipboard-check me-2 text-success"></i> 7. Security Policies, Auditing, and Assurance
+            </button>
+          </h2>
+          <div id="t7" class="accordion-collapse collapse" aria-labelledby="t7h" data-bs-parent="#topicsAccordion">
+            <div class="accordion-body">
+              <ul class="topic-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-check-circle"></i>Enterprise security policies and governance</li>
+                <li><i class="fa-solid fa-check-circle"></i>Risk management and compliance auditing</li>
+                <li><i class="fa-solid fa-check-circle"></i>Incident response policies and effectiveness of controls</li>
+                <li><i class="fa-solid fa-check-circle"></i>Continuous monitoring and assurance frameworks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="t8h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t8" aria-expanded="false" aria-controls="t8">
+              <i class="fa-solid fa-magnifying-glass me-2 text-success"></i> 8. Digital Forensics
+            </button>
+          </h2>
+          <div id="t8" class="accordion-collapse collapse" aria-labelledby="t8h" data-bs-parent="#topicsAccordion">
+            <div class="accordion-body">
+              <ul class="topic-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-check-circle"></i>Machine learning in evidence extraction</li>
+                <li><i class="fa-solid fa-check-circle"></i>Malware analysis and attribution</li>
+                <li><i class="fa-solid fa-check-circle"></i>Network, cloud, and mobile forensics</li>
+                <li><i class="fa-solid fa-check-circle"></i>Big data forensics and non-traditional scenarios</li>
+                <li><i class="fa-solid fa-check-circle"></i>Digital evidence law and policy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="t9h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t9" aria-expanded="false" aria-controls="t9">
+              <i class="fa-solid fa-microchip me-2 text-success"></i> 9. Internet of Things (IoT) Security
+            </button>
+          </h2>
+          <div id="t9" class="accordion-collapse collapse" aria-labelledby="t9h" data-bs-parent="#topicsAccordion">
+            <div class="accordion-body">
+              <ul class="topic-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-check-circle"></i>IoT device security and firmware security</li>
+                <li><i class="fa-solid fa-check-circle"></i>IoT authentication and access control</li>
+                <li><i class="fa-solid fa-check-circle"></i>Threat detection in IoT and critical infrastructure</li>
+                <li><i class="fa-solid fa-check-circle"></i>IoT security standards and ecosystem protection</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="t10h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t10" aria-expanded="false" aria-controls="t10">
+              <i class="fa-solid fa-code me-2 text-success"></i> 10. Software Security
+            </button>
+          </h2>
+          <div id="t10" class="accordion-collapse collapse" aria-labelledby="t10h" data-bs-parent="#topicsAccordion">
+            <div class="accordion-body">
+              <ul class="topic-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-check-circle"></i>Secure SDLC, DevSecOps, and patch management</li>
+                <li><i class="fa-solid fa-check-circle"></i>Static and dynamic application security testing</li>
+                <li><i class="fa-solid fa-check-circle"></i>Supply chain security and memory safety</li>
+                <li><i class="fa-solid fa-check-circle"></i>Secure coding and threat modeling</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="t11h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t11" aria-expanded="false" aria-controls="t11">
+              <i class="fa-solid fa-globe me-2 text-success"></i> 11. Web Security
+            </button>
+          </h2>
+          <div id="t11" class="accordion-collapse collapse" aria-labelledby="t11h" data-bs-parent="#topicsAccordion">
+            <div class="accordion-body">
+              <ul class="topic-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-check-circle"></i>Preventing XSS and mitigating SQL injection</li>
+                <li><i class="fa-solid fa-check-circle"></i>Authentication and session management</li>
+                <li><i class="fa-solid fa-check-circle"></i>Secure HTTPS/TLS, CSP, CSRF protection</li>
+                <li><i class="fa-solid fa-check-circle"></i>API security and web DoS/DDoS protection</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="t12h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t12" aria-expanded="false" aria-controls="t12">
+              <i class="fa-solid fa-bug-slash me-2 text-success"></i> 12. Security Testing & Auditing
+            </button>
+          </h2>
+          <div id="t12" class="accordion-collapse collapse" aria-labelledby="t12h" data-bs-parent="#topicsAccordion">
+            <div class="accordion-body">
+              <ul class="topic-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-check-circle"></i>Penetration testing methodologies</li>
+                <li><i class="fa-solid fa-check-circle"></i>Automated security testing tools</li>
+                <li><i class="fa-solid fa-check-circle"></i>Red Team vs. Blue Team exercises</li>
+                <li><i class="fa-solid fa-check-circle"></i>Post-breach security auditing and continuous monitoring</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="t13h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t13" aria-expanded="false" aria-controls="t13">
+              <i class="fa-solid fa-shield-halved me-2 text-success"></i> 13. Security Protocols
+            </button>
+          </h2>
+          <div id="t13" class="accordion-collapse collapse" aria-labelledby="t13h" data-bs-parent="#topicsAccordion">
+            <div class="accordion-body">
+              <ul class="topic-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-check-circle"></i>Cryptographic protocols for secure communication</li>
+                <li><i class="fa-solid fa-check-circle"></i>TLS, IPSec, secure key exchange</li>
+                <li><i class="fa-solid fa-check-circle"></i>Zero Trust security protocols</li>
+                <li><i class="fa-solid fa-check-circle"></i>Security protocols in IoT and wireless networks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="t14h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t14" aria-expanded="false" aria-controls="t14">
+              <i class="fa-solid fa-virus me-2 text-success"></i> 14. Malware Analysis & Detection
+            </button>
+          </h2>
+          <div id="t14" class="accordion-collapse collapse" aria-labelledby="t14h" data-bs-parent="#topicsAccordion">
+            <div class="accordion-body">
+              <ul class="topic-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-check-circle"></i>Static vs dynamic malware analysis</li>
+                <li><i class="fa-solid fa-check-circle"></i>Behavioral analysis and detection</li>
+                <li><i class="fa-solid fa-check-circle"></i>APT detection and memory forensics</li>
+                <li><i class="fa-solid fa-check-circle"></i>Ransomware analysis and prevention</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="t15h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t15" aria-expanded="false" aria-controls="t15">
+              <i class="fa-solid fa-eye-slash me-2 text-success"></i> 15. Information Hiding & Watermarking
+            </button>
+          </h2>
+          <div id="t15" class="accordion-collapse collapse" aria-labelledby="t15h" data-bs-parent="#topicsAccordion">
+            <div class="accordion-body">
+              <ul class="topic-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-check-circle"></i>Steganography and steganalysis</li>
+                <li><i class="fa-solid fa-check-circle"></i>Digital watermarking for media security</li>
+                <li><i class="fa-solid fa-check-circle"></i>Reversible data hiding methods</li>
+                <li><i class="fa-solid fa-check-circle"></i>Watermarking in cloud and encrypted domains</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="t16h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t16" aria-expanded="false" aria-controls="t16">
+              <i class="fa-solid fa-database me-2 text-success"></i> 16. Database & System Security
+            </button>
+          </h2>
+          <div id="t16" class="accordion-collapse collapse" aria-labelledby="t16h" data-bs-parent="#topicsAccordion">
+            <div class="accordion-body">
+              <ul class="topic-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-check-circle"></i>Database encryption and access control</li>
+                <li><i class="fa-solid fa-check-circle"></i>SQL injection prevention and auditing</li>
+                <li><i class="fa-solid fa-check-circle"></i>Operating system hardening and patch management</li>
+                <li><i class="fa-solid fa-check-circle"></i>Database activity monitoring and intrusion detection</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 17 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="t17h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#t17" aria-expanded="false" aria-controls="t17">
+              <i class="fa-solid fa-cloud me-2 text-success"></i> 17. Cloud Computing Security
+            </button>
+          </h2>
+          <div id="t17" class="accordion-collapse collapse" aria-labelledby="t17h" data-bs-parent="#topicsAccordion">
+            <div class="accordion-body">
+              <ul class="topic-list list-unstyled mb-0">
+                <li><i class="fa-solid fa-check-circle"></i>Cloud IAM and identity access management</li>
+                <li><i class="fa-solid fa-check-circle"></i>Cloud security compliance and isolation</li>
+                <li><i class="fa-solid fa-check-circle"></i>Zero Trust architecture for cloud</li>
+                <li><i class="fa-solid fa-check-circle"></i>Cloud threat detection, monitoring, and DLP</li>
+                <li><i class="fa-solid fa-check-circle"></i>Securing cloud APIs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-4 text-center">
+        <a href="cfp.html" class="btn btn-saffron btn-lg">
+          <i class="fa-solid fa-paper-plane me-2"></i> Submit Your Paper
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (same as your pages) -->
+<!-- FOOTER -->
+<footer class="pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-4">
+      <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
+          
+          <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo" style="height:42px;width:auto;">
+        </div> 
+	   <h5 class="fw-bold text-white">ICACSDF 2026</h5>
+        <p class="mb-2">
+          School of Computer Science, UPES Dehradun, Uttarakhand
+        </p>
+
+        <!-- ✅ Footer logos -->
+        
+
+        <div class="small">
+          <div class="mb-2">
+            <i class="fa-solid fa-calendar-days me-2"></i> <strong>11–12 September 2026</strong>
+          </div>
+          <div>
+            <i class="fa-solid fa-certificate me-2"></i> Sponsored by <strong>IEEE UP Section</strong>
+          </div>
+          <div class="mt-2">
+            <div class="mt-2"><i class="fa-solid fa-globe me-2"></i>  <a href = "https://2025.icacsdf.org/"> <strong> ICACSDF2025 Conference </strong> </a> </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+      <h6 class="fw-bold text-white">About</h6>
+<h6 class="fw-bold text-white">About</h6>
+<p class="small mb-2">
+  <strong>Academic Excellence</strong><br>
+  UPES is ranked <strong>No. 1 Private University in Academic Reputation</strong> by QS.
+  It is placed <strong>239 globally</strong> in Engineering & Technology and
+  <strong>312 globally</strong> in Social Sciences & Management.
+  <br>
+  In India, UPES is ranked <strong>45</strong> by NIRF.
+  THE World University Rankings 2025 place UPES at
+  <strong>7th in India</strong> and among the <strong>Top 500 globally</strong>.
+  Shanghai Ranking lists UPES in the <strong>Top 150 worldwide</strong>.
+</p>
+
+
+
+        <h6 class="fw-bold text-white mt-4">Contact Us</h6>
+        <p class="small mb-2">
+          Contact UPES, Bidholi Campus, Dehradun<br>
+          P.O. Bidholi Via Premnagar, Dehradun-248007
+        </p>
+        <p class="small mb-0">
+          <a href="mailto:conference_socs@ddn.upes.ac.in"> <i class="fa-solid fa-envelope me-2"></i>conference_socs@ddn.upes.ac.in </a>
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+        <h6 class="fw-bold text-white">Important Dates</h6>
+        <div class="small">
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Paper Submission Opens</strong></span>
+            <span class="text-end">01 March 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Submission Deadline</strong></span>
+            <span class="text-end">30 June 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Notification of Acceptance</strong></span>
+            <span class="text-end">25 July 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Camera Ready Submission</strong></span>
+            <span class="text-end">15 August 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Last Date of Registration</strong></span>
+            <span class="text-end">25 August 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 pt-2">
+            <span><strong>Conference Date</strong></span>
+            <span class="text-end">11–12 September 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <hr class="border-light opacity-25 mt-4">
+
+<div class="d-flex justify-content-between align-items-center">
+  <p class="small mb-0 text-start">
+    <strong>&copy; 2026 ICACSDF</strong>. All Rights Reserved.
+  </p>
+
+  <p class="small mb-0 text-end">
+    Design and Developed by:
+    <a href="https://edcatalyst.in" target="_blank" rel="noopener noreferrer">
+      <strong>Edcatalyst.in</strong>
+    </a>
+  </p>
+</div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+/* ===============================
+   1) COUNTDOWN TIMER
+   Conference starts: 11 Sep 2026 09:00 IST
+   11 Sep 2026 09:00 IST = 11 Sep 2026 03:30 UTC
+================================ */
+(function(){
+  const targetUTC = Date.UTC(2026, 8, 11, 3, 30, 0);
+  const elDays  = document.getElementById("cd-days");
+  const elHours = document.getElementById("cd-hours");
+  const elMins  = document.getElementById("cd-mins");
+  const elSecs  = document.getElementById("cd-secs");
+
+  function pad(n){ return String(n).padStart(2, "0"); }
+
+  function tick(){
+    const now = Date.now();
+    let diff = targetUTC - now;
+
+    if(diff <= 0){
+      elDays.textContent  = "00";
+      elHours.textContent = "00";
+      elMins.textContent  = "00";
+      elSecs.textContent  = "00";
+      return;
+    }
+
+    const totalSeconds = Math.floor(diff / 1000);
+    const days = Math.floor(totalSeconds / (3600 * 24));
+    const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+    const mins = Math.floor((totalSeconds % 3600) / 60);
+    const secs = totalSeconds % 60;
+
+    elDays.textContent  = String(days);
+    elHours.textContent = pad(hours);
+    elMins.textContent  = pad(mins);
+    elSecs.textContent  = pad(secs);
+  }
+
+  tick();
+  setInterval(tick, 1000);
+})();
+
+/* ===============================
+   2) BASIC “NO RIGHT CLICK / INSPECT”
+   NOTE: This is NOT real protection.
+================================ */
+(function(){
+  document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+  }, { passive: false });
+
+  document.addEventListener("keydown", function(e){
+    const key = e.key.toLowerCase();
+
+    if (e.key === "F12") { e.preventDefault(); return false; }
+    if (e.ctrlKey && e.shiftKey && (key === "i" || key === "j" || key === "c")) { e.preventDefault(); return false; }
+    if (e.ctrlKey && key === "u") { e.preventDefault(); return false; }
+    if (e.ctrlKey && key === "s") { e.preventDefault(); return false; }
+  }, { passive: false });
+})();
+</script>
+
+</body>
+</html>

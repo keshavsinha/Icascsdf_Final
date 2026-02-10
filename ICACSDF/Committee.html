@@ -1,1131 +1,843 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>ICACSDF2025</title>
-  <meta name="description" content="icacsdf,ICACSDF is the International Conference on Advancement in Cyber Security and Digital Forensics, hosted by UPES Dehradun on April 11-12, 2025. Join leading experts in cybersecurity and digital forensics.">
-  <meta name="keywords" content="icacsdf2025, icacsdf,ICACSDF cybersecurity conference, digital forensics conference, UPES Dehradun, cyber security advancement, international conference">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+<title>Committee | ICACSDF 2026 | UPES Dehradun</title>
+<meta name="description" content="ICACSDF 2026 Committee — International Conference on Advances in Cyber Security and Digital Forensics. UPES Dehradun. Sponsored by IEEE UP Section. 11–12 September 2026.">
+<meta name="keywords" content="ICACSDF 2026, Committee, UPES, Dehradun, Uttarakhand, Cyber Security, Digital Forensics, IEEE UP Section">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
 
+<style>
+  :root{
+    --sky:#1e88e5;
+    --forest:#0b5d3b;
+    --slate:#0f172a;
+    --sun:#f59e0b;
+    --snow:#f8fafc;
+  }
 
+  body{
+    font-family:'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    color:#0b1220;
+    background:
+      radial-gradient(900px 500px at 10% 0%, rgba(30,136,229,.10), transparent 60%),
+      radial-gradient(900px 600px at 90% 20%, rgba(11,93,59,.10), transparent 60%),
+      linear-gradient(180deg, #ffffff, #f6fbff);
+  }
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  /* Top bar */
+  .top-bar{
+    background: linear-gradient(90deg, var(--slate), #0b2a1b);
+    color: rgba(255,255,255,.92);
+    font-size:.92rem;
+  }
+  .top-bar a{ color: rgba(255,255,255,.92); text-decoration:none; }
+  .top-bar a:hover{ color: #fff; text-decoration: underline; }
 
+  /* Navbar */
+  .navbar{
+    background: rgba(255,255,255,.88) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(15,23,42,.08);
+  }
+  .navbar-brand{ font-weight: 800; letter-spacing:.2px; }
+  .brand-pill{
+    display:inline-flex;
+    align-items:center;
+    gap:.55rem;
+    padding:.45rem .75rem;
+    border-radius:999px;
+    background: linear-gradient(135deg, rgba(30,136,229,.10), rgba(11,93,59,.10));
+    border: 1px solid rgba(15,23,42,.10);
+  }
 
+  /* Logos */
+  .brand-logos{ display:flex; align-items:center; gap:14px; }
+  .brand-logos img{
+    height:44px; width:auto; object-fit:contain;
+    filter: drop-shadow(0 8px 18px rgba(2,6,23,.10));
+  }
+  .brand-logos .logo-divider{
+    width:1px; height:28px; background: rgba(15,23,42,.15);
+  }
+  @media (max-width: 992px){ .brand-logos img{ height:38px; } }
+
+  /* Hero */
+  .hero{
+    position: relative;
+    overflow: hidden;
+    padding: 86px 0 46px;
+  }
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.32), rgba(255,255,255,.95)),
+      url("https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1800&q=80");
+    background-size: cover;
+    background-position: center;
+    pointer-events:none;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;
+    left:0; right:0; bottom:-2px;
+    height:160px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200' preserveAspectRatio='none'%3E%3Cpath d='M0 160 L120 120 L220 150 L340 80 L420 140 L520 60 L640 145 L760 90 L860 160 L980 110 L1200 160 L1200 200 L0 200 Z' fill='%230b5d3b' opacity='0.20'/%3E%3Cpath d='M0 170 L140 130 L250 165 L360 105 L460 155 L560 75 L680 165 L820 115 L940 175 L1200 135 L1200 200 L0 200 Z' fill='%231e88e5' opacity='0.14'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events:none;
+  }
+  .hero .container{ position:relative; z-index:1; }
+
+  .chip{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    padding:.45rem .85rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,.88);
+    border: 1px solid rgba(15,23,42,.10);
+    color: var(--slate);
+    font-weight: 800;
+    font-size: .92rem;
+  }
+  .chip i{ color: var(--forest); }
+
+  .hero-title{
+    font-weight: 900;
+    line-height: 1.12;
+    color: var(--slate);
+    text-shadow: 0 10px 35px rgba(2,6,23,.12);
+  }
+  .hero-lead{
+    color: rgba(15,23,42,.78);
+    max-width: 980px;
+    margin-inline: auto;
+  }
+
+  /* Panels & cards */
+  .soft-panel{
+    background: rgba(255,255,255,.92);
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 20px;
+    box-shadow: 0 16px 40px rgba(2,6,23,.06);
+  }
+  .section-title{ font-weight: 900; color: var(--slate); }
+  .section-subtitle{
+    color: rgba(15,23,42,.70);
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .role-card{
+    background:#fff;
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 18px;
+    padding: 18px;
+    height: 100%;
+    box-shadow: 0 14px 34px rgba(2,6,23,.06);
+  }
+  .role-head{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom: 10px;
+  }
+  .role-icon{
+    width:44px;height:44px;
+    border-radius:14px;
+    display:flex;align-items:center;justify-content:center;
+    background: linear-gradient(135deg, rgba(30,136,229,.12), rgba(11,93,59,.12));
+    border: 1px solid rgba(15,23,42,.10);
+    color: var(--forest);
+  }
+  .role-title{
+    margin:0;
+    font-weight: 900;
+    color: var(--slate);
+  }
+  .people-list{
+    margin:0;
+    padding-left: 1.1rem;
+    color: rgba(15,23,42,.78);
+    line-height: 1.8;
+    font-weight: 600;
+  }
+
+  /* Countdown */
+  .countdown-wrap{
+    max-width: 980px;
+    margin: 16px auto 0;
+    background: rgba(255,255,255,.82);
+    border: 1px solid rgba(15,23,42,.10);
+    border-radius: 18px;
+    padding: 18px 18px;
+    backdrop-filter: blur(10px);
+  }
+  .countdown-label{ font-weight: 900; color: var(--slate); }
+  .count-box{
+    background: #fff;
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 16px;
+    padding: 14px 10px;
+    box-shadow: 0 12px 28px rgba(2,6,23,.06);
+  }
+  .count-num{
+    font-size: 1.55rem;
+    font-weight: 900;
+    color: var(--forest);
+    line-height: 1;
+  }
+  .count-text{
+    font-size: .85rem;
+    color: rgba(15,23,42,.65);
+    margin-top: 4px;
+    font-weight: 800;
+  }
+
+  /* Footer */
+  footer{
+    background: linear-gradient(90deg, var(--slate), #0b2a1b);
+    color: rgba(255,255,255,.85);
+  }
+  footer a{ color: rgba(255,255,255,.85); text-decoration:none; }
+  footer a:hover{ color: #fff; text-decoration: underline; }
+  .footer-date-row{
+    border-bottom: 1px solid rgba(255,255,255,.20);
+    padding: .55rem 0;
+  }
+
+  .offcanvas{ background: #ffffff; }
+</style>
 </head>
 
-<body class="index-page">
+<body>
 
-  <header id="header" class="header sticky-top">
+<!-- TOP BAR -->
+<div class="top-bar py-2">
+  <div class="container d-flex justify-content-between flex-wrap gap-2">
+    <div class="small">
+      <i class="fa-solid fa-calendar-days"></i> <strong>11–12 September 2026</strong> &nbsp;|&nbsp;
+      <i class="fa-solid fa-location-dot"></i> UPES Dehradun, Uttarakhand &nbsp;|&nbsp;
+      <!-- <i class="fa-solid fa-globe"></i> Hybrid Conference -->
+    </div>
+    <div class="small">
+      <span class="me-3"><i class="fa-solid fa-certificate"></i> Sponsored by <strong>IEEE UP Section</strong></span>
+      <a href="mailto:conference_socs@ddn.upes.ac.in"> <i class="fa-solid fa-envelope me-2"></i>conference_socs@ddn.upes.ac.in </a>
+         
+    </div>
+  </div>
+</div>
 
-    <div class="topbar d-flex align-items-center">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:conference_socs@ddn.upes.ac.in">conference_socs@ddn.upes.ac.in</a></i>
- 
-        </div>
-		
-		 <div class="contact-info d-flex align-items-center">
-          <i class=" d-flex align-items-center"> <a href="https://cmt3.research.microsoft.com/ICACSDF2025/Submission/Index">Paper Submission</a> </i>
-        </div>
-			
-		
-        <div class="social-links d-none d-md-flex align-items-center">
-          <a href="https://www.facebook.com/profile.php?id=61566150947779" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.linkedin.com/events/7247846013133086720/comments/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-    </div><!-- End Top Bar -->
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <span class="brand-pill">
+        <i class="fa-solid fa-mountain-sun text-success"></i>
+        ICACSDF 2026
+      </span>
+    </a>
 
-    <div class="branding d-flex align-items-cente">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-       <!-- Adding the Conference logo -->
-    <div class="conference-logo">
-      <a href="index.html" class="logo d-flex align-items-center"> <img src="assets/img/conflogo.png" alt="Conference Logo"/ > </a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto gap-lg-2 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
+        <li class="nav-item"><a class="nav-link" href="conferencetheme.html">Conference Themes</a></li>
+        <li class="nav-item"><a class="nav-link" href="committee.html">Committee</a></li>
+        <li class="nav-item"><a class="nav-link" href="registration.html">Registration</a></li>
+        <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+        <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
+		<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+        <!-- ✅ LOGOS (Best place: navbar right side) -->
+        <li class="nav-item ms-lg-3 d-none d-lg-block">
+          <div class="brand-logos">
+            <div class="logo-divider"></div>
+            <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- OFFCANVAS MOBILE MENU -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title fw-bold">ICACSDF 2026</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  
+  <div class="offcanvas-body">
+    <!-- ✅ Logos in mobile -->
+    <div class="d-flex align-items-center gap-3 mb-3">
+      <img src="assets/upes-logo.png" alt="UPES Logo" style="height:40px;width:auto;">
+      <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo" style="height:40px;width:auto;">
     </div>
 
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="Committee.html" class="active">Committee</a></li>
-            <li><a href="Registration.html">Registration</a></li>
-            <li><a href="Review.html">Review Process</a></li>
-            <li class="dropdown"><a href="call.html"><span>Call for Paper</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-               <li><a href="guideline.html">Author Guidlines</a></li>
-                <li><a href="theme.html">Conference Themes</a></li>
-                <li><a href="importantdates.html">Important Dates</a></li>
-                <li><a href="assets/Word+Latex-Template.zip">Paper Template</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html"><strong>Home</strong></a></li>
+      <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
+      <li class="nav-item"><a class="nav-link" href="conferencetheme.html">Conference Themes</a></li>
+      <li class="nav-item"><a class="nav-link" href="committee.html">Committee</a></li>
+      <li class="nav-item"><a class="nav-link" href="registration.html">Registration</a></li>
+      <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+      <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+    <hr>
+    <div class="small text-muted">
+      Sponsored by <strong>IEEE UP Section</strong>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero text-center">
+  <div class="container">
+    <div class="chip mb-3">
+      <i class="fa-solid fa-people-group"></i>
+      Committee • School of Computer Science, UPES Dehradun, India
+    </div>
+
+    <h1 class="display-5 hero-title mb-3">Organizing & Technical Committee</h1>
+    <p class="lead hero-lead mb-3">
+      The ICACSDF 2026 committee comprises academic leaders, researchers, and coordinators driving the conference vision,
+      review process, industry engagement, and on-ground execution.
+    </p>
+
+    <!-- Countdown -->
+    <div class="countdown-wrap">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+        <div class="countdown-label">
+          <i class="fa-solid fa-stopwatch me-2"></i> Countdown to ICACSDF 2026
+        </div>
+        <div class="small text-muted">
+          Conference starts: <strong>11 September 2026</strong>
+        </div>
+      </div>
+
+      <div class="row g-2 g-md-3">
+        <div class="col-6 col-md-3">
+          <div class="count-box">
+            <div class="count-num" id="cd-days">--</div>
+            <div class="count-text">Days</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="count-box">
+            <div class="count-num" id="cd-hours">--</div>
+            <div class="count-text">Hours</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="count-box">
+            <div class="count-num" id="cd-mins">--</div>
+            <div class="count-text">Minutes</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="count-box">
+            <div class="count-num" id="cd-secs">--</div>
+            <div class="count-text">Seconds</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-3 small text-muted">
+        Interested in joining as reviewer/volunteer? Write to <strong>conference_socs@ddn.upes.ac.in</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMITTEE SECTION -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">Organizing Committee</h2>
+      <p class="section-subtitle">Leadership and coordination team supporting ICACSDF 2026 planning and execution.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Chief Patrons -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-crown"></i></div>
+            <h5 class="role-title">Chief Patrons</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Sunil Rai, Chancellor, UPES, India</li>
+            <li>Dr. Ram Sharma, Vice Chancellor, UPES, India</li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-
-<!-- Adding the Springer logo -->
-    <div class="springer-logo">
-      <a href="https://www.springer.com/series/15179" class="logo d-flex align-items-center"> <img src="assets/img/springer.png" alt="Springer Logo"  / > </a>
-    </div>
+        </div>
       </div>
 
-    </div>
-    
-    <style>
-        .color-changing-border {
-            padding: 20px;
-            background-color: ;
-            border-radius: 20px;
-            animation: borderChange 2s infinite alternate;
-            border-width: 4px;
-            border-style: inset;
-        }
-
-        @keyframes borderChange {
-            0% {
-                border-color: #ff9800; /* Orange */
-            }
-            25% {
-                border-color: #ff5722; /* Deep Orange */
-            }
-            50% {
-                border-color: #4caf50; /* Green */
-            }
-            75% {
-                border-color: #2196f3; /* Blue */
-            }
-            100% {
-                border-color: #9c27b0; /* Purple */
-            }
-        }
-		
-   
-
-    </style>
-    
-  </header>
-
-  <main class="main">
-
- 
- <!-- About Section -->
-    <section id="about" class="about section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-                <p> <span class="description-title"> Organizing Committee </span></p>
-      </div><!-- End Section Title --><br>
-
-<div class="container">
-    <div class="row gy-1">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;">Chief Patrons</h3>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <strong>Dr. Sunil Rai</strong><br>
-                        Chancellor, UPES, India <br><br>
-                    </div>
-                    <div class="col-md-6">
-                        <strong>Dr. Ram Sharma</strong><br>
-                        Vice Chancellor, UPES, India <br><br>
-                    </div>
-                </div>
-            </div>
+      <!-- Patrons -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-star"></i></div>
+            <h5 class="role-title">Patrons</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Jayasankar Variyar, Pro Vice Chancellor, UPES, Dehradun, India</li>
+            <li>Dr. Veena Dutta, Vice Provost, Chancery, UPES, Dehradun, India</li>
+            <li>Mr. Manish Madaan, Registrar, UPES Dehradun, India</li>
+          </ul>
         </div>
-    </div>
-</div>
-				  
-<div class="container">			  
-	<div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="250">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;">Patrons</h3>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <strong>Dr. Jayasankar Variyar</strong><br>
-                        Pro Vice Chancellor, UPES, Dehradun, India <br><br>
-                    </div>
-                    <div class="col-md-6">
-                        <strong>Mr. Manish Madaan</strong><br>
-                        Registrar, UPES, Dehradun, India<br><br>
-                    </div>
-                </div>
-            </div>
+      </div>
+
+      <!-- General Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-user-tie"></i></div>
+            <h5 class="role-title">General Chairs</h5>
+          </div>
+          <ul class="people-list">
+            <li>Mr. Rajiv Nandwani, Senior Director, UPES, Dehradun, India</li>
+          </ul>
         </div>
-    </div>
-</div>
+      </div>
 
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;">General Chairs</h3>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <strong>Dr. Vijaysekhar Chellaboina</strong><br>
-                        Dean (SoCS), UPES, India <br><br>
-                    </div>
-                    <div class="col-md-6">
-                        <strong>Dr. Ravi S Iyer</strong><br>
-                        IISc Bangalore, India <br><br>
-                    </div>
-                </div>
-            </div>
+      <!-- Organizing Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-sitemap"></i></div>
+            <h5 class="role-title">Organizing Chairs (Convenors)</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Rajib Banerjee, UPES, India</li>
+            <li>Dr. Sushabhan Chodhury, UPES, Dehradun</li>
+          </ul>
         </div>
-    </div>
-</div>
+      </div>
 
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="250">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;">Organizing Chairs (Convenors)</h3>
-                <div class="row text-center">
-                    <div class="col-md-3">
-                        <strong>Dr. Ajay Prasad</strong><br> UPES, India<br><br>
-                    </div>
-                    <div class="col-md-3">
-                       <strong>Dr. Sushabhan Chodhury</strong><br> UPES, India<br><br>
-                    </div>
-                    <div class="col-md-3">
-                   <strong>Dr. Babusena Paul</strong><br> Director, Institute for Intelligent Systems, <br>University of Johannesburg, South Africa<br><br>
-                    </div>
-					<div class="col-md-3">
-                  <strong>Dr. Jeetendra Pande</strong><br> School of Computer Sciences & Information Technology,<br> Uttarakhand Open University, India<br><br>
-                    </div>
-                </div>
-            </div>
+      <!-- Organizing Co-Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-people-arrows"></i></div>
+            <h5 class="role-title">Organizing Co-Chairs</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Keshav Sinha, Secretary</li>
+            <li>Dr. Sandip Kumar Chaurasiya, UPES, India</li>
+            <li>Prof. Shubhi Sharma, UPES, India</li>
+          </ul>
         </div>
-    </div>
-</div>
+      </div>
 
-
-
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Organizing Co-Chairs </h3>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <strong>Dr. Rajib Banerjee</strong><br>
-                        UPES, India, (General Secretary)<br><br>
-                    </div>
-                    <div class="col-md-4">
-                        <strong>Dr. Keshav Sinha</strong><br>
-                        UPES, Dehradun, (Secretary)<br><br>
-                    </div>
-                    <div class="col-md-4">
-                        <strong>Dr. Ahmed Elnger</strong><br>
-                        Beni-Suef University, Egypt<br><br>
-                    </div>
-                </div>
-            </div>
+      <!-- Organizing Coordinators -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h5 class="role-title">Organizing Co-ordinators</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Arjun Arora, UPES India</li>
+            <li>Dr. Kaushik Ghosh, UPES, India</li>
+          </ul>
         </div>
+      </div>
     </div>
-</div>
 
+    <div class="text-center mt-5 mb-4">
+      <h2 class="section-title">Technical Program Committee</h2>
+      <p class="section-subtitle">Chairs and members responsible for review, selection, and technical quality.</p>
+    </div>
 
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="250">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Program (TPC) Chairs </h3>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <strong>Dr. Vinod Patidar</strong><br> UPES, India<br><br>
-						<strong>Dr. Neelu Jyothi Ahuja</strong><br> UPES, India<br><br>
-						<strong>Dr. Hanumat Sastry G</strong><br> UPES, India<br><br>
-						<strong>Dr. Tanupriya Choudhury</strong><br> UPES, India<br><br>
-                    </div>
-                    <div class="col-md-4">
-                        <strong>Dr. Hitesh Kumar Sharma</strong><br> UPES, India<br><br>
-						<strong>Dr. Anil Kumar</strong><br> UPES, India<br><br>
-						<strong>Dr. Kaushik Ghosh</strong><br> UPES, India<br><br>
-						<strong>Dr. Virender Kadyan</strong><br> UPES, India<br><br>
-                    </div>
-                    <div class="col-md-4">
-                        <strong>Dr. Saad Aldosary</strong><br> Department of Computer Science,<br> King Saud University, Saudi Arabia<br><br>
-						<strong>Dr. Hussain Falih Mahdi</strong><br> Associate Professor, University of Diyala, Iraq<br><br>
-						<strong>Dr. Ved Prakash Mishra</strong><br> Professor, Amity University Dubai<br><br>
-						<strong>Dr. Ahmed Elnger</strong><br> Beni-Suef University, Egypt<br><br>
-                    </div>
-                </div>
-            </div>
+    <div class="row g-4">
+      <!-- TPC Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-gears"></i></div>
+            <h5 class="role-title">Technical Program Chairs</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Rakesh Ranjan, UPES, India</li>
+            <li>Dr. Shiladitya Bhattacharjee, UPES, India</li>
+            <li>Dr. Gagandeep Singh, UPES, India</li>
+            <li>Dr. Ajay Prasad</li>
+          </ul>
         </div>
-    </div>
-</div>
+      </div>
 
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Publication Chairs </h3>
-                <div class="row text-center">
-                    <div class="col-md-3">
-                        <strong>Dr. Ajay Prasad</strong><br> UPES, India<br><br>
-                    </div>
-                    <div class="col-md-3">
-                       <strong>Dr. Sushabhan Chodhury</strong><br> UPES, India<br><br>
-                    </div>
-                    <div class="col-md-3">
-                   <strong>Dr. Babusena Paul</strong><br> Director, Institute for Intelligent Systems, <br>University of Johannesburg, South Africa<br><br>
-                    </div>
-					<div class="col-md-3">
-                  <strong>Dr. Jeetendra Pande</strong><br> School of Computer Sciences & Information Technology,<br> Uttarakhand Open University, India<br><br>
-                    </div>
-                </div>
-            </div>
+      <!-- TPC Members -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-users-gear"></i></div>
+            <h5 class="role-title">Technical Program Committee Members</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Neelu Jyothi Ahuja, UPES, India</li>
+            <li>Dr. Vinod Patidar, UPES, India</li>
+            <li>Dr. Hanumat Sastry, UPES, India</li>
+            <li>Dr. Tanupriya Choudhury, UPES, India</li>
+            <li>Dr. Anish Kumar Vishwakarma, UPES, India</li>
+            <li>Dr. Panduranga Raviteja, UPES, India</li>
+            <li>Dr. Virender Kadyan, UPES, India</li>
+            <li>Dr. Anil Kumar, UPES, India</li>
+            <li>Dr. Bhupendra Singh, UPES, India</li>
+            <li>Dr. Christalin Nelson, UPES, India</li>
+            <li>Dr. Ayush Agarwal, UPES, India</li>
+          </ul>
         </div>
+      </div>
     </div>
-</div>
 
+    <div class="text-center mt-5 mb-4">
+      <h2 class="section-title">Chairs & Committees</h2>
+      <p class="section-subtitle">Functional teams handling industry, publication, publicity, finance, global and local coordination.</p>
+    </div>
 
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="250">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> International Advisory Board </h3>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <strong>Prof. Dipankar Dasgupta </strong> <br> Fellow NAI, IEEE & Distinguished Speaker <br> Director, Center for Information Assurance <br> William Hill Professor in Cybersecurity <br> Advisory Board Member of Geocentric Cyber Security <br> Massachusetts Institute of Technology (MIT)<br><br>
-			<strong>Dr. Karl McCreadie</strong><br> School of Computing, Eng & Intel. Sys, <br>Ulster University, United Kingdom<br><br>
-			 <strong>Ms. Marcie Sonderson</strong><br> Criminal Investigator, McAfee, Missouri, United States<br><br>
-			 <strong>Dr. Walid El-Shafai</strong><br> Menoufia University, Egypt<br><br>
-			 <strong>Dr. Moustafa Hussien Aly</strong><br> Arab Academy for Science, Technology and Maritime Transport, Egypt<br><br>
-			 
-                    </div>
-                    <div class="col-md-4">
-                       <strong> Dr. Rajkumar Buyya </strong> <br> Redmond Barry Distinguished Professor <br> Director, Cloud Computing and Distributed Systems (CLOUDS) Lab <br> School of Computing and Information Systems <br> The University of Melbourne <br> <br>
-			 <strong>Dr. Alexander Kuiper</strong><br> Computer Scientist at Kuiper Forensics, Maintal, Hesse, Germany<br><br>
-			 <strong>Mr. Rajat Goel</strong><br> Principal Engineer, DropBox, California, United States<br><br>
-			 <strong>Mr. Baris Dincer</strong><br> CIO, Threat Intelligence Advisor, RedTeam Lead, LEX Program, Turkiye<br><br>
-			 <strong>Dr. Saad Aldosary</strong><br> Department of Computer Science, King Saud University, Saudi Arabia<br><br>
-					   
-                    </div>
-                    <div class="col-md-4">
-			 <strong>Mr. Dmitry (Soxoj) Danilov</strong><br> Head of OSINT, Amsterdam, North Holland, Netherlands<br><br>
-			 <strong>Dr. Fahri Özsungur</strong><br> Mersin University, Turkey<br><br>
-			 <strong>Mr. Arup Kumar Laha</strong><br> Executive Architect, Country Delivery Lead, IBM, Thailand<br><br>
-			 <strong>Dr. Sher Afghan Khan</strong><br> International Islamic University, Malaysia<br><br>
-			 <strong>Ms. Nandita Gupta</strong><br> Principal Data Scientist, Walmart Labs, California, United States<br><br>
-			 <strong>Dr. Ahmed Elnger</strong><br> Beni-Suef University, Egypt<br><br>
-			 <strong>Dr. Xiao-Zhi Gao</strong><br> Eastern Finland University, Finland<br>
-                    </div>
-                </div>
-            </div>
+    <div class="row g-4">
+      <!-- Industry Chair -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-industry"></i></div>
+            <h5 class="role-title">Industry Chair</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Amit Kumar Khandelwal (Prof. Practices)</li>
+            <li>Dr. Hitesh Kumar Sharma, UPES, India</li>
+            <li>Dr. Akashdeep Bhardwaj, UPES, India</li>
+            <li>Dr. Pankaj Badoni, UPES, India</li>
+            <li>Dr. Deepika Sachdev</li>
+          </ul>
         </div>
-    </div>
-</div>
-  
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> National Advisory Board </h3>
-                <div class="row text-center">
-                    <div class="col-md-4">
-<strong>  Dr. Talwar Yoginder</strong><br>  Scientist at National Informatics Centre, Min. of Communications & IT, Delhi, India   <br><br>
-<strong>  Dr. Aditya Raj</strong><br> Scientist, National Informatics Centre, MeitY, India <br><br>
-<strong>  Dr. Niranjan Prasad</strong><br> Director-II (Scientist-F) (Retd), Defense Research & Development Organization (DRDO). India <br><br>                    </div>
-                    <div class="col-md-4">
-                 <strong>  Dr. Vijay Nath</strong><br> BIT Mesra Ranchi & Executive Member of IETE & ISVE Ranchi Jharkhand India <br><br>
-			    <strong> Dr. Raja Datta</strong><br> IIT Kharagpur, India <br><br>
-				 <strong>  Dr. Manish Prateek</strong><br> Professor and Pro Vice-Chancellor, DBS Global University <br><br>
-				  <strong>  Dr. Amit Agarwal</strong><br> Director, Institute of Technology, Gopeshwar, Uttarakhand (India) <br><br> 
-					   
-                    </div>
-                    <div class="col-md-4">
-			 
-			 				   <strong>  Dr. M. P. Jain</strong><br> Pro Chancellor, IMS Unison University, India <br><br>
-				    <strong>  Dr. Sipra das Bit</strong><br> Professor (HAG), IIEST, Shibpur, India <br><br>
-					 <strong>   Dr. Jamuna Kanta Sing </strong><br> Professor, Jadavpur University, India <br><br>
-					 <strong>  Dr. Arindom Biswas</strong><br> Kazi Nazrul University, India <br><br>
-			 
-			 
-                    </div>
-                </div>
-            </div>
+      </div>
+
+      <!-- Publication Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-book"></i></div>
+            <h5 class="role-title">Publication Chairs</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Sumitra, UPES, India</li>
+            <li>Dr. Deepa Rani, UPES, India</li>
+          </ul>
         </div>
+      </div>
+
+      <!-- Publicity Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-bullhorn"></i></div>
+            <h5 class="role-title">Publicity Chairs</h5>
+          </div>
+          <ul class="people-list">
+            <li>Prof. Rahul Kumar, UPES, India</li>
+            <li>Dr. Ved Prakash Bharadwaj, UPES, India</li>
+          </ul>
+          <hr style="opacity:.15;">
+          <h6 class="fw-bold mb-2" style="color:var(--slate);">Publicity Co-Chairs</h6>
+          <ul class="people-list">
+            <li>Dr. Khushboo Jain, UPES, India</li>
+            <li>Dr. Pavinder, UPES, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Finance Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-coins"></i></div>
+            <h5 class="role-title">Finance Chair</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Abhijit Kumar, UPES, India</li>
+            <li>Dr. Sanoj Kumar, UPES, India</li>
+            <li>Dr. Rahul Singh, UPES, India</li>
+          </ul>
+          <hr style="opacity:.15;">
+          <h6 class="fw-bold mb-2" style="color:var(--slate);">Finance Co-Chairs</h6>
+          <ul class="people-list">
+            <li>Dr. Swati Rastogi, UPES, India</li>
+            <li>Dr. Kapil Gupta, UPES, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Global Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-globe"></i></div>
+            <h5 class="role-title">Global Chairs</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Roohi Sille, UPES, India</li>
+            <li>Ms. Sugandha Sharma, UPES, India</li>
+          </ul>
+          <hr style="opacity:.15;">
+          <h6 class="fw-bold mb-2" style="color:var(--slate);">Global Co-Chair</h6>
+          <ul class="people-list">
+            <li>Dr. Richa Kumari, UPES, India</li>
+            <li>Dr. Silky Goel, UPES, India</li>
+            <li>Dr. Shaurya Gupta, UPES, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Local Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <h5 class="role-title">Local Chairs</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Saurabh Jain, UPES, India</li>
+            <li>Prof. Alok Jhaldiyal, UPES, India</li>
+          </ul>
+          <hr style="opacity:.15;">
+          <h6 class="fw-bold mb-2" style="color:var(--slate);">Local Co-Chairs</h6>
+          <ul class="people-list">
+            <li>Dr. Shahina Anwarul, UPES, India</li>
+            <li>Dr. Bhavana Kaushik, UPES, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Digital Media Chairs -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-photo-film"></i></div>
+            <h5 class="role-title">Digital Media Chairs</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Archana Kumari, UPES, India</li>
+            <li>Dr. Surbhi Saraswat, UPES, India</li>
+          </ul>
+          <hr style="opacity:.15;">
+          <h6 class="fw-bold mb-2" style="color:var(--slate);">Digital Media Co-Chairs</h6>
+          <ul class="people-list">
+            <li>Dr. Vidyanand Mishra, UPES, India</li>
+            <li>Prof. Dhiviya Rose J, UPES, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Coordination Committee -->
+      <div class="col-lg-6">
+        <div class="role-card">
+          <div class="role-head">
+            <div class="role-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+            <h5 class="role-title">Coordination Committee</h5>
+          </div>
+          <ul class="people-list">
+            <li>Dr. Amarendra Tripathi, UPES, India</li>
+            <li>Mr. Nakul Ahuja, UPES, India</li>
+            <li>Ms. Poonam Bhandari, UPES, India</li>
+          </ul>
+        </div>
+      </div>
     </div>
-</div>		
 
+  </div>
+</section>
 
+<!-- FOOTER (same as index) -->
+<!-- FOOTER -->
+<footer class="pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4">
 
-
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="250">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Technical Program Committee </h3>
-                <div class="row text-center">
-     <div class="col-md-4">
+      <div class="col-lg-4">
+      <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
           
-		  <strong>Dr. Sayantan Chakraborty</strong><br> Chairman, International Association of Professional and Fellow Engineers-Delaware-USA<br><br>
-		  <strong>Dr. Salim Barbhuiya</strong><br> Professor, University of Leeds, UK<br><br>
-		  <strong>Dr. Manash K. Paul</strong><br>Scientist, Principal Investigator, University of California Los Angeles<br> <br>
-		  <strong>Dr. Santhi Raju Pilli</strong><br> Assistant Professor, Jazan University, KSA<br> <br>
-		  <strong> Dr. Adarsh Kumar </strong> <br> UPES, India<br><br>
-		  <strong>Dr. Hussain Falih Mahdi</strong><br> Associate Professor, University of Diyala, Iraq<br><br>
-		  <strong>Dr. Ved Prakash Mishra</strong><br>Professor, Amity University Dubai<br> <br>
-		  <strong>Dr. Jung-Sup Um</strong> <br>Professor, Kyungpook National University, South Korea<br><br>
-		  <strong> Dr. Bhupendra Singh </strong> <br> UPES, India<br><br>
-		  <strong>Dr. Madhu Khurana</strong><br>Assistant Professor, University of Gloucestershire, United Kingdom<br><br>
-		  <strong>Dr. Praveen Kumar</strong><br>Professor, Astana IT University, Kazakhstan<br><br> 
-		  <strong>Dr. Nguyen Gia Nhu</strong><br>Professor, Duy Tan University, Da Nang, Vietnam<br><br>
-		  <strong> Dr. Deepak Kumar Sharma </strong> <br> UPES, India<br><br>
-		  <strong>Dr. Teoh Teik Toe</strong><br>Professor and Academic Director, NTU Singapore<br><br>
-		  <strong>Dr. Amit Kumar Mondal</strong><br>Assistant Professor, Manipal University Dubai UAE<br><br>
-		  <strong>Dr. Danish Ather</strong><br>Associate Professor, Amity University Tashkent Uzbekistan<br><br>
-		  <strong> Dr. Deepika Koundal </strong> <br> UPES, India<br><br>
-		  <strong>Dr. Thinagaran A/L Perumal / FSKTM </strong> <br>Associate Professor, Universiti Putra, Malaysia<br><br>
-		  <strong>Dr. Ujwal Chakraborty</strong> <br>NIT Silchar, India<br><br>
-		  <strong>Dr. Sunil Gupta</strong><br>UPES, India<br><br>
-		  <strong>Dr. Kumar Venkatesh</strong><br>MNNIT Allahabad, India<br><br>
-		  <strong>Dr. Souvik Ganguli</strong> <br>Thapar Institute of Engineering and Technology, India<br><br>
-		  <strong> Dr. Dhirendra Kumar Sharma </strong> <br> UPES, India<br><br>
-		  <strong>Dr. V.K. Jha </strong> <br> BIT Mesra, Ranchi<br><br>
-		  <strong>Dr. Rajeev Kumar Ranjan</strong> <br> ISM, Dhanbad<br><br>
-		  <strong>Dr. Amritanjali</strong> <br> BIT Mesra Ranchi<br><br>
-		  <strong>Dr. Deepak Prasad</strong> <br> Sarala Birla University Ranchi<br><br>
-
-          <strong>Dr. Pooja</strong> <br> UPES, Dehradun India <br><br>
-          <strong>Ms. Sumitra</strong> <br>  UPES, Dehradun, India <br><br>
-          <strong>Dr. Ajay Kumar</strong> <br> NIIT (China) Limited, Shanghai  <br><br>
-          <strong>Dr. Yogesh Mali </strong> <br> G H Raisoni College of Engineering and Management Wagholi Pune , India <br><br>
-          <strong>Dr. Pathan Mohd Shafi</strong> <br> MIT Art Design and Technology University, Pune, India <br><br>
-          <strong>Dr. Manas Kumar Yogi</strong> <br> Pragati Engineering College(Autonomous), India <br><br>
-
-
-          <strong>Dr. B Thamotharan</strong> <br> SASTRA Deemed University <br><br>
-          <strong>Ms. M Keerthika</strong> <br> Avinashilingham Institute for Home Science and Higher Education for Women <br><br>
-          <strong>Mr. Subrata Pan</strong> <br>  Bankura Unnayani Institute of Engineering <br><br>
-
-
-          <strong>Dr. D. Shamia</strong> <br> V.S.B. College of Engineering Technical Campus, India <br><br>
-
-          <strong>Mr. Avinash Kumar</strong> <br> Sharada University, India <br><br>
-
-		  
-       </div>
-					
-	<div class="col-md-4">
-          
-		  <strong>Dr. Pramod Gaur</strong> <br>Senior Lecturer, Nottingham Trent University, Nottingham, England, United Kingdom<br><br>
-		  <strong>Dr. Abdul Razaq</strong> <br>          Abertay University, United Kingdom<br><br>
-		  <strong> Dr. Goutam Datta </strong> <br> UPES, India<br><br>
-		  <strong>Dr. Alexander Kuiper</strong> <br>          Computer Scientist at Kuiper Forensics, Maintal, Hesse, Germany<br><br>
-		  <strong>Dr. Manoj Kumar</strong> <br>          Associate Professor, University of Wollongong, Dubai, UAE<br><br>
-		  <strong>Ms. Jane Eliseva</strong> <br>          Head Alliances, Social Links, Riga, Latvia<br><br>
-		  <strong> Dr. Juhi Agarwal </strong> <br> UPES, India<br><br>
-		  <strong>Ms. Marcie Sonderson</strong> <br>          Criminal Investigator McAfee, Missouri, United States<br><br>
-		  <strong>Dr. Mohit Mittal</strong> <br>          Shiratech Knowtion GmbH, Germany<br><br>
-		  <strong>Dr. Swadha Gupta</strong> <br>          Shiratech Knowtion GmbH, Germany<br><br>
-		  <strong> Dr. Kapil Gupta </strong> <br> UPES, India<br><br>
-		  <strong>Dr. Vijay Prakash</strong> <br>          Research Support Officer III, University of Malta, Malta<br><br>
-		  <strong>Dr. Seema Rawat</strong> <br>          Associate Professor, Amity University Tashkent Uzbekistan<br><br>
-		  <strong> Dr. Piyush Rawat </strong> <br> UPES, India<br><br>
-		  <strong>Dr. P. Kumar</strong> <br>          IIT Patna, India<br><br>
-		  <strong>Dr. Amit Kumar</strong> <br>          Thapar Institute of Engineering and Technology, India<br><br>
-		  <strong>Dr. Talwar Yoginder</strong> <br>          Scientist at National Informatics Centre, Min. of Communications & IT, India<br><br>
-		  <strong>Dr. Nitish Kumar Guru</strong> <br>          Scientific Assistant (Ballistics), Directorate of Forensic Science and Laboratory, India<br><br>
-		  <strong>Dr. Sanjay Kumar Biswash</strong> <br>          UPES, India<br><br>
-		  <strong>Dr. Supratim Biswas</strong> <br>          BIT Mesra Ranchi, India<br><br>
-		  <strong>Dr. Kaushik Ghosh</strong> <br>          UPES, India<br><br>
-		  <strong>Dr. Anup Dewanji</strong> <br>          Indian Statistical Institute (ISI), India<br><br>
-		  <strong> Dr. N Prasanthi Kumari</strong> <br> UPES, India<br><br>
-		  <strong>Dr. Abhishek Pandey</strong> <br> Usha Martin University, Ranchi<br><br>
-		  <strong>Dr. Sudip Kumar Sahana</strong> <br> BIT Mesra Ranchi<br><br>
-		  <strong>Dr. Rajiv Ranjan</strong> <br>BIT Sindri<br><br>
-		  <strong>Dr. P. Chinnasamy</strong> <br> MLR Institute of Technology, India<br><br>
-
-          <strong>Dr. G Manimala </strong> <br> SRI SAI RAM ENGINEERING COLLEGE , India<br><br>
-          <strong>Dr. C. S. Yadav</strong> <br> DST Ministry of Science and Technolgy Delhi, India<br><br>
-          <strong>Dr. Rizwana Kallooravi Thandil</strong> <br> Sullamussalam Science College Areekode , India<br><br>
-          <strong>Dr. Ebenezer Mensah</strong> <br> University of the Cumberlands, USA<br><br>
-          <strong>Dr. Yogesh Mali</strong> <br> Savtribai Phule Pune University, India<br><br>
-          <strong>Dr. Tripti Singh</strong> <br> IIITDM Jabalpur , India<br><br>
-				
-
-          <strong>Ms. Hemangi Hemant Kulkarni</strong> <br> GES R H Sapat college of Engineering <br><br>
-          <strong>Dr. Sriram A.L.</strong> <br> Sastra Deemed University<br><br>
-          <strong>Mr. Alok Choudhury</strong> <br> Assam Don Bosco University <br><br>
-
-
-          <strong>Prof. IRFAN BAGAWAN</strong> <br> MLR Institute of Technology, Hyderabad <br><br>
-          <strong>Mr. Shashidhar Reddy Polepalli</strong> <br> Fortinet, United States  <br><br>
-
-          <strong>Mr. Rishi Kumar Sharma</strong> <br> Verisk, USA  <br><br>
-
-       
-
+          <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo" style="height:42px;width:auto;">
         </div> 
-					
-					
-                    <div class="col-md-4">
-			 
-			 <strong>Dr. Alok Aggarwal</strong> <br>UPES, India<br><br>
-		     <strong>Dr. Anirban Ghatak</strong> <br>Indian Statistical Institute (ISI), India<br><br>
-			 <strong> Dr. Ved Prakash Bhardwaj </strong> <br> UPES, India<br><br>
-		  <strong>Dr. Soumik Das</strong> <br>          Indian Statistical Institute (ISI), India<br><br>
-		  <strong> Dr. Rohit Srivastava </strong> <br> UPES, India<br><br>
-		  <strong>Dr. Arijit Ghosh</strong> <br>          Indian Statistical Institute (ISI), India<br><br>
-          <strong>Dr. Hitesh Kumar Sharma</strong> <br>          UPES, India<br><br>
-		            <strong>Dr. Sourav Chakraborty</strong> <br>	          Indian Statistical Institute (ISI), India<br><br>
-					<strong> Dr. Sandeep Pratap Singh </strong> <br> UPES, India<br><br>
-		            <strong>Dr. Debrup Chakraborty</strong> <br>          Indian Statistical Institute (ISI), India<br><br>
-		            <strong>Dr. Tanupriya Choudhury</strong> <br>          UPES, India<br><br>
-		            <strong>Dr. Chandrashekhar Azad</strong> <br>          National Institute of Technology, India<br><br>
-		  		  <strong>Dr. Adarsh Kumar</strong> <br>          UPES, India<br><br>
-		            <strong>Dr. Soumyabrata Chakrabarty</strong> <br>          IIT, India<br><br>
-		            <strong>Dr. Rudra P. Pradhan</strong> <br>          Indian Institute of Technology Kharagpur, India<br><br>
-		            <strong>Dr. Sudhir Kumar Barai</strong> <br>          BITS Pilani, India<br><br>
-		            <strong>Dr. Rohit Tanwar</strong> <br>          UPES, India<br><br>
-		   <strong>Mr. Karuna Nidhan Upadhyay</strong> <br> Assistant Director (Cyber Forensic), Directorate of Forensic Science and Laboratory, India<br><br>
-		            <strong>Dr Cheng Cheng</strong> <br> Senior Lecturer Computer Science, Swansea University, UK<br><br>
-					<strong> Dr. Varun Sapra </strong> <br> UPES, India<br><br>
-		            <strong>Dr. Vinayakumar Ravi</strong> <br>          Assistant Research Professor, Prince Mohammad Bin Fahd University, Khobar, Saudi Arabia<br>
-		  		  <strong>Dr. Suneet</strong> <br>          UPES, India<br><br>
-		            <strong>Dr. S. Raghavan</strong> <br>          NIT TRICHY, India<br><br>
-		  		    <strong>Dr. Sanjeev Kumar</strong> <br>          UPES, India<br><br>
-					<strong> Dr. Muthukumar Ka </strong> <br> UPES, India<br><br>
-					<strong>Dr. Sumit Srivastava</strong> <br> BIT Mesra Ranchi<br><br>
-					<strong>Dr. Sweta Srivastava</strong> <br> Amity University<br><br>
-					<strong>Dr. Syeda Darakhshan Jabeen</strong> <br> BIT Mesra Ranchi<br><br>
-					<strong>Dr. Gopal Singh Rawat</strong> <br> Bennett University, India <br><br>
+	   <h5 class="fw-bold text-white">ICACSDF 2026</h5>
+        <p class="mb-2">
+          School of Computer Science, UPES Dehradun, Uttarakhand
+        </p>
 
-                    <strong>Dr. RAJASEKARAN S</strong> <br>University of Technology and Applied Sciences , Ibri, Omn, Oman<br><br>
-                    <strong>Mr. S M Zia Ur Rashid</strong> <br> Paycom, United States <br><br>
-                    <strong>Mr. Vinay Chowdary Dabbara</strong> <br> Northumbria university , United Kingdom  <br><br>
-                    <strong>Dr.  Aarthi E</strong> <br> SRM Institute of Science and Technology, India <br><br>
-                    <strong>Ms. Madhuri Yadav</strong> <br> IITM, Janakpuri, India <br><br>
-                    <strong>Dr. Ranjana Rautela</strong> <br> Cégep- Heritage College, Gatineau, QC, Canada <br><br>
+        <!-- ✅ Footer logos -->
+        
 
-
-                    <strong>Dr Aslam J  Karjagi</strong> <br> SECAB Institute of Engineering & Technology, Vijayapura <br><br>
-                    <strong>Ms. Priyanka Nainal Kokare</strong> <br>Symbiosis International University, Pune <br><br>
-                    <strong>Ms. Suja. C. K</strong> <br> Adi Shankara Institute of Engineering and Technology <br><br>
-
-                    <strong>Ms. Sonal Sanjay Ayare</strong> <br>  Kolhapur Institute Of Technology's College Of Engineering, Kolhapur <br><br>
-
-                    <strong>Mr. Deepak Shivrambhai Antiya</strong> <br>  Oracle, USA <br><br>
-
-                    <strong>Mr. Pradeep Sharma</strong> <br> ServiceNow, USA <br><br>
-
-         </div>
-                </div>
-            </div>
+        <div class="small">
+          <div class="mb-2">
+            <i class="fa-solid fa-calendar-days me-2"></i> <strong>11–12 September 2026</strong>
+          </div>
+          <div>
+            <i class="fa-solid fa-certificate me-2"></i> Sponsored by <strong>IEEE UP Section</strong>
+          </div>
+          <div class="mt-2">
+            <div class="mt-2"><i class="fa-solid fa-globe me-2"></i>  <a href = "https://2025.icacsdf.org/"> <strong> ICACSDF2025 Conference </strong> </a> </div>
+          </div>
         </div>
-    </div>
-</div>	
-
-
-
-
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Publicity / Sponsorship Chairs </h3>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <strong>Dr. Akashdeep Bhardwaj</strong> <br>
-          UPES, India<br><br>
-          <strong>Dr. Pankaj Badoni</strong> <br>
-          UPES, India<br><br>
-			 
-                    </div>
-                    <div class="col-md-4">
-                       <strong>Dr. Saurabh Shanu</strong> <br>
-          UPES, India<br><br>
-		  <strong>Dr. Mahendra Kumar Shrivas</strong> <br>
-          UPES, India<br><br>
-					   
-                    </div>
-                    <div class="col-md-4">
-			 
-			   <strong>Dr. Sugandha Sharma</strong> <br>
-          UPES, India<br><br>
-		  <strong>Dr. Abhirup Khanna</strong> <br>
-          UPES, India<br><br>
-		  <strong>Dr. Chandra Mani Sharma</strong> <br>
-          UPES, India<br><br>
-		  
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>	
-
-
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="250">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Publicity / Sponsorship Co-Chairs  </h3>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <strong>Dr. Avita Katal</strong> <br>
-          UPES, India<br><br>
-          <strong>Dr. Archana Kumari</strong> <br>
-          UPES, India<br><br>
-          <strong>Dr. Khushboo Jain</strong> <br>
-          UPES, India<br><br>
-			 
-                    </div>
-                    <div class="col-md-4">
-                       <strong>Dr. Rahul Singh</strong> <br>
-          UPES, India<br><br>
-		  <strong>Dr. Dhiviya Rose J</strong> <br>
-          UPES, India<br><br>
-		  <strong>Dr. Sonali Vyas</strong> <br>
-          UPES, India<br><br>
-					   
-                    </div>
-                    <div class="col-md-4">
-			 <strong>Dr. Silky Goel</strong> <br>
-          UPES, India<br><br>
-		   <strong> Dr. Aditi Zear </strong> <br>
-          UPES, India<br><br>
-		  <strong>Mr. Ritesh Kumar </strong> <br>
-          UPES, India<br><br>
-			 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>					  
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Finance Chairs </h3>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <strong>Dr. Sunil Gupta</strong> <br>UPES, India<br><br>
-		            </div>
-                    <div class="col-md-6">
-                      <strong> Dr. Abhijit Kumar</strong> <br>UPES, India<br><br>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>	
-
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="250">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Finance Co-Chairs </h3>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                       <strong> Dr. Sanoj Kumar</strong> <br>UPES, India<br><br> 
-		            </div>
-                    <div class="col-md-6">
-                      
-					     <strong>Dr. Rohit Tanwar</strong> <br>UPES, India<br><br>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>	
-
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Global Chairs </h3>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                       <strong>Dr. Virendra Sule</strong> <br>
-          UPES, India<br><br>
-      
-		            </div>
-                    <div class="col-md-6">
-                          <strong>Dr. Roohi Sille</strong> <br>
-          UPES, India<br><br>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>	
-
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="250">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Global Co-Chairs </h3>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <strong>Dr. Suneet Kumar Gupta</strong> <br>
-          UPES, India<br><br>
-		            </div>
-                    <div class="col-md-6">
-                      
-					     <strong>Dr. Nayantara Kotoky</strong> <br>
-          UPES, India<br><br> 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>	
-
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Local Chairs </h3>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <strong>Dr. Gagandeep Singh</strong> <br>
-          UPES, India<br><br>
-		            </div>
-                    <div class="col-md-6">
-                      
-					     <strong>Dr. Neeraj Chugh</strong> <br>
-          UPES, India<br><br>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>	
-
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="250">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Local Co-Chairs </h3>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <strong>Dr. Bhawana Kaushik</strong> <br>
-          UPES, India<br><br>
-		            </div>
-                    <div class="col-md-6">
-                      
-					     <strong>Prof. Sandip Kumar Chaurasiya</strong> <br>
-          UPES, India<br><br> 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Digital Media Chairs </h3>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <strong> Dr. Surbhi Saraswat</strong> <br>
-          UPES, India<br><br>
-		            </div>
-                    <div class="col-md-6">
-                      
-					     <strong> Dr. Amarendra Tripathi</strong> <br>
-          UPES, India<br><br>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="150">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Digital Media Co-Chairs </h3>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                         <strong>Dr. Vidyanand Mishra</strong> <br>
-          UPES, India<br><br>
-          <strong>Dr. Amar Jindal</strong> <br>
-          UPES, India<br><br>
-		            </div>
-                    <div class="col-md-6">
-                      
-					     <strong>Ms. Shubhi Sharma</strong> <br>
-          UPES, India<br><br>
-		  <strong>Dr. Dhiviya Rose J</strong> <br>
-          UPES, India<br><br>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Program Coordination Committee Chairs </h3>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                         <strong> Dr. Arjun Arora</strong> <br>UPES, India<br><br>
-		 <strong> Dr. Juhi Agrawal</strong> <br> UPES, India<br><br> 
-		 <strong> Dr. N Prasanthi Kumari</strong> <br> UPES, India<br><br>
-		            </div>
-                    <div class="col-md-4">
-                      
-					     <strong> Dr. Mitali Chugh</strong> <br>
-          UPES, India<br><br>
-		 <strong> Dr. Shahina Anwarul</strong> <br>
-          UPES, India<br><br>
-		 <strong> Dr. Gagan Deep Singh</strong> <br>
-          UPES, India<br><br>
-		  
-                    </div>
-					
-					<div class="col-md-4">
-                      
-					   	 <strong> Dr. Christalin Nelson S</strong> <br>
-          UPES, India<br><br>
-		 <strong> Dr. Saurabh Jain</strong> <br>
-          UPES, India<br><br>
-		 <strong> Dr. Alok Jhaldiyal</strong> <br>
-          UPES, India<br><br>
-		  
-                    </div>
-					
-					
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="250">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Student Coordination Chairs </h3>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                         		  <strong>Dr. Avita Katal</strong><br> UPES, India<br><br> 
-		  <strong>Dr. Sachi Choudhary</strong><br>  UPES, India<br><br> 
-		  <strong>Dr. Sugandha Sharma</strong><br> UPES, India<br><br> 
-		            </div>
-                    <div class="col-md-4">
-                      <strong>Dr. Bhavana Kaushik</strong><br>  UPES, India<br><br> 
-		  <strong>Dr. Tanu Singh</strong><br>  UPES, India<br><br> 
-		  <strong>Dr. Ambika Aggarwal</strong><br>  UPES, India<br><br>
-                    </div>
-					
-					<div class="col-md-4">
-                      <strong>Dr. Ram Kumar, UPES</strong><br>  UPES, India<br><br> 
-		  <strong>Dr. Pankaj Badoni</strong><br>  UPES, India<br><br>  
-		  <strong>Dr. Saurabh Shanu </strong><br>  UPES, India<br><br> 
-					   			  
-                    </div>
-					
-					
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Coordination Committee </h3>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                         <strong>Dr. Amar Shukla</strong> <br> UPES, India<br><br>
-		            </div>
-                    <div class="col-md-4">
-                      
-			          <strong>Mr. Nakul Ahuja</strong> <br> UPES, India<br> <br>
-                    </div>
-					
-					<div class="col-md-4">
-                      <strong>Ms. Poonam Bhandari</strong> <br> UPES, India<br><br>
-					   			  
-                    </div>
-					
-					
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
- 
- <div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-                <h3 class="text-center" style="color: #00796b;"> Organizing Sub-Committee </h3>
-                <div class="row text-center">
-                    <div class="col-md-4">
-
-
-<strong> Dr. Abhishek Yadav</strong> <br> UPES, India<br><br>
-<strong> Dr. Achala Shakya</strong> <br> UPES, India<br><br>
-<strong> Dr. Aishik Biswas</strong> <br> UPES, India<br><br>
-<strong> Dr. Akhilesh Mohan Srivastava</strong> <br> UPES, India<br><br>
-<strong> Dr. Alind </strong> <br> UPES, India<br><br>
-<strong> Dr. Amit Gurung</strong> <br> UPES, India<br><br>
-<strong> Dr. Amit Panwar</strong> <br> UPES, India<br><br>
-<strong> Dr. Amit Verma</strong> <br> UPES, India<br><br>
-<strong> Dr. Anand Kumar</strong> <br> UPES, India<br><br>
-<strong> Dr. Anish Kumar Vishwakarma</strong> <br> UPES, India<br><br>
-<strong> Dr. Anushree Sah</strong> <br> UPES, India<br><br>
-<strong> Dr. Arghya Maji</strong> <br> UPES, India<br><br>
-<strong> Dr. Arundhati Tarafdar</strong> <br> UPES, India<br><br>
-<strong> Dr. Aryan Bansal</strong> <br> UPES, India<br><br>
-<strong> Dr. Ashwni Kumar</strong> <br> UPES, India<br><br>
-<strong> Dr. Avishek Majumder</strong> <br> UPES, India<br><br>
-<strong> Dr. Ayush Gurjar</strong> <br> UPES, India<br><br>
-<strong> Dr. Barsha Abhisheka</strong> <br> UPES, India<br><br>
-<strong> Dr. Chhotelal Kumar</strong> <br> UPES, India<br><br>
-<strong> Dr. Debanjan Ghosh</strong> <br> UPES, India<br><br>
-<strong> Dr. Deepanshu Singh Satwaliya</strong> <br> UPES, India<br><br>
-<strong> Dr. Deepshikha Gupta</strong> <br> UPES, India<br><br>
-<strong> Dr. Dinesh Kumar Ravi</strong> <br> UPES, India<br><br>
-<strong> Dr. Gaurav Bhardwaj</strong> <br> UPES, India<br><br>
-<strong> Dr. Gaurav Buddhawar</strong> <br> UPES, India<br><br>
-<strong> Dr. Gaytri </strong> <br> UPES, India<br><br>
-<strong> Dr. Gouranga Duari</strong> <br> UPES, India<br><br>
-<strong> Dr. Kamakshi Rautela</strong> <br> UPES, India<br><br>
-<strong> Dr. Rajesh Bhatt</strong> <br> UPES, India<br><br>
-<strong> Dr. Rakesh Ranjan</strong> <br> UPES, India<br><br>
-<strong> Dr. Ravi Yadav</strong> <br> UPES, India<br><br>
-
-
-
-			 
-                    </div>
-                    <div class="col-md-4">
-
-
-<strong> Dr. Kamal Raj Singh</strong> <br> UPES, India<br><br>
-<strong> Dr. Kaushlendra Kumar Sinha</strong> <br> UPES, India<br><br>
-<strong> Dr. Kaustubh Abhay Ijardar</strong> <br> UPES, India<br><br>
-<strong> Dr. Kotha Venugopalachary</strong> <br> UPES, India<br><br>
-<strong> Dr. Kshitij Deepak Kumre</strong> <br> UPES, India<br><br>
-<strong> Dr. Manish Kumar Giri</strong> <br> UPES, India<br><br>
-<strong> Dr. Manish Kumar Pandey</strong> <br> UPES, India<br><br>
-<strong> Dr. Manobendra Mondal</strong> <br> UPES, India<br><br>
-<strong> Dr. Manojeet Roy</strong> <br> UPES, India<br><br>
-<strong> Dr. Milton Kumar</strong> <br> UPES, India<br><br>
-<strong> Dr. Mohammad Ahsan</strong> <br> UPES, India<br><br>
-<strong> Dr. Mrinal Maji</strong> <br> UPES, India<br><br>
-<strong> Dr. Nadeem Yousuf Khanday</strong> <br> UPES, India<br><br>
-<strong> Dr. Narendra Kumar Dewangan</strong> <br> UPES, India<br><br>
-<strong> Dr. Nimisha Pandey</strong> <br> UPES, India<br><br>
-<strong> Dr. Nitika Nigam</strong> <br> UPES, India<br><br>
-<strong> Dr. Panduranga Raviteja</strong> <br> UPES, India<br><br>
-<strong> Dr. Pankaj Kundan Dadure</strong> <br> UPES, India<br><br>
-<strong> Dr. Pawan Sharma</strong> <br> UPES, India<br><br>
-<strong> Dr. Pawan Singh Koranga</strong> <br> UPES, India<br><br>
-<strong> Dr. Pooja Sarin</strong> <br> UPES, India<br><br>
-<strong> Dr. Poonam Kainthura</strong> <br> UPES, India<br><br>
-<strong> Dr. Prabhat Ranjan Singh</strong> <br> UPES, India<br><br>
-<strong> Dr. Pragya Katyayan</strong> <br> UPES, India<br><br>
-<strong> Dr. Pranshu Srivastava</strong> <br> UPES, India<br><br>
-<strong> Dr. Prateek Gautam</strong> <br> UPES, India<br><br>
-<strong> Dr. Priyanka Goel</strong> <br> UPES, India<br><br>
-<strong> Dr. Priyanka Singh</strong> <br> UPES, India<br><br>
-<strong> Dr. Rahul Kumar</strong> <br> UPES, India<br><br>
-<strong> Dr. Ritesh Kumar</strong> <br> UPES, India<br><br>
-<strong> Dr. Rohitesh Kumar</strong> <br> UPES, India<br><br>
-				   
-                    </div>
-                    <div class="col-md-4">
-
-
-
-<strong> Dr. Sachi Choudhary</strong> <br> UPES, India<br><br>
-<strong> Dr. Sachin Chaudhary</strong> <br> UPES, India<br><br>
-<strong> Dr. Sahinur Rahman Laskar</strong> <br> UPES, India<br><br>
-<strong> Dr. Sambhavi Shukla</strong> <br> UPES, India<br><br>
-<strong> Dr. Sandeep Chand Kumain</strong> <br> UPES, India<br><br>
-<strong> Dr. Sanjay Kumar Biswash</strong> <br> UPES, India<br><br>
-<strong> Dr. Sanjeev Kumar</strong> <br> UPES, India<br><br>
-<strong> Dr. Saroj Snehal Shivagunde</strong> <br> UPES, India<br><br>
-<strong> Dr. Shantanu Agnihotri</strong> <br> UPES, India<br><br>
-<strong> Dr. Shaurya Gupta</strong> <br> UPES, India<br><br>
-<strong> Dr. Shiladitya Bhattacharjee</strong> <br> UPES, India<br><br>
-<strong> Dr. Shresth Gupta</strong> <br> UPES, India<br><br>
-<strong> Dr. Sk Tausif Rahman</strong> <br> UPES, India<br><br>
-<strong> Dr. Sonal Talreja</strong> <br> UPES, India<br><br>
-<strong> Dr. Soumen Das</strong> <br> UPES, India<br><br>
-<strong> Dr. Soumik Maity</strong> <br> UPES, India<br><br>
-<strong> Dr. Subhranil Das</strong> <br> UPES, India<br><br>
-<strong> Dr. Sumit Singh</strong> <br> UPES, India<br><br>
-<strong> Dr. Suneet Kumar Gupta</strong> <br> UPES, India<br><br>
-<strong> Dr. Supreet Singh</strong> <br> UPES, India<br><br>
-<strong> Dr. Surender Varma Gadhiraju</strong> <br> UPES, India<br><br>
-<strong> Dr. Suvojit Dhara</strong> <br> UPES, India<br><br>
-<strong> Dr. Swati Rastogi</strong> <br> UPES, India<br><br>
-<strong> Dr. Syed Sajid Hussain</strong> <br> UPES, India<br><br>
-<strong> Dr. Touseef Iqbal</strong> <br> UPES, India<br><br>
-<strong> Dr. Upasana </strong> <br> UPES, India<br><br>
-<strong> Dr. Vibhu Jately</strong> <br> UPES, India<br><br>
-<strong> Dr. Vinamrata Rani</strong> <br> UPES, India<br><br>
-<strong> Dr. Vishal Kumar Lohan</strong> <br> UPES, India<br><br>
-<strong> Dr. Vishal Sharma</strong> <br> UPES, India<br><br>
-<strong> Dr. Yeshwant Singh</strong> <br> UPES, India<br><br>
-
-			 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>	
- 
- 
-<div class="container">
-    <div class="row gy-1" style="margin-top: 20px;">
-        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-content ps-0 ps-lg-3 color-changing-border">
-               
-                <div class="row text-center">
-                    <div class="col-md-12">
-                         <i class="bi bi-bank2" style="font-size: 1.5rem; margin-right: 10px;"></i>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUiEY5FeQT50T6F9Rilry6GYVwBlFngahdzjoOQXKohQqkSA/viewform" target="_blank" style="text-decoration: none; color: #007bff; font-weight: bold;">
-            Join the Team as Technical Program Committee (TPC) or Reviewer Panel  </a>
-					   			  
-                    </div>
-					
-					
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-    </section><!-- /About Section -->
-	
- 
- 
- 
- 
-
-    </section><!-- /About Section -->
-	    
-	
-
-
-
-  </main>
-
-  <footer id="footer" class="footer">
-
-
-    <div class="container footer-top">
-     <div class="row gy-4">
-	 <div class="col-lg-4 col-md-12">
-                     
-
-                
-                <span class="sitename">
-                <a href="https://upes.ac.in" class="logo d-flex align-items-center"> <img src="assets/img/team/team-5.jpg" class="img-fluid" alt=""> </a> </span>
-                     
-          </div><!-- End Team Member -->
-		  
-		  
-        <div class="col-lg-4 col-md-12">
-          <h4>About</h4>
-          <span class="sitename"> <p class="text-justify"> <b> NIRF Ranking 2024 </b> <br>
-As per the National Institutional Ranking Framework (NIRF) 2024, the Ministry of Education, India, UPES has been ranked 46, with a rank of 42 in engineering, 41 in management and 28 in law.</p>
-
-</span>
-        </div>
-
-        <div class="col-lg-4 col-md-12">
-          <h4>Contact Us</h4>
-          <span class="sitename">
-          <p class="text-justify">
-Contact UPES, Bidholi Campus, Dehradun
-P.O. Bidholi Via Premnagar,
-Dehradun-248007 </p>
-<p><strong>Email:</strong> <span><a href="mailto:conference_socs@ddn.upes.ac.in">conference_socs@ddn.upes.ac.in</a></span></p>
-
-</span>
-        </div>
-
       </div>
-    
-	
 
-    <div class="container copyright text-center mt-4">
-      <p> Copyright ©  <strong class="px-1 sitename">ICACSDF2025</strong></p>
-       </div>
+      <div class="col-lg-4">
+      <h6 class="fw-bold text-white">About</h6>
+<h6 class="fw-bold text-white">About</h6>
+<p class="small mb-2">
+  <strong>Academic Excellence</strong><br>
+  UPES is ranked <strong>No. 1 Private University in Academic Reputation</strong> by QS.
+  It is placed <strong>239 globally</strong> in Engineering & Technology and
+  <strong>312 globally</strong> in Social Sciences & Management.
+  <br>
+  In India, UPES is ranked <strong>45</strong> by NIRF.
+  THE World University Rankings 2025 place UPES at
+  <strong>7th in India</strong> and among the <strong>Top 500 globally</strong>.
+  Shanghai Ranking lists UPES in the <strong>Top 150 worldwide</strong>.
+</p>
+
+
+
+        <h6 class="fw-bold text-white mt-4">Contact Us</h6>
+        <p class="small mb-2">
+          Contact UPES, Bidholi Campus, Dehradun<br>
+          P.O. Bidholi Via Premnagar, Dehradun-248007
+        </p>
+        <p class="small mb-0">
+          <a href="mailto:conference_socs@ddn.upes.ac.in"> <i class="fa-solid fa-envelope me-2"></i>conference_socs@ddn.upes.ac.in </a>
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+        <h6 class="fw-bold text-white">Important Dates</h6>
+        <div class="small">
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Paper Submission Opens</strong></span>
+            <span class="text-end">01 March 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Submission Deadline</strong></span>
+            <span class="text-end">30 June 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Notification of Acceptance</strong></span>
+            <span class="text-end">25 July 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Camera Ready Submission</strong></span>
+            <span class="text-end">15 August 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Last Date of Registration</strong></span>
+            <span class="text-end">25 August 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 pt-2">
+            <span><strong>Conference Date</strong></span>
+            <span class="text-end">11–12 September 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <hr class="border-light opacity-25 mt-4">
+
+<div class="d-flex justify-content-between align-items-center">
+  <p class="small mb-0 text-start">
+    <strong>&copy; 2026 ICACSDF</strong>. All Rights Reserved.
+  </p>
+
+  <p class="small mb-0 text-end">
+    Design and Developed by:
+    <a href="https://edcatalyst.in" target="_blank" rel="noopener noreferrer">
+      <strong>Edcatalyst.in</strong>
+    </a>
+  </p>
 </div>
-  </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+</footer>
 
-  
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
- <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+<script>
+/* ===============================
+   1) COUNTDOWN TIMER
+   Conference starts: 11 Sep 2026 09:00 IST
+   11 Sep 2026 09:00 IST = 11 Sep 2026 03:30 UTC
+================================ */
+(function(){
+  const targetUTC = Date.UTC(2026, 8, 11, 3, 30, 0); // 8 = September
+  const elDays  = document.getElementById("cd-days");
+  const elHours = document.getElementById("cd-hours");
+  const elMins  = document.getElementById("cd-mins");
+  const elSecs  = document.getElementById("cd-secs");
+
+  function pad(n){ return String(n).padStart(2, "0"); }
+
+  function tick(){
+    const now = Date.now();
+    let diff = targetUTC - now;
+
+    if(diff <= 0){
+      elDays.textContent  = "00";
+      elHours.textContent = "00";
+      elMins.textContent  = "00";
+      elSecs.textContent  = "00";
+      return;
+    }
+
+    const totalSeconds = Math.floor(diff / 1000);
+    const days = Math.floor(totalSeconds / (3600 * 24));
+    const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+    const mins = Math.floor((totalSeconds % 3600) / 60);
+    const secs = totalSeconds % 60;
+
+    elDays.textContent  = String(days);
+    elHours.textContent = pad(hours);
+    elMins.textContent  = pad(mins);
+    elSecs.textContent  = pad(secs);
+  }
+
+  tick();
+  setInterval(tick, 1000);
+})();
+
+/* ===============================
+   2) BASIC “NO RIGHT CLICK / INSPECT”
+   NOTE: This is NOT real protection.
+================================ */
+(function(){
+  document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+  }, { passive: false });
+
+  document.addEventListener("keydown", function(e){
+    const key = e.key.toLowerCase();
+
+    if (e.key === "F12") { e.preventDefault(); return false; }
+    if (e.ctrlKey && e.shiftKey && (key === "i" || key === "j" || key === "c")) { e.preventDefault(); return false; }
+    if (e.ctrlKey && key === "u") { e.preventDefault(); return false; }
+    if (e.ctrlKey && key === "s") { e.preventDefault(); return false; }
+  }, { passive: false });
+})();
+</script>
 
 </body>
-
 </html>

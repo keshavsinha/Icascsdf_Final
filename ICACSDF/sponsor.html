@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Sponsors | ICACSDF 2026 | UPES Dehradun</title>
+<meta name="description" content="ICACSDF 2026 Sponsors — UPES Dehradun. Sponsored by IEEE UP Section. 11–12 September 2026.">
+<meta name="keywords" content="ICACSDF 2026, Sponsors, UPES, IEEE UP Section, Cyber Security, Digital Forensics, Uttarakhand">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --sky:#1e88e5;
+    --forest:#0b5d3b;
+    --slate:#0f172a;
+    --sun:#f59e0b;
+    --snow:#f8fafc;
+  }
+
+  body{
+    font-family:'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    color:#0b1220;
+    background:
+      radial-gradient(900px 500px at 10% 0%, rgba(30,136,229,.10), transparent 60%),
+      radial-gradient(900px 600px at 90% 20%, rgba(11,93,59,.10), transparent 60%),
+      linear-gradient(180deg, #ffffff, #f6fbff);
+  }
+
+  /* Top bar */
+  .top-bar{
+    background: linear-gradient(90deg, var(--slate), #0b2a1b);
+    color: rgba(255,255,255,.92);
+    font-size:.92rem;
+  }
+  .top-bar a{ color: rgba(255,255,255,.92); text-decoration:none; }
+  .top-bar a:hover{ color:#fff; text-decoration: underline; }
+
+  /* Navbar */
+  .navbar{
+    background: rgba(255,255,255,.88) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(15,23,42,.08);
+  }
+  .navbar-brand{ font-weight: 800; letter-spacing:.2px; }
+  .brand-pill{
+    display:inline-flex;
+    align-items:center;
+    gap:.55rem;
+    padding:.45rem .75rem;
+    border-radius:999px;
+    background: linear-gradient(135deg, rgba(30,136,229,.10), rgba(11,93,59,.10));
+    border: 1px solid rgba(15,23,42,.10);
+  }
+
+  /* Logos */
+  .brand-logos{ display:flex; align-items:center; gap:14px; }
+  .brand-logos img{
+    height:44px; width:auto; object-fit:contain;
+    filter: drop-shadow(0 8px 18px rgba(2,6,23,.10));
+  }
+  .brand-logos .logo-divider{ width:1px; height:28px; background: rgba(15,23,42,.15); }
+  @media (max-width: 992px){ .brand-logos img{ height:38px; } }
+
+  /* Hero */
+  .hero{
+    position: relative;
+    overflow: hidden;
+    padding: 86px 0 52px;
+  }
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.32), rgba(255,255,255,.95)),
+      url("https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1800&q=80");
+    background-size: cover;
+    background-position: center;
+    pointer-events:none;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;
+    left:0; right:0; bottom:-2px;
+    height:160px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200' preserveAspectRatio='none'%3E%3Cpath d='M0 160 L120 120 L220 150 L340 80 L420 140 L520 60 L640 145 L760 90 L860 160 L980 110 L1200 160 L1200 200 L0 200 Z' fill='%230b5d3b' opacity='0.20'/%3E%3Cpath d='M0 170 L140 130 L250 165 L360 105 L460 155 L560 75 L680 165 L820 115 L940 175 L1200 135 L1200 200 L0 200 Z' fill='%231e88e5' opacity='0.14'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events:none;
+  }
+  .hero .container{ position:relative; z-index:1; }
+
+  .chip{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    padding:.45rem .85rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,.88);
+    border: 1px solid rgba(15,23,42,.10);
+    color: var(--slate);
+    font-weight: 800;
+    font-size: .92rem;
+  }
+  .chip i{ color: var(--forest); }
+
+  .hero-title{
+    font-weight: 950;
+    line-height: 1.12;
+    color: var(--slate);
+    text-shadow: 0 10px 35px rgba(2,6,23,.12);
+  }
+  .hero-lead{
+    color: rgba(15,23,42,.78);
+    max-width: 980px;
+    margin-inline: auto;
+  }
+
+  .btn-saffron{
+    background: linear-gradient(135deg, var(--sun), #ffb020);
+    border:0;
+    color:#1f2937;
+    font-weight: 900;
+  }
+  .btn-saffron:hover{
+    filter: brightness(1.03);
+    box-shadow: 0 0 0 6px rgba(245,158,11,.18);
+  }
+  .btn-forest{
+    background: linear-gradient(135deg, var(--forest), #0a7a4b);
+    border:0;
+    color:#fff;
+    font-weight: 900;
+  }
+  .btn-forest:hover{
+    filter: brightness(1.03);
+    box-shadow: 0 0 0 6px rgba(11,93,59,.16);
+  }
+  .btn-outline-sky{
+    border: 2px solid rgba(30,136,229,.55);
+    color: var(--slate);
+    font-weight: 900;
+  }
+  .btn-outline-sky:hover{ background: rgba(30,136,229,.10); }
+
+  .section-title{ font-weight: 950; color: var(--slate); }
+  .section-subtitle{
+    color: rgba(15,23,42,.70);
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .soft-panel{
+    background: rgba(255,255,255,.92);
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 20px;
+    box-shadow: 0 16px 40px rgba(2,6,23,.06);
+  }
+
+  .icon-badge{
+    width: 44px; height: 44px;
+    border-radius: 14px;
+    display:flex; align-items:center; justify-content:center;
+    background: linear-gradient(135deg, rgba(30,136,229,.12), rgba(11,93,59,.12));
+    border: 1px solid rgba(15,23,42,.10);
+    color: var(--forest);
+  }
+
+  /* Countdown */
+  .countdown-wrap{
+    max-width: 980px;
+    margin: 16px auto 0;
+    background: rgba(255,255,255,.82);
+    border: 1px solid rgba(15,23,42,.10);
+    border-radius: 18px;
+    padding: 18px 18px;
+    backdrop-filter: blur(10px);
+  }
+  .countdown-label{ font-weight: 950; color: var(--slate); }
+  .count-box{
+    background: #fff;
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 16px;
+    padding: 14px 10px;
+    box-shadow: 0 12px 28px rgba(2,6,23,.06);
+  }
+  .count-num{
+    font-size: 1.55rem;
+    font-weight: 950;
+    color: var(--forest);
+    line-height: 1;
+  }
+  .count-text{
+    font-size: .85rem;
+    color: rgba(15,23,42,.65);
+    margin-top: 4px;
+    font-weight: 850;
+  }
+
+  /* Sponsor tier cards */
+  .tier-card{
+    background: #fff;
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 20px;
+    padding: 18px;
+    height: 100%;
+    box-shadow: 0 14px 34px rgba(2,6,23,.06);
+    position: relative;
+    overflow: hidden;
+  }
+  .tier-card::before{
+    content:"";
+    position:absolute;
+    inset:-40px -40px auto auto;
+    width: 160px;
+    height: 160px;
+    border-radius: 999px;
+    background: radial-gradient(circle at 30% 30%, rgba(245,158,11,.18), rgba(30,136,229,.10), transparent 60%);
+  }
+  .tier-title{
+    font-weight: 950;
+    color: var(--slate);
+    margin: 0;
+  }
+  .tier-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding: 7px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(15,23,42,.10);
+    background: rgba(255,255,255,.90);
+    font-weight: 950;
+    font-size: .88rem;
+  }
+  .tier-tag i{ color: var(--forest); }
+
+  .list-check{
+    margin:0;
+    padding-left: 1.1rem;
+    color: rgba(15,23,42,.78);
+    line-height: 1.75;
+    font-weight: 650;
+  }
+  .list-check li{ margin-bottom: 6px; }
+  .list-check i{ color: var(--forest); margin-right: .55rem; }
+
+  /* Sponsor logos grid */
+  .logo-tile{
+    background:#fff;
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 18px;
+    padding: 16px;
+    height: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow: 0 12px 26px rgba(2,6,23,.05);
+  }
+  .logo-tile img{
+    max-height: 54px;
+    width:auto;
+    max-width: 100%;
+    object-fit:contain;
+    filter: drop-shadow(0 8px 18px rgba(2,6,23,.08));
+  }
+
+  footer{
+    background: linear-gradient(90deg, var(--slate), #0b2a1b);
+    color: rgba(255,255,255,.85);
+  }
+  footer a{ color: rgba(255,255,255,.85); text-decoration:none; }
+  footer a:hover{ color:#fff; text-decoration: underline; }
+  .footer-date-row{
+    border-bottom: 1px solid rgba(255,255,255,.20);
+    padding: .55rem 0;
+  }
+
+  .offcanvas{ background:#ffffff; }
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar py-2">
+  <div class="container d-flex justify-content-between flex-wrap gap-2">
+    <div class="small">
+      <i class="fa-solid fa-calendar-days"></i> <strong>11–12 September 2026</strong> &nbsp;|&nbsp;
+      <i class="fa-solid fa-location-dot"></i> UPES Dehradun, Uttarakhand &nbsp;|&nbsp;
+      <!-- <i class="fa-solid fa-globe"></i> Hybrid Conference -->
+    </div>
+    <div class="small">
+      <span class="me-3"><i class="fa-solid fa-certificate"></i> Sponsored by <strong>IEEE UP Section</strong></span>
+      <a href="mailto:conference_socs@ddn.upes.ac.in"> <i class="fa-solid fa-envelope me-2"></i>conference_socs@ddn.upes.ac.in </a>
+         
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <span class="brand-pill">
+        <i class="fa-solid fa-mountain-sun text-success"></i>
+        ICACSDF 2026
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto gap-lg-2 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
+        <li class="nav-item"><a class="nav-link" href="conferencetheme.html">Conference Themes</a></li>
+        <li class="nav-item"><a class="nav-link" href="committee.html">Committee</a></li>
+        <li class="nav-item"><a class="nav-link" href="registration.html">Registration</a></li>
+        <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+        <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
+		<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+        <!-- ✅ LOGOS (Best place: navbar right side) -->
+        <li class="nav-item ms-lg-3 d-none d-lg-block">
+          <div class="brand-logos">
+            <div class="logo-divider"></div>
+            <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- OFFCANVAS MOBILE MENU -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title fw-bold">ICACSDF 2026</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  
+  <div class="offcanvas-body">
+    <!-- ✅ Logos in mobile -->
+    <div class="d-flex align-items-center gap-3 mb-3">
+      <img src="assets/upes-logo.png" alt="UPES Logo" style="height:40px;width:auto;">
+      <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo" style="height:40px;width:auto;">
+    </div>
+
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html"><strong>Home</strong></a></li>
+      <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
+      <li class="nav-item"><a class="nav-link" href="conferencetheme.html">Conference Themes</a></li>
+      <li class="nav-item"><a class="nav-link" href="committee.html">Committee</a></li>
+      <li class="nav-item"><a class="nav-link" href="registration.html">Registration</a></li>
+      <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+      <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+    <hr>
+    <div class="small text-muted">
+      Sponsored by <strong>IEEE UP Section</strong>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero text-center">
+  <div class="container">
+    <div class="chip mb-3">
+      <i class="fa-solid fa-handshake"></i>
+      Sponsors & Partners • ICACSDF 2026 • UPES Dehradun
+    </div>
+
+    <h1 class="display-5 hero-title mb-3">Sponsors</h1>
+
+    <p class="lead hero-lead mb-3">
+      ICACSDF 2026 is sponsored by <strong>IEEE UP Section</strong>. We welcome industry, government, and academic partners
+      to support this conference and engage with the cybersecurity & digital forensics community.
+    </p>
+
+    <div class="d-flex justify-content-center flex-wrap gap-2 mb-3">
+      <a href="#become" class="btn btn-saffron btn-lg"><i class="fa-solid fa-rocket me-2"></i>Become a Sponsor</a>
+      <a href="#tiers" class="btn btn-forest btn-lg"><i class="fa-solid fa-layer-group me-2"></i>View Sponsorship Tiers</a>
+      <a href="mailto:conference_socs@ddn.upes.ac.in" class="btn btn-outline-sky btn-lg">
+        <i class="fa-solid fa-envelope me-2"></i>Contact Sponsorship Desk
+      </a>
+    </div>
+
+    <!-- Countdown -->
+    <div class="countdown-wrap">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+        <div class="countdown-label">
+          <i class="fa-solid fa-stopwatch me-2"></i> Countdown to ICACSDF 2026
+        </div>
+        <div class="small text-muted">
+          Conference starts: <strong>11 September 2026</strong>
+        </div>
+      </div>
+
+      <div class="row g-2 g-md-3">
+        <div class="col-6 col-md-3">
+          <div class="count-box">
+            <div class="count-num" id="cd-days">--</div>
+            <div class="count-text">Days</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="count-box">
+            <div class="count-num" id="cd-hours">--</div>
+            <div class="count-text">Hours</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="count-box">
+            <div class="count-num" id="cd-mins">--</div>
+            <div class="count-text">Minutes</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="count-box">
+            <div class="count-num" id="cd-secs">--</div>
+            <div class="count-text">Seconds</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-3 small text-muted">
+        Interested in visibility at ICACSDF 2026? Email <strong>conference_socs@ddn.upes.ac.in</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURRENT SPONSOR STRIP -->
+<section class="py-5">
+  <div class="container">
+    <div class="soft-panel p-4 p-lg-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <div class="icon-badge"><i class="fa-solid fa-certificate"></i></div>
+            <h2 class="section-title mb-0">Official Sponsor</h2>
+          </div>
+          <p class="mb-0" style="color: rgba(15,23,42,.78); line-height: 1.85; font-weight: 650;">
+            <strong>IEEE UP Section</strong> supports ICACSDF 2026 to strengthen research, collaboration, and innovation
+            across cybersecurity and digital forensics.
+          </p>
+        </div>
+        <div class="col-lg-5">
+          <div class="d-flex justify-content-center justify-content-lg-end align-items-center gap-3 flex-wrap">
+            <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo" style="height:58px;width:auto;">
+            <img src="assets/upes-logo.png" alt="UPES Logo" style="height:58px;width:auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY SPONSOR -->
+<section class="py-5" style="background: linear-gradient(180deg, #f8fafc, #eef6ff);">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">Why Sponsor ICACSDF 2026?</h2>
+      <p class="section-subtitle">
+        Sponsorship offers meaningful engagement with researchers, students, and industry professionals.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="soft-panel p-4 h-100">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <div class="icon-badge"><i class="fa-solid fa-bullhorn"></i></div>
+            <h6 class="mb-0 fw-bold" style="color:var(--slate);">High Visibility</h6>
+          </div>
+          <div class="text-muted fw-bold">
+            Brand exposure on the conference website, banners, stage screens, and digital promotions.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="soft-panel p-4 h-100">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <div class="icon-badge"><i class="fa-solid fa-people-group"></i></div>
+            <h6 class="mb-0 fw-bold" style="color:var(--slate);">Direct Networking</h6>
+          </div>
+          <div class="text-muted fw-bold">
+            Connect with authors, keynote speakers, and participants working on real security problems.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="soft-panel p-4 h-100">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <div class="icon-badge"><i class="fa-solid fa-briefcase"></i></div>
+            <h6 class="mb-0 fw-bold" style="color:var(--slate);">Hiring & Talent</h6>
+          </div>
+          <div class="text-muted fw-bold">
+            Engage with students and researchers for internships, placements, and collaborations.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="soft-panel p-4 h-100">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <div class="icon-badge"><i class="fa-solid fa-microphone-lines"></i></div>
+            <h6 class="mb-0 fw-bold" style="color:var(--slate);">Speaking Opportunities</h6>
+          </div>
+          <div class="text-muted fw-bold">
+            Sponsor talks, panel sessions, workshops, and product showcases (as per package).
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="soft-panel p-4 h-100">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <div class="icon-badge"><i class="fa-solid fa-shield-halved"></i></div>
+            <h6 class="mb-0 fw-bold" style="color:var(--slate);">Thought Leadership</h6>
+          </div>
+          <div class="text-muted fw-bold">
+            Position your organization at the forefront of cyber defense and digital investigation.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="soft-panel p-4 h-100">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <div class="icon-badge"><i class="fa-solid fa-handshake-angle"></i></div>
+            <h6 class="mb-0 fw-bold" style="color:var(--slate);">Partnerships</h6>
+          </div>
+          <div class="text-muted fw-bold">
+            Create joint research, product collaborations, MoUs, and industry-academia initiatives.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPONSOR TIERS -->
+<section id="tiers" class="py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">Sponsorship Tiers</h2>
+      <p class="section-subtitle">
+        Use these tiers as a clean structure. Replace benefits or add pricing once finalized.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="tier-card">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="tier-title"><i class="fa-solid fa-crown me-2 text-warning"></i>Title Sponsor</h5>
+            <span class="tier-tag"><i class="fa-solid fa-star"></i> Highest Visibility</span>
+          </div>
+          <hr style="opacity:.12;">
+          <ul class="list-check">
+            <li><i class="fa-solid fa-check-circle"></i>Logo on all major branding (stage, website, backdrops)</li>
+            <li><i class="fa-solid fa-check-circle"></i>Keynote/featured session slot (as approved)</li>
+            <li><i class="fa-solid fa-check-circle"></i>Premium exhibition booth</li>
+            <li><i class="fa-solid fa-check-circle"></i>Top placement in all promotions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="tier-card">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="tier-title"><i class="fa-solid fa-gem me-2 text-success"></i>Platinum Sponsor</h5>
+            <span class="tier-tag"><i class="fa-solid fa-bullhorn"></i> Strong Branding</span>
+          </div>
+          <hr style="opacity:.12;">
+          <ul class="list-check">
+            <li><i class="fa-solid fa-check-circle"></i>Logo on website & banners</li>
+            <li><i class="fa-solid fa-check-circle"></i>Session sponsorship / panel branding</li>
+            <li><i class="fa-solid fa-check-circle"></i>Exhibition booth</li>
+            <li><i class="fa-solid fa-check-circle"></i>Social media promotions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="tier-card">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="tier-title"><i class="fa-solid fa-medal me-2 text-warning"></i>Gold Sponsor</h5>
+            <span class="tier-tag"><i class="fa-solid fa-eye"></i> Visibility</span>
+          </div>
+          <hr style="opacity:.12;">
+          <ul class="list-check">
+            <li><i class="fa-solid fa-check-circle"></i>Logo placement on website & venue</li>
+            <li><i class="fa-solid fa-check-circle"></i>Brand mention during sessions</li>
+            <li><i class="fa-solid fa-check-circle"></i>Booth / desk (as per availability)</li>
+            <li><i class="fa-solid fa-check-circle"></i>Promotional inserts in kit</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="tier-card">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="tier-title"><i class="fa-solid fa-award me-2 text-success"></i>Silver Sponsor</h5>
+            <span class="tier-tag"><i class="fa-solid fa-badge-check"></i> Support</span>
+          </div>
+          <hr style="opacity:.12;">
+          <ul class="list-check">
+            <li><i class="fa-solid fa-check-circle"></i>Logo on website sponsor section</li>
+            <li><i class="fa-solid fa-check-circle"></i>Brand mention in acknowledgements</li>
+            <li><i class="fa-solid fa-check-circle"></i>Option to provide standees (approved)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="tier-card">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="tier-title"><i class="fa-solid fa-school me-2 text-success"></i>Academic Partner</h5>
+            <span class="tier-tag"><i class="fa-solid fa-graduation-cap"></i> Academia</span>
+          </div>
+          <hr style="opacity:.12;">
+          <ul class="list-check">
+            <li><i class="fa-solid fa-check-circle"></i>Institution logo on website</li>
+            <li><i class="fa-solid fa-check-circle"></i>Student participation support (as applicable)</li>
+            <li><i class="fa-solid fa-check-circle"></i>Collaboration opportunities with UPES</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="tier-card">
+          <div class="d-flex justify-content-between align-items-start gap-2">
+            <h5 class="tier-title"><i class="fa-solid fa-rocket me-2 text-success"></i>Startup / Community Partner</h5>
+            <span class="tier-tag"><i class="fa-solid fa-users"></i> Community</span>
+          </div>
+          <hr style="opacity:.12;">
+          <ul class="list-check">
+            <li><i class="fa-solid fa-check-circle"></i>Logo + partner mention</li>
+            <li><i class="fa-solid fa-check-circle"></i>Community booth (subject to space)</li>
+            <li><i class="fa-solid fa-check-circle"></i>Social media shoutouts</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <p class="small text-muted fw-bold mb-2">
+        Pricing & exact deliverables can be updated once the sponsorship brochure is finalized.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CURRENT / FUTURE SPONSORS GRID -->
+<section class="py-5" style="background: linear-gradient(180deg, #f8fafc, #eef6ff);">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">Sponsors & Partners</h2>
+
+    </div>
+
+    <div class="row g-3">
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="logo-tile">
+          <img src="assets/ieee-up-logo.png" alt="IEEE UP Section">
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="logo-tile">
+          <img src="assets/upes-logo.png" alt="UPES">
+        </div>
+      </div>
+
+      <!-- Placeholders (replace with real sponsors) -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="logo-tile">
+          <div class="text-muted fw-bold text-center">
+            <i class="fa-solid fa-image me-2"></i> Sponsor Logo
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="logo-tile">
+          <div class="text-muted fw-bold text-center">
+            <i class="fa-solid fa-image me-2"></i> Sponsor Logo
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="logo-tile">
+          <div class="text-muted fw-bold text-center">
+            <i class="fa-solid fa-image me-2"></i> Partner Logo
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="logo-tile">
+          <div class="text-muted fw-bold text-center">
+            <i class="fa-solid fa-image me-2"></i> Partner Logo
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="logo-tile">
+          <div class="text-muted fw-bold text-center">
+            <i class="fa-solid fa-image me-2"></i> Sponsor Logo
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="logo-tile">
+          <div class="text-muted fw-bold text-center">
+            <i class="fa-solid fa-image me-2"></i> Sponsor Logo
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CURRENT / FUTURE SPONSORS GRID -->
+<section class="py-5" style="background: linear-gradient(180deg, #f8fafc, #eef6ff);">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">Media Partners</h2>
+
+    </div>
+
+    <div class="row g-3">
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="logo-tile">
+          <img src="assets/cws.png" alt="CWS">
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="logo-tile">
+          <img src="assets/upes-logo.png" alt="UPES">
+        </div>
+      </div>
+
+      <!-- Placeholders (replace with real sponsors) -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="logo-tile">
+          <div class="text-muted fw-bold text-center">
+            <i class="fa-solid fa-image me-2"></i> Sponsor Logo
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="logo-tile">
+          <div class="text-muted fw-bold text-center">
+            <i class="fa-solid fa-image me-2"></i> Sponsor Logo
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="logo-tile">
+          <div class="text-muted fw-bold text-center">
+            <i class="fa-solid fa-image me-2"></i> Partner Logo
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="logo-tile">
+          <div class="text-muted fw-bold text-center">
+            <i class="fa-solid fa-image me-2"></i> Partner Logo
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="logo-tile">
+          <div class="text-muted fw-bold text-center">
+            <i class="fa-solid fa-image me-2"></i> Sponsor Logo
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="logo-tile">
+          <div class="text-muted fw-bold text-center">
+            <i class="fa-solid fa-image me-2"></i> Sponsor Logo
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BECOME A SPONSOR -->
+<section id="become" class="py-5">
+  <div class="container">
+    <div class="soft-panel p-4 p-lg-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-8">
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <div class="icon-badge"><i class="fa-solid fa-handshake-angle"></i></div>
+            <h2 class="section-title mb-0">Become a Sponsor</h2>
+          </div>
+          <p class="mb-0" style="color: rgba(15,23,42,.78); line-height: 1.85; font-weight: 650;">
+            To sponsor ICACSDF 2026, please contact the organizing team. We will share the sponsorship brochure,
+            tier details, and branding deliverables.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <a class="btn btn-saffron btn-lg" href="mailto:conference_socs@ddn.upes.ac.in">
+              <i class="fa-solid fa-envelope me-2"></i>Email Sponsorship Desk
+            </a>
+            <a class="btn btn-forest btn-lg" href="#">
+              <i class="fa-solid fa-file-arrow-down me-2"></i>Download Sponsorship Brochure
+            </a>
+          </div>
+
+          <div class="small text-muted fw-bold mt-3">
+            Replace “Download Sponsorship Brochure” with your PDF link (example: <code>assets/ICACSDF2026_Sponsorship.pdf</code>)
+          </div>
+        </div>
+
+        <div class="col-lg-4 text-center">
+          <div class="p-3 bg-white rounded-4 border" style="border-color: rgba(15,23,42,.10) !important;">
+            <div class="fw-bold" style="color: var(--slate);">
+              <i class="fa-solid fa-phone-volume me-2 text-success"></i>Quick Contact
+            </div>
+            <div class="mt-2 fw-bold text-muted">
+              conference_socs@ddn.upes.ac.in
+            </div>
+            <div class="small text-muted mt-2 fw-bold">
+              UPES, Bidholi Campus, Dehradun
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (same as index) -->
+<!-- FOOTER -->
+<footer class="pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-4">
+      <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
+          
+          <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo" style="height:42px;width:auto;">
+        </div> 
+	   <h5 class="fw-bold text-white">ICACSDF 2026</h5>
+        <p class="mb-2">
+          School of Computer Science, UPES Dehradun, Uttarakhand
+        </p>
+
+        <!-- ✅ Footer logos -->
+        
+
+        <div class="small">
+          <div class="mb-2">
+            <i class="fa-solid fa-calendar-days me-2"></i> <strong>11–12 September 2026</strong>
+          </div>
+          <div>
+            <i class="fa-solid fa-certificate me-2"></i> Sponsored by <strong>IEEE UP Section</strong>
+          </div>
+          <div class="mt-2">
+            <div class="mt-2"><i class="fa-solid fa-globe me-2"></i>  <a href = "https://2025.icacsdf.org/"> <strong> ICACSDF2025 Conference </strong> </a> </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+      <h6 class="fw-bold text-white">About</h6>
+<h6 class="fw-bold text-white">About</h6>
+<p class="small mb-2">
+  <strong>Academic Excellence</strong><br>
+  UPES is ranked <strong>No. 1 Private University in Academic Reputation</strong> by QS.
+  It is placed <strong>239 globally</strong> in Engineering & Technology and
+  <strong>312 globally</strong> in Social Sciences & Management.
+  <br>
+  In India, UPES is ranked <strong>45</strong> by NIRF.
+  THE World University Rankings 2025 place UPES at
+  <strong>7th in India</strong> and among the <strong>Top 500 globally</strong>.
+  Shanghai Ranking lists UPES in the <strong>Top 150 worldwide</strong>.
+</p>
+
+
+
+        <h6 class="fw-bold text-white mt-4">Contact Us</h6>
+        <p class="small mb-2">
+          Contact UPES, Bidholi Campus, Dehradun<br>
+          P.O. Bidholi Via Premnagar, Dehradun-248007
+        </p>
+        <p class="small mb-0">
+          <a href="mailto:conference_socs@ddn.upes.ac.in"> <i class="fa-solid fa-envelope me-2"></i>conference_socs@ddn.upes.ac.in </a>
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+        <h6 class="fw-bold text-white">Important Dates</h6>
+        <div class="small">
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Paper Submission Opens</strong></span>
+            <span class="text-end">01 March 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Submission Deadline</strong></span>
+            <span class="text-end">30 June 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Notification of Acceptance</strong></span>
+            <span class="text-end">25 July 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Camera Ready Submission</strong></span>
+            <span class="text-end">15 August 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Last Date of Registration</strong></span>
+            <span class="text-end">25 August 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 pt-2">
+            <span><strong>Conference Date</strong></span>
+            <span class="text-end">11–12 September 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <hr class="border-light opacity-25 mt-4">
+
+<div class="d-flex justify-content-between align-items-center">
+  <p class="small mb-0 text-start">
+    <strong>&copy; 2026 ICACSDF</strong>. All Rights Reserved.
+  </p>
+
+  <p class="small mb-0 text-end">
+    Design and Developed by:
+    <a href="https://edcatalyst.in" target="_blank" rel="noopener noreferrer">
+      <strong>Edcatalyst.in</strong>
+    </a>
+  </p>
+</div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+/* ===============================
+   1) COUNTDOWN TIMER
+   Conference starts: 11 Sep 2026 09:00 IST
+   11 Sep 2026 09:00 IST = 11 Sep 2026 03:30 UTC
+================================ */
+(function(){
+  const targetUTC = Date.UTC(2026, 8, 11, 3, 30, 0);
+  const elDays  = document.getElementById("cd-days");
+  const elHours = document.getElementById("cd-hours");
+  const elMins  = document.getElementById("cd-mins");
+  const elSecs  = document.getElementById("cd-secs");
+
+  function pad(n){ return String(n).padStart(2, "0"); }
+
+  function tick(){
+    const now = Date.now();
+    let diff = targetUTC - now;
+
+    if(diff <= 0){
+      elDays.textContent  = "00";
+      elHours.textContent = "00";
+      elMins.textContent  = "00";
+      elSecs.textContent  = "00";
+      return;
+    }
+
+    const totalSeconds = Math.floor(diff / 1000);
+    const days = Math.floor(totalSeconds / (3600 * 24));
+    const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+    const mins = Math.floor((totalSeconds % 3600) / 60);
+    const secs = totalSeconds % 60;
+
+    elDays.textContent  = String(days);
+    elHours.textContent = pad(hours);
+    elMins.textContent  = pad(mins);
+    elSecs.textContent  = pad(secs);
+  }
+
+  tick();
+  setInterval(tick, 1000);
+})();
+
+/* ===============================
+   2) BASIC “NO RIGHT CLICK / INSPECT”
+   NOTE: This is NOT real protection.
+================================ */
+(function(){
+  document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+  }, { passive: false });
+
+  document.addEventListener("keydown", function(e){
+    const key = e.key.toLowerCase();
+
+    if (e.key === "F12") { e.preventDefault(); return false; }
+    if (e.ctrlKey && e.shiftKey && (key === "i" || key === "j" || key === "c")) { e.preventDefault(); return false; }
+    if (e.ctrlKey && key === "u") { e.preventDefault(); return false; }
+    if (e.ctrlKey && key === "s") { e.preventDefault(); return false; }
+  }, { passive: false });
+})();
+</script>
+
+</body>
+</html>
