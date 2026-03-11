@@ -165,6 +165,15 @@
     box-shadow: 0 16px 40px rgba(2,6,23,.06);
   }
 
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
   .icon-badge{
     width: 44px; height: 44px;
     border-radius: 14px;
@@ -755,14 +764,12 @@
         </div>
       </div>
 
-      <!-- Placeholders (replace with real sponsors) -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <div class="logo-tile">
-          <div class="text-muted fw-bold text-center">
-            <i class="fa-solid fa-image me-2"></i> Sponsor Logo
-          </div>
-        </div>
-      </div>
+<div class="col-6 col-md-4 col-lg-3">
+  <div class="logo-tile clickable" onclick="window.location.href='https://edcatalyst.in'">
+    <img src="assets/edc.png" alt="edcatalyst">
+  </div>
+</div>
+	  
       <div class="col-6 col-md-4 col-lg-3">
         <div class="logo-tile">
           <div class="text-muted fw-bold text-center">
