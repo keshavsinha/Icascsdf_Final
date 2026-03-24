@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Call for Special Sessions | ICACSDF 2026 | UPES Dehradun</title>
+<meta name="description" content="Call for Special Session Proposals: ICACSDF 2026 — International Conference on Advances in Cyber Security and Digital Forensics. UPES Dehradun. Sponsored by IEEE UP Section. 11–12 September 2026.">
+<meta name="keywords" content="ICACSDF 2026, Special Sessions, Call for Proposals, UPES, Dehradun, Uttarakhand, Cyber Security, Digital Forensics, IEEE UP Section">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --sky:#1e88e5;
+    --forest:#0b5d3b;
+    --slate:#0f172a;
+    --sun:#f59e0b;
+    --snow:#f8fafc;
+  }
+
+  body{
+    font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:#0b1220;
+    background:
+      radial-gradient(900px 500px at 10% 0%,rgba(30,136,229,.10),transparent 60%),
+      radial-gradient(900px 600px at 90% 20%,rgba(11,93,59,.10),transparent 60%),
+      linear-gradient(180deg,#ffffff,#f6fbff);
+  }
+
+  /* Top bar */
+  .top-bar{
+    background:linear-gradient(90deg,var(--slate),#0b2a1b);
+    color:rgba(255,255,255,.92); font-size:.85rem;
+    position:relative; z-index:1031;
+  }
+  .top-bar a{color:rgba(255,255,255,.92);text-decoration:none;}
+  .top-bar a:hover{color:#fff;text-decoration:underline;}
+
+  /* Navbar */
+  .navbar{
+    background:rgba(255,255,255,.95)!important;
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(15,23,42,.08);
+    position:sticky; top:0; z-index:1030;
+  }
+  .navbar-brand{font-weight:800;letter-spacing:.2px;}
+  .brand-pill{
+    display:inline-flex;align-items:center;gap:.55rem;
+    padding:.45rem .75rem;border-radius:999px;
+    background:linear-gradient(135deg,rgba(30,136,229,.10),rgba(11,93,59,.10));
+    border:1px solid rgba(15,23,42,.10);
+  }
+  .brand-logos{display:flex;align-items:center;gap:14px;}
+  .brand-logos img{height:44px;width:auto;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(2,6,23,.10));}
+  .brand-logos .logo-divider{width:1px;height:28px;background:rgba(15,23,42,.15);}
+  @media(max-width:992px){.brand-logos img{height:38px;}}
+
+  /* Offcanvas */
+  .offcanvas{background:#ffffff;}
+  .offcanvas .nav-link{padding:.6rem 0;font-weight:700;border-bottom:1px solid rgba(15,23,42,.06);}
+  .offcanvas .nav-link.active{color:var(--forest);}
+
+  /* Hero */
+  .hero{position:relative;overflow:hidden;padding:60px 0 54px;margin-top:0;}
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background:
+      linear-gradient(180deg,rgba(255,255,255,.30),rgba(255,255,255,.95)),
+      url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80");
+    background-size:cover;background-position:center;pointer-events:none;
+  }
+  .hero::after{
+    content:"";position:absolute;left:0;right:0;bottom:-2px;height:170px;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200' preserveAspectRatio='none'%3E%3Cpath d='M0 160 L120 120 L220 150 L340 80 L420 140 L520 60 L640 145 L760 90 L860 160 L980 110 L1200 160 L1200 200 L0 200 Z' fill='%230b5d3b' opacity='0.20'/%3E%3Cpath d='M0 170 L140 130 L250 165 L360 105 L460 155 L560 75 L680 165 L820 115 L940 175 L1200 135 L1200 200 L0 200 Z' fill='%231e88e5' opacity='0.14'/%3E%3C/svg%3E");
+    background-size:cover;background-repeat:no-repeat;pointer-events:none;
+  }
+  .hero .container{position:relative;z-index:1;}
+  .hero-title{font-weight:900;line-height:1.12;color:var(--slate);text-shadow:0 10px 35px rgba(2,6,23,.12);}
+  .hero-lead{color:rgba(15,23,42,.78);max-width:980px;margin-inline:auto;}
+
+  .chip{
+    display:inline-flex;align-items:center;gap:.5rem;
+    padding:.45rem .85rem;border-radius:999px;
+    background:rgba(255,255,255,.88);border:1px solid rgba(15,23,42,.10);
+    color:var(--slate);font-weight:800;font-size:.88rem;
+  }
+  .chip i{color:var(--forest);}
+
+  /* Buttons */
+  .btn-saffron{background:linear-gradient(135deg,var(--sun),#ffb020);border:0;color:#1f2937;font-weight:800;}
+  .btn-saffron:hover{filter:brightness(1.03);box-shadow:0 0 0 6px rgba(245,158,11,.18);}
+  .btn-forest{background:linear-gradient(135deg,var(--forest),#0a7a4b);border:0;color:#fff;font-weight:800;}
+  .btn-forest:hover{filter:brightness(1.03);box-shadow:0 0 0 6px rgba(11,93,59,.16);}
+  .btn-outline-sky{border:2px solid rgba(30,136,229,.55);color:var(--slate);font-weight:800;}
+  .btn-outline-sky:hover{background:rgba(30,136,229,.10);}
+
+  /* Text */
+  .section-title{font-weight:900;color:var(--slate);}
+  .section-subtitle{color:rgba(15,23,42,.70);max-width:980px;margin:0 auto;}
+  .muted-strong{color:rgba(15,23,42,.72);}
+
+  /* Panels */
+  .soft-panel{background:rgba(255,255,255,.92);border:1px solid rgba(15,23,42,.08);border-radius:20px;box-shadow:0 16px 40px rgba(2,6,23,.06);}
+  .icon-badge{
+    width:44px;height:44px;border-radius:14px;flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,rgba(30,136,229,.12),rgba(11,93,59,.12));
+    border:1px solid rgba(15,23,42,.10);color:var(--forest);
+  }
+
+  /* Topic pills */
+  .topic-pill{
+    border:1px solid rgba(15,23,42,.10);background:rgba(255,255,255,.88);
+    border-radius:999px;padding:.45rem .75rem;display:inline-flex;
+    gap:.5rem;align-items:center;font-weight:800;color:rgba(15,23,42,.85);
+    margin:.25rem .25rem 0 0;font-size:.85rem;
+  }
+  .topic-pill i{color:var(--forest);}
+
+  /* Checklist */
+  .list-check li{margin-bottom:.55rem;}
+  .list-check i{color:var(--forest);margin-right:.55rem;}
+
+  /* Benefit cards */
+  .benefit-card{
+    background:rgba(255,255,255,.92);border:1px solid rgba(15,23,42,.08);
+    border-radius:18px;padding:1.5rem;box-shadow:0 8px 24px rgba(2,6,23,.05);
+    transition:transform .2s,box-shadow .2s;height:100%;
+  }
+  .benefit-card:hover{transform:translateY(-4px);box-shadow:0 20px 48px rgba(2,6,23,.09);}
+  .benefit-icon{
+    width:52px;height:52px;border-radius:16px;
+    display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:1rem;
+    background:linear-gradient(135deg,rgba(30,136,229,.13),rgba(11,93,59,.13));
+    border:1px solid rgba(15,23,42,.10);color:var(--forest);
+  }
+
+  /* Highlight strip */
+  .highlight-strip{background:linear-gradient(135deg,var(--forest),#0a7a4b);border-radius:20px;color:#fff;padding:2rem;}
+  .highlight-strip .stat-num{font-size:1.9rem;font-weight:900;line-height:1;}
+  .highlight-strip .stat-label{font-size:.78rem;opacity:.80;font-weight:700;margin-top:4px;}
+
+  /* Steps timeline */
+  .step-line{position:relative;}
+  .step-item{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.75rem;position:relative;}
+  .step-item:not(:last-child)::after{
+    content:"";position:absolute;left:19px;top:44px;bottom:-1.75rem;
+    width:2px;background:linear-gradient(180deg,var(--forest),rgba(11,93,59,.10));
+  }
+  .step-dot{
+    width:40px;height:40px;min-width:40px;border-radius:50%;
+    background:linear-gradient(135deg,var(--forest),#0a7a4b);color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:900;font-size:.9rem;box-shadow:0 4px 12px rgba(11,93,59,.30);
+    flex-shrink:0;position:relative;z-index:1;
+  }
+  .step-content{flex:1;padding-top:6px;}
+
+  /* Footer */
+  footer{background:linear-gradient(90deg,var(--slate),#0b2a1b);color:rgba(255,255,255,.85);}
+  footer a{color:rgba(255,255,255,.85);text-decoration:none;}
+  footer a:hover{color:#fff;text-decoration:underline;}
+  .footer-date-row{border-bottom:1px solid rgba(255,255,255,.20);padding:.55rem 0;}
+
+  /* Pulse badge */
+  @keyframes pulse-ring{
+    0%{box-shadow:0 0 0 0 rgba(11,93,59,.35);}
+    70%{box-shadow:0 0 0 10px rgba(11,93,59,0);}
+    100%{box-shadow:0 0 0 0 rgba(11,93,59,0);}
+  }
+  .badge-pulse{animation:pulse-ring 2s infinite;border-radius:999px;}
+
+  /* ── Mobile responsive ── */
+  @media(max-width:767px){
+    .hero{padding:40px 0 40px;}
+    .hero-title{font-size:1.6rem!important;}
+    .hero-lead{font-size:.92rem;}
+    .highlight-strip{padding:1.25rem 1rem;}
+    .highlight-strip .stat-num{font-size:1.45rem;}
+    .highlight-strip .stat-label{font-size:.70rem;}
+    .soft-panel{border-radius:14px;}
+    .btn-lg{padding:.55rem 1rem;font-size:.88rem;}
+    .section-title{font-size:1.25rem;}
+    .chip{font-size:.80rem;padding:.38rem .7rem;}
+    .benefit-card{padding:1.1rem;}
+    .step-item{gap:.75rem;}
+    .step-dot{width:34px;height:34px;min-width:34px;font-size:.8rem;}
+    .step-item:not(:last-child)::after{left:16px;}
+  }
+  @media(max-width:400px){
+    .hero-title{font-size:1.35rem!important;}
+    .top-bar .ieee-label{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar py-2">
+  <div class="container d-flex justify-content-between flex-wrap gap-2">
+    <div class="small">
+      <i class="fa-solid fa-calendar-days"></i> <strong>11–12 September 2026</strong> &nbsp;|&nbsp;
+      <i class="fa-solid fa-location-dot"></i> UPES Dehradun, Uttarakhand &nbsp;|&nbsp;
+      <!-- <i class="fa-solid fa-globe"></i> Hybrid Conference -->
+    </div>
+    <div class="small">
+      <span class="me-3"><i class="fa-solid fa-certificate"></i> Sponsored by <strong>IEEE UP Section Conference Record #70668</strong></span>
+      <a href="mailto:conference_socs@ddn.upes.ac.in"> <i class="fa-solid fa-envelope me-2"></i>conference_socs@ddn.upes.ac.in </a>
+         
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-pill">
+        <i class="fa-solid fa-mountain-sun text-success"></i>
+        ICACSDF 2026
+      </span>
+    </a>
+
+    <button class="navbar-toggler border-0" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu" aria-label="Open navigation menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto gap-lg-1 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
+        <li class="nav-item"><a class="nav-link active fw-bold" href="call_for_special_sessions.html">Special Sessions</a></li>
+        <li class="nav-item"><a class="nav-link" href="conferencetheme.html">Themes</a></li>
+        <li class="nav-item"><a class="nav-link" href="cmt.html">Committee</a></li>
+        <li class="nav-item"><a class="nav-link" href="reg.html">Registration</a></li>
+        <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+        <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2 d-none d-lg-block">
+          <div class="brand-logos">
+            <div class="logo-divider"></div>
+            <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- OFFCANVAS MOBILE MENU -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header border-bottom">
+    <div class="d-flex align-items-center gap-2">
+      <i class="fa-solid fa-mountain-sun text-success fs-5"></i>
+      <h5 class="offcanvas-title fw-bold mb-0" id="mobileMenuLabel">ICACSDF 2026</h5>
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="d-flex align-items-center gap-3 mb-3">
+      <img src="assets/upes-logo.png" alt="UPES Logo" style="height:36px;width:auto;">
+      <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo" style="height:36px;width:auto;">
+    </div>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
+      <li class="nav-item"><a class="nav-link active" href="call_for_special_sessions.html">Special Sessions</a></li>
+      <li class="nav-item"><a class="nav-link" href="conferencetheme.html">Conference Themes</a></li>
+      <li class="nav-item"><a class="nav-link" href="cmt.html">Committee</a></li>
+      <li class="nav-item"><a class="nav-link" href="reg.html">Registration</a></li>
+      <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+      <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+    <hr>
+    <p class="small text-muted mb-2">
+      <i class="fa-solid fa-certificate me-1 text-success"></i>
+      Sponsored by <strong>IEEE UP Section Conference Record #70668</strong>
+    </p>
+    <a href="mailto:conference_socs@ddn.upes.ac.in" class="small d-block" style="color:var(--forest);text-decoration:none;">
+      <i class="fa-solid fa-envelope me-1"></i> conference_socs@ddn.upes.ac.in
+    </a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero text-center">
+  <div class="container">
+    <div class="chip mb-3">
+      <i class="fa-solid fa-star"></i>
+      Leadership Opportunity – Shape the Research Agenda
+    </div>
+
+    <h1 class="display-5 hero-title mb-3">🚀 Call for Special Sessions</h1>
+
+    <p class="lead hero-lead mb-3">
+      The Organizing Committee of ICACSDF 2026 invites dynamic researchers, academicians, and industry professionals
+      to propose and organize Special Sessions in their domain of expertise. Lead a focused research track,
+      bring together a global community of experts, and contribute directly to a premier international conference.
+    </p>
+
+    <div class="d-flex justify-content-center align-items-center gap-2 flex-wrap mb-3">
+      <span class="badge rounded-pill text-bg-light px-3 py-2" style="border:1px solid rgba(15,23,42,.10);">
+        <i class="fa-solid fa-certificate me-1 text-success"></i><strong>IEEE UP Section #70668</strong>
+      </span>
+      <span class="badge rounded-pill text-bg-light px-3 py-2" style="border:1px solid rgba(15,23,42,.10);">
+        <i class="fa-solid fa-calendar-days me-1 text-success"></i><strong>11–12 September 2026</strong>
+      </span>
+    </div>
+
+    <div class="d-flex justify-content-center flex-wrap gap-2 mb-4">
+      <a href="FORM_Special_session.pdf" class="btn btn-saffron btn-lg" download>
+        <i class="fa-solid fa-file-arrow-down me-2"></i>Download Proposal Form
+      </a>
+      <a href="mailto:ayush.agrawal@ddn.upes.ac.in" class="btn btn-forest btn-lg">
+        <i class="fa-solid fa-paper-plane me-2"></i>Submit Proposal
+      </a>
+      <a href="#guidelines" class="btn btn-outline-sky btn-lg">
+        <i class="fa-solid fa-list-check me-2"></i>Guidelines
+      </a>
+    </div>
+
+    <!-- Quick-stat strip -->
+    <div class="highlight-strip mt-2">
+      <div class="row g-2 g-md-3 text-center">
+        <div class="col-6 col-md-3">
+          <div class="stat-num">6+</div>
+          <div class="stat-label">Min. Accepted Papers</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-num">60%</div>
+          <div class="stat-label">Max Organizer Co-authored</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-num">30%</div>
+          <div class="stat-label">Max from Same Institution</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Free Reg. (≥10 Papers)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY ORGANIZE -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <span class="badge rounded-pill text-bg-success px-3 py-2 mb-2 badge-pulse">
+        <i class="fa-solid fa-star me-2"></i>Why Organize?
+      </span>
+      <h2 class="section-title mt-2">🌟 Why Organize a Special Session?</h2>
+      <p class="section-subtitle">Becoming a Special Session Organizer is more than just participation — it is a leadership opportunity in the global research community.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-4">
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fa-solid fa-trophy"></i></div>
+          <h6 class="fw-bold mb-1" style="color:var(--slate);">Showcase Your Expertise</h6>
+          <p class="small muted-strong mb-0">Lead a specialized domain track and demonstrate thought leadership in your area of research.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <h6 class="fw-bold mb-1" style="color:var(--slate);">Build a Research Network</h6>
+          <p class="small muted-strong mb-0">Lead and grow a network of researchers and collaborators from around the globe.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fa-solid fa-chair"></i></div>
+          <h6 class="fw-bold mb-1" style="color:var(--slate);">Session Chair Recognition</h6>
+          <p class="small muted-strong mb-0">Gain official recognition as Session Chair/Co-Chair in proceedings, website, and program schedule.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fa-solid fa-id-badge"></i></div>
+          <h6 class="fw-bold mb-1" style="color:var(--slate);">Strengthen Your Academic Profile</h6>
+          <p class="small muted-strong mb-0">Enhance your academic visibility and professional standing in the international research community.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h6 class="fw-bold mb-1" style="color:var(--slate);">Shape Emerging Discussions</h6>
+          <p class="small muted-strong mb-0">Contribute to defining cutting-edge research directions and exploring emerging technologies.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="benefit-card">
+          <div class="benefit-icon"><i class="fa-solid fa-ticket"></i></div>
+          <h6 class="fw-bold mb-1" style="color:var(--slate);">Complimentary Registration</h6>
+          <p class="small muted-strong mb-0">One complimentary conference registration upon successful acceptance and registration of at least 10 papers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCOPE -->
+<section id="scope" class="py-5" style="background:linear-gradient(180deg,#f8fafc,#eef6ff);">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">🎯 Scope of Special Sessions</h2>
+      <p class="section-subtitle">We invite proposals on cutting-edge and interdisciplinary topics, including but not limited to:</p>
+    </div>
+    <div class="soft-panel p-4 p-lg-5">
+      <div class="mb-2">
+        <span class="topic-pill"><i class="fa-solid fa-brain"></i>Artificial Intelligence &amp; Machine Learning</span>
+        <span class="topic-pill"><i class="fa-solid fa-database"></i>Data Science &amp; Big Data Analytics</span>
+        <span class="topic-pill"><i class="fa-solid fa-robot"></i>Robotics &amp; Intelligent Automation</span>
+        <span class="topic-pill"><i class="fa-solid fa-wifi"></i>IoT &amp; Cyber-Physical Systems</span>
+        <span class="topic-pill"><i class="fa-solid fa-microchip"></i>Embedded Systems &amp; VLSI Design</span>
+        <span class="topic-pill"><i class="fa-solid fa-cloud"></i>Cloud Computing &amp; Distributed Systems</span>
+        <span class="topic-pill"><i class="fa-solid fa-shield-halved"></i>Cybersecurity, Blockchain &amp; Trustworthy Systems</span>
+        <span class="topic-pill"><i class="fa-solid fa-city"></i>Smart Cities &amp; Industry 4.0</span>
+        <span class="topic-pill"><i class="fa-solid fa-heart-pulse"></i>Healthcare Technologies &amp; Medical IoT</span>
+        <span class="topic-pill"><i class="fa-solid fa-leaf"></i>Green Computing &amp; Sustainable Technologies</span>
+        <span class="topic-pill"><i class="fa-solid fa-flask"></i>Emerging Interdisciplinary Research Areas</span>
+      </div>
+      <hr class="my-4" style="opacity:.15;">
+      <p class="muted-strong mb-0 small">
+        <i class="fa-solid fa-circle-info me-2" style="color:var(--sky);"></i>
+        This list is indicative. Proposals on other relevant and innovative topics in computing, security, and digital forensics are equally welcome.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDELINES -->
+<section id="guidelines" class="py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">📌 Guidelines for Special Session Proposals</h2>
+      <p class="section-subtitle">To ensure quality, diversity, and successful execution, the following guidelines must be strictly followed.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="soft-panel p-4 h-100">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="icon-badge"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h3 class="mb-0 section-title fs-5">Submission Requirements</h3>
+          </div>
+          <ul class="list-unstyled list-check mb-0 muted-strong">
+            <li><i class="fa-solid fa-check-circle"></i>All papers undergo rigorous peer-review</li>
+            <li><i class="fa-solid fa-check-circle"></i>Minimum of <strong>6 accepted and registered papers</strong> required</li>
+            <li><i class="fa-solid fa-check-circle"></i>Organizer co-authored papers must not exceed <strong>60% of total submissions</strong></li>
+            <li><i class="fa-solid fa-check-circle"></i>Each author may submit a maximum of <strong>2 papers</strong></li>
+            <li><i class="fa-solid fa-check-circle"></i>No more than <strong>30% of papers</strong> from the organizers' own institution</li>
+            <li><i class="fa-solid fa-check-circle"></i>Insufficient sessions may be merged with regular tracks</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="soft-panel p-4 h-100">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="icon-badge"><i class="fa-solid fa-people-group"></i></div>
+            <h3 class="mb-0 section-title fs-5">Roles &amp; Responsibilities</h3>
+          </div>
+          <p class="muted-strong small mb-3">As a Special Session Organizer, you will:</p>
+          <ul class="list-unstyled list-check mb-0 muted-strong">
+            <li><i class="fa-solid fa-check-circle"></i>Define a focused and impactful session theme</li>
+            <li><i class="fa-solid fa-check-circle"></i>Promote your session through academic and professional networks</li>
+            <li><i class="fa-solid fa-check-circle"></i>Attract high-quality research contributions</li>
+            <li><i class="fa-solid fa-check-circle"></i>Coordinate with the Technical Program Committee during review</li>
+            <li><i class="fa-solid fa-check-circle"></i>Ensure timely communication and smooth session execution</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO APPLY -->
+<section class="py-5" style="background:linear-gradient(180deg,#f8fafc,#eef6ff);">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">📩 How to Apply</h2>
+      <p class="section-subtitle">Follow these simple steps to submit your Special Session Proposal.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <div class="soft-panel p-4 p-lg-5 h-100">
+          <div class="step-line">
+
+            <div class="step-item">
+              <div class="step-dot">1</div>
+              <div class="step-content">
+                <h6 class="fw-bold mb-1" style="color:var(--slate);">Download the Proposal Form</h6>
+                <p class="small muted-strong mb-0">Download the official Special Session Proposal Form (PDF) and fill it out completely before submitting.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-dot">2</div>
+              <div class="step-content">
+                <h6 class="fw-bold mb-1" style="color:var(--slate);">Prepare Your Proposal</h6>
+                <p class="small muted-strong mb-0">Include Session Title, Brief Description &amp; Objectives, Scope and Topics Covered, and complete Organizer Details (Name, Affiliation, Contact).</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-dot">3</div>
+              <div class="step-content">
+                <h6 class="fw-bold mb-1" style="color:var(--slate);">Get HOD Signature</h6>
+                <p class="small muted-strong mb-0">Obtain the signature of your Head of Department on the proposal form as required by the conference guidelines.</p>
+              </div>
+            </div>
+
+            <div class="step-item" style="margin-bottom:0;">
+              <div class="step-dot">4</div>
+              <div class="step-content">
+                <h6 class="fw-bold mb-1" style="color:var(--slate);">Submit via Email</h6>
+                <p class="small muted-strong mb-2">Email the completed proposal form to:</p>
+                <a href="mailto:ayush.agrawal@ddn.upes.ac.in" class="fw-bold d-inline-flex align-items-center gap-1" style="color:var(--forest);word-break:break-all;">
+                  <i class="fa-solid fa-envelope flex-shrink-0"></i>ayush.agrawal@ddn.upes.ac.in
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <hr class="my-4" style="opacity:.15;">
+
+          <div class="d-flex flex-wrap gap-2">
+            <a href="FORM_Special_session.pdf" class="btn btn-saffron" download>
+              <i class="fa-solid fa-file-arrow-down me-2"></i>Proposal Form (PDF)
+            </a>
+            <a href="Call for Special Session Proposals.docx" class="btn btn-forest" download>
+              <i class="fa-solid fa-file-word me-2"></i>Call Details (DOCX)
+            </a>
+            <a href="mailto:ayush.agrawal@ddn.upes.ac.in" class="btn btn-outline-sky">
+              <i class="fa-solid fa-paper-plane me-2"></i>Email Proposal
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="soft-panel p-4 h-100">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="icon-badge"><i class="fa-solid fa-file-circle-check"></i></div>
+            <h3 class="mb-0 section-title fs-5">Proposal Must Include</h3>
+          </div>
+          <ul class="list-unstyled list-check muted-strong">
+            <li><i class="fa-solid fa-check-circle"></i>Session Title</li>
+            <li><i class="fa-solid fa-check-circle"></i>Brief Description and Objectives</li>
+            <li><i class="fa-solid fa-check-circle"></i>Scope and Topics Covered</li>
+            <li><i class="fa-solid fa-check-circle"></i>Organizer 1 &amp; 2 Details (Name, Affiliation, Email, Contact)</li>
+            <li><i class="fa-solid fa-check-circle"></i>Brief Biography of Organizer(s)</li>
+            <li><i class="fa-solid fa-check-circle"></i>Technical Description of the Session</li>
+            <li><i class="fa-solid fa-check-circle"></i>Motivation and Relevance</li>
+            <li><i class="fa-solid fa-check-circle"></i>Potential Authors and Reviewers (Optional)</li>
+            <li><i class="fa-solid fa-check-circle"></i>Expected Number of Submissions</li>
+            <li><i class="fa-solid fa-check-circle"></i>Signature of HOD</li>
+          </ul>
+          <div class="p-3 rounded-3 mt-2" style="background:rgba(245,158,11,.10);border:1px solid rgba(245,158,11,.25);">
+            <p class="small mb-0 fw-bold" style="color:#92400e;">
+              <i class="fa-solid fa-triangle-exclamation me-2"></i>
+              All accepted papers in Special Sessions will be included in the official conference proceedings, subject to registration and presentation guidelines.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS SUMMARY -->
+<section class="py-5">
+  <div class="container">
+    <div class="soft-panel p-4 p-lg-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <div class="d-flex align-items-start gap-3 mb-3">
+            <div class="icon-badge"><i class="fa-solid fa-gift"></i></div>
+            <div>
+              <h3 class="section-title fs-4 mb-1">🎁 Benefits for Special Session Organizers</h3>
+              <p class="muted-strong small mb-0">Everything you get when your session is approved</p>
+            </div>
+          </div>
+          <ul class="list-unstyled list-check muted-strong">
+            <li><i class="fa-solid fa-check-circle"></i>Serve as <strong>Session Chair/Co-Chair</strong> at ICACSDF 2026</li>
+            <li><i class="fa-solid fa-check-circle"></i>Official recognition in conference proceedings, website, and program schedule</li>
+            <li><i class="fa-solid fa-check-circle"></i>Expand your global research network and international collaborations</li>
+            <li><i class="fa-solid fa-check-circle"></i>Enhance your academic visibility and leadership profile</li>
+            <li><i class="fa-solid fa-check-circle"></i><strong>One complimentary conference registration</strong> upon at least 10 accepted and registered papers</li>
+          </ul>
+        </div>
+        <div class="col-lg-5">
+          <div class="highlight-strip text-center">
+            <i class="fa-solid fa-globe fa-2x mb-3 d-block"></i>
+            <div class="fw-bold fs-5 mb-2">Join Us – Lead, Collaborate, and Inspire</div>
+            <p class="small mb-3" style="opacity:.88;">Take the initiative to organize a Special Session at ICACSDF 2026 and become a part of a vibrant platform that drives innovation, collaboration, and impactful research.</p>
+            <a href="FORM_Special_session.pdf" class="btn btn-saffron w-100" download>
+              <i class="fa-solid fa-arrow-right me-2"></i>Step Forward as a Leader
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (same as index) -->
+<!-- FOOTER -->
+<footer class="pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-4">
+      <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
+          
+          <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo" style="height:42px;width:auto;">
+        </div> 
+	   <h5 class="fw-bold text-white">ICACSDF 2026</h5>
+        <p class="mb-2">
+          School of Computer Science, UPES Dehradun, Uttarakhand
+        </p>
+
+        <!-- ✅ Footer logos -->
+        
+
+        <div class="small">
+          <div class="mb-2">
+            <i class="fa-solid fa-calendar-days me-2"></i> <strong>11–12 September 2026</strong>
+          </div>
+          <div>
+            <i class="fa-solid fa-certificate me-2"></i> Sponsored by <strong>IEEE UP Section Conference Record #70668</strong>
+          </div>
+          <div class="mt-2">
+            <div class="mt-2"><i class="fa-solid fa-globe me-2"></i>  <a href = "https://2025.icacsdf.org/"> <strong> ICACSDF2025 Conference </strong> </a> </div>
+          </div>
+		  </div>
+		  
+        <h6 class="fw-bold text-white mt-4">Contact Us</h6>
+        <p class="small mb-2">
+          Contact UPES, Bidholi Campus, Dehradun<br>
+          P.O. Bidholi Via Premnagar, Dehradun-248007
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+<h6 class="fw-bold text-white">Rankings & Recognitions</h6>
+<p class="small mb-2">
+
+  • NIRF 2025: Ranked <strong>45 (Overall)</strong>, 
+  <strong>43 (Engineering)</strong>, 
+  <strong>36 (Management)</strong>, and 
+  <strong>18 (Law)</strong><br>
+
+  • Times Higher Education (THE) 2026: Among the 
+  <strong>Top 5 universities in India</strong>; ranked 
+  <strong>501–600 globally</strong>; 
+  <strong>299 in Research Quality</strong><br>
+
+  • QS World University Rankings 2026: Ranked 
+  <strong>901–950 globally</strong>; 
+  <strong>No. 1 Private University in India for Academic Reputation</strong><br>
+
+  • U.S. News & World Report 2025: Ranked 
+  <strong>919 globally</strong>; 
+  <strong>20 in India</strong><br>
+
+  • Shanghai Ranking (GRAS): Ranked among the 
+  <strong>Top 150 in Telecommunication Engineering</strong>, 
+  <strong>Top 400 in Electrical & Electronic Engineering</strong>, and 
+  <strong>Top 500 in Computer Science & Engineering</strong><br>
+
+  • QS Rating: Awarded <strong>5-Star rating</strong>; placed among the 
+  <strong>Top 2% universities globally</strong><br>
+
+  • NBA-Accredited Programs | Recognised by UGC | Member of AIU
+</p>
+
+
+
+      
+      </div>
+
+      <div class="col-lg-4">
+        <h6 class="fw-bold text-white">Important Dates</h6>
+        <div class="small">
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Paper Submission Opens</strong></span>
+            <span class="text-end">18 March 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Submission Deadline</strong></span>
+            <span class="text-end">30 June 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Notification of Acceptance</strong></span>
+            <span class="text-end">25 July 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Camera Ready Submission</strong></span>
+            <span class="text-end">15 August 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Last Date of Registration</strong></span>
+            <span class="text-end">25 August 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 pt-2">
+            <span><strong>Conference Date</strong></span>
+            <span class="text-end">11–12 September 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <hr class="border-light opacity-25 mt-4">
+
+<div class="d-flex justify-content-between align-items-center">
+  <p class="small mb-0 text-start">
+    <strong>&copy; 2026 ICACSDF</strong>. All Rights Reserved.
+  </p>
+
+  <p class="small mb-0 text-end">
+    Design and Developed by:
+    <a href="https://edcatalyst.in" target="_blank" rel="noopener noreferrer">
+      <strong>Edcatalyst.in</strong>
+    </a>
+  </p>
+</div>
+
+</footer>
+
+<!-- Bootstrap JS bundle (includes Popper — required for offcanvas/hamburger) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+(function(){
+  document.addEventListener("contextmenu",function(e){e.preventDefault();},{passive:false});
+  document.addEventListener("keydown",function(e){
+    if(e.key==="F12"){e.preventDefault();return false;}
+    if((e.ctrlKey||e.metaKey)&&e.shiftKey&&["i","j","c"].includes(e.key.toLowerCase())){e.preventDefault();return false;}
+    if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="u"){e.preventDefault();return false;}
+  });
+})();
+</script>
+
+</body>
+</html>
