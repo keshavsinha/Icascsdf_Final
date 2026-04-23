@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Special Sessions | ICACSDF 2026 | UPES Dehradun</title>
+<meta name="description" content="Accepted Special Sessions at ICACSDF 2026 — International Conference on Advances in Cyber Security and Digital Forensics. UPES Dehradun. Sponsored by IEEE UP Section. 11–12 September 2026.">
+<meta name="keywords" content="ICACSDF 2026, Special Sessions, UPES, Dehradun, Cyber Security, Digital Forensics, IEEE UP Section, Wearable AI, Biomedical">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --sky:#1e88e5;
+    --forest:#0b5d3b;
+    --slate:#0f172a;
+    --sun:#f59e0b;
+    --snow:#f8fafc;
+  }
+
+  body{
+    font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:#0b1220;
+    background:
+      radial-gradient(900px 500px at 10% 0%,rgba(30,136,229,.10),transparent 60%),
+      radial-gradient(900px 600px at 90% 20%,rgba(11,93,59,.10),transparent 60%),
+      linear-gradient(180deg,#ffffff,#f6fbff);
+  }
+
+  /* Top bar */
+  .top-bar{
+    background:linear-gradient(90deg,var(--slate),#0b2a1b);
+    color:rgba(255,255,255,.92); font-size:.85rem;
+    position:relative; z-index:1031;
+  }
+  .top-bar a{color:rgba(255,255,255,.92);text-decoration:none;}
+  .top-bar a:hover{color:#fff;text-decoration:underline;}
+
+/* NAVBAR CORE */
+.navbar{
+  background:rgba(255,255,255,.95)!important;
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(15,23,42,.08);
+  position:sticky;
+  top:0;
+  z-index:1030;
+}
+
+.navbar-brand{
+  font-weight:800;
+  letter-spacing:.2px;
+}
+
+/* BRAND */
+.brand-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:.55rem;
+  padding:.45rem .75rem;
+  border-radius:999px;
+  background:linear-gradient(135deg,rgba(30,136,229,.10),rgba(11,93,59,.10));
+  border:1px solid rgba(15,23,42,.10);
+}
+
+/* NAV ITEMS */
+.navbar-nav{
+  display:flex;
+  flex-wrap:wrap;              /* ✅ prevents overflow */
+  gap:4px;                    /* controlled spacing */
+}
+
+.navbar-nav .nav-link{
+  white-space:nowrap;         /* prevents breaking */
+  font-size:0.9rem;
+  font-weight:600;
+}
+
+/* LOGO */
+.ieee-logo{
+  height:32px;                /* ✅ reduced size */
+  width:auto;
+  object-fit:contain;
+}
+
+/* CONTAINER FIX */
+.navbar .container{
+  max-width:1320px;           /* Bootstrap standard */
+}
+
+/* MOBILE */
+@media(max-width:992px){
+  .ieee-logo{
+    display:none;
+  }
+}
+  
+
+  /* Offcanvas */
+  .offcanvas{background:#ffffff;}
+  .offcanvas .nav-link{padding:.6rem 0;font-weight:700;border-bottom:1px solid rgba(15,23,42,.06);}
+  .offcanvas .nav-link.active{color:var(--forest);}
+
+  /* Hero */
+  .hero{position:relative;overflow:hidden;padding:60px 0 54px;margin-top:0;}
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background:
+      linear-gradient(180deg,rgba(255,255,255,.30),rgba(255,255,255,.95)),
+      url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80");
+    background-size:cover;background-position:center;pointer-events:none;
+  }
+  .hero::after{
+    content:"";position:absolute;left:0;right:0;bottom:-2px;height:170px;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200' preserveAspectRatio='none'%3E%3Cpath d='M0 160 L120 120 L220 150 L340 80 L420 140 L520 60 L640 145 L760 90 L860 160 L980 110 L1200 160 L1200 200 L0 200 Z' fill='%230b5d3b' opacity='0.20'/%3E%3Cpath d='M0 170 L140 130 L250 165 L360 105 L460 155 L560 75 L680 165 L820 115 L940 175 L1200 135 L1200 200 L0 200 Z' fill='%231e88e5' opacity='0.14'/%3E%3C/svg%3E");
+    background-size:cover;background-repeat:no-repeat;pointer-events:none;
+  }
+  .hero .container{position:relative;z-index:1;}
+  .hero-title{font-weight:900;line-height:1.12;color:var(--slate);text-shadow:0 10px 35px rgba(2,6,23,.12);}
+  .hero-lead{color:rgba(15,23,42,.78);max-width:980px;margin-inline:auto;}
+
+  .chip{
+    display:inline-flex;align-items:center;gap:.5rem;
+    padding:.45rem .85rem;border-radius:999px;
+    background:rgba(255,255,255,.88);border:1px solid rgba(15,23,42,.10);
+    color:var(--slate);font-weight:800;font-size:.88rem;
+  }
+  .chip i{color:var(--forest);}
+
+  /* Buttons */
+  .btn-saffron{background:linear-gradient(135deg,var(--sun),#ffb020);border:0;color:#1f2937;font-weight:800;}
+  .btn-saffron:hover{filter:brightness(1.03);box-shadow:0 0 0 6px rgba(245,158,11,.18);}
+  .btn-forest{background:linear-gradient(135deg,var(--forest),#0a7a4b);border:0;color:#fff;font-weight:800;}
+  .btn-forest:hover{filter:brightness(1.03);box-shadow:0 0 0 6px rgba(11,93,59,.16);}
+  .btn-outline-sky{border:2px solid rgba(30,136,229,.55);color:var(--slate);font-weight:800;}
+  .btn-outline-sky:hover{background:rgba(30,136,229,.10);}
+
+  /* Text */
+  .section-title{font-weight:900;color:var(--slate);}
+  .section-subtitle{color:rgba(15,23,42,.70);max-width:980px;margin:0 auto;}
+  .muted-strong{color:rgba(15,23,42,.72);}
+
+  /* Panels */
+  .soft-panel{background:rgba(255,255,255,.92);border:1px solid rgba(15,23,42,.08);border-radius:20px;box-shadow:0 16px 40px rgba(2,6,23,.06);}
+  .icon-badge{
+    width:44px;height:44px;border-radius:14px;flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,rgba(30,136,229,.12),rgba(11,93,59,.12));
+    border:1px solid rgba(15,23,42,.10);color:var(--forest);
+  }
+
+  /* Topic pills */
+  .topic-pill{
+    border:1px solid rgba(15,23,42,.10);background:rgba(255,255,255,.88);
+    border-radius:999px;padding:.45rem .75rem;display:inline-flex;
+    gap:.5rem;align-items:center;font-weight:800;color:rgba(15,23,42,.85);
+    margin:.25rem .25rem 0 0;font-size:.85rem;
+  }
+  .topic-pill i{color:var(--forest);}
+
+  /* Checklist */
+  .list-check li{margin-bottom:.55rem;}
+  .list-check i{color:var(--forest);margin-right:.55rem;}
+
+  /* Session card */
+  .session-card{
+    background:#fff;border:1px solid rgba(15,23,42,.08);
+    border-radius:24px;box-shadow:0 16px 48px rgba(2,6,23,.07);
+    overflow:hidden;
+  }
+  .session-card-header{
+    background:linear-gradient(135deg,var(--forest),#0a7a4b);
+    color:#fff;padding:1.75rem 2rem 1.5rem;
+  }
+  .session-card-header.sky{
+    background:linear-gradient(135deg,var(--sky),#1565c0);
+  }
+  .session-number{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:36px;height:36px;border-radius:50%;
+    background:rgba(255,255,255,.20);border:2px solid rgba(255,255,255,.40);
+    font-weight:900;font-size:.9rem;flex-shrink:0;
+  }
+  .session-title{font-weight:900;line-height:1.25;font-size:1.15rem;}
+  .session-body{padding:2rem;}
+
+  /* Dates grid */
+  .date-box{
+    background:linear-gradient(135deg,rgba(30,136,229,.06),rgba(11,93,59,.06));
+    border:1px solid rgba(15,23,42,.08);border-radius:14px;
+    padding:.85rem 1rem;text-align:center;
+  }
+  .date-box .date-label{font-size:.70rem;font-weight:800;color:rgba(15,23,42,.55);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.25rem;}
+  .date-box .date-val{font-size:.95rem;font-weight:800;color:var(--slate);}
+  .date-box.highlight{background:linear-gradient(135deg,rgba(11,93,59,.12),rgba(10,122,75,.12));border-color:rgba(11,93,59,.20);}
+  .date-box.highlight .date-val{color:var(--forest);}
+
+  /* Organizer card */
+  .organizer-card{
+    background:rgba(248,250,252,.90);border:1px solid rgba(15,23,42,.08);
+    border-radius:14px;padding:1.1rem 1.25rem;
+  }
+  .organizer-card .org-name{font-weight:800;color:var(--slate);font-size:.95rem;}
+  .organizer-card .org-role{font-size:.78rem;color:var(--forest);font-weight:700;font-style:italic;}
+  .organizer-card .org-meta{font-size:.80rem;color:rgba(15,23,42,.60);margin-top:.3rem;}
+  .organizer-card .org-meta a{color:var(--sky);text-decoration:none;font-weight:700;}
+  .organizer-card .org-meta a:hover{text-decoration:underline;}
+
+  /* Coming soon card */
+  .coming-soon-card{
+    background:linear-gradient(135deg,rgba(15,23,42,.03),rgba(30,136,229,.05));
+    border:2px dashed rgba(15,23,42,.15);
+    border-radius:24px;padding:3rem 2rem;text-align:center;
+  }
+
+  /* Section divider */
+  .sessions-divider{
+    display:flex;align-items:center;gap:1rem;margin:2.5rem 0;
+  }
+  .sessions-divider::before,.sessions-divider::after{
+    content:"";flex:1;height:1px;background:rgba(15,23,42,.10);
+  }
+
+  /* IEEE badge */
+  .ieee-badge{
+    display:inline-flex;align-items:center;gap:.5rem;
+    background:linear-gradient(135deg,rgba(30,136,229,.10),rgba(11,93,59,.10));
+    border:1px solid rgba(30,136,229,.25);border-radius:999px;
+    padding:.4rem .85rem;font-weight:800;font-size:.80rem;color:var(--slate);
+  }
+  .ieee-badge i{color:var(--sky);}
+
+  /* Pulse badge */
+  @keyframes pulse-ring{
+    0%{box-shadow:0 0 0 0 rgba(11,93,59,.35);}
+    70%{box-shadow:0 0 0 10px rgba(11,93,59,0);}
+    100%{box-shadow:0 0 0 0 rgba(11,93,59,0);}
+  }
+  .badge-pulse{animation:pulse-ring 2s infinite;border-radius:999px;}
+
+  /* Footer */
+  footer{background:linear-gradient(90deg,var(--slate),#0b2a1b);color:rgba(255,255,255,.85);}
+  footer a{color:rgba(255,255,255,.85);text-decoration:none;}
+  footer a:hover{color:#fff;text-decoration:underline;}
+  .footer-date-row{border-bottom:1px solid rgba(255,255,255,.20);padding:.55rem 0;}
+
+
+
+  /* Mobile */
+  @media(max-width:767px){
+    .hero{padding:40px 0 40px;}
+    .hero-title{font-size:1.6rem!important;}
+    .hero-lead{font-size:.92rem;}
+    .session-card-header{padding:1.25rem 1.25rem 1rem;}
+    .session-body{padding:1.25rem;}
+    .session-title{font-size:1rem;}
+    .soft-panel{border-radius:14px;}
+    .btn-lg{padding:.55rem 1rem;font-size:.88rem;}
+    .section-title{font-size:1.25rem;}
+    .chip{font-size:.80rem;padding:.38rem .7rem;}
+  }
+  @media(max-width:400px){
+    .hero-title{font-size:1.35rem!important;}
+    .top-bar .ieee-label{display:none;}
+  }
+</style>
+
+<style>
+  .top-bar{background:linear-gradient(90deg,#0f172a,#0b2a1b);color:rgba(255,255,255,.92);font-size:.85rem;position:relative;z-index:1031;}
+  .top-bar a{color:rgba(255,255,255,.92);text-decoration:none;}
+  .top-bar a:hover{color:#fff;text-decoration:underline;}
+  .navbar{background:rgba(255,255,255,.95)!important;backdrop-filter:blur(10px);border-bottom:1px solid rgba(15,23,42,.08);position:sticky;top:0;z-index:1030;}
+  .navbar-brand{font-weight:800;letter-spacing:.2px;}
+  .brand-pill{display:inline-flex;align-items:center;gap:.55rem;padding:.45rem .75rem;border-radius:999px;background:linear-gradient(135deg,rgba(30,136,229,.10),rgba(11,93,59,.10));border:1px solid rgba(15,23,42,.10);}
+  .brand-logos{display:flex;align-items:center;gap:14px;}
+  .brand-logos img{height:44px;width:auto;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(2,6,23,.10));}
+  .brand-logos .logo-divider{width:1px;height:28px;background:rgba(15,23,42,.15);}
+  @media(max-width:992px){.brand-logos img{height:38px;}}
+
+  /* Dropdown */
+  .navbar .dropdown-menu{border:1px solid rgba(15,23,42,.10);border-radius:14px;box-shadow:0 16px 40px rgba(2,6,23,.12);padding:.5rem;min-width:240px;margin-top:.4rem;}
+  .navbar .dropdown-item{border-radius:10px;padding:.6rem .85rem;font-weight:700;font-size:.88rem;color:#0f172a;display:flex;align-items:center;gap:.7rem;transition:background .15s;white-space:normal;}
+  .navbar .dropdown-item:hover{background:rgba(30,136,229,.08);color:#0b5d3b;}
+  .navbar .dropdown-item .drop-icon{width:30px;height:30px;border-radius:8px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.78rem;}
+  .navbar .dropdown-item .drop-icon.green{background:rgba(11,93,59,.12);color:#0b5d3b;}
+  .navbar .dropdown-item .drop-icon.sky{background:rgba(30,136,229,.12);color:#1e88e5;}
+  .navbar .dropdown-divider{margin:.35rem .5rem;opacity:.12;}
+  .navbar .dropdown-toggle.active{color:#0b5d3b;font-weight:800;}
+
+  /* Offcanvas */
+  .offcanvas{background:#ffffff;}
+  .offcanvas .nav-link{padding:.6rem 0;font-weight:700;border-bottom:1px solid rgba(15,23,42,.06);}
+  .offcanvas .nav-link.active{color:#0b5d3b;}
+  .offcanvas .sub-group{border:1px solid rgba(15,23,42,.08);border-radius:12px;overflow:hidden;margin:.2rem 0 .4rem 0;}
+  .offcanvas .sub-link{display:flex;align-items:center;gap:.55rem;padding:.5rem 1rem;font-weight:700;font-size:.85rem;color:#0f172a;text-decoration:none;}
+  .offcanvas .sub-link:hover{background:rgba(11,93,59,.06);color:#0b5d3b;}
+  .offcanvas .sub-link + .sub-link{border-top:1px solid rgba(15,23,42,.06);}
+
+  @media(max-width:400px){.top-bar .ieee-label{display:none;}}
+</style>
+
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar py-2">
+  <div class="container d-flex justify-content-between flex-wrap gap-2">
+    <div class="small">
+      <i class="fa-solid fa-calendar-days"></i> <strong>11–12 September 2026</strong> &nbsp;|&nbsp;
+      <i class="fa-solid fa-location-dot"></i> UPES Dehradun, Uttarakhand
+    </div>
+    <div class="small">
+      <span class="me-3 ieee-label"><i class="fa-solid fa-certificate"></i> Sponsored by <strong>IEEE UP Section Conference Record #70668</strong></span>
+      <a href="mailto:conference_socs@ddn.upes.ac.in"><i class="fa-solid fa-envelope me-1"></i>conference_socs@ddn.upes.ac.in</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-pill">
+        <i class="fa-solid fa-mountain-sun text-success"></i>
+        ICACSDF 2026
+      </span>
+    </a>
+
+    <button class="navbar-toggler border-0" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu" aria-label="Open navigation menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto gap-lg-1 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
+        
+		<!-- SPECIAL SESSIONS DROPDOWN -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Special Sessions
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="special_sessions.html" data-page="special_sessions.html">
+                <span class="drop-icon green"><i class="fa-solid fa-layer-group"></i></span>
+                <span>
+                  <div style="font-size:.85rem;font-weight:800;line-height:1.3;">Accepted Sessions</div>
+                  <div style="font-size:.72rem;color:rgba(15,23,42,.50);font-weight:600;">View all 4 confirmed sessions</div>
+                </span>
+              </a>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item" href="call_for_special_sessions.html" data-page="call_for_special_sessions.html">
+                <span class="drop-icon sky"><i class="fa-solid fa-rocket"></i></span>
+                <span>
+                  <div style="font-size:.85rem;font-weight:800;line-height:1.3;">Call for Special Session</div>
+                  <div style="font-size:.72rem;color:rgba(15,23,42,.50);font-weight:600;">Submit your session proposal</div>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- END DROPDOWN -->
+		
+        <li class="nav-item"><a class="nav-link" href="conferencetheme.html">Themes</a></li>
+        <li class="nav-item"><a class="nav-link" href="cmt.html">Committee</a></li>
+        <li class="nav-item"><a class="nav-link" href="reg.html">Registration</a></li>
+        <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+        <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2 d-none d-lg-block">
+          <div class="brand-logos">
+            <div class="logo-divider"></div>
+            <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- OFFCANVAS MOBILE MENU -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header border-bottom">
+    <div class="d-flex align-items-center gap-2">
+      <i class="fa-solid fa-mountain-sun text-success fs-5"></i>
+      <h5 class="offcanvas-title fw-bold mb-0" id="mobileMenuLabel">ICACSDF 2026</h5>
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="d-flex align-items-center gap-3 mb-3">
+      <img src="assets/upes-logo.png" alt="UPES Logo" style="height:36px;width:auto;">
+      <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo" style="height:36px;width:auto;">
+    </div>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
+      
+	  		<!-- SPECIAL SESSIONS DROPDOWN -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Special Sessions
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="special_sessions.html" data-page="special_sessions.html">
+                <span class="drop-icon green"><i class="fa-solid fa-layer-group"></i></span>
+                <span>
+                  <div style="font-size:.85rem;font-weight:800;line-height:1.3;">Accepted Sessions</div>
+                  <div style="font-size:.72rem;color:rgba(15,23,42,.50);font-weight:600;">View all 4 confirmed sessions</div>
+                </span>
+              </a>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item" href="call_for_special_sessions.html" data-page="call_for_special_sessions.html">
+                <span class="drop-icon sky"><i class="fa-solid fa-rocket"></i></span>
+                <span>
+                  <div style="font-size:.85rem;font-weight:800;line-height:1.3;">Call for Special Session</div>
+                  <div style="font-size:.72rem;color:rgba(15,23,42,.50);font-weight:600;">Submit your session proposal</div>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- END DROPDOWN -->
+	  
+      <li class="nav-item"><a class="nav-link" href="conferencetheme.html">Conference Themes</a></li>
+      <li class="nav-item"><a class="nav-link" href="cmt.html">Committee</a></li>
+      <li class="nav-item"><a class="nav-link" href="reg.html">Registration</a></li>
+      <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+      <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+    <hr>
+    <p class="small text-muted mb-2">
+      <i class="fa-solid fa-certificate me-1 text-success"></i>
+      Sponsored by <strong>IEEE UP Section Conference Record #70668</strong>
+    </p>
+    <a href="mailto:conference_socs@ddn.upes.ac.in" class="small d-block" style="color:var(--forest);text-decoration:none;">
+      <i class="fa-solid fa-envelope me-1"></i> conference_socs@ddn.upes.ac.in
+    </a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero text-center">
+  <div class="container">
+    <div class="chip mb-3">
+      <i class="fa-solid fa-layer-group"></i>
+      Accepted Special Sessions — ICACSDF 2026
+    </div>
+
+    <h1 class="display-5 hero-title mb-3">🎯 Special Sessions</h1>
+
+    <p class="lead hero-lead mb-4">
+      ICACSDF 2026 features focused Special Sessions on emerging and interdisciplinary topics in cybersecurity, AI, and digital forensics.
+      Each session is organized by domain experts and brings together high-quality research contributions for in-depth discussion and collaboration.
+    </p>
+
+    <div class="d-flex justify-content-center align-items-center gap-2 flex-wrap mb-3">
+      <span class="badge rounded-pill text-bg-light px-3 py-2" style="border:1px solid rgba(15,23,42,.10);">
+        <i class="fa-solid fa-certificate me-1 text-success"></i><strong>IEEE UP Section #70668</strong>
+      </span>
+      <span class="badge rounded-pill text-bg-light px-3 py-2" style="border:1px solid rgba(15,23,42,.10);">
+        <i class="fa-solid fa-calendar-days me-1 text-success"></i><strong>11–12 September 2026</strong>
+      </span>
+      <span class="badge rounded-pill text-bg-light px-3 py-2" style="border:1px solid rgba(15,23,42,.10);">
+        <i class="fa-brands fa-searchengin me-1 text-primary"></i><strong>Published in IEEE Xplore</strong>
+      </span>
+    </div>
+
+    <!-- IEEE publication note -->
+    <div class="soft-panel d-inline-block px-4 py-2 mt-2">
+      <span class="small muted-strong">
+        <i class="fa-solid fa-circle-check me-2 text-success"></i>
+        All accepted papers will be published in <strong>IEEE Xplore</strong> subject to meeting IEEE quality standards and successful peer review.
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- SESSIONS LISTING -->
+<section class="py-5">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <span class="badge rounded-pill text-bg-success px-3 py-2 mb-2 badge-pulse">
+        <i class="fa-solid fa-layer-group me-2"></i>Accepted Sessions
+      </span>
+      <h2 class="section-title mt-2">📋 Session Listings</h2>
+      <p class="section-subtitle">Browse the confirmed special sessions for ICACSDF 2026. More sessions will be added as proposals are accepted.</p>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SESSION 1 — UPDATING SOON
+    ═══════════════════════════════════════════════════════ -->
+    <div class="coming-soon-card mb-4">
+      <div class="mb-3">
+        <span class="badge rounded-pill px-3 py-2" style="background:rgba(15,23,42,.08);color:rgba(15,23,42,.55);font-weight:800;font-size:.80rem;">
+          <i class="fa-solid fa-hourglass-half me-2"></i>Special Session 01
+        </span>
+      </div>
+      <i class="fa-solid fa-clock fa-2x mb-3 d-block" style="color:rgba(15,23,42,.25);"></i>
+      <h4 class="fw-bold mb-2" style="color:rgba(15,23,42,.45);">Session Details — Updating Soon</h4>
+      <p class="small mb-0" style="color:rgba(15,23,42,.40);max-width:480px;margin:0 auto;">
+        This special session has been accepted. Full details including topics, organizers, and submission information will be published shortly. Please check back soon.
+      </p>
+    </div>
+
+    <!-- Sessions divider -->
+    <div class="sessions-divider">
+      <span class="small fw-bold" style="color:rgba(15,23,42,.40);white-space:nowrap;">Session 02</span>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SESSION 2 — FULL DETAILS
+    ═══════════════════════════════════════════════════════ -->
+    <div class="session-card mb-4">
+
+      <!-- Header -->
+      <div class="session-card-header sky">
+        <div class="d-flex align-items-start gap-3">
+          <div class="session-number mt-1">02</div>
+          <div class="flex-1">
+            <div class="small mb-1" style="opacity:.80;font-weight:700;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;">
+              <i class="fa-solid fa-star me-1"></i>Special Session
+            </div>
+            <h2 class="session-title mb-2">
+              Robust and Edge-Intelligent AI for Wearable Biomedical Signal Analytics
+              and Cyber Security in Digital Health
+            </h2>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="ieee-badge" style="background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.30);color:#fff;">
+                <i class="fa-solid fa-microchip"></i>AI &amp; IoT
+              </span>
+              <span class="ieee-badge" style="background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.30);color:#fff;">
+                <i class="fa-solid fa-heart-pulse"></i>Digital Health
+              </span>
+              <span class="ieee-badge" style="background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.30);color:#fff;">
+                <i class="fa-solid fa-shield-halved"></i>Cyber Security
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Body -->
+      <div class="session-body">
+
+        <!-- Overview -->
+        <div class="mb-4">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <div class="icon-badge"><i class="fa-solid fa-circle-info"></i></div>
+            <h3 class="mb-0 section-title fs-5">Overview</h3>
+          </div>
+          <p class="muted-strong mb-0" style="line-height:1.75;">
+            This special session focuses on developing <strong>robust, explainable, and secure AI-driven systems</strong> for data-intensive and real-time applications. It brings together researchers at the intersection of AI, IoT, and secure intelligent systems, with emphasis on <strong>trustworthy and privacy-aware solutions</strong> for wearable biomedical and digital health environments.
+          </p>
+        </div>
+
+        <hr style="opacity:.10;">
+
+        <!-- Topics + Organizers row -->
+        <div class="row g-4 mt-1">
+
+          <!-- Topics of Interest -->
+          <div class="col-lg-7">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="icon-badge"><i class="fa-solid fa-tags"></i></div>
+              <h3 class="mb-0 section-title fs-5">Topics of Interest <span class="small fw-normal text-muted">(not limited to)</span></h3>
+            </div>
+            <div>
+              <span class="topic-pill"><i class="fa-solid fa-brain"></i>AI/ML for Secure &amp; Intelligent Systems</span>
+              <span class="topic-pill"><i class="fa-solid fa-person-walking"></i>Human Activity Recognition &amp; Sensor Applications</span>
+              <span class="topic-pill"><i class="fa-solid fa-wave-square"></i>Signal Processing for Time-Series &amp; Sensor Data</span>
+              <span class="topic-pill"><i class="fa-solid fa-shield-halved"></i>Robust &amp; Noise-Resilient ML Models</span>
+              <span class="topic-pill"><i class="fa-solid fa-magnifying-glass-chart"></i>Explainable AI (XAI) &amp; Trustworthy AI</span>
+              <span class="topic-pill"><i class="fa-solid fa-user-shield"></i>Privacy-Preserving AI &amp; Federated Learning</span>
+              <span class="topic-pill"><i class="fa-solid fa-microchip"></i>Edge AI &amp; Secure Deployment on Resource-Constrained Devices</span>
+              <span class="topic-pill"><i class="fa-solid fa-layer-group"></i>Multimodal Data Fusion in Intelligent Systems</span>
+              <span class="topic-pill"><i class="fa-solid fa-wifi"></i>IoT-Enabled Systems &amp; Cyber-Physical Security</span>
+              <span class="topic-pill"><i class="fa-solid fa-chart-line"></i>Real-Time Monitoring &amp; Anomaly Detection</span>
+              <span class="topic-pill"><i class="fa-solid fa-database"></i>Secure Data Analytics &amp; Decision-Making Systems</span>
+              <span class="topic-pill"><i class="fa-solid fa-heart-pulse"></i>AI in Healthcare, Smart Environments &amp; Security Domains</span>
+            </div>
+          </div>
+
+          <!-- Organizers -->
+          <div class="col-lg-5">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="icon-badge"><i class="fa-solid fa-people-group"></i></div>
+              <h3 class="mb-0 section-title fs-5">Session Organizers</h3>
+            </div>
+            <div class="d-flex flex-column gap-3">
+
+              <div class="organizer-card">
+                <div class="org-name">Dr. Pratibha Tokas</div>
+                <div class="org-role">Assistant Professor (Senior Scale), SoCS, UPES Dehradun</div>
+                <div class="org-meta mt-2">
+                  <i class="fa-solid fa-envelope me-1"></i>
+                  <a href="mailto:Pratibhatokas89@gmail.com">Pratibhatokas89@gmail.com</a><br>
+                  <i class="fa-solid fa-phone me-1 mt-1"></i>+91-9899520705
+                </div>
+              </div>
+
+              <div class="organizer-card">
+                <div class="org-name">Dr. Saurabh Shrivastava</div>
+                <div class="org-role">Assistant Professor (Senior Scale), SoCS, UPES Dehradun</div>
+                <div class="org-meta mt-2">
+                  <i class="fa-solid fa-envelope me-1"></i>
+                  <a href="mailto:manit.saurabh@gmail.com">manit.saurabh@gmail.com</a><br>
+                  <i class="fa-solid fa-phone me-1 mt-1"></i>+91-8109387738
+                </div>
+              </div>
+
+              <div class="organizer-card">
+                <div class="org-name">Dr. Vijay Bhaskar Semwal</div>
+                <div class="org-role">Assistant Professor, Dept. of CSE, MANIT Bhopal</div>
+                <div class="org-meta mt-2">
+                  <i class="fa-solid fa-envelope me-1"></i>
+                  <a href="mailto:vsemwal@gmail.com">vsemwal@gmail.com</a><br>
+                  <i class="fa-solid fa-phone me-1 mt-1"></i>+91-7541805885
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <hr style="opacity:.10;" class="my-4">
+
+        <!-- Important Dates -->
+        <div class="mb-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="icon-badge"><i class="fa-solid fa-calendar-days"></i></div>
+            <h3 class="mb-0 section-title fs-5">Important Dates</h3>
+          </div>
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="date-box">
+                <div class="date-label"><i class="fa-solid fa-file-arrow-up me-1"></i>Submission Deadline</div>
+                <div class="date-val">15 July 2026</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="date-box">
+                <div class="date-label"><i class="fa-solid fa-bell me-1"></i>Notification of Acceptance</div>
+                <div class="date-val">10 August 2026</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="date-box">
+                <div class="date-label"><i class="fa-solid fa-file-circle-check me-1"></i>Camera Ready Submission</div>
+                <div class="date-val">25 August 2026</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="date-box highlight">
+                <div class="date-label"><i class="fa-solid fa-star me-1"></i>Conference Dates</div>
+                <div class="date-val">11–12 Sep 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submission Guidelines -->
+        <div class="soft-panel p-4" style="background:linear-gradient(135deg,rgba(30,136,229,.04),rgba(11,93,59,.04));">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="icon-badge"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h3 class="mb-0 section-title fs-5">Submission Guidelines</h3>
+          </div>
+          <ul class="list-unstyled list-check mb-3 muted-strong">
+            <li><i class="fa-solid fa-check-circle"></i>Manuscripts must be <strong>original</strong> and not under review elsewhere</li>
+            <li><i class="fa-solid fa-check-circle"></i>Papers must be prepared in <strong>IEEE format</strong></li>
+            <li><i class="fa-solid fa-check-circle"></i>Submissions must be <strong>plagiarism-free</strong> and comply with standard ethical guidelines</li>
+            <li><i class="fa-solid fa-check-circle"></i>Accepted papers will be published in <strong>IEEE Xplore</strong> subject to IEEE quality standards and peer review</li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="mailto:conference_socs@ddn.upes.ac.in" class="btn btn-forest btn-sm">
+              <i class="fa-solid fa-paper-plane me-2"></i>Submit Your Paper
+            </a>
+            <a href="cfp.html" class="btn btn-outline-sky btn-sm">
+              <i class="fa-solid fa-file-lines me-2"></i>Full CFP Details
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /session-body -->
+    </div><!-- /session-card session 2 -->
+
+    <!-- Sessions divider -->
+    <div class="sessions-divider">
+      <span class="small fw-bold" style="color:rgba(15,23,42,.40);white-space:nowrap;">Session 03</span>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SESSION 3 — FULL DETAILS
+    ═══════════════════════════════════════════════════════ -->
+    <div class="session-card mb-4">
+
+      <!-- Header -->
+      <div class="session-card-header">
+        <div class="d-flex align-items-start gap-3">
+          <div class="session-number mt-1">03</div>
+          <div class="flex-1">
+            <div class="small mb-1" style="opacity:.80;font-weight:700;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;">
+              <i class="fa-solid fa-star me-1"></i>Special Session
+            </div>
+            <h2 class="session-title mb-2">
+              Deep Learning Techniques for Image Processing in Digital Forensics
+            </h2>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="ieee-badge" style="background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.30);color:#fff;">
+                <i class="fa-solid fa-brain"></i>Deep Learning
+              </span>
+              <span class="ieee-badge" style="background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.30);color:#fff;">
+                <i class="fa-solid fa-image"></i>Image Processing
+              </span>
+              <span class="ieee-badge" style="background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.30);color:#fff;">
+                <i class="fa-solid fa-magnifying-glass"></i>Digital Forensics
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Body -->
+      <div class="session-body">
+
+        <!-- Overview -->
+        <div class="mb-4">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <div class="icon-badge"><i class="fa-solid fa-circle-info"></i></div>
+            <h3 class="mb-0 section-title fs-5">Overview</h3>
+          </div>
+          <p class="muted-strong mb-0" style="line-height:1.75;">
+            This special session focuses on the application of <strong>deep learning techniques in image processing for digital forensics</strong>. The session aims to bring together researchers and practitioners working on advanced AI-driven methods to <strong>analyze, enhance, and authenticate digital images</strong> in forensic investigations — spanning detection, explainability, and low-quality image recovery.
+          </p>
+        </div>
+
+        <hr style="opacity:.10;">
+
+        <!-- Topics + Organizers row -->
+        <div class="row g-4 mt-1">
+
+          <!-- Topics of Interest -->
+          <div class="col-lg-7">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="icon-badge"><i class="fa-solid fa-tags"></i></div>
+              <h3 class="mb-0 section-title fs-5">Topics of Interest <span class="small fw-normal text-muted">(not limited to)</span></h3>
+            </div>
+            <div>
+              <span class="topic-pill"><i class="fa-solid fa-network-wired"></i>Deep Learning for Image Forensics</span>
+              <span class="topic-pill"><i class="fa-solid fa-scissors"></i>Image Tampering &amp; Forgery Detection</span>
+              <span class="topic-pill"><i class="fa-solid fa-robot"></i>Generative AI (GenAI) in Forensic Analysis</span>
+              <span class="topic-pill"><i class="fa-solid fa-magnifying-glass-chart"></i>Explainable AI (XAI) for Forensic Decision Support</span>
+              <span class="topic-pill"><i class="fa-solid fa-wand-magic-sparkles"></i>Image Enhancement for Low-Quality Forensic Data</span>
+              <span class="topic-pill"><i class="fa-solid fa-fingerprint"></i>Digital Image Authentication &amp; Integrity Verification</span>
+              <span class="topic-pill"><i class="fa-solid fa-layer-group"></i>CNN / Transformer Architectures for Forensic Tasks</span>
+              <span class="topic-pill"><i class="fa-solid fa-camera"></i>Deepfake Detection &amp; Media Provenance</span>
+            </div>
+          </div>
+
+          <!-- Organizers -->
+          <div class="col-lg-5">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="icon-badge"><i class="fa-solid fa-people-group"></i></div>
+              <h3 class="mb-0 section-title fs-5">Session Organizers</h3>
+            </div>
+            <div class="d-flex flex-column gap-3">
+
+              <div class="organizer-card">
+                <div class="org-name">Dr. Arjun Abhishek</div>
+                <div class="org-role">Faculty, SoCS, UPES Dehradun</div>
+                <div class="org-meta mt-2">
+                  <i class="fa-solid fa-envelope me-1"></i>
+                  <a href="mailto:arjun.abhishek@ddn.upes.ac.in">arjun.abhishek@ddn.upes.ac.in</a>
+                </div>
+              </div>
+
+              <div class="organizer-card">
+                <div class="org-name">Dr. Sagar Deep Deb</div>
+                <div class="org-role">Faculty, SoCS, UPES Dehradun</div>
+                <div class="org-meta mt-2">
+                  <i class="fa-solid fa-envelope me-1"></i>
+                  <a href="mailto:sagar.deb@ddn.upes.ac.in">sagar.deb@ddn.upes.ac.in</a>
+                </div>
+              </div>
+
+              <div class="organizer-card">
+                <div class="org-name">Dr. Gaurav Sundaram</div>
+                <div class="org-role">Electronics &amp; Communication Engineering, IIIT Ranchi</div>
+                <div class="org-meta mt-2">
+                  <i class="fa-solid fa-envelope me-1"></i>
+                  <a href="mailto:gauravsundaram@iiitranchi.ac.in">gauravsundaram@iiitranchi.ac.in</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <hr style="opacity:.10;" class="my-4">
+
+        <!-- Important Dates -->
+        <div class="mb-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="icon-badge"><i class="fa-solid fa-calendar-days"></i></div>
+            <h3 class="mb-0 section-title fs-5">Important Dates</h3>
+          </div>
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="date-box">
+                <div class="date-label"><i class="fa-solid fa-file-arrow-up me-1"></i>Submission Deadline</div>
+                <div class="date-val">15 July 2026</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="date-box">
+                <div class="date-label"><i class="fa-solid fa-bell me-1"></i>Notification of Acceptance</div>
+                <div class="date-val">10 August 2026</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="date-box">
+                <div class="date-label"><i class="fa-solid fa-file-circle-check me-1"></i>Camera Ready Submission</div>
+                <div class="date-val">25 August 2026</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="date-box highlight">
+                <div class="date-label"><i class="fa-solid fa-star me-1"></i>Conference Dates</div>
+                <div class="date-val">Sep 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submission Guidelines + Flyer Download -->
+        <div class="soft-panel p-4" style="background:linear-gradient(135deg,rgba(30,136,229,.04),rgba(11,93,59,.04));">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="icon-badge"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h3 class="mb-0 section-title fs-5">Submission Guidelines</h3>
+          </div>
+          <ul class="list-unstyled list-check mb-3 muted-strong">
+            <li><i class="fa-solid fa-check-circle"></i>Manuscripts must be <strong>original</strong> and not under review elsewhere</li>
+            <li><i class="fa-solid fa-check-circle"></i>Papers must be prepared in <strong>IEEE format</strong></li>
+            <li><i class="fa-solid fa-check-circle"></i>Submissions must be <strong>plagiarism-free</strong> and comply with standard ethical guidelines</li>
+            <li><i class="fa-solid fa-check-circle"></i>Accepted papers will be published in <strong>IEEE Xplore</strong> subject to IEEE quality standards and peer review</li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="mailto:conference_socs@ddn.upes.ac.in" class="btn btn-forest btn-sm">
+              <i class="fa-solid fa-paper-plane me-2"></i>Submit Your Paper
+            </a>
+            <a href="cfp.html" class="btn btn-outline-sky btn-sm">
+              <i class="fa-solid fa-file-lines me-2"></i>Full CFP Details
+            </a>
+            <a href="assets/ICACSDF_Flyer_Session03.pdf" download class="btn btn-saffron btn-sm">
+              <i class="fa-solid fa-file-pdf me-2"></i>Download Session Flyer
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /session-body -->
+    </div><!-- /session-card session 3 -->
+
+    <!-- Sessions divider -->
+    <div class="sessions-divider">
+      <span class="small fw-bold" style="color:rgba(15,23,42,.40);white-space:nowrap;">Session 04</span>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SESSION 4 — FULL DETAILS
+    ═══════════════════════════════════════════════════════ -->
+    <div class="session-card mb-4">
+
+      <!-- Header -->
+      <div class="session-card-header" style="background:linear-gradient(135deg,#7b2ff7,#4a1abd);">
+        <div class="d-flex align-items-start gap-3">
+          <div class="session-number mt-1">04</div>
+          <div class="flex-1">
+            <div class="small mb-1" style="opacity:.80;font-weight:700;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;">
+              <i class="fa-solid fa-star me-1"></i>Special Session
+            </div>
+            <h2 class="session-title mb-2">
+              AI-Driven Malware Analysis and Threat Intelligence
+            </h2>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="ieee-badge" style="background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.30);color:#fff;">
+                <i class="fa-solid fa-brain"></i>AI &amp; ML
+              </span>
+              <span class="ieee-badge" style="background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.30);color:#fff;">
+                <i class="fa-solid fa-bug"></i>Malware Analysis
+              </span>
+              <span class="ieee-badge" style="background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.30);color:#fff;">
+                <i class="fa-solid fa-shield-halved"></i>Threat Intelligence
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Body -->
+      <div class="session-body">
+
+        <!-- Overview -->
+        <div class="mb-4">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <div class="icon-badge"><i class="fa-solid fa-circle-info"></i></div>
+            <h3 class="mb-0 section-title fs-5">Overview</h3>
+          </div>
+          <p class="muted-strong mb-0" style="line-height:1.75;">
+            This special session explores the application of <strong>artificial intelligence and machine learning</strong> to modern malware analysis and cyber threat intelligence. It brings together researchers and industry practitioners working on <strong>static/dynamic malware analysis, botnet detection, polymorphic threat modelling, and SOC-integrated AI defences</strong> — bridging academic research with real-world endpoint protection challenges.
+          </p>
+        </div>
+
+        <hr style="opacity:.10;">
+
+        <!-- Topics + Organizers row -->
+        <div class="row g-4 mt-1">
+
+          <!-- Topics of Interest -->
+          <div class="col-lg-7">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="icon-badge"><i class="fa-solid fa-tags"></i></div>
+              <h3 class="mb-0 section-title fs-5">Topics of Interest <span class="small fw-normal text-muted">(not limited to)</span></h3>
+            </div>
+            <div>
+              <span class="topic-pill"><i class="fa-solid fa-bug"></i>AI/ML for Malware Detection &amp; Classification</span>
+              <span class="topic-pill"><i class="fa-solid fa-code"></i>Static &amp; Dynamic Malware Analysis</span>
+              <span class="topic-pill"><i class="fa-solid fa-network-wired"></i>Botnet Detection &amp; C2 Traffic Analysis</span>
+              <span class="topic-pill"><i class="fa-solid fa-shuffle"></i>Polymorphic &amp; Metamorphic Threat Modelling</span>
+              <span class="topic-pill"><i class="fa-solid fa-mobile-screen"></i>Android &amp; Mobile Malware Analysis</span>
+              <span class="topic-pill"><i class="fa-solid fa-tower-broadcast"></i>Cyber Threat Intelligence &amp; Threat Hunting</span>
+              <span class="topic-pill"><i class="fa-solid fa-terminal"></i>SOC Automation &amp; AI-Assisted Incident Response</span>
+              <span class="topic-pill"><i class="fa-solid fa-shield-virus"></i>Endpoint Protection &amp; Zero-Day Exploit Detection</span>
+              <span class="topic-pill"><i class="fa-solid fa-chart-bar"></i>Multi-Source Threat Detection &amp; Risk Classification</span>
+              <span class="topic-pill"><i class="fa-solid fa-lock"></i>Adversarial Attacks on Security ML Models</span>
+            </div>
+          </div>
+
+          <!-- Organizers -->
+          <div class="col-lg-5">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="icon-badge"><i class="fa-solid fa-people-group"></i></div>
+              <h3 class="mb-0 section-title fs-5">Session Organizers</h3>
+            </div>
+            <div class="d-flex flex-column gap-3">
+
+              <div class="organizer-card">
+                <div class="org-name">Dr. Ashu Sharma</div>
+                <div class="org-role">Cybersecurity Advisor (Manager), WatchGuard Technologies</div>
+                <div class="org-meta mt-2">
+                  <i class="fa-solid fa-envelope me-1"></i>
+                  <a href="mailto:ashu.abviiitm@gmail.com">ashu.abviiitm@gmail.com</a><br>
+                  <i class="fa-solid fa-phone me-1 mt-1"></i>+91-8975805861
+                </div>
+              </div>
+
+              <div class="organizer-card">
+                <div class="org-name">Sanjay Sharma</div>
+                <div class="org-role">Senior Security &amp; Compliance Specialist, Atari Inc.</div>
+                <div class="org-meta mt-2">
+                  <i class="fa-solid fa-envelope me-1"></i>
+                  <a href="mailto:sanjay071288@gmail.com">sanjay071288@gmail.com</a><br>
+                  <i class="fa-solid fa-phone me-1 mt-1"></i>+91-9616619764
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <hr style="opacity:.10;" class="my-4">
+
+        <!-- Important Dates -->
+        <div class="mb-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="icon-badge"><i class="fa-solid fa-calendar-days"></i></div>
+            <h3 class="mb-0 section-title fs-5">Important Dates</h3>
+          </div>
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="date-box">
+                <div class="date-label"><i class="fa-solid fa-file-arrow-up me-1"></i>Submission Deadline</div>
+                <div class="date-val">30 June 2026</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="date-box">
+                <div class="date-label"><i class="fa-solid fa-bell me-1"></i>Notification of Acceptance</div>
+                <div class="date-val">25 July 2026</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="date-box">
+                <div class="date-label"><i class="fa-solid fa-file-circle-check me-1"></i>Camera Ready Submission</div>
+                <div class="date-val">15 August 2026</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="date-box highlight">
+                <div class="date-label"><i class="fa-solid fa-star me-1"></i>Conference Dates</div>
+                <div class="date-val">11–12 Sep 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submission Guidelines -->
+        <div class="soft-panel p-4" style="background:linear-gradient(135deg,rgba(123,47,247,.04),rgba(74,26,189,.04));">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="icon-badge"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h3 class="mb-0 section-title fs-5">Submission Guidelines</h3>
+          </div>
+          <ul class="list-unstyled list-check mb-3 muted-strong">
+            <li><i class="fa-solid fa-check-circle"></i>Manuscripts must be <strong>original</strong> and not under review elsewhere</li>
+            <li><i class="fa-solid fa-check-circle"></i>Papers must be prepared in <strong>IEEE format</strong></li>
+            <li><i class="fa-solid fa-check-circle"></i>Submissions must be <strong>plagiarism-free</strong> and comply with standard ethical guidelines</li>
+            <li><i class="fa-solid fa-check-circle"></i>Accepted papers will be published in <strong>IEEE Xplore</strong> subject to IEEE quality standards and peer review</li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="mailto:conference_socs@ddn.upes.ac.in" class="btn btn-forest btn-sm">
+              <i class="fa-solid fa-paper-plane me-2"></i>Submit Your Paper
+            </a>
+            <a href="cfp.html" class="btn btn-outline-sky btn-sm">
+              <i class="fa-solid fa-file-lines me-2"></i>Full CFP Details
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /session-body -->
+    </div><!-- /session-card session 4 -->
+
+    <!-- More sessions note -->
+    <div class="text-center mt-5">
+      <div class="soft-panel d-inline-block px-5 py-4">
+        <i class="fa-solid fa-circle-plus fa-2x mb-3 d-block" style="color:var(--forest);"></i>
+        <h5 class="fw-bold mb-2" style="color:var(--slate);">More Sessions Coming Soon</h5>
+        <p class="small muted-strong mb-3">Additional special sessions are currently under review. This page will be updated as sessions are confirmed.</p>
+        <a href="call_for_special_sessions.html" class="btn btn-saffron btn-sm">
+          <i class="fa-solid fa-arrow-right me-2"></i>Propose a Special Session
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ORGANIZER BIOS -->
+<section class="py-5" style="background:linear-gradient(180deg,#f8fafc,#eef6ff);">
+  <div class="container">
+    <div class="text-center mb-4">
+      <span class="badge rounded-pill text-bg-success px-3 py-2 mb-2">
+        <i class="fa-solid fa-user-tie me-2"></i>Session 02 — Organizer Profiles
+      </span>
+      <h2 class="section-title mt-2">👤 About the Organizers</h2>
+      <p class="section-subtitle">Session 02 is organized by distinguished researchers from UPES Dehradun and MANIT Bhopal.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Bio 1 -->
+      <div class="col-lg-4">
+        <div class="soft-panel p-4 h-100">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div style="width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,var(--sky),var(--forest));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:1.2rem;flex-shrink:0;">PT</div>
+            <div>
+              <div class="fw-bold" style="color:var(--slate);">Dr. Pratibha Tokas</div>
+              <div class="small" style="color:var(--forest);font-weight:700;">SoCS, UPES Dehradun</div>
+            </div>
+          </div>
+          <p class="small muted-strong mb-0" style="line-height:1.75;">
+            Assistant Professor (Senior Scale) at UPES Dehradun. She completed her Ph.D. from MANIT Bhopal with research focused on robust, interpretable, and resource-efficient frameworks for Human Activity Recognition (HAR) using wearable sensor data. Her work spans multimodal data (IMU and sEMG), explainable AI (XAI), and edge-deployable AI for personalized healthcare. Published in <em>IEEE Sensors Journal</em>, <em>IEEE Transactions on Consumer Electronics</em>, <em>Applied Soft Computing</em>, and <em>Neural Computing and Applications</em>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bio 2 -->
+      <div class="col-lg-4">
+        <div class="soft-panel p-4 h-100">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div style="width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,var(--forest),#0a7a4b);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:1.2rem;flex-shrink:0;">SS</div>
+            <div>
+              <div class="fw-bold" style="color:var(--slate);">Dr. Saurabh Shrivastava</div>
+              <div class="small" style="color:var(--forest);font-weight:700;">SoCS (AI Cluster), UPES Dehradun</div>
+            </div>
+          </div>
+          <p class="small muted-strong mb-0" style="line-height:1.75;">
+            Assistant Professor (Senior Scale) in the School of Computer Science (AI Cluster) at UPES Dehradun. Ph.D. from MANIT, Bhopal. His research spans machine learning, optimization techniques, and support vector machines (SVM), with contributions to noise-robust SVM variants, image classification, and deep learning in healthcare analytics. Published in <em>Information Sciences</em>, <em>Expert Systems with Applications</em>, and <em>Biomedical Signal Processing and Control</em>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bio 3 -->
+      <div class="col-lg-4">
+        <div class="soft-panel p-4 h-100">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div style="width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,#7b2ff7,#1e88e5);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:1.2rem;flex-shrink:0;">VS</div>
+            <div>
+              <div class="fw-bold" style="color:var(--slate);">Dr. Vijay Bhaskar Semwal</div>
+              <div class="small" style="color:var(--forest);font-weight:700;">Dept. of CSE, MANIT Bhopal</div>
+            </div>
+          </div>
+          <p class="small muted-strong mb-0" style="line-height:1.75;">
+            Assistant Professor at MANIT Bhopal since 2019. Ph.D. in Robotics and Artificial Intelligence from IIIT Allahabad (2017). Has previously served at NIT Rourkela, IIIT Dharwad, and NIT Jamshedpur. Research interests include Human–Robot Interaction, wearable sensor-based healthcare, HAR, gait analysis, IoT, and AI. Author of 50+ SCI/SCOPUS-indexed publications, recipient of the <strong>DST-SERB Early Career Research Award (ECRA)</strong>, and Senior Member of IEEE.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SESSION 03 ORGANIZER BIOS -->
+<section class="py-5" style="background:linear-gradient(180deg,#f0f9ff,#e8f5e9);">
+  <div class="container">
+    <div class="text-center mb-4">
+      <span class="badge rounded-pill px-3 py-2 mb-2" style="background:linear-gradient(135deg,var(--forest),#0a7a4b);color:#fff;">
+        <i class="fa-solid fa-user-tie me-2"></i>Session 03 — Organizer Profiles
+      </span>
+      <h2 class="section-title mt-2">👤 About the Organizers</h2>
+      <p class="section-subtitle">Session 03 is organized by researchers from IIT Patna, IIT Bombay, and IIIT Ranchi, working at the intersection of Biomedical Image Processing, AI, and Generative AI.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Bio 1 — Dr. Arjun Abhishek -->
+      <div class="col-lg-4">
+        <div class="soft-panel p-4 h-100">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div style="width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,var(--forest),#0a7a4b);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:1.2rem;flex-shrink:0;">AA</div>
+            <div>
+              <div class="fw-bold" style="color:var(--slate);">Dr. Arjun Abhishek</div>
+              <div class="small" style="color:var(--forest);font-weight:700;">Assistant Professor, SoCS, UPES Dehradun</div>
+            </div>
+          </div>
+          <p class="small muted-strong mb-3" style="line-height:1.75;">
+            Assistant Professor at the School of Computer Science, UPES Dehradun. Prior to joining UPES, he served as Ad-hoc Faculty in the Department of Computer Science at NIT Patna. He completed his Ph.D. from the Department of Electrical Engineering, IIT Patna. His research focuses on the intersection of <strong>Biomedical Image Processing and Artificial Intelligence</strong>.
+          </p>
+          <div class="small" style="color:rgba(15,23,42,.55);">
+            <i class="fa-solid fa-envelope me-1" style="color:var(--sky);"></i>
+            <a href="mailto:arjun.abhishek@ddn.upes.ac.in" style="color:var(--sky);text-decoration:none;font-weight:700;">arjun.abhishek@ddn.upes.ac.in</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bio 2 — Dr. Sagar Deep Deb -->
+      <div class="col-lg-4">
+        <div class="soft-panel p-4 h-100">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div style="width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,var(--sky),#1565c0);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:1.2rem;flex-shrink:0;">SD</div>
+            <div>
+              <div class="fw-bold" style="color:var(--slate);">Dr. Sagar Deep Deb</div>
+              <div class="small" style="color:var(--forest);font-weight:700;">Assistant Professor, SoCS, UPES Dehradun</div>
+            </div>
+          </div>
+          <p class="small muted-strong mb-3" style="line-height:1.75;">
+            Assistant Professor at the School of Computer Science, UPES, working at the intersection of <strong>machine learning, deep learning, and healthcare</strong>. He holds a Ph.D. (2024) in Electrical Engineering from IIT Patna and completed a postdoctoral fellowship at IIT Bombay before joining UPES.
+          </p>
+          <div class="small" style="color:rgba(15,23,42,.55);">
+            <i class="fa-solid fa-envelope me-1" style="color:var(--sky);"></i>
+            <a href="mailto:sagar.deb@ddn.upes.ac.in" style="color:var(--sky);text-decoration:none;font-weight:700;">sagar.deb@ddn.upes.ac.in</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bio 3 — Dr. Gaurav Sundaram -->
+      <div class="col-lg-4">
+        <div class="soft-panel p-4 h-100">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div style="width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,#7b2ff7,#1e88e5);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:1.2rem;flex-shrink:0;">GS</div>
+            <div>
+              <div class="fw-bold" style="color:var(--slate);">Dr. Gaurav Sundaram</div>
+              <div class="small" style="color:var(--forest);font-weight:700;">Assistant Professor, ECE, IIIT Ranchi</div>
+            </div>
+          </div>
+          <p class="small muted-strong mb-3" style="line-height:1.75;">
+            Assistant Professor in the Department of Electronics and Communication at IIIT Ranchi. He completed his Ph.D. from the Department of Electrical Engineering, IIT Patna. His research focuses on the intersection of <strong>Generative AI and Machine Learning</strong>.
+          </p>
+          <div class="small" style="color:rgba(15,23,42,.55);">
+            <i class="fa-solid fa-envelope me-1" style="color:var(--sky);"></i>
+            <a href="mailto:gauravsundaram@iiitranchi.ac.in" style="color:var(--sky);text-decoration:none;font-weight:700;">gauravsundaram@iiitranchi.ac.in</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SESSION 04 ORGANIZER BIOS -->
+<section class="py-5" style="background:linear-gradient(180deg,#f3eeff,#ede8ff);">
+  <div class="container">
+    <div class="text-center mb-4">
+      <span class="badge rounded-pill px-3 py-2 mb-2" style="background:linear-gradient(135deg,#7b2ff7,#4a1abd);color:#fff;">
+        <i class="fa-solid fa-user-tie me-2"></i>Session 04 — Organizer Profiles
+      </span>
+      <h2 class="section-title mt-2">👤 About the Organizers</h2>
+      <p class="section-subtitle">Session 04 is organized by industry-academia experts bridging malware research, threat intelligence, and AI-driven security operations.</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Bio 1 — Dr. Ashu Sharma -->
+      <div class="col-lg-5">
+        <div class="soft-panel p-4 h-100">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div style="width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,#7b2ff7,#4a1abd);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:1.2rem;flex-shrink:0;">AS</div>
+            <div>
+              <div class="fw-bold" style="color:var(--slate);">Dr. Ashu Sharma</div>
+              <div class="small" style="color:#7b2ff7;font-weight:700;">Cybersecurity Advisor (Manager), WatchGuard Technologies</div>
+            </div>
+          </div>
+          <p class="small muted-strong mb-3" style="line-height:1.75;">
+            A cybersecurity researcher with <strong>14+ years of expertise</strong> in malware analysis and threat intelligence. He holds a Ph.D. from BITS Pilani and a law degree in cyber crime, bridging academia and industry. As Cybersecurity Advisor at WatchGuard Technologies and an IIT Kanpur postdoctoral fellow, he has published extensively on <strong>Android malware, botnet analysis, and polymorphic threats</strong>. His work integrates static/dynamic analysis with machine learning for real-world SOC security challenges.
+          </p>
+          <div class="d-flex flex-wrap gap-3 small" style="color:rgba(15,23,42,.55);">
+            <div><i class="fa-solid fa-envelope me-1" style="color:#7b2ff7;"></i><a href="mailto:ashu.abviiitm@gmail.com" style="color:#7b2ff7;text-decoration:none;font-weight:700;">ashu.abviiitm@gmail.com</a></div>
+            <div><i class="fa-solid fa-phone me-1" style="color:#7b2ff7;"></i><span>+91-8975805861</span></div>
+            <div><i class="fa-brands fa-linkedin me-1" style="color:#7b2ff7;"></i><a href="https://www.linkedin.com/in/dr-ashu-sharma-2b361319/" target="_blank" rel="noopener" style="color:#7b2ff7;text-decoration:none;font-weight:700;">LinkedIn Profile</a></div>
+          </div>
+          <div class="mt-3">
+            <span class="topic-pill" style="font-size:.78rem;"><i class="fa-solid fa-shield-halved"></i>Malware Analysis</span>
+            <span class="topic-pill" style="font-size:.78rem;"><i class="fa-solid fa-microchip"></i>Endpoint Protection</span>
+            <span class="topic-pill" style="font-size:.78rem;"><i class="fa-solid fa-lock"></i>Cybersecurity</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bio 2 — Sanjay Sharma -->
+      <div class="col-lg-5">
+        <div class="soft-panel p-4 h-100">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div style="width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,#1e88e5,#7b2ff7);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:1.2rem;flex-shrink:0;">SS</div>
+            <div>
+              <div class="fw-bold" style="color:var(--slate);">Sanjay Sharma</div>
+              <div class="small" style="color:#7b2ff7;font-weight:700;">Senior Security &amp; Compliance Specialist, Atari Inc.</div>
+            </div>
+          </div>
+          <p class="small muted-strong mb-3" style="line-height:1.75;">
+            Senior Security and Compliance Specialist at Atari Inc. with <strong>8+ years of experience</strong> in information security, compliance, threat analysis, and cyber risk management. His expertise spans <strong>security governance, ISO 27001 &amp; SOC 2 compliance, security awareness, and operational cyber defence</strong>. He has prior experience in malware analysis and ML-based security research, and is currently pursuing a Ph.D. focused on <strong>multi-source threat detection and classification</strong> using machine learning.
+          </p>
+          <div class="d-flex flex-wrap gap-3 small mb-3" style="color:rgba(15,23,42,.55);">
+            <div><i class="fa-solid fa-envelope me-1" style="color:#7b2ff7;"></i><a href="mailto:sanjay071288@gmail.com" style="color:#7b2ff7;text-decoration:none;font-weight:700;">sanjay071288@gmail.com</a></div>
+            <div><i class="fa-solid fa-phone me-1" style="color:#7b2ff7;"></i><span>+91-9616619764</span></div>
+            <div><i class="fa-brands fa-linkedin me-1" style="color:#7b2ff7;"></i><a href="https://www.linkedin.com/in/sanjay-sharma-cisa-45b989a2/" target="_blank" rel="noopener" style="color:#7b2ff7;text-decoration:none;font-weight:700;">LinkedIn Profile</a></div>
+          </div>
+          <div>
+            <span class="topic-pill" style="font-size:.78rem;"><i class="fa-solid fa-certificate"></i>CISA (ISACA)</span>
+            <span class="topic-pill" style="font-size:.78rem;"><i class="fa-solid fa-file-shield"></i>ISO/IEC 27001 Lead Auditor</span>
+            <span class="topic-pill" style="font-size:.78rem;"><i class="fa-solid fa-user-secret"></i>CEH v10</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (same as index) -->
+<!-- FOOTER -->
+<footer class="pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-4">
+      <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
+          
+          <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo" style="height:42px;width:auto;">
+        </div> 
+	   <h5 class="fw-bold text-white">ICACSDF 2026</h5>
+        <p class="mb-2">
+          School of Computer Science, UPES Dehradun, Uttarakhand
+        </p>
+
+        <!-- ✅ Footer logos -->
+        
+
+        <div class="small">
+          <div class="mb-2">
+            <i class="fa-solid fa-calendar-days me-2"></i> <strong>11–12 September 2026</strong>
+          </div>
+          <div>
+            <i class="fa-solid fa-certificate me-2"></i> Sponsored by <strong>IEEE UP Section Conference Record #70668</strong>
+          </div>
+          <div class="mt-2">
+            <div class="mt-2"><i class="fa-solid fa-globe me-2"></i>  <a href = "https://2025.icacsdf.org/"> <strong> ICACSDF2025 Conference </strong> </a> </div>
+          </div>
+		  </div>
+		  
+        <h6 class="fw-bold text-white mt-4">Contact Us</h6>
+        <p class="small mb-2">
+          Contact UPES, Bidholi Campus, Dehradun<br>
+          P.O. Bidholi Via Premnagar, Dehradun-248007
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+<h6 class="fw-bold text-white">Rankings & Recognitions</h6>
+<p class="small mb-2">
+
+  • NIRF 2025: Ranked <strong>45 (Overall)</strong>, 
+  <strong>43 (Engineering)</strong>, 
+  <strong>36 (Management)</strong>, and 
+  <strong>18 (Law)</strong><br>
+
+  • Times Higher Education (THE) 2026: Among the 
+  <strong>Top 5 universities in India</strong>; ranked 
+  <strong>501–600 globally</strong>; 
+  <strong>299 in Research Quality</strong><br>
+
+  • QS World University Rankings 2026: Ranked 
+  <strong>901–950 globally</strong>; 
+  <strong>No. 1 Private University in India for Academic Reputation</strong><br>
+
+  • U.S. News & World Report 2025: Ranked 
+  <strong>919 globally</strong>; 
+  <strong>20 in India</strong><br>
+
+  • Shanghai Ranking (GRAS): Ranked among the 
+  <strong>Top 150 in Telecommunication Engineering</strong>, 
+  <strong>Top 400 in Electrical & Electronic Engineering</strong>, and 
+  <strong>Top 500 in Computer Science & Engineering</strong><br>
+
+  • QS Rating: Awarded <strong>5-Star rating</strong>; placed among the 
+  <strong>Top 2% universities globally</strong><br>
+
+  • NBA-Accredited Programs | Recognised by UGC | Member of AIU
+</p>
+
+
+
+      
+      </div>
+
+      <div class="col-lg-4">
+        <h6 class="fw-bold text-white">Important Dates</h6>
+        <div class="small">
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Paper Submission Opens</strong></span>
+            <span class="text-end">18 March 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Submission Deadline</strong></span>
+            <span class="text-end">30 June 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Notification of Acceptance</strong></span>
+            <span class="text-end">25 July 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Camera Ready Submission</strong></span>
+            <span class="text-end">15 August 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Last Date of Registration</strong></span>
+            <span class="text-end">25 August 2026</span>
+          </div>
+          <div class="d-flex justify-content-between gap-3 pt-2">
+            <span><strong>Conference Date</strong></span>
+            <span class="text-end">11–12 September 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <hr class="border-light opacity-25 mt-4">
+
+<div class="d-flex justify-content-between align-items-center">
+  <p class="small mb-0 text-start">
+    <strong>&copy; 2026 ICACSDF</strong>. All Rights Reserved.
+  </p>
+
+  <p class="small mb-0 text-end">
+    Design and Developed by:
+    <a href="https://edcatalyst.in" target="_blank" rel="noopener noreferrer">
+      <strong>Edcatalyst.in</strong>
+    </a>
+  </p>
+</div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+(function(){
+  document.addEventListener("contextmenu",function(e){e.preventDefault();},{passive:false});
+  document.addEventListener("keydown",function(e){
+    if(e.key==="F12"){e.preventDefault();return false;}
+    if((e.ctrlKey||e.metaKey)&&e.shiftKey&&["i","j","c"].includes(e.key.toLowerCase())){e.preventDefault();return false;}
+    if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="u"){e.preventDefault();return false;}
+  });
+})();
+</script>
+
+</body>
+</html>

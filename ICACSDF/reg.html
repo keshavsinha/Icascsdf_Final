@@ -27,269 +27,6 @@
   }
 
   body{
-    font-family:'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-    color:#0b1220;
-    background:
-      radial-gradient(900px 500px at 10% 0%, rgba(30,136,229,.10), transparent 60%),
-      radial-gradient(900px 600px at 90% 20%, rgba(11,93,59,.10), transparent 60%),
-      linear-gradient(180deg, #ffffff, #f6fbff);
-  }
-
-  /* Top bar */
-  .top-bar{
-    background: linear-gradient(90deg, var(--slate), #0b2a1b);
-    color: rgba(255,255,255,.92);
-    font-size:.92rem;
-  }
-  .top-bar a{ color: rgba(255,255,255,.92); text-decoration:none; }
-  .top-bar a:hover{ color: #fff; text-decoration: underline; }
-
-  /* Navbar */
-  .navbar{
-    background: rgba(255,255,255,.88) !important;
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(15,23,42,.08);
-  }
-  .navbar-brand{ font-weight: 800; letter-spacing:.2px; }
-  .brand-pill{
-    display:inline-flex;
-    align-items:center;
-    gap:.55rem;
-    padding:.45rem .75rem;
-    border-radius:999px;
-    background: linear-gradient(135deg, rgba(30,136,229,.10), rgba(11,93,59,.10));
-    border: 1px solid rgba(15,23,42,.10);
-  }
-
-  /* Logos */
-  .brand-logos{ display:flex; align-items:center; gap:14px; }
-  .brand-logos img{
-    height:44px; width:auto; object-fit:contain;
-    filter: drop-shadow(0 8px 18px rgba(2,6,23,.10));
-  }
-  .brand-logos .logo-divider{ width:1px; height:28px; background: rgba(15,23,42,.15); }
-  @media (max-width: 992px){ .brand-logos img{ height:38px; } }
-
-  /* Hero */
-  .hero{
-    position: relative;
-    overflow: hidden;
-    padding: 86px 0 50px;
-  }
-  .hero::before{
-    content:"";
-    position:absolute; inset:0;
-    background:
-      linear-gradient(180deg, rgba(255,255,255,.32), rgba(255,255,255,.95)),
-      url("https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1800&q=80");
-    background-size: cover;
-    background-position: center;
-    pointer-events:none;
-  }
-  .hero::after{
-    content:"";
-    position:absolute;
-    left:0; right:0; bottom:-2px;
-    height:160px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200' preserveAspectRatio='none'%3E%3Cpath d='M0 160 L120 120 L220 150 L340 80 L420 140 L520 60 L640 145 L760 90 L860 160 L980 110 L1200 160 L1200 200 L0 200 Z' fill='%230b5d3b' opacity='0.20'/%3E%3Cpath d='M0 170 L140 130 L250 165 L360 105 L460 155 L560 75 L680 165 L820 115 L940 175 L1200 135 L1200 200 L0 200 Z' fill='%231e88e5' opacity='0.14'/%3E%3C/svg%3E");
-    background-size: cover;
-    background-repeat: no-repeat;
-    pointer-events:none;
-  }
-  .hero .container{ position:relative; z-index:1; }
-
-  .chip{
-    display:inline-flex;
-    align-items:center;
-    gap:.5rem;
-    padding:.45rem .85rem;
-    border-radius: 999px;
-    background: rgba(255,255,255,.88);
-    border: 1px solid rgba(15,23,42,.10);
-    color: var(--slate);
-    font-weight: 800;
-    font-size: .92rem;
-  }
-  .chip i{ color: var(--forest); }
-
-  .hero-title{
-    font-weight: 900;
-    line-height: 1.12;
-    color: var(--slate);
-    text-shadow: 0 10px 35px rgba(2,6,23,.12);
-  }
-  .hero-lead{
-    color: rgba(15,23,42,.78);
-    max-width: 980px;
-    margin-inline: auto;
-  }
-
-  .btn-saffron{
-    background: linear-gradient(135deg, var(--sun), #ffb020);
-    border: 0;
-    color: #1f2937;
-    font-weight: 900;
-  }
-  .btn-saffron:hover{
-    filter: brightness(1.03);
-    box-shadow: 0 0 0 6px rgba(245,158,11,.18);
-  }
-  .btn-forest{
-    background: linear-gradient(135deg, var(--forest), #0a7a4b);
-    border: 0;
-    color: #fff;
-    font-weight: 900;
-  }
-  .btn-forest:hover{
-    filter: brightness(1.03);
-    box-shadow: 0 0 0 6px rgba(11,93,59,.16);
-  }
-
-  .section-title{ font-weight: 900; color: var(--slate); }
-  .section-subtitle{
-    color: rgba(15,23,42,.70);
-    max-width: 980px;
-    margin: 0 auto;
-  }
-
-  .soft-panel{
-    background: rgba(255,255,255,.92);
-    border: 1px solid rgba(15,23,42,.08);
-    border-radius: 20px;
-    box-shadow: 0 16px 40px rgba(2,6,23,.06);
-  }
-
-  /* Countdown */
-  .countdown-wrap{
-    max-width: 980px;
-    margin: 16px auto 0;
-    background: rgba(255,255,255,.82);
-    border: 1px solid rgba(15,23,42,.10);
-    border-radius: 18px;
-    padding: 18px 18px;
-    backdrop-filter: blur(10px);
-  }
-  .countdown-label{ font-weight: 900; color: var(--slate); }
-  .count-box{
-    background: #fff;
-    border: 1px solid rgba(15,23,42,.08);
-    border-radius: 16px;
-    padding: 14px 10px;
-    box-shadow: 0 12px 28px rgba(2,6,23,.06);
-  }
-  .count-num{
-    font-size: 1.55rem;
-    font-weight: 900;
-    color: var(--forest);
-    line-height: 1;
-  }
-  .count-text{
-    font-size: .85rem;
-    color: rgba(15,23,42,.65);
-    margin-top: 4px;
-    font-weight: 800;
-  }
-
-  /* Registration cards */
-  .fee-card{
-    background:#fff;
-    border: 1px solid rgba(15,23,42,.08);
-    border-radius: 20px;
-    padding: 18px;
-    height: 100%;
-    box-shadow: 0 14px 34px rgba(2,6,23,.06);
-    position: relative;
-    overflow: hidden;
-  }
-  .fee-card::before{
-    content:"";
-    position:absolute;
-    inset:-40px -40px auto auto;
-    width: 160px;
-    height: 160px;
-    border-radius: 999px;
-    background: radial-gradient(circle at 30% 30%, rgba(245,158,11,.22), rgba(30,136,229,.10), transparent 60%);
-    filter: blur(0px);
-  }
-  .fee-title{
-    font-weight: 900;
-    color: var(--slate);
-    margin-bottom: 6px;
-  }
-  .fee-badge{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    padding: 8px 12px;
-    border-radius: 999px;
-    border: 1px solid rgba(15,23,42,.10);
-    background: rgba(255,255,255,.86);
-    font-weight: 900;
-  }
-  .fee-price{
-    font-size: 1.8rem;
-    font-weight: 950;
-    color: var(--forest);
-    letter-spacing: .2px;
-    margin: 12px 0 6px;
-  }
-  .fee-note{
-    color: rgba(15,23,42,.70);
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  .list-check{
-    margin:0;
-    padding-left: 1.1rem;
-    color: rgba(15,23,42,.78);
-    line-height: 1.75;
-    font-weight: 650;
-  }
-  .list-check i{ color: var(--forest); margin-right: .55rem; }
-
-  /* Steps */
-  .step{
-    display:flex;
-    gap: 12px;
-    align-items:flex-start;
-  }
-  .step-num{
-    width: 44px;height:44px;
-    border-radius: 14px;
-    display:flex;align-items:center;justify-content:center;
-    background: linear-gradient(135deg, rgba(30,136,229,.12), rgba(11,93,59,.12));
-    border: 1px solid rgba(15,23,42,.10);
-    color: var(--forest);
-    font-weight: 950;
-  }
-  .step h6{ font-weight: 900; margin-bottom: 4px; color: var(--slate); }
-  .step p{ margin:0; color: rgba(15,23,42,.74); font-weight: 650; line-height: 1.7; }
-
-  /* Footer */
-  footer{
-    background: linear-gradient(90deg, var(--slate), #0b2a1b);
-    color: rgba(255,255,255,.85);
-  }
-  footer a{ color: rgba(255,255,255,.85); text-decoration:none; }
-  footer a:hover{ color: #fff; text-decoration: underline; }
-  .footer-date-row{
-    border-bottom: 1px solid rgba(255,255,255,.20);
-    padding: .55rem 0;
-  }
-
-  .offcanvas{ background: #ffffff; }
-</style>
-
-<style> 
-  :root{
-    --sky:#1e88e5;
-    --forest:#0b5d3b;
-    --slate:#0f172a;
-    --sun:#f59e0b;
-    --snow:#f8fafc;
-  }
-
-  body{
     font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
     color:#0b1220;
     background:
@@ -307,24 +44,64 @@
   .top-bar a{color:rgba(255,255,255,.92);text-decoration:none;}
   .top-bar a:hover{color:#fff;text-decoration:underline;}
 
-  /* Navbar */
-  .navbar{
-    background:rgba(255,255,255,.95)!important;
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid rgba(15,23,42,.08);
-    position:sticky; top:0; z-index:1030;
+/* NAVBAR CORE */
+.navbar{
+  background:rgba(255,255,255,.95)!important;
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(15,23,42,.08);
+  position:sticky;
+  top:0;
+  z-index:1030;
+}
+
+.navbar-brand{
+  font-weight:800;
+  letter-spacing:.2px;
+}
+
+/* BRAND */
+.brand-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:.55rem;
+  padding:.45rem .75rem;
+  border-radius:999px;
+  background:linear-gradient(135deg,rgba(30,136,229,.10),rgba(11,93,59,.10));
+  border:1px solid rgba(15,23,42,.10);
+}
+
+/* NAV ITEMS */
+.navbar-nav{
+  display:flex;
+  flex-wrap:wrap;              /* ✅ prevents overflow */
+  gap:4px;                    /* controlled spacing */
+}
+
+.navbar-nav .nav-link{
+  white-space:nowrap;         /* prevents breaking */
+  font-size:0.9rem;
+  font-weight:600;
+}
+
+/* LOGO */
+.ieee-logo{
+  height:32px;                /* ✅ reduced size */
+  width:auto;
+  object-fit:contain;
+}
+
+/* CONTAINER FIX */
+.navbar .container{
+  max-width:1320px;           /* Bootstrap standard */
+}
+
+/* MOBILE */
+@media(max-width:992px){
+  .ieee-logo{
+    display:none;
   }
-  .navbar-brand{font-weight:800;letter-spacing:.2px;}
-  .brand-pill{
-    display:inline-flex;align-items:center;gap:.55rem;
-    padding:.45rem .75rem;border-radius:999px;
-    background:linear-gradient(135deg,rgba(30,136,229,.10),rgba(11,93,59,.10));
-    border:1px solid rgba(15,23,42,.10);
-  }
-  .brand-logos{display:flex;align-items:center;gap:14px;}
-  .brand-logos img{height:44px;width:auto;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(2,6,23,.10));}
-  .brand-logos .logo-divider{width:1px;height:28px;background:rgba(15,23,42,.15);}
-  @media(max-width:992px){.brand-logos img{height:38px;}}
+}
+  
 
   /* Offcanvas */
   .offcanvas{background:#ffffff;}
@@ -392,46 +169,73 @@
   .list-check li{margin-bottom:.55rem;}
   .list-check i{color:var(--forest);margin-right:.55rem;}
 
-  /* Benefit cards */
-  .benefit-card{
-    background:rgba(255,255,255,.92);border:1px solid rgba(15,23,42,.08);
-    border-radius:18px;padding:1.5rem;box-shadow:0 8px 24px rgba(2,6,23,.05);
-    transition:transform .2s,box-shadow .2s;height:100%;
+  /* Session card */
+  .session-card{
+    background:#fff;border:1px solid rgba(15,23,42,.08);
+    border-radius:24px;box-shadow:0 16px 48px rgba(2,6,23,.07);
+    overflow:hidden;
   }
-  .benefit-card:hover{transform:translateY(-4px);box-shadow:0 20px 48px rgba(2,6,23,.09);}
-  .benefit-icon{
-    width:52px;height:52px;border-radius:16px;
-    display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:1rem;
-    background:linear-gradient(135deg,rgba(30,136,229,.13),rgba(11,93,59,.13));
-    border:1px solid rgba(15,23,42,.10);color:var(--forest);
+  .session-card-header{
+    background:linear-gradient(135deg,var(--forest),#0a7a4b);
+    color:#fff;padding:1.75rem 2rem 1.5rem;
+  }
+  .session-card-header.sky{
+    background:linear-gradient(135deg,var(--sky),#1565c0);
+  }
+  .session-number{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:36px;height:36px;border-radius:50%;
+    background:rgba(255,255,255,.20);border:2px solid rgba(255,255,255,.40);
+    font-weight:900;font-size:.9rem;flex-shrink:0;
+  }
+  .session-title{font-weight:900;line-height:1.25;font-size:1.15rem;}
+  .session-body{padding:2rem;}
+
+  /* Dates grid */
+  .date-box{
+    background:linear-gradient(135deg,rgba(30,136,229,.06),rgba(11,93,59,.06));
+    border:1px solid rgba(15,23,42,.08);border-radius:14px;
+    padding:.85rem 1rem;text-align:center;
+  }
+  .date-box .date-label{font-size:.70rem;font-weight:800;color:rgba(15,23,42,.55);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.25rem;}
+  .date-box .date-val{font-size:.95rem;font-weight:800;color:var(--slate);}
+  .date-box.highlight{background:linear-gradient(135deg,rgba(11,93,59,.12),rgba(10,122,75,.12));border-color:rgba(11,93,59,.20);}
+  .date-box.highlight .date-val{color:var(--forest);}
+
+  /* Organizer card */
+  .organizer-card{
+    background:rgba(248,250,252,.90);border:1px solid rgba(15,23,42,.08);
+    border-radius:14px;padding:1.1rem 1.25rem;
+  }
+  .organizer-card .org-name{font-weight:800;color:var(--slate);font-size:.95rem;}
+  .organizer-card .org-role{font-size:.78rem;color:var(--forest);font-weight:700;font-style:italic;}
+  .organizer-card .org-meta{font-size:.80rem;color:rgba(15,23,42,.60);margin-top:.3rem;}
+  .organizer-card .org-meta a{color:var(--sky);text-decoration:none;font-weight:700;}
+  .organizer-card .org-meta a:hover{text-decoration:underline;}
+
+  /* Coming soon card */
+  .coming-soon-card{
+    background:linear-gradient(135deg,rgba(15,23,42,.03),rgba(30,136,229,.05));
+    border:2px dashed rgba(15,23,42,.15);
+    border-radius:24px;padding:3rem 2rem;text-align:center;
   }
 
-  /* Highlight strip */
-  .highlight-strip{background:linear-gradient(135deg,var(--forest),#0a7a4b);border-radius:20px;color:#fff;padding:2rem;}
-  .highlight-strip .stat-num{font-size:1.9rem;font-weight:900;line-height:1;}
-  .highlight-strip .stat-label{font-size:.78rem;opacity:.80;font-weight:700;margin-top:4px;}
-
-  /* Steps timeline */
-  .step-line{position:relative;}
-  .step-item{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.75rem;position:relative;}
-  .step-item:not(:last-child)::after{
-    content:"";position:absolute;left:19px;top:44px;bottom:-1.75rem;
-    width:2px;background:linear-gradient(180deg,var(--forest),rgba(11,93,59,.10));
+  /* Section divider */
+  .sessions-divider{
+    display:flex;align-items:center;gap:1rem;margin:2.5rem 0;
   }
-  .step-dot{
-    width:40px;height:40px;min-width:40px;border-radius:50%;
-    background:linear-gradient(135deg,var(--forest),#0a7a4b);color:#fff;
-    display:flex;align-items:center;justify-content:center;
-    font-weight:900;font-size:.9rem;box-shadow:0 4px 12px rgba(11,93,59,.30);
-    flex-shrink:0;position:relative;z-index:1;
+  .sessions-divider::before,.sessions-divider::after{
+    content:"";flex:1;height:1px;background:rgba(15,23,42,.10);
   }
-  .step-content{flex:1;padding-top:6px;}
 
-  /* Footer */
-  footer{background:linear-gradient(90deg,var(--slate),#0b2a1b);color:rgba(255,255,255,.85);}
-  footer a{color:rgba(255,255,255,.85);text-decoration:none;}
-  footer a:hover{color:#fff;text-decoration:underline;}
-  .footer-date-row{border-bottom:1px solid rgba(255,255,255,.20);padding:.55rem 0;}
+  /* IEEE badge */
+  .ieee-badge{
+    display:inline-flex;align-items:center;gap:.5rem;
+    background:linear-gradient(135deg,rgba(30,136,229,.10),rgba(11,93,59,.10));
+    border:1px solid rgba(30,136,229,.25);border-radius:999px;
+    padding:.4rem .85rem;font-weight:800;font-size:.80rem;color:var(--slate);
+  }
+  .ieee-badge i{color:var(--sky);}
 
   /* Pulse badge */
   @keyframes pulse-ring{
@@ -441,22 +245,26 @@
   }
   .badge-pulse{animation:pulse-ring 2s infinite;border-radius:999px;}
 
-  /* ── Mobile responsive ── */
+  /* Footer */
+  footer{background:linear-gradient(90deg,var(--slate),#0b2a1b);color:rgba(255,255,255,.85);}
+  footer a{color:rgba(255,255,255,.85);text-decoration:none;}
+  footer a:hover{color:#fff;text-decoration:underline;}
+  .footer-date-row{border-bottom:1px solid rgba(255,255,255,.20);padding:.55rem 0;}
+
+
+
+  /* Mobile */
   @media(max-width:767px){
     .hero{padding:40px 0 40px;}
     .hero-title{font-size:1.6rem!important;}
     .hero-lead{font-size:.92rem;}
-    .highlight-strip{padding:1.25rem 1rem;}
-    .highlight-strip .stat-num{font-size:1.45rem;}
-    .highlight-strip .stat-label{font-size:.70rem;}
+    .session-card-header{padding:1.25rem 1.25rem 1rem;}
+    .session-body{padding:1.25rem;}
+    .session-title{font-size:1rem;}
     .soft-panel{border-radius:14px;}
     .btn-lg{padding:.55rem 1rem;font-size:.88rem;}
     .section-title{font-size:1.25rem;}
     .chip{font-size:.80rem;padding:.38rem .7rem;}
-    .benefit-card{padding:1.1rem;}
-    .step-item{gap:.75rem;}
-    .step-dot{width:34px;height:34px;min-width:34px;font-size:.8rem;}
-    .step-item:not(:last-child)::after{left:16px;}
   }
   @media(max-width:400px){
     .hero-title{font-size:1.35rem!important;}
@@ -464,8 +272,200 @@
   }
 </style>
 
-</head>
+<style>
+  .top-bar{background:linear-gradient(90deg,#0f172a,#0b2a1b);color:rgba(255,255,255,.92);font-size:.85rem;position:relative;z-index:1031;}
+  .top-bar a{color:rgba(255,255,255,.92);text-decoration:none;}
+  .top-bar a:hover{color:#fff;text-decoration:underline;}
+  .navbar{background:rgba(255,255,255,.95)!important;backdrop-filter:blur(10px);border-bottom:1px solid rgba(15,23,42,.08);position:sticky;top:0;z-index:1030;}
+  .navbar-brand{font-weight:800;letter-spacing:.2px;}
+  .brand-pill{display:inline-flex;align-items:center;gap:.55rem;padding:.45rem .75rem;border-radius:999px;background:linear-gradient(135deg,rgba(30,136,229,.10),rgba(11,93,59,.10));border:1px solid rgba(15,23,42,.10);}
+  .brand-logos{display:flex;align-items:center;gap:14px;}
+  .brand-logos img{height:44px;width:auto;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(2,6,23,.10));}
+  .brand-logos .logo-divider{width:1px;height:28px;background:rgba(15,23,42,.15);}
+  @media(max-width:992px){.brand-logos img{height:38px;}}
 
+  /* Dropdown */
+  .navbar .dropdown-menu{border:1px solid rgba(15,23,42,.10);border-radius:14px;box-shadow:0 16px 40px rgba(2,6,23,.12);padding:.5rem;min-width:240px;margin-top:.4rem;}
+  .navbar .dropdown-item{border-radius:10px;padding:.6rem .85rem;font-weight:700;font-size:.88rem;color:#0f172a;display:flex;align-items:center;gap:.7rem;transition:background .15s;white-space:normal;}
+  .navbar .dropdown-item:hover{background:rgba(30,136,229,.08);color:#0b5d3b;}
+  .navbar .dropdown-item .drop-icon{width:30px;height:30px;border-radius:8px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.78rem;}
+  .navbar .dropdown-item .drop-icon.green{background:rgba(11,93,59,.12);color:#0b5d3b;}
+  .navbar .dropdown-item .drop-icon.sky{background:rgba(30,136,229,.12);color:#1e88e5;}
+  .navbar .dropdown-divider{margin:.35rem .5rem;opacity:.12;}
+  .navbar .dropdown-toggle.active{color:#0b5d3b;font-weight:800;}
+
+  /* Offcanvas */
+  .offcanvas{background:#ffffff;}
+  .offcanvas .nav-link{padding:.6rem 0;font-weight:700;border-bottom:1px solid rgba(15,23,42,.06);}
+  .offcanvas .nav-link.active{color:#0b5d3b;}
+  .offcanvas .sub-group{border:1px solid rgba(15,23,42,.08);border-radius:12px;overflow:hidden;margin:.2rem 0 .4rem 0;}
+  .offcanvas .sub-link{display:flex;align-items:center;gap:.55rem;padding:.5rem 1rem;font-weight:700;font-size:.85rem;color:#0f172a;text-decoration:none;}
+  .offcanvas .sub-link:hover{background:rgba(11,93,59,.06);color:#0b5d3b;}
+  .offcanvas .sub-link + .sub-link{border-top:1px solid rgba(15,23,42,.06);}
+
+  @media(max-width:400px){.top-bar .ieee-label{display:none;}}
+</style>
+
+<style>
+  /* Countdown */
+  .countdown-wrap{
+    max-width: 860px;
+    margin: 18px auto 0;
+    background: rgba(255,255,255,.82);
+    border: 1px solid rgba(15,23,42,.10);
+    border-radius: 18px;
+    padding: 18px 18px;
+    backdrop-filter: blur(10px);
+  }
+  .countdown-label{
+    font-weight: 800;
+    color: var(--slate);
+  }
+  .count-box{
+    background: #fff;
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 16px;
+    padding: 14px 10px;
+    box-shadow: 0 12px 28px rgba(2,6,23,.06);
+  }
+  .count-num{
+    font-size: 1.55rem;
+    font-weight: 900;
+    color: var(--forest);
+    line-height: 1;
+  }
+  .count-text{
+    font-size: .85rem;
+    color: rgba(15,23,42,.65);
+    margin-top: 4px;
+    font-weight: 700;
+  }
+  
+  /* COMMITTEE CARDS */
+.role-card{
+  background:#ffffff;
+  border:1px solid rgba(15,23,42,.08);
+  border-radius:20px;
+  padding:1.5rem;
+  box-shadow:0 12px 35px rgba(2,6,23,.06);
+  height:100%;
+  transition:all 0.25s ease;
+}
+
+.role-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 20px 50px rgba(2,6,23,.10);
+}
+
+/* HEADER */
+.role-head{
+  display:flex;
+  align-items:center;
+  gap:0.75rem;
+  margin-bottom:1rem;
+}
+
+.role-icon{
+  width:40px;
+  height:40px;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,rgba(30,136,229,.12),rgba(11,93,59,.12));
+  border:1px solid rgba(15,23,42,.10);
+  color:#0b5d3b;
+  font-size:0.9rem;
+}
+
+.role-title{
+  font-weight:800;
+  color:#0f172a;
+  margin:0;
+}
+
+/* PEOPLE LIST */
+.people-list{
+  list-style:none;
+  padding-left:0;
+  margin:0;
+}
+
+.people-list li{
+  font-size:0.9rem;
+  padding:0.35rem 0;
+  border-bottom:1px dashed rgba(15,23,42,.08);
+}
+
+.people-list li:last-child{
+  border-bottom:none;
+}
+
+.fee-card{
+  background:#ffffff;
+  border:1px solid rgba(15,23,42,.08);
+  border-radius:20px;
+  padding:1.75rem;
+  box-shadow:0 14px 40px rgba(2,6,23,.06);
+  height:100%;
+  transition:all .25s ease;
+}
+
+.fee-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 22px 60px rgba(2,6,23,.12);
+}
+
+.fee-title{
+  font-weight:800;
+  color:#0f172a;
+}
+
+.fee-price{
+  font-size:1.4rem;
+  font-weight:900;
+  color:#0b5d3b;
+  margin-top:.3rem;
+}
+
+.fee-note{
+  font-size:.8rem;
+  color:rgba(15,23,42,.6);
+}
+
+.fee-badge{
+  background:rgba(30,136,229,.1);
+  border:1px solid rgba(30,136,229,.2);
+  padding:.3rem .6rem;
+  border-radius:999px;
+  font-weight:800;
+  font-size:.75rem;
+}
+
+.step{
+  display:flex;
+  gap:1rem;
+  align-items:flex-start;
+}
+
+.step-num{
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  background:#0b5d3b;
+  color:#fff;
+  font-weight:800;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+}
+
+  
+</style>
+
+
+</head>
 <body>
 
 <!-- TOP BAR -->
@@ -473,13 +473,11 @@
   <div class="container d-flex justify-content-between flex-wrap gap-2">
     <div class="small">
       <i class="fa-solid fa-calendar-days"></i> <strong>11–12 September 2026</strong> &nbsp;|&nbsp;
-      <i class="fa-solid fa-location-dot"></i> UPES Dehradun, Uttarakhand &nbsp;|&nbsp;
-      <!-- <i class="fa-solid fa-globe"></i> Hybrid Conference -->
+      <i class="fa-solid fa-location-dot"></i> UPES Dehradun, Uttarakhand
     </div>
     <div class="small">
-      <span class="me-3"><i class="fa-solid fa-certificate"></i> Sponsored by <strong>IEEE UP Section Conference Record #70668</strong></span>
-      <a href="mailto:conference_socs@ddn.upes.ac.in"> <i class="fa-solid fa-envelope me-2"></i>conference_socs@ddn.upes.ac.in </a>
-         
+      <span class="me-3 ieee-label"><i class="fa-solid fa-certificate"></i> Sponsored by <strong>IEEE UP Section Conference Record #70668</strong></span>
+      <a href="mailto:conference_socs@ddn.upes.ac.in"><i class="fa-solid fa-envelope me-1"></i>conference_socs@ddn.upes.ac.in</a>
     </div>
   </div>
 </div>
@@ -504,9 +502,38 @@
       <ul class="navbar-nav ms-auto gap-lg-1 align-items-lg-center">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
-        <li class="nav-item"><a class="nav-link" href="call_for_special_sessions.html">Special Sessions</a></li>
-        <li class="nav-item"><a class="nav-link" href="conferencetheme.html">Themes</a></li>
-        <li class="nav-item"><a class="nav-link" href="cmt.html">Committee</a></li>
+        
+		<!-- SPECIAL SESSIONS DROPDOWN -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Special Sessions
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="special_sessions.html" data-page="special_sessions.html">
+                <span class="drop-icon green"><i class="fa-solid fa-layer-group"></i></span>
+                <span>
+                  <div style="font-size:.85rem;font-weight:800;line-height:1.3;">Accepted Sessions</div>
+                  <div style="font-size:.72rem;color:rgba(15,23,42,.50);font-weight:600;">View all 4 confirmed sessions</div>
+                </span>
+              </a>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item" href="call_for_special_sessions.html" data-page="call_for_special_sessions.html">
+                <span class="drop-icon sky"><i class="fa-solid fa-rocket"></i></span>
+                <span>
+                  <div style="font-size:.85rem;font-weight:800;line-height:1.3;">Call for Special Session</div>
+                  <div style="font-size:.72rem;color:rgba(15,23,42,.50);font-weight:600;">Submit your session proposal</div>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- END DROPDOWN -->
+		
+        <li class="nav-item"><a class="nav-link " href="conferencetheme.html">Themes</a></li>
+        <li class="nav-item"><a class="nav-link " href="cmt.html">Committee</a></li>
         <li class="nav-item"><a class="nav-link active fw-bold" href="reg.html">Registration</a></li>
         <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
         <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
@@ -539,10 +566,39 @@
     <ul class="navbar-nav">
       <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
       <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
-      <li class="nav-item"><a class="nav-link" href="call_for_special_sessions.html">Special Sessions</a></li>
+      
+	  		<!-- SPECIAL SESSIONS DROPDOWN -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Special Sessions
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="special_sessions.html" data-page="special_sessions.html">
+                <span class="drop-icon green"><i class="fa-solid fa-layer-group"></i></span>
+                <span>
+                  <div style="font-size:.85rem;font-weight:800;line-height:1.3;">Accepted Sessions</div>
+                  <div style="font-size:.72rem;color:rgba(15,23,42,.50);font-weight:600;">View all 4 confirmed sessions</div>
+                </span>
+              </a>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item" href="call_for_special_sessions.html" data-page="call_for_special_sessions.html">
+                <span class="drop-icon sky"><i class="fa-solid fa-rocket"></i></span>
+                <span>
+                  <div style="font-size:.85rem;font-weight:800;line-height:1.3;">Call for Special Session</div>
+                  <div style="font-size:.72rem;color:rgba(15,23,42,.50);font-weight:600;">Submit your session proposal</div>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- END DROPDOWN -->
+	  
       <li class="nav-item"><a class="nav-link" href="conferencetheme.html">Conference Themes</a></li>
       <li class="nav-item"><a class="nav-link" href="cmt.html">Committee</a></li>
-      <li class="nav-item"><a class="nav-link active" href="reg.html">Registration</a></li>
+      <li class="nav-item"><a class="nav-link active fw-bold" href="reg.html">Registration</a></li>
       <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
       <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
       <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
