@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Speakers & Guests | ICACSDF 2026 | UPES Dehradun</title>
+<meta name="description" content="Speakers & Guests — Chief Guest, Guest of Honor, Keynote Speakers and Industrial Track — ICACSDF 2026, International Conference on Advancement in Cyber Security and Digital Forensics. UPES Dehradun. Sponsored by IEEE UP Section. 11–12 September 2026.">
+<meta name="keywords" content="ICACSDF 2026, Speakers, Chief Guest, Guest of Honor, Keynote Speakers, Industrial Track, UPES, Dehradun, Uttarakhand, Cyber Security, Digital Forensics, IEEE UP Section">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --sky:#1e88e5;
+    --forest:#0b5d3b;
+    --slate:#0f172a;
+    --sun:#f59e0b;
+    --snow:#f8fafc;
+  }
+
+  body{
+    font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:#0b1220;
+    background:
+      radial-gradient(900px 500px at 10% 0%,rgba(30,136,229,.10),transparent 60%),
+      radial-gradient(900px 600px at 90% 20%,rgba(11,93,59,.10),transparent 60%),
+      linear-gradient(180deg,#ffffff,#f6fbff);
+  }
+
+  /* Top bar */
+  .top-bar{
+    background:linear-gradient(90deg,var(--slate),#0b2a1b);
+    color:rgba(255,255,255,.92); font-size:.85rem;
+    position:relative; z-index:1031;
+  }
+  .top-bar a{color:rgba(255,255,255,.92);text-decoration:none;}
+  .top-bar a:hover{color:#fff;text-decoration:underline;}
+  @media(max-width:400px){.top-bar .ieee-label{display:none;}}
+
+  /* Navbar */
+  .navbar{
+    background:rgba(255,255,255,.95)!important;
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(15,23,42,.08);
+    position:sticky; top:0; z-index:1030;
+  }
+  .navbar-brand{font-weight:800;letter-spacing:.2px;}
+  .brand-pill{
+    display:inline-flex;align-items:center;gap:.55rem;
+    padding:.45rem .75rem;border-radius:999px;
+    background:linear-gradient(135deg,rgba(30,136,229,.10),rgba(11,93,59,.10));
+    border:1px solid rgba(15,23,42,.10);
+  }
+  .navbar-nav{display:flex;flex-wrap:wrap;gap:4px;}
+  .navbar-nav .nav-link{white-space:nowrap;font-size:0.9rem;font-weight:600;}
+  .ieee-logo{height:32px;width:auto;object-fit:contain;}
+  .navbar .container{max-width:1320px;}
+  @media(max-width:992px){.ieee-logo{display:none;}}
+
+  .brand-logos{display:flex;align-items:center;gap:14px;}
+  .brand-logos img{height:44px;width:auto;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(2,6,23,.10));}
+  .brand-logos .logo-divider{width:1px;height:28px;background:rgba(15,23,42,.15);}
+  @media(max-width:992px){.brand-logos img{height:38px;}}
+
+  /* Dropdown */
+  .navbar .dropdown-menu{border:1px solid rgba(15,23,42,.10);border-radius:14px;box-shadow:0 16px 40px rgba(2,6,23,.12);padding:.5rem;min-width:240px;margin-top:.4rem;}
+  .navbar .dropdown-item{border-radius:10px;padding:.6rem .85rem;font-weight:700;font-size:.88rem;color:#0f172a;display:flex;align-items:center;gap:.7rem;transition:background .15s;white-space:normal;}
+  .navbar .dropdown-item:hover{background:rgba(30,136,229,.08);color:#0b5d3b;}
+  .navbar .dropdown-item .drop-icon{width:30px;height:30px;border-radius:8px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.78rem;}
+  .navbar .dropdown-item .drop-icon.green{background:rgba(11,93,59,.12);color:#0b5d3b;}
+  .navbar .dropdown-item .drop-icon.sky{background:rgba(30,136,229,.12);color:#1e88e5;}
+  .navbar .dropdown-divider{margin:.35rem .5rem;opacity:.12;}
+  .navbar .dropdown-toggle.active{color:#0b5d3b;font-weight:800;}
+
+  /* Secondary nav strip */
+  .subnav{
+    background:rgba(248,250,252,.92);
+    border-bottom:1px solid rgba(15,23,42,.06);
+    position:sticky; top:0; z-index:1029;
+  }
+  .subnav .container{
+    display:flex; align-items:center; justify-content:center;
+    gap:1.5rem; flex-wrap:wrap; padding:.4rem 0;
+  }
+  .subnav a{
+    font-size:.8rem; font-weight:700; color:rgba(15,23,42,.62);
+    text-decoration:none; white-space:nowrap;
+  }
+  .subnav a:hover{color:var(--forest);}
+  .subnav a.active{color:var(--forest);}
+  .subnav .dot{color:rgba(15,23,42,.25); font-size:.7rem;}
+  @media(max-width:767px){.subnav{display:none;}}
+
+  /* Offcanvas */
+  .offcanvas{background:#ffffff;}
+  .offcanvas .nav-link{padding:.6rem 0;font-weight:700;border-bottom:1px solid rgba(15,23,42,.06);}
+  .offcanvas .nav-link.active{color:var(--forest);}
+  .offcanvas .sub-group{border:1px solid rgba(15,23,42,.08);border-radius:12px;overflow:hidden;margin:.2rem 0 .4rem 0;}
+  .offcanvas .sub-link{display:flex;align-items:center;gap:.55rem;padding:.5rem 1rem;font-weight:700;font-size:.85rem;color:#0f172a;text-decoration:none;}
+  .offcanvas .sub-link:hover{background:rgba(11,93,59,.06);color:#0b5d3b;}
+  .offcanvas .sub-link + .sub-link{border-top:1px solid rgba(15,23,42,.06);}
+
+  /* Page header (compact hero, no countdown) */
+  .page-hero{position:relative;overflow:hidden;padding:50px 0 44px;margin-top:0;}
+  .page-hero::before{
+    content:"";position:absolute;inset:0;
+    background:
+      linear-gradient(180deg,rgba(255,255,255,.35),rgba(255,255,255,.96)),
+      url("https://images.unsplash.com/photo-1560439514-4e9645039924?auto=format&fit=crop&w=1800&q=80");
+    background-size:cover;background-position:center;pointer-events:none;
+  }
+  .page-hero::after{
+    content:"";position:absolute;left:0;right:0;bottom:-2px;height:130px;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200' preserveAspectRatio='none'%3E%3Cpath d='M0 160 L120 120 L220 150 L340 80 L420 140 L520 60 L640 145 L760 90 L860 160 L980 110 L1200 160 L1200 200 L0 200 Z' fill='%230b5d3b' opacity='0.20'/%3E%3Cpath d='M0 170 L140 130 L250 165 L360 105 L460 155 L560 75 L680 165 L820 115 L940 175 L1200 135 L1200 200 L0 200 Z' fill='%231e88e5' opacity='0.14'/%3E%3C/svg%3E");
+    background-size:cover;background-repeat:no-repeat;pointer-events:none;
+  }
+  .page-hero .container{position:relative;z-index:1;}
+  .page-hero-title{font-weight:900;line-height:1.15;color:var(--slate);text-shadow:0 10px 35px rgba(2,6,23,.12);}
+  .page-hero-lead{color:rgba(15,23,42,.78);max-width:820px;margin-inline:auto;}
+
+  .chip{
+    display:inline-flex;align-items:center;gap:.5rem;
+    padding:.45rem .85rem;border-radius:999px;
+    background:rgba(255,255,255,.88);border:1px solid rgba(15,23,42,.10);
+    color:var(--slate);font-weight:800;font-size:.88rem;
+  }
+  .chip i{color:var(--forest);}
+
+  .section-title{font-weight:900;color:var(--slate);}
+  .section-subtitle{color:rgba(15,23,42,.70);max-width:820px;margin:0 auto;}
+
+  /* Track tabs */
+  .track-tab{
+    border:1px solid rgba(15,23,42,.14);background:#fff;color:var(--slate);
+    font-weight:800;font-size:.86rem;padding:.55rem 1.15rem;border-radius:999px;
+    transition:all .15s;
+  }
+  .track-tab:hover{border-color:rgba(11,93,59,.4);color:var(--forest);}
+  .track-tab.active{
+    background:linear-gradient(135deg,var(--forest),#0a7a4b);
+    color:#fff;border-color:transparent;box-shadow:0 8px 20px rgba(11,93,59,.25);
+  }
+  .track-section{display:none;}
+  .track-section.active{display:block;}
+  .track-heading{
+    text-align:center;margin-bottom:2rem;
+  }
+  .track-heading .track-icon{
+    width:52px;height:52px;border-radius:50%;
+    background:linear-gradient(135deg,var(--forest),#0a7a4b);
+    color:#fff;display:inline-flex;align-items:center;justify-content:center;
+    font-size:1.2rem;margin-bottom:.6rem;
+  }
+  .track-heading h2{font-weight:900;color:var(--slate);font-size:1.5rem;margin-bottom:.25rem;}
+  .track-heading p{color:rgba(15,23,42,.65);font-size:.92rem;margin:0;}
+
+  /* Speaker card */
+  .speaker-card{
+    background:#fff;border:1px solid rgba(15,23,42,.08);
+    border-radius:24px;box-shadow:0 16px 48px rgba(2,6,23,.07);
+    overflow:hidden;height:100%;
+  }
+  .speaker-banner{
+    background:linear-gradient(135deg,var(--forest),#0a7a4b);
+    height:64px;position:relative;
+  }
+  .speaker-banner.sky{background:linear-gradient(135deg,var(--sky),#1565c0);}
+  .speaker-photo-wrap{
+    margin-top:-52px;padding:0 2rem;position:relative;z-index:1;
+  }
+  .speaker-photo{
+    width:104px;height:104px;border-radius:50%;
+    object-fit:cover;border:5px solid #fff;
+    box-shadow:0 10px 24px rgba(2,6,23,.18);background:#eef2f6;
+  }
+  .speaker-body{padding:1.1rem 2rem 2rem;}
+  .speaker-name{font-weight:900;color:var(--slate);font-size:1.15rem;margin-bottom:.15rem;}
+  .speaker-role{color:var(--forest);font-weight:700;font-size:.86rem;line-height:1.4;margin-bottom:.9rem;}
+  .speaker-badges{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:.9rem;}
+  .speaker-badge{
+    font-size:.72rem;font-weight:800;padding:.3rem .65rem;border-radius:999px;
+    background:rgba(30,136,229,.08);border:1px solid rgba(30,136,229,.20);color:var(--slate);
+  }
+  .speaker-bio{
+    font-size:.87rem;line-height:1.65;color:rgba(15,23,42,.75);
+  }
+  .speaker-bio.clamped{
+    display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .read-more-btn{
+    border:none;background:none;color:var(--sky);font-weight:800;font-size:.85rem;
+    padding:.5rem 0 0;cursor:pointer;
+  }
+  .read-more-btn:hover{color:var(--forest);text-decoration:underline;}
+
+  .coming-soon-card{
+    background:linear-gradient(135deg,rgba(15,23,42,.03),rgba(30,136,229,.05));
+    border:2px dashed rgba(15,23,42,.15);
+    border-radius:24px;padding:2.5rem 2rem;text-align:center;height:100%;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+  }
+
+  /* Footer */
+  footer{background:linear-gradient(90deg,var(--slate),#0b2a1b);color:rgba(255,255,255,.85);}
+  footer a{color:rgba(255,255,255,.85);text-decoration:none;}
+  footer a:hover{color:#fff;text-decoration:underline;}
+  .footer-date-row{border-bottom:1px solid rgba(255,255,255,.20);padding:.55rem 0;}
+
+  @media(max-width:767px){
+    .page-hero{padding:36px 0 36px;}
+    .page-hero-title{font-size:1.5rem!important;}
+    .page-hero-lead{font-size:.92rem;}
+    .section-title{font-size:1.25rem;}
+    .speaker-body{padding:1.1rem 1.25rem 1.5rem;}
+    .speaker-photo-wrap{padding:0 1.25rem;}
+  }
+</style>
+
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar py-2">
+  <div class="container d-flex justify-content-between flex-wrap gap-2">
+    <div class="small">
+      <i class="fa-solid fa-calendar-days"></i> <strong>11–12 September 2026</strong> &nbsp;|&nbsp;
+      <i class="fa-solid fa-location-dot"></i> UPES Dehradun, Uttarakhand
+    </div>
+    <div class="small">
+      <span class="me-3 ieee-label"><i class="fa-solid fa-certificate"></i> Sponsored by <strong>IEEE UP Section Conference Record #70668</strong></span>
+      <a href="mailto:conference_socs@ddn.upes.ac.in"><i class="fa-solid fa-envelope me-1"></i>conference_socs@ddn.upes.ac.in</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-pill">
+        <i class="fa-solid fa-mountain-sun text-success"></i>
+        ICACSDF 2026
+      </span>
+    </a>
+
+    <button class="navbar-toggler border-0" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu" aria-label="Open navigation menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto gap-lg-1 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
+        <li class="nav-item"><a class="nav-link active fw-bold" href="keynotes.html">Speakers &amp; Guests</a></li>
+        <li class="nav-item"><a class="nav-link" href="reg.html">Registration</a></li>
+        <li class="nav-item"><a class="nav-link" href="cmt.html">Committee</a></li>
+        <li class="nav-item ms-lg-2 d-none d-lg-block">
+          <div class="brand-logos">
+            <div class="logo-divider"></div>
+            <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- SECONDARY NAV STRIP -->
+<div class="subnav d-none d-lg-block">
+  <div class="container">
+    <a href="conferencetheme.html">Themes</a>
+    <span class="dot">&bull;</span>
+    <a href="special_sessions.html">Special Sessions</a>
+    <span class="dot">&bull;</span>
+    <a href="venue.html">Venue</a>
+    <span class="dot">&bull;</span>
+    <a href="sponsor.html">Sponsors</a>
+    <span class="dot">&bull;</span>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<!-- OFFCANVAS MOBILE MENU -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header border-bottom">
+    <div class="d-flex align-items-center gap-2">
+      <i class="fa-solid fa-mountain-sun text-success fs-5"></i>
+      <h5 class="offcanvas-title fw-bold mb-0" id="mobileMenuLabel">ICACSDF 2026</h5>
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="d-flex align-items-center gap-3 mb-3">
+      <img src="assets/upes-logo.png" alt="UPES Logo" style="height:36px;width:auto;">
+      <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo" style="height:36px;width:auto;">
+    </div>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
+
+      <!-- SPECIAL SESSIONS DROPDOWN -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Special Sessions
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="special_sessions.html" data-page="special_sessions.html">
+              <span class="drop-icon green"><i class="fa-solid fa-layer-group"></i></span>
+              <span>
+                <div style="font-size:.85rem;font-weight:800;line-height:1.3;">Accepted Sessions</div>
+                <div style="font-size:.72rem;color:rgba(15,23,42,.50);font-weight:600;">View all 4 confirmed sessions</div>
+              </span>
+            </a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li>
+            <a class="dropdown-item" href="call_for_special_sessions.html" data-page="call_for_special_sessions.html">
+              <span class="drop-icon sky"><i class="fa-solid fa-rocket"></i></span>
+              <span>
+                <div style="font-size:.85rem;font-weight:800;line-height:1.3;">Call for Special Session</div>
+                <div style="font-size:.72rem;color:rgba(15,23,42,.50);font-weight:600;">Submit your session proposal</div>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <!-- END DROPDOWN -->
+
+      <li class="nav-item"><a class="nav-link" href="conferencetheme.html">Conference Themes</a></li>
+      <li class="nav-item"><a class="nav-link active fw-bold" href="keynotes.html">Speakers &amp; Guests</a></li>
+      <li class="nav-item"><a class="nav-link" href="cmt.html">Committee</a></li>
+      <li class="nav-item"><a class="nav-link" href="reg.html">Registration</a></li>
+      <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+      <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+    <hr>
+    <p class="small text-muted mb-2">
+      <i class="fa-solid fa-certificate me-1 text-success"></i>
+      Sponsored by <strong>IEEE UP Section Conference Record #70668</strong>
+    </p>
+    <a href="mailto:conference_socs@ddn.upes.ac.in" class="small d-block" style="color:var(--forest);text-decoration:none;">
+      <i class="fa-solid fa-envelope me-1"></i> conference_socs@ddn.upes.ac.in
+    </a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero text-center">
+  <div class="container">
+    <div class="chip mb-3">
+      <i class="fa-solid fa-microphone-lines"></i>
+      ICACSDF 2026 &middot; School of Computer Science, UPES Dehradun
+    </div>
+    <h1 class="display-6 page-hero-title mb-3">Speakers &amp; Guests</h1>
+    <p class="lead page-hero-lead mb-0">
+      Distinguished dignitaries, researchers, and industry leaders joining ICACSDF 2026.
+    </p>
+  </div>
+</section>
+
+<!-- TRACK TABS -->
+<section class="pt-2 pb-0">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-center gap-2 mb-1" id="trackTabs">
+      <button class="track-tab" data-target="track-chief-guest" type="button">
+        <i class="fa-solid fa-star me-1"></i> Chief Guest
+      </button>
+      <button class="track-tab" data-target="track-guest-of-honor" type="button">
+        <i class="fa-solid fa-medal me-1"></i> Guest of Honor
+      </button>
+      <button class="track-tab active" data-target="track-keynote" type="button">
+        <i class="fa-solid fa-microphone-lines me-1"></i> Keynote Speakers
+      </button>
+      <button class="track-tab" data-target="track-industrial" type="button">
+        <i class="fa-solid fa-industry me-1"></i> Industrial Track
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- SPEAKERS -->
+<section class="py-5">
+  <div class="container">
+
+    <!-- TRACK: CHIEF GUEST -->
+    <div class="track-section" id="track-chief-guest">
+      <div class="track-heading">
+        <div class="track-icon"><i class="fa-solid fa-star"></i></div>
+        <h2>Chief Guest</h2>
+        <p>To be announced soon. Stay tuned for updates.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-6">
+          <div class="coming-soon-card">
+            <i class="fa-solid fa-user-plus fs-2 mb-3" style="color:var(--forest);"></i>
+            <div class="fw-bold" style="color:var(--slate);font-size:1.05rem;">Chief Guest</div>
+            <div class="small mt-1" style="color:rgba(15,23,42,.60);">To be announced soon.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TRACK: GUEST OF HONOR -->
+    <div class="track-section" id="track-guest-of-honor">
+      <div class="track-heading">
+        <div class="track-icon"><i class="fa-solid fa-medal"></i></div>
+        <h2>Guest of Honor</h2>
+        <p>To be announced soon. Stay tuned for updates.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-6">
+          <div class="coming-soon-card">
+            <i class="fa-solid fa-user-plus fs-2 mb-3" style="color:var(--forest);"></i>
+            <div class="fw-bold" style="color:var(--slate);font-size:1.05rem;">Guest of Honor</div>
+            <div class="small mt-1" style="color:rgba(15,23,42,.60);">To be announced soon.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TRACK: KEYNOTE SPEAKERS -->
+    <div class="track-section active" id="track-keynote">
+      <div class="track-heading">
+        <div class="track-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+        <h2>Keynote Speakers</h2>
+        <p>Distinguished researchers sharing insights on the future of cybersecurity and digital forensics.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+
+
+<!-- Speaker 1: Prof. Steven Galbraith -->
+      <div class="col-lg-6">
+        <div class="speaker-card">
+          <div class="speaker-banner sky"></div>
+          <div class="speaker-photo-wrap">
+            <img src="assets/speakers/steven-galbraith.png" alt="Prof. Steven Galbraith" class="speaker-photo">
+          </div>
+          <div class="speaker-body">
+            <div class="speaker-name">Prof. Steven Galbraith</div>
+            <div class="speaker-role">
+              Head of Department &amp; Professor, Mathematics Department,<br>
+              Cyber Security Foundry, University of Auckland, New Zealand
+            </div>
+            <div class="speaker-badges">
+              <span class="speaker-badge"><i class="fa-solid fa-book me-1"></i>Author, Math. of Public Key Cryptography</span>
+              <span class="speaker-badge"><i class="fa-solid fa-atom me-1"></i>Post-Quantum Cryptography</span>
+              <span class="speaker-badge"><i class="fa-solid fa-shapes me-1"></i>Elliptic Curve Cryptography</span>
+              <span class="speaker-badge"><i class="fa-solid fa-calculator me-1"></i>Computational Number Theory</span>
+            </div>
+            <p class="speaker-bio clamped" data-full="Prof. Steven Galbraith is Head of the Mathematics Department and a member of the Cyber Security Foundry at the University of Auckland, New Zealand. His research spans computational number theory, public key cryptography, and computational algebraic geometry, with a particular focus on elliptic curves over finite fields and post-quantum public key cryptography. He is the author of the advanced graduate textbook &quot;Mathematics of Public Key Cryptography&quot;. He serves as an editorial board member of Designs, Codes and Cryptography and of IACR Communications in Cryptology, and has chaired or co-chaired program committees for several leading cryptology conferences, including Program Co-Chair of ASIACRYPT 2019, Program Chair of ANTS 2020, and Program Chair of CT-RSA 2022; he has also served on program committees for PKC, CRYPTO, ASIACRYPT, ANTS, and EUROCRYPT in recent years. He is part of an MBIE-funded project for New Zealand&ndash;Australia collaboration in post-quantum cryptography, and authored a widely referenced whitepaper, &quot;The Quantum Threat to Cybersecurity: Looking Through the Prism of Post-Quantum Cryptography&quot; (2021), as well as a report on the cybersecurity risks and opportunities that large-scale quantum computers pose to industry sectors in New Zealand and Australia.">
+              Prof. Steven Galbraith is Head of the Mathematics Department and a member of the Cyber Security Foundry at the University of Auckland, New Zealand. His research spans computational number theory, public key cryptography, and computational algebraic geometry, with a particular focus on elliptic curves over finite fields and post-quantum public key cryptography...
+            </p>
+            <button class="read-more-btn" type="button">Read full bio <i class="fa-solid fa-chevron-down ms-1"></i></button>
+          </div>
+        </div>
+      </div>
+	  
+	  
+
+      <!-- Speaker 2: Prof. Edoardo Serra -->
+      <div class="col-lg-6">
+        <div class="speaker-card">
+          <div class="speaker-banner"></div>
+          <div class="speaker-photo-wrap">
+            <img src="assets/speakers/edoardo-serra.png" alt="Prof. Edoardo Serra" class="speaker-photo">
+          </div>
+          <div class="speaker-body">
+            <div class="speaker-name">Prof. Edoardo Serra</div>
+            <div class="speaker-role">
+              Associate Professor &amp; Co-Director, Computing Ph.D. Program,<br>
+              Department of Computer Science, Boise State University, USA
+            </div>
+            <div class="speaker-badges">
+              <span class="speaker-badge"><i class="fa-solid fa-graduation-cap me-1"></i>Co-Director, Computing Ph.D.</span>
+              <span class="speaker-badge"><i class="fa-solid fa-microscope me-1"></i>UCLA Visiting Researcher</span>
+              <span class="speaker-badge"><i class="fa-solid fa-university me-1"></i>Univ. of Maryland</span>
+            </div>
+            <p class="speaker-bio clamped" data-full="Prof. Edoardo Serra is an Associate Professor in the Department of Computer Science at Boise State University, USA, where he has served as Co-Director of the Computing Ph.D. Program since January 2023. He received his Ph.D. in Computer Science Engineering from the University of Calabria, Italy, in 2012. He was a Visiting Researcher at the Computer Science Department of the University of California &ndash; Los Angeles (UCLA) from October 2010 to July 2011. After completing his Ph.D., he held a postdoctoral position at the University of Calabria (2012) and served as a Research Associate at the University of Maryland (January 2013 &ndash; August 2015). He joined Boise State University in August 2015 as an Assistant Professor in the Department of Computer Science, and was promoted to Associate Professor in July 2021.">
+              Prof. Edoardo Serra is an Associate Professor in the Department of Computer Science at Boise State University, USA, where he has served as Co-Director of the Computing Ph.D. Program since January 2023. He received his Ph.D. in Computer Science Engineering from the University of Calabria, Italy, in 2012. He was a Visiting Researcher at the Computer Science Department of the University of California &ndash; Los Angeles (UCLA) from October 2010 to July 2011...
+            </p>
+            <button class="read-more-btn" type="button">Read full bio <i class="fa-solid fa-chevron-down ms-1"></i></button>
+          </div>
+        </div>
+      </div>
+
+
+      
+      <!-- Speaker 3: Prof. Raja Datta -->
+      <div class="col-lg-6">
+        <div class="speaker-card">
+          <div class="speaker-banner sky"></div>
+          <div class="speaker-photo-wrap">
+            <img src="assets/speakers/raja-datta.png" alt="Prof. Raja Datta" class="speaker-photo">
+          </div>
+          <div class="speaker-body">
+            <div class="speaker-name">Prof. Raja Datta</div>
+            <div class="speaker-role">
+              Professor, Dept. of Electronics &amp; Electrical Communication Engineering,<br>
+              Indian Institute of Technology (IIT) Kharagpur
+            </div>
+            <div class="speaker-badges">
+              <span class="speaker-badge"><i class="fa-solid fa-award me-1"></i>Fellow, IETE</span>
+              <span class="speaker-badge"><i class="fa-solid fa-award me-1"></i>Fellow, IE (India)</span>
+              <span class="speaker-badge"><i class="fa-solid fa-award me-1"></i>Senior Member, IEEE</span>
+              <span class="speaker-badge"><i class="fa-solid fa-network-wired me-1"></i>5G &amp; Network Security</span>
+            </div>
+            <p class="speaker-bio clamped" data-full="Raja Datta is a Professor in the Department of Electronics and Electrical Communication Engineering (E &amp; ECE) at Indian Institute of Technology Kharagpur. He has served as the Head of Computer and Informatics Centre from March 2021 to December 2025 and also as Head of G. S. Sanyal School of Telecommunications from April 2018 till June 2021, both at IIT Kharagpur. Prof. Datta is a Fellow of Institution of Electronics and Telecommunication Engineers (FIETE), Fellow of Institution of Engineers (India) (FIE) and Senior Member of IEEE (SMIEEE). He has published extensively in high impact factor Journals (that includes IEEE Transactions, IET, Elsevier, Springer, etc.) and International Conferences. He co-authored several book chapters and coedited books. He has been the Principal Investigators of projects sponsored by MHRD, DIT, ISRO, and Indian Railways. Was the Coordinator of Train Ten Thousand Teachers (T10KT) Program under NMEICT from IIT Kharagpur (jointly with IIT Bombay) during 2013 to 2018. He has been consultants to DRDO and Haldia Port and was in the core committee for securing Indian National Museum, Kolkata. His team developed E-Classroom Software named &quot;DEEKSHAK&quot; for conducting online classes during the Pandemic. Was the Secretary, Vice-Chair and Chairman of IEEE Kharagpur Section in 2012, 2013 and 2014 respectively. The section received the best small section award in Region 10 during his tenure as an office bearer. His main research interests include 5G and beyond Networks, Network Security and Privacy Preservation, Software Defined Network (SDN), Virtual Network Functions (VNF), Vehicular Networks, Internet of Things (IoT), Delay Tolerant Networks (DTN), Deep Space Inter Planetary Networks (IPN), Mobile Networks, WDM and Elastic Optical Networks.">
+              Raja Datta is a Professor in the Department of Electronics and Electrical Communication Engineering (E &amp; ECE) at Indian Institute of Technology Kharagpur. He has served as the Head of Computer and Informatics Centre from March 2021 to December 2025 and also as Head of G. S. Sanyal School of Telecommunications from April 2018 till June 2021, both at IIT Kharagpur...
+            </p>
+            <button class="read-more-btn" type="button">Read full bio <i class="fa-solid fa-chevron-down ms-1"></i></button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Speaker 4: Prof. Sipra Das Bit -->
+      <div class="col-lg-6">
+        <div class="speaker-card">
+          <div class="speaker-banner sky"></div>
+          <div class="speaker-photo-wrap">
+            <img src="assets/speakers/sipra-das-bit.jpg" alt="Prof. Sipra Das Bit" class="speaker-photo">
+          </div>
+          <div class="speaker-body">
+            <div class="speaker-name">Prof. Sipra Das Bit</div>
+            <div class="speaker-role">
+              Professor, Department of Computer Science and Technology,<br>
+              Indian Institute of Engineering Science and Technology (IIEST), Shibpur
+            </div>
+            <div class="speaker-badges">
+              <span class="speaker-badge"><i class="fa-solid fa-award me-1"></i>Senior Member, IEEE</span>
+              <span class="speaker-badge"><i class="fa-solid fa-award me-1"></i>AICTE Career Award</span>
+              <span class="speaker-badge"><i class="fa-solid fa-tower-broadcast me-1"></i>Wireless Sensor Networks</span>
+              <span class="speaker-badge"><i class="fa-solid fa-satellite-dish me-1"></i>Delay Tolerant Networks</span>
+            </div>
+            <p class="speaker-bio clamped" data-full="Prof. Sipra Das Bit is a Professor in the Department of Computer Science and Technology at the Indian Institute of Engineering Science and Technology (IIEST), Shibpur, with more than three decades of teaching and research experience. She earned her Ph.D. (Engineering) from the Department of Computer Science &amp; Engineering, Jadavpur University, Kolkata, in 1997. She is a Senior Member of IEEE and a recipient of the Career Award for Young Teachers from the All-India Council of Technical Education (AICTE). Her research interests span Mobile Computing, Wireless Sensor Networks, and Delay Tolerant Networks, with a strong focus on post-disaster situation analysis and resource management using delay-tolerant peer-to-peer wireless networks. She has led the ITRA-funded project &quot;Post-Disaster Situation Analysis and Resource Management using Delay-Tolerant Peer-to-Peer Wireless Networks (DiSARM)&quot;, sponsored by the Digital India Corporation (formerly Media Lab Asia), Ministry of Communications and Information Technology, Government of India, in collaboration with IIT Kharagpur and IIM Calcutta. Prof. Das Bit has an extensive publication record in top-tier venues including IEEE Transactions on Systems, Man, and Cybernetics, IEEE Transactions on Engineering Management, IEEE Transactions on Network and Service Management, IEEE Computer, IEEE Access, Journal of Network and Computer Applications (Elsevier), Computer Communications (Elsevier), and Wireless Networks (Springer), among others, along with numerous papers at IEEE conferences such as ANTS, GLOBECOM, INDICON, ICDCN, and PerCom. Her work has been recognized with multiple Best Paper Awards. She has supervised extensive doctoral and post-graduate research in energy-efficient wireless sensor network design, secure data forwarding, image and video compression for multimedia sensor networks, and disaster-response communication systems.">
+              Prof. Sipra Das Bit is a Professor in the Department of Computer Science and Technology at the Indian Institute of Engineering Science and Technology (IIEST), Shibpur, with more than three decades of teaching and research experience. She earned her Ph.D. (Engineering) from the Department of Computer Science &amp; Engineering, Jadavpur University, Kolkata, in 1997. She is a Senior Member of IEEE and a recipient of the Career Award for Young Teachers from the All-India Council of Technical Education (AICTE)...
+            </p>
+            <button class="read-more-btn" type="button">Read full bio <i class="fa-solid fa-chevron-down ms-1"></i></button>
+          </div>
+        </div>
+      </div>
+
+
+
+<!-- Speaker 5: Prof. Goutam Paul -->
+<div class="col-lg-6">
+  <div class="speaker-card">
+    <div class="speaker-banner"></div>
+
+    <div class="speaker-photo-wrap">
+      <img src="assets/speakers/goutam-paul.png"
+           alt="Prof. Goutam Paul"
+           class="speaker-photo">
+    </div>
+
+    <div class="speaker-body">
+      <div class="speaker-name">Prof. Goutam Paul</div>
+
+      <div class="speaker-role">
+        Professor, Electronics and Communication Sciences Unit (ECSU),<br>
+        Indian Statistical Institute (ISI), Kolkata
+      </div>
+
+      <div class="speaker-badges">
+        <span class="speaker-badge">
+          <i class="fa-solid fa-award me-1"></i>Humboldt Fellow
+        </span>
+
+        <span class="speaker-badge">
+          <i class="fa-solid fa-award me-1"></i>NASI Young Scientist Award
+        </span>
+
+        <span class="speaker-badge">
+          <i class="fa-solid fa-lock me-1"></i>Cryptology
+        </span>
+
+        <span class="speaker-badge">
+          <i class="fa-solid fa-atom me-1"></i>Quantum Cryptography
+        </span>
+      </div>
+
+      <p class="speaker-bio clamped"
+         data-full="Prof. Goutam Paul is currently a Professor at the Electronics and Communication Sciences Unit (ECSU), Indian Statistical Institute (ISI), Kolkata, and also serves as Visiting Professor at the Centre for Quantum Engineering, Research and Education (CQuERE), TCG CREST, Kolkata. He earlier served as Associate Professor and Head of the Cryptology and Security Research Unit (CSRU) at ISI Kolkata. His research spans Classical and Quantum Cryptography, Information and Coding Theory, and Quantum Information and Computation. He earned his Ph.D. in Cryptology from ISI Kolkata (degree awarded by Jadavpur University, 2009) on the analysis and design of RC4 and its variants under Dr. Subhamoy Maitra, an M.S. in Computer Science from the State University of New York (SUNY) at Albany, USA, and a B.E. in Computer Science &amp; Technology from Bengal Engineering College (now IIEST Shibpur). Among his honours are the Alexander von Humboldt Fellowship, Germany (2012), during which he spent a year in Germany as a guest scientist, a DAAD Fellowship (2012), and the Young Scientist Platinum Jubilee Award from the National Academy of Sciences, India (NASI) in 2013. He has held numerous international visiting scientist positions, including at NUS Singapore, the University of Tokyo, EPFL Switzerland, RWTH Aachen, Lund University, and the University of Waterloo, among others. He serves on the Editorial Board of the IACR Transactions on Symmetric Cryptology (ToSC) and has served as Associate Editor of SN Computer Science (Springer). He has been a Program Committee member for leading cryptology venues including ASIACRYPT, INDOCRYPT, and FSE, and was Program Co-Chair of INDOCRYPT 2013. His work is cited over 3,000 times on Google Scholar.">
+        Prof. Goutam Paul is currently a Professor at the Electronics and Communication
+        Sciences Unit (ECSU), Indian Statistical Institute (ISI), Kolkata, and also serves
+        as Visiting Professor at the Centre for Quantum Engineering, Research and Education
+        (CQuERE), TCG CREST, Kolkata...
+      </p>
+
+      <button class="read-more-btn" type="button">
+        Read full bio
+        <i class="fa-solid fa-chevron-down ms-1"></i>
+      </button>
+    </div>
+  </div>
+</div>
+	  
+	  
+
+      <!-- Speaker 6: Prof. Sanjeev Kumar -->
+      <div class="col-lg-6">
+        <div class="speaker-card">
+          <div class="speaker-banner sky"></div>
+          <div class="speaker-photo-wrap">
+            <img src="assets/speakers/sanjeev-kumar.png" alt="Prof. Sanjeev Kumar" class="speaker-photo">
+          </div>
+          <div class="speaker-body">
+            <div class="speaker-name">Prof. Sanjeev Kumar</div>
+            <div class="speaker-role">
+              Professor, Department of Mathematics,<br>
+              Indian Institute of Technology (IIT) Roorkee
+            </div>
+            <div class="speaker-badges">
+              <span class="speaker-badge"><i class="fa-solid fa-award me-1"></i>Bal Krishna Outstanding Teacher Award</span>
+              <span class="speaker-badge"><i class="fa-solid fa-atom me-1"></i>Quantum Imaging</span>
+              <span class="speaker-badge"><i class="fa-solid fa-image me-1"></i>Mathematical Image Processing</span>
+              <span class="speaker-badge"><i class="fa-solid fa-brain me-1"></i>Machine Learning</span>
+            </div>
+            <p class="speaker-bio clamped" data-full="Prof. Sanjeev Kumar is a Professor in the Department of Mathematics at the Indian Institute of Technology (IIT) Roorkee, where he also serves as Head of the Institute Computer Centre. His research spans Mathematical Image Processing &mdash; including computational algorithms for image restoration, image encryption and secret sharing, quantum imaging, and 3D reconstruction &mdash; as well as Machine Learning, particularly neural networks and tree-based classifiers and their applications in image processing. He earned his Ph.D. in Mathematics from IIT Roorkee (2008), an M.Sc. in Applied Mathematics from IIT Roorkee (2003), and a B.Sc. in Mathematics from CCS University Meerut (2001), followed by a postdoctoral fellowship at the University of Udine, Italy (2008&ndash;2010) under an MIUR Postdoctoral Fellowship. He has held faculty positions at IIT Roorkee since 2010, rising from Assistant Professor to Professor (2023). His publication record spans 70+ journal papers in venues including Neural Networks (Elsevier), Journal of Information Security and Applications, Pattern Recognition Letters, IEEE JSTARS, Quantum Information Processing, and Nonlinear Dynamics, along with numerous conference papers and book chapters, and he has co-edited the Springer proceedings of the International Conference on Computer Vision and Image Processing (CVIP) 2016. He has led and collaborated on major funded projects, including DRDO-funded work on AI-driven antiviral drug discovery and remote-sensing-based landslide prediction for the Central Himalaya. He has supervised numerous doctoral scholars across image restoration, quantum cryptography, medical imaging, and optical flow estimation. His honours include the Prof. Bal Krishna Outstanding Teacher Award (2023), the Outstanding Teacher Award for Undergraduate Category (2019), and a Best Paper Award at the International Conference on ECCS, NIT Kurukshetra (2015). He is a member of IEEE Computer Society, SIAM, the International Association of Pattern Recognition, and a Life Member of ACEEE and IACSIT.">
+              Prof. Sanjeev Kumar is a Professor in the Department of Mathematics at the Indian Institute of Technology (IIT) Roorkee, where he also serves as Head of the Institute Computer Centre. His research spans Mathematical Image Processing &mdash; including computational algorithms for image restoration, image encryption and secret sharing, quantum imaging, and 3D reconstruction &mdash; as well as Machine Learning, particularly neural networks and tree-based classifiers and their applications in image processing...
+            </p>
+            <button class="read-more-btn" type="button">Read full bio <i class="fa-solid fa-chevron-down ms-1"></i></button>
+          </div>
+        </div>
+      </div>
+
+
+
+      
+
+      <!-- More keynote speakers coming soon -->
+      <div class="col-lg-6">
+        <div class="coming-soon-card">
+          <i class="fa-solid fa-user-plus fs-2 mb-3" style="color:var(--forest);"></i>
+          <div class="fw-bold" style="color:var(--slate);font-size:1.05rem;">More Keynote Speakers</div>
+          <div class="small mt-1" style="color:rgba(15,23,42,.60);">To be announced soon. Stay tuned for updates.</div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <!-- TRACK: INDUSTRIAL TRACK -->
+    <div class="track-section" id="track-industrial">
+      <div class="track-heading">
+        <div class="track-icon"><i class="fa-solid fa-industry"></i></div>
+        <h2>Invited & Industrial Track</h2>
+        <p>Invited Talk and Industry leaders sharing perspectives from the front lines of applied AI, ML, and security engineering.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+
+
+
+<!-- Speaker 1: Prof. Abhishek Das -->
+      <div class="col-lg-6">
+        <div class="speaker-card">
+          <div class="speaker-banner"></div>
+          <div class="speaker-photo-wrap">
+            <img src="assets/speakers/abhishek-das.png" alt="Prof. Abhishek Das" class="speaker-photo">
+          </div>
+          <div class="speaker-body">
+            <div class="speaker-name">Prof. Abhishek Das</div>
+            <div class="speaker-role">
+              Professor &amp; Former Head, Dept. of Computer Sc. &amp; Engineering,<br>
+              Aliah University, Kolkata
+            </div>
+            <div class="speaker-badges">
+              <span class="speaker-badge"><i class="fa-solid fa-award me-1"></i>Fellow, IETE</span>
+              <span class="speaker-badge"><i class="fa-solid fa-award me-1"></i>Fellow, SAIARD</span>
+              <span class="speaker-badge"><i class="fa-solid fa-microscope me-1"></i>Medical Image Processing</span>
+              <span class="speaker-badge"><i class="fa-solid fa-brain me-1"></i>Machine Learning</span>
+            </div>
+            <p class="speaker-bio clamped" data-full="Prof. Abhishek Das is a Professor and former Head in the Dept. of Computer Sc. &amp; Engineering at Aliah University, Kolkata. His Research Area is in Medical Image Processing, Machine Learning, Data Science and IoT. He has received a Post Doctoral Research position from University of West Scotland, UK by a Fellowship received from the European Commission. He has also worked as Associate Professor and Head of the Department for two Terms (2017-2019, 2023-2025) at Aliah University, Kolkata and as Assistant Professor in the Dept. of Information Technology, Tripura University (A Central University), India. He has worked previously as a Reader in Computer Sc. &amp; Engineering, Indian Institute of Space Science &amp; Technology (IIST) and Lecturer in Information Technology, Bengal Engineering and Science University, Shibpur (now IIEST Shibpur). He is an Associate Editor of Microsystem Technologies (SCI), Academic Editor of PLOS ONE Journal (SCI). He also has filed and published 11 (Eleven) patents and 1 copyright in his name as co-inventor at India Patent Office, Govt. of India and Intellectual Property Office, U.K. His Ph.D is from the Dept. of Computer Sc. &amp; Engineering, Jadavpur University, India. His M.S. in Electrical &amp; Computer Engineering from Kansas State University, USA and B.Tech in Computer Science &amp; Engineering from Kalyani University, India. He is also currently the President of the Institution Innovation Council (IIC)-Aliah University. He has worked as a Business System Analyst in Blue Cross Blue Shield New York, USA &amp; as a Quality Analyst in Vensoft Inc. Phoenix, USA and also as a Consultant Project Manager in the Software Industry. He is also a Visiting Scientist at Indian Statistical Institute, Kolkata. He has also worked in Technical Educational Administration as Regional Officer and Asst. Director (on deputation) at AICTE (under MHRD, Govt. of India). He is an NCERT National Scholar, New Delhi and a Tilford Dow Scholar, USA. His Biography has been published in the 28th edition of National Dean's List, USA. He is a Fellow of IETE, Fellow of NBSP (Regd. under Ministry of Corporate Affairs, Govt. of India), Fellow of South Asian Chamber of Scientific Research &amp; Development (SAIARD) (certified by MSME, Govt. of India), Member of IEEE, Computer Society of India, ACM and an Honorary Senior Member of IACSIT Singapore. He has successfully handled over 05 extramural grants/projects as PI. He has several publications in International and National Journals and peer-reviewed Conferences. He is also a TPC Committee Member of IEEE and other international conferences in Europe and South-East Asia. His PhD students have been awarded their Degree from Jadavpur University, Aliah University and working in different Govt. colleges and institutes.">
+              Prof. Abhishek Das is a Professor and former Head in the Dept. of Computer Sc. &amp; Engineering at Aliah University, Kolkata. His Research Area is in Medical Image Processing, Machine Learning, Data Science and IoT. He has received a Post Doctoral Research position from University of West Scotland, UK by a Fellowship received from the European Commission. He has also worked as Associate Professor and Head of the Department for two Terms (2017-2019, 2023-2025) at Aliah University, Kolkata and as Assistant Professor in the Dept. of Information Technology, Tripura University (A Central University), India...
+            </p>
+            <button class="read-more-btn" type="button">Read full bio <i class="fa-solid fa-chevron-down ms-1"></i></button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- Speaker 2: Harsh Verma -->
+      <div class="col-lg-6">
+        <div class="speaker-card">
+          <div class="speaker-banner"></div>
+          <div class="speaker-photo-wrap">
+            <img src="assets/speakers/harsh-verma.jpg" alt="Mr. Harsh Verma" class="speaker-photo">
+          </div>
+          <div class="speaker-body">
+            <div class="speaker-name">Mr. Harsh Verma</div>
+            <div class="speaker-role">
+              Principal Software Engineer &ndash; AI/ML, Palo Alto Networks,<br>
+              San Jose, California, USA
+            </div>
+            <div class="speaker-badges">
+              <span class="speaker-badge"><i class="fa-solid fa-graduation-cap me-1"></i>Stanford GSB Exec. Program</span>
+              <span class="speaker-badge"><i class="fa-solid fa-robot me-1"></i>Generative AI</span>
+              <span class="speaker-badge"><i class="fa-solid fa-shield-halved me-1"></i>Network Security AI</span>
+              <span class="speaker-badge"><i class="fa-solid fa-database me-1"></i>Big Data &amp; ML Systems</span>
+            </div>
+            <p class="speaker-bio clamped" data-full="Harsh Verma is a Principal Software Engineer &ndash; AI/ML at Palo Alto Networks, San Jose, California, where he builds multi-agent, LLM-based Generative AI copilots &mdash; including a security policy optimization copilot that detects and resolves network configuration issues &mdash; using RAG pipelines and microservice-oriented deployment across multi-modal, distributed data on Google Cloud Platform. He leads architecture, design, and productionization of large-scale machine learning platforms (Kubeflow, TensorFlow Serving/TFX, Spark-ML pipelines), builds CI pipelines adopted company-wide for quality assurance, and mentors junior ML engineers while driving cross-functional projects end to end. Earlier, he was a Machine Learning Engineer at Hypergiant Sensory Sciences, where he built metrics and face-detection pipelines for neural network object detection and classification systems, and a Software Development Engineer at Hike Messenger, where he built content recommendation, tagging, and duplicate-detection systems using deep neural embeddings. He holds an Executive Business Program certification from Stanford University Graduate School of Business, an M.S. in Computer Science (Big Data Science &amp; Engineering) from the University of Texas at Dallas, and a B.Tech in Computer Science &amp; Engineering from Uttarakhand Technical University, where he graduated 3rd in his class. He conducted research in Dr. Latifur Khan's lab on secure real-time heterogeneous IoT data management, published at IEEE-CogML 2019, and holds a patent for a COVID-19 Preventive Automated Entry Point (COPAEP) system. He is active as a startup mentor at TechStars SF, a hackathon judge (including GenlabX AI Engineer World's Fair Hackathon), and a recognized Stanford Distinguished Scholar.">
+              Harsh Verma is a Principal Software Engineer &ndash; AI/ML at Palo Alto Networks, San Jose, California, where he builds multi-agent, LLM-based Generative AI copilots &mdash; including a security policy optimization copilot that detects and resolves network configuration issues &mdash; using RAG pipelines and microservice-oriented deployment across multi-modal, distributed data on Google Cloud Platform...
+            </p>
+            <button class="read-more-btn" type="button">Read full bio <i class="fa-solid fa-chevron-down ms-1"></i></button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Speaker: Satyam Rastogi -->
+      <div class="col-lg-6">
+        <div class="speaker-card">
+          <div class="speaker-banner sky"></div>
+          <div class="speaker-photo-wrap">
+            <img src="assets/speakers/satyam-rastogi.png" alt="Mr. Satyam Rastogi" class="speaker-photo">
+          </div>
+          <div class="speaker-body">
+            <div class="speaker-name">Mr. Satyam Rastogi</div>
+            <div class="speaker-role">
+              Director of Information Security &amp; DevOps, BAMKO;<br>
+              Director of Red Team, Superior Group of Companies (SGC)
+            </div>
+            <div class="speaker-badges">
+              <span class="speaker-badge"><i class="fa-solid fa-user-shield me-1"></i>Red Team Operations</span>
+              <span class="speaker-badge"><i class="fa-solid fa-cloud me-1"></i>Cloud Security</span>
+              <span class="speaker-badge"><i class="fa-solid fa-robot me-1"></i>AI-Driven Security</span>
+              <span class="speaker-badge"><i class="fa-solid fa-gears me-1"></i>DevSecOps</span>
+            </div>
+            <p class="speaker-bio clamped" data-full="Satyam Rastogi is a cybersecurity leader with 14+ years of global experience, currently Director of Information Security &amp; DevOps at BAMKO and Director of Red Team at Superior Group of Companies (SGC). A CISO-level offensive-security leader, he specializes in enterprise security, Red Team operations, DevSecOps automation, cloud security architecture, and AI-driven security. He has delivered 50+ large-scale security, cloud, and compliance programs across the USA, UK, Canada, UAE, Qatar, and India &mdash; aligned with ISO 27001, SOC 2, PCI DSS, GDPR, CCPA, and DPDPA. A regular international speaker on Red Team methodology, cloud security, and DevSecOps, he also mentors emerging security professionals.">
+              Satyam Rastogi is a cybersecurity leader with 14+ years of global experience, currently Director of Information Security &amp; DevOps at BAMKO and Director of Red Team at Superior Group of Companies (SGC). A CISO-level offensive-security leader, he specializes in enterprise security, Red Team operations, DevSecOps automation, cloud security architecture, and AI-driven security...
+            </p>
+            <button class="read-more-btn" type="button">Read full bio <i class="fa-solid fa-chevron-down ms-1"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- More industrial track speakers coming soon -->
+      <div class="col-lg-6">
+        <div class="coming-soon-card">
+          <i class="fa-solid fa-user-plus fs-2 mb-3" style="color:var(--forest);"></i>
+          <div class="fw-bold" style="color:var(--slate);font-size:1.05rem;">More Industrial Speakers</div>
+          <div class="small mt-1" style="color:rgba(15,23,42,.60);">To be announced soon. Stay tuned for updates.</div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-4">
+      <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
+
+          <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo" style="height:42px;width:auto;">
+        </div>
+	   <h5 class="fw-bold text-white">ICACSDF 2026</h5>
+        <p class="mb-2">
+          School of Computer Science, UPES Dehradun, Uttarakhand
+        </p>
+
+        <div class="small">
+          <div class="mb-2">
+            <i class="fa-solid fa-calendar-days me-2"></i> <strong>11–12 September 2026</strong>
+          </div>
+          <div>
+            <i class="fa-solid fa-certificate me-2"></i> Sponsored by <strong>IEEE UP Section Conference Record #70668</strong>
+          </div>
+          <div class="mt-2">
+            <div class="mt-2"><i class="fa-solid fa-globe me-2"></i>  <a href="https://2025.icacsdf.org/"> <strong> ICACSDF2025 Conference </strong> </a> </div>
+          </div>
+		  </div>
+
+        <h6 class="fw-bold text-white mt-4">Contact Us</h6>
+        <p class="small mb-2">
+          Contact UPES, Bidholi Campus, Dehradun<br>
+          P.O. Bidholi Via Premnagar, Dehradun-248007
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+<h6 class="fw-bold text-white">Rankings &amp; Recognitions</h6>
+<p class="small mb-2">
+
+  • NIRF 2025: Ranked <strong>45 (Overall)</strong>,
+  <strong>43 (Engineering)</strong>,
+  <strong>36 (Management)</strong>, and
+  <strong>18 (Law)</strong><br>
+
+  • Times Higher Education (THE) 2026: Among the
+  <strong>Top 5 universities in India</strong>; ranked
+  <strong>501–600 globally</strong>;
+  <strong>299 in Research Quality</strong><br>
+
+  • QS World University Rankings 2026: Ranked
+  <strong>901–950 globally</strong>;
+  <strong>No. 1 Private University in India for Academic Reputation</strong><br>
+
+  • U.S. News &amp; World Report 2025: Ranked
+  <strong>919 globally</strong>;
+  <strong>20 in India</strong><br>
+
+  • Shanghai Ranking (GRAS): Ranked among the
+  <strong>Top 150 in Telecommunication Engineering</strong>,
+  <strong>Top 400 in Electrical &amp; Electronic Engineering</strong>, and
+  <strong>Top 500 in Computer Science &amp; Engineering</strong><br>
+
+  • QS Rating: Awarded <strong>5-Star rating</strong>; placed among the
+  <strong>Top 2% universities globally</strong><br>
+
+  • NBA-Accredited Programs | Recognised by UGC | Member of AIU
+</p>
+      </div>
+
+      <div class="col-lg-4">
+  <h6 class="fw-bold text-white">Important Dates</h6>
+  <div class="small">
+    <div class="d-flex justify-content-between gap-3 footer-date-row">
+      <span><strong>Paper Submission Opens</strong></span>
+      <span class="text-end">18 March 2026</span>
+    </div>
+
+    <div class="d-flex justify-content-between gap-3 footer-date-row">
+      <span><strong>Submission Deadline</strong></span>
+      <span class="text-end">
+        <del class="text-muted">30 June 2026</del><br>
+        <span class="fw-bold text-danger">8 July 2026 (Hard Deadline)</span>
+      </span>
+    </div>
+
+    <div class="d-flex justify-content-between gap-3 footer-date-row">
+      <span><strong>Notification of Acceptance</strong></span>
+      <span class="text-end">25 July 2026</span>
+    </div>
+
+    <div class="d-flex justify-content-between gap-3 footer-date-row">
+      <span><strong>Camera Ready Submission</strong></span>
+      <span class="text-end">5 August 2026</span>
+    </div>
+
+    <div class="d-flex justify-content-between gap-3 footer-date-row">
+      <span><strong>Last Date of Registration</strong></span>
+      <span class="text-end">
+        <del class="text-muted">Phase 1: 15 August 2026</del><br>
+        <span class="fw-bold text-danger">Phase 2: 25 August 2026</span>
+      </span>
+    </div>
+
+    <div class="d-flex justify-content-between gap-3 pt-2">
+      <span><strong>Conference Date</strong></span>
+      <span class="text-end">11–12 September 2026</span>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+   <hr class="border-light opacity-25 mt-4">
+
+<div class="d-flex justify-content-between align-items-center">
+  <p class="small mb-0 text-start">
+    <strong>&copy; 2026 ICACSDF</strong>. All Rights Reserved.
+  </p>
+
+  <p class="small mb-0 text-end">
+    Design and Developed by:
+    <a href="https://edcatalyst.in" target="_blank" rel="noopener noreferrer">
+      <strong>Edcatalyst.in</strong>
+    </a>
+  </p>
+</div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  document.querySelectorAll('.read-more-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      const body = btn.closest('.speaker-body');
+      const bio = body.querySelector('.speaker-bio');
+      const isClamped = bio.classList.contains('clamped');
+      if(isClamped){
+        bio.classList.remove('clamped');
+        bio.innerHTML = bio.getAttribute('data-full');
+        btn.innerHTML = 'Show less <i class="fa-solid fa-chevron-up ms-1"></i>';
+      } else {
+        bio.classList.add('clamped');
+        btn.innerHTML = 'Read full bio <i class="fa-solid fa-chevron-down ms-1"></i>';
+        body.scrollIntoView({behavior:'smooth', block:'nearest'});
+      }
+    });
+  });
+
+  // Track tab switching
+  document.querySelectorAll('.track-tab').forEach(function(tab){
+    tab.addEventListener('click', function(){
+      document.querySelectorAll('.track-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.track-section').forEach(s => s.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById(tab.getAttribute('data-target')).classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>

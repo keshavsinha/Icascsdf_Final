@@ -294,6 +294,26 @@
   .navbar .dropdown-divider{margin:.35rem .5rem;opacity:.12;}
   .navbar .dropdown-toggle.active{color:#0b5d3b;font-weight:800;}
 
+  /* Secondary nav strip */
+  .subnav{
+    background:rgba(248,250,252,.92);
+    border-bottom:1px solid rgba(15,23,42,.06);
+    position:sticky; top:0; z-index:1029;
+  }
+  .subnav .container{
+    display:flex; align-items:center; justify-content:center;
+    gap:1.5rem; flex-wrap:wrap; padding:.4rem 0;
+  }
+  .subnav a{
+    font-size:.8rem; font-weight:700; color:rgba(15,23,42,.62);
+    text-decoration:none; white-space:nowrap;
+  }
+  .subnav a:hover{color:var(--forest);}
+  .subnav a.active{color:var(--forest);}
+  .subnav .dot{color:rgba(15,23,42,.25); font-size:.7rem;}
+  @media(max-width:767px){.subnav{display:none;}}
+
+
   /* Offcanvas */
   .offcanvas{background:#ffffff;}
   .offcanvas .nav-link{padding:.6rem 0;font-weight:700;border-bottom:1px solid rgba(15,23,42,.06);}
@@ -380,42 +400,9 @@
       <ul class="navbar-nav ms-auto gap-lg-1 align-items-lg-center">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
-        
-		<!-- SPECIAL SESSIONS DROPDOWN -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Special Sessions
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="special_sessions.html" data-page="special_sessions.html">
-                <span class="drop-icon green"><i class="fa-solid fa-layer-group"></i></span>
-                <span>
-                  <div style="font-size:.85rem;font-weight:800;line-height:1.3;">Accepted Sessions</div>
-                  <div style="font-size:.72rem;color:rgba(15,23,42,.50);font-weight:600;">View all 4 confirmed sessions</div>
-                </span>
-              </a>
-            </li>
-            <li><hr class="dropdown-divider"></li>
-            <li>
-              <a class="dropdown-item" href="call_for_special_sessions.html" data-page="call_for_special_sessions.html">
-                <span class="drop-icon sky"><i class="fa-solid fa-rocket"></i></span>
-                <span>
-                  <div style="font-size:.85rem;font-weight:800;line-height:1.3;">Call for Special Session</div>
-                  <div style="font-size:.72rem;color:rgba(15,23,42,.50);font-weight:600;">Submit your session proposal</div>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <!-- END DROPDOWN -->
-		
-        <li class="nav-item"><a class="nav-link active fw-bold" href="conferencetheme.html">Themes</a></li>
-        <li class="nav-item"><a class="nav-link" href="cmt.html">Committee</a></li>
+        <li class="nav-item"><a class="nav-link" href="keynotes.html">Speakers &amp; Guests</a></li>
         <li class="nav-item"><a class="nav-link" href="reg.html">Registration</a></li>
-        <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
-        <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="cmt.html">Committee</a></li>
         <li class="nav-item ms-lg-2 d-none d-lg-block">
           <div class="brand-logos">
             <div class="logo-divider"></div>
@@ -426,6 +413,22 @@
     </div>
   </div>
 </nav>
+
+<!-- SECONDARY NAV STRIP -->
+<div class="subnav d-none d-lg-block">
+  <div class="container">
+    <a href="conferencetheme.html" class="active">Themes</a>
+    <span class="dot">&bull;</span>
+    <a href="special_sessions.html">Special Sessions</a>
+    <span class="dot">&bull;</span>
+    <a href="venue.html">Venue</a>
+    <span class="dot">&bull;</span>
+    <a href="sponsor.html">Sponsors</a>
+    <span class="dot">&bull;</span>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
 
 <!-- OFFCANVAS MOBILE MENU -->
 <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
@@ -441,42 +444,14 @@
       <img src="assets/upes-logo.png" alt="UPES Logo" style="height:36px;width:auto;">
       <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo" style="height:36px;width:auto;">
     </div>
-    <ul class="navbar-nav">
+        <ul class="navbar-nav">
       <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
       <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
-      
-	  		<!-- SPECIAL SESSIONS DROPDOWN -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Special Sessions
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="special_sessions.html" data-page="special_sessions.html">
-                <span class="drop-icon green"><i class="fa-solid fa-layer-group"></i></span>
-                <span>
-                  <div style="font-size:.85rem;font-weight:800;line-height:1.3;">Accepted Sessions</div>
-                  <div style="font-size:.72rem;color:rgba(15,23,42,.50);font-weight:600;">View all 4 confirmed sessions</div>
-                </span>
-              </a>
-            </li>
-            <li><hr class="dropdown-divider"></li>
-            <li>
-              <a class="dropdown-item" href="call_for_special_sessions.html" data-page="call_for_special_sessions.html">
-                <span class="drop-icon sky"><i class="fa-solid fa-rocket"></i></span>
-                <span>
-                  <div style="font-size:.85rem;font-weight:800;line-height:1.3;">Call for Special Session</div>
-                  <div style="font-size:.72rem;color:rgba(15,23,42,.50);font-weight:600;">Submit your session proposal</div>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <!-- END DROPDOWN -->
-	  
-      <li class="nav-item"><a class="nav-link active fw-bold" href="conferencetheme.html">Conference Themes</a></li>
-      <li class="nav-item"><a class="nav-link" href="cmt.html">Committee</a></li>
+      <li class="nav-item"><a class="nav-link" href="keynotes.html">Speakers &amp; Guests</a></li>
       <li class="nav-item"><a class="nav-link" href="reg.html">Registration</a></li>
+      <li class="nav-item"><a class="nav-link" href="cmt.html">Committee</a></li>
+      <li class="nav-item"><a class="nav-link active fw-bold" href="conferencetheme.html">Themes</a></li>
+      <li class="nav-item"><a class="nav-link" href="special_sessions.html">Special Sessions</a></li>
       <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
       <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
       <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -1036,7 +1011,10 @@
 
     <div class="d-flex justify-content-between gap-3 footer-date-row">
       <span><strong>Last Date of Registration</strong></span>
-      <span class="text-end">5 August 2026</span>
+      <span class="text-end">
+        <del class="text-muted">Phase 1: 15 August 2026</del><br>
+        <span class="fw-bold text-danger">Phase 2: 25 August 2026</span>
+      </span>
     </div>
 
     <div class="d-flex justify-content-between gap-3 pt-2">
