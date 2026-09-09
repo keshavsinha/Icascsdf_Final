@@ -740,37 +740,65 @@
 
     <div class="row g-4">
       <div class="col-lg-6">
-        <div class="soft-panel p-4 h-100">
-          <div class="d-flex align-items-center gap-2 mb-3">
-            <div class="icon-badge"><i class="fa-solid fa-file-circle-check"></i></div>
-            <h3 class="mb-0 section-title fs-4">Manuscript Requirements</h3>
-          </div>
-          <ul class="list-unstyled list-check mb-0 muted-strong">
-            <li><i class="fa-solid fa-check-circle"></i>Original, unpublished, and not under review elsewhere</li>
-            <li><i class="fa-solid fa-check-circle"></i>Written in English with clear structure (abstract → methods → results)</li>
-            <li><i class="fa-solid fa-check-circle"></i>Clearly state contribution, evaluation metrics, and limitations</li>
-            <li><i class="fa-solid fa-check-circle"></i>Figures/tables must be readable and properly referenced</li>
-            <li><i class="fa-solid fa-check-circle"></i>At least one author must register and present if accepted</li>
-          </ul>
-        </div>
-      </div>
+  <div class="soft-panel p-4 h-100">
+    <div class="d-flex align-items-center gap-2 mb-3">
+      <div class="icon-badge"><i class="fa-solid fa-file-circle-check"></i></div>
+      <h3 class="mb-0 section-title fs-4">Manuscript Requirements</h3>
+    </div>
+    <ul class="list-unstyled list-check mb-3 muted-strong">
+      <li><i class="fa-solid fa-check-circle"></i>Original and unpublished, not under review or accepted elsewhere</li>
+      <li><i class="fa-solid fa-check-circle"></i>Written in English, following the standard structure: abstract, introduction, related work, methods, results, conclusion</li>
+      <li><i class="fa-solid fa-check-circle"></i>Prepared in the <strong>IEEE conference two-column A4 template</strong> (Word or LaTeX <code>conference</code> mode with <code>a4paper</code>); margins, column widths, and font sizes must not be altered</li>
+      <li><i class="fa-solid fa-check-circle"></i><strong>6 pages</strong> including figures, tables, and references; up to <strong>8 pages</strong> permitted with an over-length fee. Papers beyond 8 pages are rejected without review</li>
+      <li><i class="fa-solid fa-check-circle"></i>Submitted as a single <strong>PDF with all fonts embedded</strong>; no Type 3 fonts. Camera-ready papers must pass IEEE PDF eXpress</li>
+      <li><i class="fa-solid fa-check-circle"></i>Abstract of 150&ndash;250 words and at least five keywords</li>
+      <li><i class="fa-solid fa-check-circle"></i>Clearly state the contribution, evaluation metrics, baselines compared against, and limitations</li>
+      <li><i class="fa-solid fa-check-circle"></i>Figures and tables must be legible at print size (minimum 300 dpi), numbered, captioned, and cited in the text</li>
+      <li><i class="fa-solid fa-check-circle"></i>References in IEEE numeric style, complete and verifiable; cite datasets, code, and tools used</li>
+      <li><i class="fa-solid fa-check-circle"></i>Work involving human subjects, personal data, or offensive security testing must state its ethical approval and disclosure practice</li>
+      <li><i class="fa-solid fa-check-circle"></i>Accepted papers require the signed IEEE copyright form; at least one author must register at the full rate and present the paper</li>
+    </ul>
+    <p class="small muted-strong mb-0">
+      Templates and PDF specifications are available from the
+      <a href="https://conferences.ieeeauthorcenter.ieee.org/author-ethics/guidelines-and-policies/submission-policies/"
+         target="_blank" rel="noopener">IEEE Author Center</a>.
+      Papers not conforming to the required format will not appear in the proceedings.
+    </p>
+  </div>
+</div>
 
-      <div class="col-lg-6">
-        <div class="soft-panel p-4 h-100">
-          <div class="d-flex align-items-center gap-2 mb-3">
-            <div class="icon-badge"><i class="fa-solid fa-scale-balanced"></i></div>
-            <h3 class="mb-0 section-title fs-4">Ethics & Similarity Policy</h3>
-          </div>
-          <ul class="list-unstyled list-check mb-0 muted-strong">
-            <li><i class="fa-solid fa-check-circle"></i>Plagiarism and duplicate submission are strictly prohibited</li>
-            <li><i class="fa-solid fa-check-circle"></i>All sources must be cited; use quotes where applicable</li>
-            <li><i class="fa-solid fa-check-circle"></i>Disclose conflicts of interest and author contributions</li>
-            <li><i class="fa-solid fa-check-circle"></i>Submissions may be screened via similarity-check tools</li>
-          </ul>
+<div class="col-lg-6">
+  <div class="soft-panel p-4 h-100">
+    <div class="d-flex align-items-center gap-2 mb-3">
+      <div class="icon-badge"><i class="fa-solid fa-scale-balanced"></i></div>
+      <h3 class="mb-0 section-title fs-4">Ethics &amp; Similarity Policy</h3>
+    </div>
+    <ul class="list-unstyled list-check mb-3 muted-strong">
+      <li><i class="fa-solid fa-check-circle"></i>All submissions are screened with iThenticate (CrossCheck), including its AI-writing detection report</li>
+      <li><i class="fa-solid fa-check-circle"></i>Overall similarity must be <strong>below 10%</strong>, with <strong>under 1% from any single source</strong></li>
+      <li><i class="fa-solid fa-check-circle"></i>AI-generated content: <strong>0%</strong> &mdash; no part of the manuscript may be written or produced by generative AI</li>
+      <li><i class="fa-solid fa-check-circle"></i>Similarity is computed excluding references and matches under eight consecutive words</li>
+      <li><i class="fa-solid fa-check-circle"></i>AI tools may be used only for language polishing of author-written text, and such use must be declared in the acknowledgements</li>
+      <li><i class="fa-solid fa-check-circle"></i>AI tools cannot be listed as authors; authors remain fully responsible for all content</li>
+      <li><i class="fa-solid fa-check-circle"></i>Self-plagiarism counts; extended versions of prior work must add substantial new content</li>
+      <li><i class="fa-solid fa-check-circle"></i>Plagiarism and duplicate or concurrent submission are strictly prohibited</li>
+      <li><i class="fa-solid fa-check-circle"></i>All sources must be cited; use quotation marks where applicable</li>
+      <li><i class="fa-solid fa-check-circle"></i>Disclose conflicts of interest and author contributions</li>
+    </ul>
+    <p class="small muted-strong mb-0">
+      Papers exceeding any threshold are rejected without review. A high AI-detection score
+      triggers manual committee review. Confirmed misconduct is handled under the IEEE PSPB
+      Operations Manual &sect;8.2.4. Committee reports are final and are not shared with authors.
+      See the
+      <a href="https://conferences.ieeeauthorcenter.ieee.org/author-ethics/guidelines-and-policies/submission-policies/"
+         target="_blank" rel="noopener">IEEE Conference Submission Policies</a> and the
+      <a href="https://www.ieee.org/publications/rights/plagiarism/plagiarism.html"
+         target="_blank" rel="noopener">IEEE Plagiarism Policy</a>.
+    </p>
+  </div>
+</div>
 
-         
-        </div>
-      </div>
+	  
     </div>
 
     <div class="soft-panel p-4 p-lg-5 mt-4">
