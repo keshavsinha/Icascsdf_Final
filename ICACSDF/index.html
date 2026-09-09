@@ -15,36 +15,49 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
 <!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
 
 <style>
-  :root{
-    --sky:#1e88e5;
-    --forest:#0b5d3b;
-    --slate:#0f172a;
-    --sun:#f59e0b;
-    --snow:#f8fafc;
-  }
+/* ============================================================
+   ICACSDF 2026 — consolidated stylesheet
+   ============================================================ */
 
-  body{
-    font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-    color:#0b1220;
-    background:
-      radial-gradient(900px 500px at 10% 0%,rgba(30,136,229,.10),transparent 60%),
-      radial-gradient(900px 600px at 90% 20%,rgba(11,93,59,.10),transparent 60%),
-      linear-gradient(180deg,#ffffff,#f6fbff);
-  }
+:root{
+  --sky:#1e88e5;
+  --forest:#0b5d3b;
+  --slate:#0f172a;
+  --sun:#f59e0b;
+  --snow:#f8fafc;
+}
 
-  /* Top bar */
-  .top-bar{
-    background:linear-gradient(90deg,var(--slate),#0b2a1b);
-    color:rgba(255,255,255,.92); font-size:.85rem;
-    position:relative; z-index:1031;
-  }
-  .top-bar a{color:rgba(255,255,255,.92);text-decoration:none;}
-  .top-bar a:hover{color:#fff;text-decoration:underline;}
+body{
+  font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  color:#0b1220;
+  background:
+    radial-gradient(900px 500px at 10% 0%,rgba(30,136,229,.10),transparent 60%),
+    radial-gradient(900px 600px at 90% 20%,rgba(11,93,59,.10),transparent 60%),
+    linear-gradient(180deg,#ffffff,#f6fbff);
+}
 
-/* NAVBAR CORE */
+a:focus-visible,button:focus-visible{
+  outline:3px solid rgba(30,136,229,.55);
+  outline-offset:2px;
+}
+
+/* ---------- Top bar ---------- */
+.top-bar{
+  background:linear-gradient(90deg,var(--slate),#0b2a1b);
+  color:rgba(255,255,255,.92);
+  font-size:.85rem;
+  position:relative;
+  z-index:1031;
+}
+.top-bar a{color:rgba(255,255,255,.92);text-decoration:none;}
+.top-bar a:hover{color:#fff;text-decoration:underline;}
+
+/* ---------- Navbar ---------- */
 .navbar{
   background:rgba(255,255,255,.95)!important;
   backdrop-filter:blur(10px);
@@ -53,13 +66,9 @@
   top:0;
   z-index:1030;
 }
+.navbar .container{max-width:1320px;}
+.navbar-brand{font-weight:800;letter-spacing:.2px;margin-right:.5rem;}
 
-.navbar-brand{
-  font-weight:800;
-  letter-spacing:.2px;
-}
-
-/* BRAND */
 .brand-pill{
   display:inline-flex;
   align-items:center;
@@ -68,515 +77,268 @@
   border-radius:999px;
   background:linear-gradient(135deg,rgba(30,136,229,.10),rgba(11,93,59,.10));
   border:1px solid rgba(15,23,42,.10);
+  white-space:nowrap;
 }
 
-/* NAV ITEMS */
-.navbar-nav{
+.navbar-nav{display:flex;gap:2px;}
+@media(min-width:992px){.navbar-nav{flex-wrap:nowrap;}}
+.navbar-nav .nav-link{white-space:nowrap;font-size:.88rem;font-weight:600;}
+@media(min-width:992px) and (max-width:1199.98px){
+  .navbar-nav .nav-link{font-size:.82rem;padding-left:.45rem;padding-right:.45rem;}
+}
+
+/* ---------- Logo group (navbar right + offcanvas + footer) ---------- */
+.brand-logos{
   display:flex;
-  flex-wrap:wrap;              /* ✅ prevents overflow */
-  gap:4px;                    /* controlled spacing */
+  align-items:center;
+  gap:12px;
+  flex-shrink:0;
 }
-
-.navbar-nav .nav-link{
-  white-space:nowrap;         /* prevents breaking */
-  font-size:0.9rem;
-  font-weight:600;
-}
-
-/* LOGO */
-.ieee-logo{
-  height:32px;                /* ✅ reduced size */
+.brand-logos img{
+  height:48px;
   width:auto;
   object-fit:contain;
 }
-
-/* CONTAINER FIX */
-.navbar .container{
-  max-width:1320px;           /* Bootstrap standard */
+.brand-logos .logo-divider{
+  width:1px;
+  height:32px;
+  background:rgba(15,23,42,.15);
+  flex-shrink:0;
+}
+@media(max-width:1199.98px){
+  .brand-logos img{height:42px;}
 }
 
-/* MOBILE */
-@media(max-width:992px){
-  .ieee-logo{
-    display:none;
-  }
+/* ---------- Secondary strip ---------- */
+.subnav{
+  background:rgba(248,250,252,.94);
+  border-bottom:1px solid rgba(15,23,42,.06);
+  position:sticky;
+  top:0;
+  z-index:1029;
 }
-  
+.subnav .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1.25rem;
+  padding:.6rem 12px;
+  max-width:1320px;
+}
+.subnav-logos{
+  display:flex;
+  align-items:center;
+  gap:26px;
+  flex-shrink:0;
+}
+.subnav-logos img{
+  height:44px;
+  width:auto;
+  object-fit:contain;
+}
+.subnav-links{
+  display:flex;
+  align-items:center;
+  gap:.85rem;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+.subnav-links a{
+  font-size:.8rem;
+  font-weight:700;
+  color:rgba(15,23,42,.62);
+  text-decoration:none;
+  white-space:nowrap;
+}
+.subnav-links a:hover,.subnav-links a.active{color:var(--forest);}
+.subnav .dot{color:rgba(15,23,42,.25);font-size:.7rem;}
 
-  /* Offcanvas */
-  .offcanvas{background:#ffffff;}
-  .offcanvas .nav-link{padding:.6rem 0;font-weight:700;border-bottom:1px solid rgba(15,23,42,.06);}
-  .offcanvas .nav-link.active{color:var(--forest);}
+@media(max-width:1199.98px){
+  .subnav-logos{gap:20px;}
+  .subnav-logos img{height:38px;}
+}
+@media(max-width:991.98px){
+  .subnav .container{justify-content:center;padding:.7rem 12px;}
+  .subnav-logos{gap:24px;}
+  .subnav-logos img{height:38px;}
+  .subnav-links{display:none;}
+}
+@media(max-width:400px){
+  .subnav-logos{gap:16px;}
+  .subnav-logos img{height:30px;}
+}
 
-  /* Hero */
-  .hero{position:relative;overflow:hidden;padding:60px 0 54px;margin-top:0;}
-  .hero::before{
-    content:"";position:absolute;inset:0;
-    background:
-      linear-gradient(180deg,rgba(255,255,255,.30),rgba(255,255,255,.95)),
-      url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80");
-    background-size:cover;background-position:center;pointer-events:none;
-  }
-  .hero::after{
-    content:"";position:absolute;left:0;right:0;bottom:-2px;height:170px;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200' preserveAspectRatio='none'%3E%3Cpath d='M0 160 L120 120 L220 150 L340 80 L420 140 L520 60 L640 145 L760 90 L860 160 L980 110 L1200 160 L1200 200 L0 200 Z' fill='%230b5d3b' opacity='0.20'/%3E%3Cpath d='M0 170 L140 130 L250 165 L360 105 L460 155 L560 75 L680 165 L820 115 L940 175 L1200 135 L1200 200 L0 200 Z' fill='%231e88e5' opacity='0.14'/%3E%3C/svg%3E");
-    background-size:cover;background-repeat:no-repeat;pointer-events:none;
-  }
-  .hero .container{position:relative;z-index:1;}
-  .hero-title{font-weight:900;line-height:1.12;color:var(--slate);text-shadow:0 10px 35px rgba(2,6,23,.12);}
-  .hero-lead{color:rgba(15,23,42,.78);max-width:980px;margin-inline:auto;}
+/* ---------- Navbar dropdown ---------- */
+.navbar .dropdown-menu{
+  border:1px solid rgba(15,23,42,.10);border-radius:14px;
+  box-shadow:0 16px 40px rgba(2,6,23,.12);padding:.5rem;
+  min-width:240px;margin-top:.4rem;
+}
+.navbar .dropdown-item{
+  border-radius:10px;padding:.6rem .85rem;font-weight:700;font-size:.88rem;
+  color:#0f172a;display:flex;align-items:center;gap:.7rem;
+  transition:background .15s;white-space:normal;
+}
+.navbar .dropdown-item:hover{background:rgba(30,136,229,.08);color:var(--forest);}
+.navbar .dropdown-item .drop-icon{
+  width:30px;height:30px;border-radius:8px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-size:.78rem;
+}
+.navbar .dropdown-item .drop-icon.green{background:rgba(11,93,59,.12);color:var(--forest);}
+.navbar .dropdown-item .drop-icon.sky{background:rgba(30,136,229,.12);color:var(--sky);}
+.navbar .dropdown-divider{margin:.35rem .5rem;opacity:.12;}
+.navbar .dropdown-toggle.active{color:var(--forest);font-weight:800;}
 
-  .chip{
-    display:inline-flex;align-items:center;gap:.5rem;
-    padding:.45rem .85rem;border-radius:999px;
-    background:rgba(255,255,255,.88);border:1px solid rgba(15,23,42,.10);
-    color:var(--slate);font-weight:800;font-size:.88rem;
-  }
-  .chip i{color:var(--forest);}
+/* ---------- Offcanvas ---------- */
+.offcanvas{background:#ffffff;}
+.offcanvas .nav-link{padding:.6rem 0;font-weight:700;border-bottom:1px solid rgba(15,23,42,.06);}
+.offcanvas .nav-link.active{color:var(--forest);}
+.offcanvas .sub-group{border:1px solid rgba(15,23,42,.08);border-radius:12px;overflow:hidden;margin:.2rem 0 .4rem 0;}
+.offcanvas .sub-link{display:flex;align-items:center;gap:.55rem;padding:.5rem 1rem;font-weight:700;font-size:.85rem;color:#0f172a;text-decoration:none;}
+.offcanvas .sub-link:hover{background:rgba(11,93,59,.06);color:var(--forest);}
+.offcanvas .sub-link + .sub-link{border-top:1px solid rgba(15,23,42,.06);}
+.offcanvas-logos img{height:40px;width:auto;object-fit:contain;}
 
-  /* Buttons */
-  .btn-saffron{background:linear-gradient(135deg,var(--sun),#ffb020);border:0;color:#1f2937;font-weight:800;}
-  .btn-saffron:hover{filter:brightness(1.03);box-shadow:0 0 0 6px rgba(245,158,11,.18);}
-  .btn-forest{background:linear-gradient(135deg,var(--forest),#0a7a4b);border:0;color:#fff;font-weight:800;}
-  .btn-forest:hover{filter:brightness(1.03);box-shadow:0 0 0 6px rgba(11,93,59,.16);}
-  .btn-outline-sky{border:2px solid rgba(30,136,229,.55);color:var(--slate);font-weight:800;}
-  .btn-outline-sky:hover{background:rgba(30,136,229,.10);}
+/* ---------- Hero ---------- */
+.hero{position:relative;overflow:hidden;padding:60px 0 54px;margin-top:0;}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.30),rgba(255,255,255,.95)),
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80");
+  background-size:cover;background-position:center;pointer-events:none;
+}
+.hero::after{
+  content:"";position:absolute;left:0;right:0;bottom:-2px;height:170px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200' preserveAspectRatio='none'%3E%3Cpath d='M0 160 L120 120 L220 150 L340 80 L420 140 L520 60 L640 145 L760 90 L860 160 L980 110 L1200 160 L1200 200 L0 200 Z' fill='%230b5d3b' opacity='0.20'/%3E%3Cpath d='M0 170 L140 130 L250 165 L360 105 L460 155 L560 75 L680 165 L820 115 L940 175 L1200 135 L1200 200 L0 200 Z' fill='%231e88e5' opacity='0.14'/%3E%3C/svg%3E");
+  background-size:cover;background-repeat:no-repeat;pointer-events:none;
+}
+.hero .container{position:relative;z-index:1;}
+.hero-title{font-weight:900;line-height:1.12;color:var(--slate);text-shadow:0 10px 35px rgba(2,6,23,.12);}
+.hero-lead{color:rgba(15,23,42,.78);max-width:980px;margin-inline:auto;}
 
-  /* Text */
-  .section-title{font-weight:900;color:var(--slate);}
-  .section-subtitle{color:rgba(15,23,42,.70);max-width:980px;margin:0 auto;}
-  .muted-strong{color:rgba(15,23,42,.72);}
+.chip{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.45rem .85rem;border-radius:999px;
+  background:rgba(255,255,255,.88);border:1px solid rgba(15,23,42,.10);
+  color:var(--slate);font-weight:800;font-size:.88rem;
+}
+.chip i{color:var(--forest);}
 
-  /* Panels */
-  .soft-panel{background:rgba(255,255,255,.92);border:1px solid rgba(15,23,42,.08);border-radius:20px;box-shadow:0 16px 40px rgba(2,6,23,.06);}
-  .icon-badge{
-    width:44px;height:44px;border-radius:14px;flex-shrink:0;
-    display:flex;align-items:center;justify-content:center;
-    background:linear-gradient(135deg,rgba(30,136,229,.12),rgba(11,93,59,.12));
-    border:1px solid rgba(15,23,42,.10);color:var(--forest);
-  }
-
-  /* Topic pills */
-  .topic-pill{
-    border:1px solid rgba(15,23,42,.10);background:rgba(255,255,255,.88);
-    border-radius:999px;padding:.45rem .75rem;display:inline-flex;
-    gap:.5rem;align-items:center;font-weight:800;color:rgba(15,23,42,.85);
-    margin:.25rem .25rem 0 0;font-size:.85rem;
-  }
-  .topic-pill i{color:var(--forest);}
-
-  /* Checklist */
-  .list-check li{margin-bottom:.55rem;}
-  .list-check i{color:var(--forest);margin-right:.55rem;}
-
-  /* Session card */
-  .session-card{
-    background:#fff;border:1px solid rgba(15,23,42,.08);
-    border-radius:24px;box-shadow:0 16px 48px rgba(2,6,23,.07);
-    overflow:hidden;
-  }
-  .session-card-header{
-    background:linear-gradient(135deg,var(--forest),#0a7a4b);
-    color:#fff;padding:1.75rem 2rem 1.5rem;
-  }
-  .session-card-header.sky{
-    background:linear-gradient(135deg,var(--sky),#1565c0);
-  }
-  .session-number{
-    display:inline-flex;align-items:center;justify-content:center;
-    width:36px;height:36px;border-radius:50%;
-    background:rgba(255,255,255,.20);border:2px solid rgba(255,255,255,.40);
-    font-weight:900;font-size:.9rem;flex-shrink:0;
-  }
-  .session-title{font-weight:900;line-height:1.25;font-size:1.15rem;}
-  .session-body{padding:2rem;}
-
-  /* Dates grid */
-  .date-box{
-    background:linear-gradient(135deg,rgba(30,136,229,.06),rgba(11,93,59,.06));
-    border:1px solid rgba(15,23,42,.08);border-radius:14px;
-    padding:.85rem 1rem;text-align:center;
-  }
-  .date-box .date-label{font-size:.70rem;font-weight:800;color:rgba(15,23,42,.55);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.25rem;}
-  .date-box .date-val{font-size:.95rem;font-weight:800;color:var(--slate);}
-  .date-box.highlight{background:linear-gradient(135deg,rgba(11,93,59,.12),rgba(10,122,75,.12));border-color:rgba(11,93,59,.20);}
-  .date-box.highlight .date-val{color:var(--forest);}
-
-  /* Organizer card */
-  .organizer-card{
-    background:rgba(248,250,252,.90);border:1px solid rgba(15,23,42,.08);
-    border-radius:14px;padding:1.1rem 1.25rem;
-  }
-  .organizer-card .org-name{font-weight:800;color:var(--slate);font-size:.95rem;}
-  .organizer-card .org-role{font-size:.78rem;color:var(--forest);font-weight:700;font-style:italic;}
-  .organizer-card .org-meta{font-size:.80rem;color:rgba(15,23,42,.60);margin-top:.3rem;}
-  .organizer-card .org-meta a{color:var(--sky);text-decoration:none;font-weight:700;}
-  .organizer-card .org-meta a:hover{text-decoration:underline;}
-
-  /* Coming soon card */
-  .coming-soon-card{
-    background:linear-gradient(135deg,rgba(15,23,42,.03),rgba(30,136,229,.05));
-    border:2px dashed rgba(15,23,42,.15);
-    border-radius:24px;padding:3rem 2rem;text-align:center;
-  }
-
-  /* Section divider */
-  .sessions-divider{
-    display:flex;align-items:center;gap:1rem;margin:2.5rem 0;
-  }
-  .sessions-divider::before,.sessions-divider::after{
-    content:"";flex:1;height:1px;background:rgba(15,23,42,.10);
-  }
-
-  /* IEEE badge */
-  .ieee-badge{
-    display:inline-flex;align-items:center;gap:.5rem;
-    background:linear-gradient(135deg,rgba(30,136,229,.10),rgba(11,93,59,.10));
-    border:1px solid rgba(30,136,229,.25);border-radius:999px;
-    padding:.4rem .85rem;font-weight:800;font-size:.80rem;color:var(--slate);
-  }
-  .ieee-badge i{color:var(--sky);}
-
-  /* Pulse badge */
-  @keyframes pulse-ring{
-    0%{box-shadow:0 0 0 0 rgba(11,93,59,.35);}
-    70%{box-shadow:0 0 0 10px rgba(11,93,59,0);}
-    100%{box-shadow:0 0 0 0 rgba(11,93,59,0);}
-  }
-  .badge-pulse{animation:pulse-ring 2s infinite;border-radius:999px;}
-
-  /* Footer */
-  footer{background:linear-gradient(90deg,var(--slate),#0b2a1b);color:rgba(255,255,255,.85);}
-  footer a{color:rgba(255,255,255,.85);text-decoration:none;}
-  footer a:hover{color:#fff;text-decoration:underline;}
-  .footer-date-row{border-bottom:1px solid rgba(255,255,255,.20);padding:.55rem 0;}
-
-
-
-  /* Mobile */
-  @media(max-width:767px){
-    .hero{padding:40px 0 40px;}
-    .hero-title{font-size:1.6rem!important;}
-    .hero-lead{font-size:.92rem;}
-    .session-card-header{padding:1.25rem 1.25rem 1rem;}
-    .session-body{padding:1.25rem;}
-    .session-title{font-size:1rem;}
-    .soft-panel{border-radius:14px;}
-    .btn-lg{padding:.55rem 1rem;font-size:.88rem;}
-    .section-title{font-size:1.25rem;}
-    .chip{font-size:.80rem;padding:.38rem .7rem;}
-  }
-  @media(max-width:400px){
-    .hero-title{font-size:1.35rem!important;}
-    .top-bar .ieee-label{display:none;}
-  }
-</style>
-
-<style>
-  .top-bar{background:linear-gradient(90deg,#0f172a,#0b2a1b);color:rgba(255,255,255,.92);font-size:.85rem;position:relative;z-index:1031;}
-  .top-bar a{color:rgba(255,255,255,.92);text-decoration:none;}
-  .top-bar a:hover{color:#fff;text-decoration:underline;}
-  .navbar{background:rgba(255,255,255,.95)!important;backdrop-filter:blur(10px);border-bottom:1px solid rgba(15,23,42,.08);position:sticky;top:0;z-index:1030;}
-  .navbar-brand{font-weight:800;letter-spacing:.2px;}
-  .brand-pill{display:inline-flex;align-items:center;gap:.55rem;padding:.45rem .75rem;border-radius:999px;background:linear-gradient(135deg,rgba(30,136,229,.10),rgba(11,93,59,.10));border:1px solid rgba(15,23,42,.10);}
-  .brand-logos{display:flex;align-items:center;gap:14px;}
-  .brand-logos img{height:44px;width:auto;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(2,6,23,.10));}
-  .brand-logos .logo-divider{width:1px;height:28px;background:rgba(15,23,42,.15);}
-  @media(max-width:992px){.brand-logos img{height:38px;}}
-
-  /* Dropdown */
-  .navbar .dropdown-menu{border:1px solid rgba(15,23,42,.10);border-radius:14px;box-shadow:0 16px 40px rgba(2,6,23,.12);padding:.5rem;min-width:240px;margin-top:.4rem;}
-  .navbar .dropdown-item{border-radius:10px;padding:.6rem .85rem;font-weight:700;font-size:.88rem;color:#0f172a;display:flex;align-items:center;gap:.7rem;transition:background .15s;white-space:normal;}
-  .navbar .dropdown-item:hover{background:rgba(30,136,229,.08);color:#0b5d3b;}
-  .navbar .dropdown-item .drop-icon{width:30px;height:30px;border-radius:8px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.78rem;}
-  .navbar .dropdown-item .drop-icon.green{background:rgba(11,93,59,.12);color:#0b5d3b;}
-  .navbar .dropdown-item .drop-icon.sky{background:rgba(30,136,229,.12);color:#1e88e5;}
-  .navbar .dropdown-divider{margin:.35rem .5rem;opacity:.12;}
-  .navbar .dropdown-toggle.active{color:#0b5d3b;font-weight:800;}
-
-  /* Secondary nav strip */
-  .subnav{
-    background:rgba(248,250,252,.92);
-    border-bottom:1px solid rgba(15,23,42,.06);
-    position:sticky; top:0; z-index:1029;
-  }
-  .subnav .container{
-    display:flex; align-items:center; justify-content:center;
-    gap:1.5rem; flex-wrap:wrap; padding:.4rem 0;
-  }
-  .subnav a{
-    font-size:.8rem; font-weight:700; color:rgba(15,23,42,.62);
-    text-decoration:none; white-space:nowrap;
-  }
-  .subnav a:hover{color:var(--forest);}
-  .subnav a.active{color:var(--forest);}
-  .subnav .dot{color:rgba(15,23,42,.25); font-size:.7rem;}
-  @media(max-width:767px){.subnav{display:none;}}
-
-  /* Offcanvas */
-  .offcanvas{background:#ffffff;}
-  .offcanvas .nav-link{padding:.6rem 0;font-weight:700;border-bottom:1px solid rgba(15,23,42,.06);}
-  .offcanvas .nav-link.active{color:#0b5d3b;}
-  .offcanvas .sub-group{border:1px solid rgba(15,23,42,.08);border-radius:12px;overflow:hidden;margin:.2rem 0 .4rem 0;}
-  .offcanvas .sub-link{display:flex;align-items:center;gap:.55rem;padding:.5rem 1rem;font-weight:700;font-size:.85rem;color:#0f172a;text-decoration:none;}
-  .offcanvas .sub-link:hover{background:rgba(11,93,59,.06);color:#0b5d3b;}
-  .offcanvas .sub-link + .sub-link{border-top:1px solid rgba(15,23,42,.06);}
-
-  @media(max-width:400px){.top-bar .ieee-label{display:none;}}
-</style>
-
-<style>
-  /* Countdown */
-  .countdown-wrap{
-    max-width: 860px;
-    margin: 18px auto 0;
-    background: rgba(255,255,255,.82);
-    border: 1px solid rgba(15,23,42,.10);
-    border-radius: 18px;
-    padding: 18px 18px;
-    backdrop-filter: blur(10px);
-  }
-  .countdown-label{
-    font-weight: 800;
-    color: var(--slate);
-  }
-  .count-box{
-    background: #fff;
-    border: 1px solid rgba(15,23,42,.08);
-    border-radius: 16px;
-    padding: 14px 10px;
-    box-shadow: 0 12px 28px rgba(2,6,23,.06);
-  }
-  .count-num{
-    font-size: 1.55rem;
-    font-weight: 900;
-    color: var(--forest);
-    line-height: 1;
-  }
-  .count-text{
-    font-size: .85rem;
-    color: rgba(15,23,42,.65);
-    margin-top: 4px;
-    font-weight: 700;
-  }
-</style>
-
-<style> 
-  :root{
-    --sky:#1e88e5;
-    --forest:#0b5d3b;
-    --slate:#0f172a;
-    --sun:#f59e0b;
-    --snow:#f8fafc;
-  }
-
-  body{
-    font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-    color:#0b1220;
-    background:
-      radial-gradient(900px 500px at 10% 0%,rgba(30,136,229,.10),transparent 60%),
-      radial-gradient(900px 600px at 90% 20%,rgba(11,93,59,.10),transparent 60%),
-      linear-gradient(180deg,#ffffff,#f6fbff);
-  }
-
-  /* Top bar */
-  .top-bar{
-    background:linear-gradient(90deg,var(--slate),#0b2a1b);
-    color:rgba(255,255,255,.92); font-size:.85rem;
-    position:relative; z-index:1031;
-  }
-  .top-bar a{color:rgba(255,255,255,.92);text-decoration:none;}
-  .top-bar a:hover{color:#fff;text-decoration:underline;}
-
-  /* Navbar */
-  .navbar{
-    background:rgba(255,255,255,.95)!important;
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid rgba(15,23,42,.08);
-    position:sticky; top:0; z-index:1030;
-  }
-  .navbar-brand{font-weight:800;letter-spacing:.2px;}
-  .brand-pill{
-    display:inline-flex;align-items:center;gap:.55rem;
-    padding:.45rem .75rem;border-radius:999px;
-    background:linear-gradient(135deg,rgba(30,136,229,.10),rgba(11,93,59,.10));
-    border:1px solid rgba(15,23,42,.10);
-  }
-  .brand-logos{display:flex;align-items:center;gap:14px;}
-  .brand-logos img{height:44px;width:auto;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(2,6,23,.10));}
-  .brand-logos .logo-divider{width:1px;height:28px;background:rgba(15,23,42,.15);}
-  @media(max-width:992px){.brand-logos img{height:38px;}}
-
-  /* Offcanvas */
-  .offcanvas{background:#ffffff;}
-  .offcanvas .nav-link{padding:.6rem 0;font-weight:700;border-bottom:1px solid rgba(15,23,42,.06);}
-  .offcanvas .nav-link.active{color:var(--forest);}
-
-  /* Hero */
-  .hero{position:relative;overflow:hidden;padding:60px 0 54px;margin-top:0;}
-  .hero::before{
-    content:"";position:absolute;inset:0;
-    background:
-      linear-gradient(180deg,rgba(255,255,255,.30),rgba(255,255,255,.95)),
-      url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80");
-    background-size:cover;background-position:center;pointer-events:none;
-  }
-  .hero::after{
-    content:"";position:absolute;left:0;right:0;bottom:-2px;height:170px;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200' preserveAspectRatio='none'%3E%3Cpath d='M0 160 L120 120 L220 150 L340 80 L420 140 L520 60 L640 145 L760 90 L860 160 L980 110 L1200 160 L1200 200 L0 200 Z' fill='%230b5d3b' opacity='0.20'/%3E%3Cpath d='M0 170 L140 130 L250 165 L360 105 L460 155 L560 75 L680 165 L820 115 L940 175 L1200 135 L1200 200 L0 200 Z' fill='%231e88e5' opacity='0.14'/%3E%3C/svg%3E");
-    background-size:cover;background-repeat:no-repeat;pointer-events:none;
-  }
-  .hero .container{position:relative;z-index:1;}
-  .hero-title{font-weight:900;line-height:1.12;color:var(--slate);text-shadow:0 10px 35px rgba(2,6,23,.12);}
-  .hero-lead{color:rgba(15,23,42,.78);max-width:980px;margin-inline:auto;}
-
-  .chip{
-    display:inline-flex;align-items:center;gap:.5rem;
-    padding:.45rem .85rem;border-radius:999px;
-    background:rgba(255,255,255,.88);border:1px solid rgba(15,23,42,.10);
-    color:var(--slate);font-weight:800;font-size:.88rem;
-  }
-  .chip i{color:var(--forest);}
-
-  /* Buttons */
-  .btn-saffron{background:linear-gradient(135deg,var(--sun),#ffb020);border:0;color:#1f2937;font-weight:800;}
-  .btn-saffron:hover{filter:brightness(1.03);box-shadow:0 0 0 6px rgba(245,158,11,.18);}
-  .btn-forest{background:linear-gradient(135deg,var(--forest),#0a7a4b);border:0;color:#fff;font-weight:800;}
-  .btn-forest:hover{filter:brightness(1.03);box-shadow:0 0 0 6px rgba(11,93,59,.16);}
-  .btn-outline-sky{border:2px solid rgba(30,136,229,.55);color:var(--slate);font-weight:800;}
-  .btn-outline-sky:hover{background:rgba(30,136,229,.10);}
-
-  /* Text */
-  .section-title{font-weight:900;color:var(--slate);}
-  .section-subtitle{color:rgba(15,23,42,.70);max-width:980px;margin:0 auto;}
-  .muted-strong{color:rgba(15,23,42,.72);}
-
-  /* Panels */
-  .soft-panel{background:rgba(255,255,255,.92);border:1px solid rgba(15,23,42,.08);border-radius:20px;box-shadow:0 16px 40px rgba(2,6,23,.06);}
-  .icon-badge{
-    width:44px;height:44px;border-radius:14px;flex-shrink:0;
-    display:flex;align-items:center;justify-content:center;
-    background:linear-gradient(135deg,rgba(30,136,229,.12),rgba(11,93,59,.12));
-    border:1px solid rgba(15,23,42,.10);color:var(--forest);
-  }
-
-  /* Topic pills */
-  .topic-pill{
-    border:1px solid rgba(15,23,42,.10);background:rgba(255,255,255,.88);
-    border-radius:999px;padding:.45rem .75rem;display:inline-flex;
-    gap:.5rem;align-items:center;font-weight:800;color:rgba(15,23,42,.85);
-    margin:.25rem .25rem 0 0;font-size:.85rem;
-  }
-  .topic-pill i{color:var(--forest);}
-
-  /* Checklist */
-  .list-check li{margin-bottom:.55rem;}
-  .list-check i{color:var(--forest);margin-right:.55rem;}
-
-  /* Benefit cards */
-  .benefit-card{
-    background:rgba(255,255,255,.92);border:1px solid rgba(15,23,42,.08);
-    border-radius:18px;padding:1.5rem;box-shadow:0 8px 24px rgba(2,6,23,.05);
-    transition:transform .2s,box-shadow .2s;height:100%;
-  }
-  .benefit-card:hover{transform:translateY(-4px);box-shadow:0 20px 48px rgba(2,6,23,.09);}
-  .benefit-icon{
-    width:52px;height:52px;border-radius:16px;
-    display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:1rem;
-    background:linear-gradient(135deg,rgba(30,136,229,.13),rgba(11,93,59,.13));
-    border:1px solid rgba(15,23,42,.10);color:var(--forest);
-  }
-
-  /* Highlight strip */
-  .highlight-strip{background:linear-gradient(135deg,var(--forest),#0a7a4b);border-radius:20px;color:#fff;padding:2rem;}
-  .highlight-strip .stat-num{font-size:1.9rem;font-weight:900;line-height:1;}
-  .highlight-strip .stat-label{font-size:.78rem;opacity:.80;font-weight:700;margin-top:4px;}
-
-  /* Steps timeline */
-  .step-line{position:relative;}
-  .step-item{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.75rem;position:relative;}
-  .step-item:not(:last-child)::after{
-    content:"";position:absolute;left:19px;top:44px;bottom:-1.75rem;
-    width:2px;background:linear-gradient(180deg,var(--forest),rgba(11,93,59,.10));
-  }
-  .step-dot{
-    width:40px;height:40px;min-width:40px;border-radius:50%;
-    background:linear-gradient(135deg,var(--forest),#0a7a4b);color:#fff;
-    display:flex;align-items:center;justify-content:center;
-    font-weight:900;font-size:.9rem;box-shadow:0 4px 12px rgba(11,93,59,.30);
-    flex-shrink:0;position:relative;z-index:1;
-  }
-  .step-content{flex:1;padding-top:6px;}
-
-  /* Footer */
-  footer{background:linear-gradient(90deg,var(--slate),#0b2a1b);color:rgba(255,255,255,.85);}
-  footer a{color:rgba(255,255,255,.85);text-decoration:none;}
-  footer a:hover{color:#fff;text-decoration:underline;}
-  .footer-date-row{border-bottom:1px solid rgba(255,255,255,.20);padding:.55rem 0;}
-
-  /* Pulse badge */
-  @keyframes pulse-ring{
-    0%{box-shadow:0 0 0 0 rgba(11,93,59,.35);}
-    70%{box-shadow:0 0 0 10px rgba(11,93,59,0);}
-    100%{box-shadow:0 0 0 0 rgba(11,93,59,0);}
-  }
-  .badge-pulse{animation:pulse-ring 2s infinite;border-radius:999px;}
-
-  /* ── Mobile responsive ── */
-  @media(max-width:767px){
-    .hero{padding:40px 0 40px;}
-    .hero-title{font-size:1.6rem!important;}
-    .hero-lead{font-size:.92rem;}
-    .highlight-strip{padding:1.25rem 1rem;}
-    .highlight-strip .stat-num{font-size:1.45rem;}
-    .highlight-strip .stat-label{font-size:.70rem;}
-    .soft-panel{border-radius:14px;}
-    .btn-lg{padding:.55rem 1rem;font-size:.88rem;}
-    .section-title{font-size:1.25rem;}
-    .chip{font-size:.80rem;padding:.38rem .7rem;}
-    .benefit-card{padding:1.1rem;}
-    .step-item{gap:.75rem;}
-    .step-dot{width:34px;height:34px;min-width:34px;font-size:.8rem;}
-    .step-item:not(:last-child)::after{left:16px;}
-  }
-  @media(max-width:400px){
-    .hero-title{font-size:1.35rem!important;}
-    .top-bar .ieee-label{display:none;}
-  }
-  
-  .theme-card{
-  font-size:1rem;
-  background:#ffffff;
+/* ---------- Info cards (hero footer row) ---------- */
+.info-card{
+  background:rgba(255,255,255,.90);
   border:1px solid rgba(15,23,42,.08);
-  border-radius:18px;
-  padding:1.5rem;
-  box-shadow:0 10px 30px rgba(2,6,23,.06);
+  border-radius:16px;
+  padding:1rem 1.15rem;
   height:100%;
-  transition:all 0.25s ease;
+  box-shadow:0 10px 26px rgba(2,6,23,.05);
+}
+.info-card i{color:var(--forest);}
+.info-card strong{color:var(--slate);font-size:.92rem;}
+
+/* ---------- Buttons ---------- */
+.btn-saffron{background:linear-gradient(135deg,var(--sun),#ffb020);border:0;color:#1f2937;font-weight:800;}
+.btn-saffron:hover{filter:brightness(1.03);box-shadow:0 0 0 6px rgba(245,158,11,.18);}
+.btn-forest{background:linear-gradient(135deg,var(--forest),#0a7a4b);border:0;color:#fff;font-weight:800;}
+.btn-forest:hover{filter:brightness(1.03);color:#fff;box-shadow:0 0 0 6px rgba(11,93,59,.16);}
+.btn-outline-sky{border:2px solid rgba(30,136,229,.55);color:var(--slate);font-weight:800;}
+.btn-outline-sky:hover{background:rgba(30,136,229,.10);}
+
+/* ---------- Text ---------- */
+.section-title{font-weight:900;color:var(--slate);}
+.section-subtitle{color:rgba(15,23,42,.70);max-width:980px;margin:0 auto;}
+.muted-strong{color:rgba(15,23,42,.72);}
+
+/* ---------- Panels ---------- */
+.soft-panel{
+  background:rgba(255,255,255,.92);
+  border:1px solid rgba(15,23,42,.08);
+  border-radius:20px;
+  box-shadow:0 16px 40px rgba(2,6,23,.06);
+}
+.icon-badge{
+  width:44px;height:44px;border-radius:14px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,rgba(30,136,229,.12),rgba(11,93,59,.12));
+  border:1px solid rgba(15,23,42,.10);color:var(--forest);
 }
 
-.theme-card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 20px 50px rgba(2,6,23,.10);
+/* ---------- Topic pills ---------- */
+.topic-pill{
+  border:1px solid rgba(15,23,42,.10);background:rgba(255,255,255,.88);
+  border-radius:999px;padding:.45rem .75rem;display:inline-flex;
+  gap:.5rem;align-items:center;font-weight:800;color:rgba(15,23,42,.85);
+  margin:.25rem .25rem 0 0;font-size:.85rem;
+}
+.topic-pill i{color:var(--forest);}
+
+/* ---------- Checklist ---------- */
+.list-check li{margin-bottom:.55rem;}
+.list-check i{color:var(--forest);margin-right:.55rem;}
+
+/* ---------- Theme cards ---------- */
+.theme-card{
+  font-size:1rem;background:#ffffff;
+  border:1px solid rgba(15,23,42,.08);border-radius:18px;
+  padding:1.5rem;box-shadow:0 10px 30px rgba(2,6,23,.06);
+  height:100%;transition:transform .25s ease,box-shadow .25s ease;
+}
+.theme-card:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(2,6,23,.10);}
+.theme-card h6{font-weight:800;margin-bottom:.75rem;color:var(--slate);}
+.theme-list{padding-left:1rem;margin:0;}
+.theme-list li{font-size:.9rem;margin-bottom:.4rem;color:rgba(15,23,42,.75);}
+
+/* ---------- Countdown ---------- */
+.countdown-wrap{
+  max-width:860px;margin:18px auto 0;
+  background:rgba(255,255,255,.82);
+  border:1px solid rgba(15,23,42,.10);
+  border-radius:18px;padding:18px;backdrop-filter:blur(10px);
+}
+.countdown-label{font-weight:800;color:var(--slate);}
+.count-box{
+  background:#fff;border:1px solid rgba(15,23,42,.08);
+  border-radius:16px;padding:14px 10px;
+  box-shadow:0 12px 28px rgba(2,6,23,.06);
+}
+.count-num{font-size:1.55rem;font-weight:900;color:var(--forest);line-height:1;}
+.count-text{font-size:.85rem;color:rgba(15,23,42,.65);margin-top:4px;font-weight:700;}
+
+/* ---------- Footer ---------- */
+footer{background:linear-gradient(90deg,var(--slate),#0b2a1b);color:rgba(255,255,255,.85);}
+footer a{color:rgba(255,255,255,.85);text-decoration:none;}
+footer a:hover{color:#fff;text-decoration:underline;}
+.footer-date-row{border-bottom:1px solid rgba(255,255,255,.20);padding:.55rem 0;}
+.footer-logos img{height:50px;width:auto;object-fit:contain;background:#fff;border-radius:8px;padding:4px 8px;}
+
+/* ---------- Pulse badge ---------- */
+@keyframes pulse-ring{
+  0%{box-shadow:0 0 0 0 rgba(11,93,59,.35);}
+  70%{box-shadow:0 0 0 10px rgba(11,93,59,0);}
+  100%{box-shadow:0 0 0 0 rgba(11,93,59,0);}
+}
+.badge-pulse{animation:pulse-ring 2s infinite;border-radius:999px;}
+
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;}
 }
 
-.theme-card h6{
-  font-weight:800;
-  margin-bottom:0.75rem;
-  color:#0f172a;
+/* ---------- Mobile ---------- */
+@media(max-width:767px){
+  .hero{padding:40px 0 40px;}
+  .hero-title{font-size:1.6rem!important;}
+  .hero-lead{font-size:.92rem;}
+  .soft-panel{border-radius:14px;}
+  .btn-lg{padding:.55rem 1rem;font-size:.88rem;}
+  .section-title{font-size:1.25rem;}
+  .chip{font-size:.80rem;padding:.38rem .7rem;}
+  .theme-card{padding:1.15rem;}
 }
-
-.theme-list{
-  padding-left:1rem;
-  margin:0;
+@media(max-width:400px){
+  .hero-title{font-size:1.35rem!important;}
+  .top-bar .ieee-label{display:none;}
 }
-
-.theme-list li{
-  font-size:0.9rem;
-  margin-bottom:0.4rem;
-  color:rgba(15,23,42,.75);
-}
-  
 </style>
 
 </head>
@@ -600,54 +362,63 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg">
   <div class="container">
+
     <a class="navbar-brand" href="index.html">
       <span class="brand-pill">
-        <i class="fa-solid fa-mountain-sun text-success"></i>
+        <i class="fa-solid fa-mountain-sun text-success" aria-hidden="true"></i>
         ICACSDF 2026
       </span>
     </a>
 
-    <button class="navbar-toggler border-0" type="button"
+    <button class="navbar-toggler border-0 ms-2" type="button"
             data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
             aria-controls="mobileMenu" aria-label="Open navigation menu">
       <span class="navbar-toggler-icon"></span>
     </button>
-	
-	<div class="brand-logos">
-            <div class="logo-divider"></div>
-            <img src="assets/ieee-up.png" alt="IEEE UP Section Logo">
-          </div>
 
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto gap-lg-1 align-items-lg-center">
-        <li class="nav-item"><a class="nav-link active fw-bold" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active fw-bold" href="index.html" aria-current="page">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
         <li class="nav-item"><a class="nav-link" href="keynotes.html">Speakers &amp; Guests</a></li>
         <li class="nav-item"><a class="nav-link" href="reg.html">Registration</a></li>
         <li class="nav-item"><a class="nav-link" href="cmt.html">Committee</a></li>
+
+        <!-- Right-side conference logo -->
         <li class="nav-item ms-lg-2 d-none d-lg-block">
           <div class="brand-logos">
-            <div class="logo-divider"></div>
-            <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo">
+            <span class="logo-divider"></span>
+            <img src="assets/ieee-up-logo.png" alt="IEEE UP Section conference mark">
           </div>
         </li>
       </ul>
     </div>
+
   </div>
 </nav>
 
-<!-- SECONDARY NAV STRIP -->
-<div class="subnav d-none d-lg-block">
+<!-- SECONDARY STRIP: sponsor logos + section links -->
+<div class="subnav">
   <div class="container">
-    <a href="conferencetheme.html">Themes</a>
-    <span class="dot">&bull;</span>
-    <a href="special_sessions.html">Special Sessions</a>
-    <span class="dot">&bull;</span>
-    <a href="venue.html">Venue</a>
-    <span class="dot">&bull;</span>
-    <a href="sponsor.html">Sponsors</a>
-    <span class="dot">&bull;</span>
-    <a href="contact.html">Contact</a>
+
+    <div class="subnav-logos">
+      <img src="assets/ieee-up.png" alt="IEEE Uttar Pradesh Section">
+      <img src="assets/anrf.jpg" alt="Anusandhan National Research Foundation">
+      <img src="assets/comptia.png" alt="CompTIA">
+    </div>
+
+    <nav class="subnav-links" aria-label="Secondary">
+      <a href="conferencetheme.html">Themes</a>
+      <span class="dot">&bull;</span>
+      <a href="special_sessions.html">Special Sessions</a>
+      <span class="dot">&bull;</span>
+      <a href="venue.html">Venue</a>
+      <span class="dot">&bull;</span>
+      <a href="sponsor.html">Sponsors</a>
+      <span class="dot">&bull;</span>
+      <a href="contact.html">Contact</a>
+    </nav>
+
   </div>
 </div>
 
@@ -655,16 +426,20 @@
 <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
   <div class="offcanvas-header border-bottom">
     <div class="d-flex align-items-center gap-2">
-      <i class="fa-solid fa-mountain-sun text-success fs-5"></i>
+      <i class="fa-solid fa-mountain-sun text-success fs-5" aria-hidden="true"></i>
       <h5 class="offcanvas-title fw-bold mb-0" id="mobileMenuLabel">ICACSDF 2026</h5>
     </div>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <div class="d-flex align-items-center gap-3 mb-3">
-      <img src="assets/upes-logo.png" alt="UPES Logo" style="height:36px;width:auto;">
-      <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo" style="height:36px;width:auto;">
+
+    <div class="offcanvas-logos d-flex align-items-center gap-3 mb-3 flex-wrap">
+      <img src="assets/ieee-up.png" alt="IEEE Uttar Pradesh Section">
+      <img src="assets/anrf.jpg" alt="Anusandhan National Research Foundation">
+      <img src="assets/comptia.png" alt="CompTIA">
+      <img src="assets/ieee-up-logo.png" alt="IEEE UP Section conference mark">
     </div>
+
     <ul class="navbar-nav">
       <li class="nav-item"><a class="nav-link active fw-bold" href="index.html">Home</a></li>
       <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
@@ -677,6 +452,7 @@
       <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
       <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
     </ul>
+
     <hr>
     <p class="small text-muted mb-2">
       <i class="fa-solid fa-certificate me-1 text-success"></i>
@@ -688,11 +464,10 @@
   </div>
 </div>
 
-
 <!-- HERO -->
 <section class="hero text-center">
   <div class="container">
-  
+
     <div class="chip mb-3">
       <i class="fa-solid fa-shield-halved"></i>
       School of Computer Science, UPES Dehradun, India
@@ -706,39 +481,28 @@
       This crucial event brings together cybersecurity experts, digital forensics researchers, and information security professionals to tackle evolving cyber threats and digital crimes.
     </p>
 
-    <!-- ✅ Logo strip inside hero (nice for branding) -->
     <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mb-3">
       <span class="badge rounded-pill text-bg-light px-3 py-2" style="border:1px solid rgba(15,23,42,.10);">
         <i class="fa-solid fa-certificate me-2 text-success"></i> Sponsored by <strong>IEEE UP Section Conference Record #70668</strong>
       </span>
-    
     </div>
 
     <div class="d-flex justify-content-center flex-wrap gap-2 mb-4">
-
-<a href="https://www.icacsdf.org/reg.html" class="btn btn-saffron btn-lg"><i class="fa-solid fa-user-plus me-2"></i>Registration Process</a>
-      
-	  <a href="https://www.icacsdf.org/reg.html" class="btn btn-forest btn-lg"><i class="fa-solid fa-receipt me-2"></i>View Fees</a>
-	  
-	  <a href="https://p.ppsl.io/PYTMPS/t6RImk"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="btn btn-primary fw-bold px-4">
-        <i class="fa-solid fa-credit-card me-2"></i>
-        Pay Registration Fee
+      <a href="https://www.icacsdf.org/reg.html" class="btn btn-saffron btn-lg">
+        <i class="fa-solid fa-user-plus me-2"></i>Registration Process
       </a>
-	  
-	  <a href="https://forms.gle/a7R7j6ZGths2Y3SQA"
-     target="_blank"
-     rel="noopener noreferrer"
-     class="btn btn-secondary btn-lg">
-    <i class="fa-solid fa-user-plus me-2"></i>
-    Start Registration
-  </a>
-
+      <a href="https://www.icacsdf.org/reg.html" class="btn btn-forest btn-lg">
+        <i class="fa-solid fa-receipt me-2"></i>View Fees
+      </a>
+      <a href="https://p.ppsl.io/PYTMPS/t6RImk" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg fw-bold">
+        <i class="fa-solid fa-credit-card me-2"></i>Pay Registration Fee
+      </a>
+      <a href="https://forms.gle/a7R7j6ZGths2Y3SQA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+        <i class="fa-solid fa-user-plus me-2"></i>Start Registration
+      </a>
     </div>
 
-    <!-- ✅ Countdown -->
+    <!-- Countdown -->
     <div class="countdown-wrap">
       <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
         <div class="countdown-label">
@@ -777,8 +541,9 @@
       </div>
 
       <div class="mt-3 small text-muted">
-        Tip: Update deadlines early so authors don’t miss submission dates. 
-		The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+        The Microsoft CMT service was used for managing the peer-reviewing process for this conference.
+        This service was provided for free by Microsoft and they bore all expenses, including costs for
+        Azure cloud services as well as for software development and support.
       </div>
     </div>
 
@@ -811,6 +576,7 @@
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -819,29 +585,31 @@
   <div class="container">
     <div class="text-center mb-4">
       <h2 class="section-title">About the Conference</h2>
-      <p class="section-subtitle" style="text-align: justify;">
-         
-		
-      </p>
     </div>
 
     <div class="soft-panel p-4 p-lg-5">
       <div class="d-flex align-items-start gap-3">
         <div class="icon-badge"><i class="fa-solid fa-people-group"></i></div>
         <div>
-          <p class="mb-0" style="color: rgba(15,23,42,.78); line-height: 1.85; text-align: justify;">
-		  
-            <strong>School of Computer Science, UPES Dehradun,</strong> is organizing the International Conference on Advances in Cyber Security and Digital Forensics (ICACSDF 2026). Sponsored by the IEEE UP Section, this crucial event brings together cybersecurity experts, digital forensics researchers, and information security professionals to tackle evolving cyber threats and digital crimes. The conference is a vibrant platform for exploring emerging trends, fostering interdisciplinary dialogue, and shaping the future of cybersecurity and digital forensics. Attendees will participate in discussions, share insights, and collaborate on the latest advancements in cybersecurity strategies, threat mitigation, and digital forensic techniques.
+          <p class="mb-0" style="color:rgba(15,23,42,.78);line-height:1.85;text-align:justify;">
+            <strong>School of Computer Science, UPES Dehradun,</strong> is organizing the International
+            Conference on Advances in Cyber Security and Digital Forensics (ICACSDF 2026). Sponsored by
+            the IEEE UP Section, this crucial event brings together cybersecurity experts, digital
+            forensics researchers, and information security professionals to tackle evolving cyber
+            threats and digital crimes. The conference is a vibrant platform for exploring emerging
+            trends, fostering interdisciplinary dialogue, and shaping the future of cybersecurity and
+            digital forensics. Attendees will participate in discussions, share insights, and collaborate
+            on the latest advancements in cybersecurity strategies, threat mitigation, and digital
+            forensic techniques.
           </p>
-        
-		</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- IMPORTANT DATES -->
-<section class="py-5" style="background: linear-gradient(180deg, #f8fafc, #eef6ff);">
+<section class="py-5" style="background:linear-gradient(180deg,#f8fafc,#eef6ff);">
   <div class="container">
 
     <div class="text-center mb-4">
@@ -855,36 +623,27 @@
     </div>
 
     <div class="row g-4 justify-content-center">
+
       <div class="col-md-6 col-lg-4">
         <div class="soft-panel p-4 h-100 text-center">
-          <div class="icon-badge mx-auto mb-3">
-            <i class="fa-solid fa-upload"></i>
-          </div>
+          <div class="icon-badge mx-auto mb-3"><i class="fa-solid fa-upload"></i></div>
           <h6 class="fw-bold">Paper Submission Opens</h6>
           <p class="mb-0 text-muted">18 March 2026</p>
         </div>
       </div>
 
-     <div class="col-md-6 col-lg-4">
-  <div class="soft-panel p-4 h-100 text-center border border-warning border-2">
-    <div class="icon-badge mx-auto mb-3">
-      <i class="fa-solid fa-hourglass-end"></i>
-    </div>
-    <h6 class="fw-bold">Submission Deadline</h6>
-    <p class="mb-1 text-muted">
-      <del>30 June 2026</del>
-    </p>
-    <p class="mb-0 fw-bold text-danger">
-      Hard Deadline: 8 July 2026
-    </p>
-  </div>
-</div>
+      <div class="col-md-6 col-lg-4">
+        <div class="soft-panel p-4 h-100 text-center border border-warning border-2">
+          <div class="icon-badge mx-auto mb-3"><i class="fa-solid fa-hourglass-end"></i></div>
+          <h6 class="fw-bold">Submission Deadline</h6>
+          <p class="mb-1 text-muted"><del>30 June 2026</del></p>
+          <p class="mb-0 fw-bold text-danger">Hard Deadline: 8 July 2026</p>
+        </div>
+      </div>
 
       <div class="col-md-6 col-lg-4">
         <div class="soft-panel p-4 h-100 text-center">
-          <div class="icon-badge mx-auto mb-3">
-            <i class="fa-solid fa-bell"></i>
-          </div>
+          <div class="icon-badge mx-auto mb-3"><i class="fa-solid fa-bell"></i></div>
           <h6 class="fw-bold">Notification of Acceptance</h6>
           <p class="mb-0 text-muted">25 July 2026</p>
         </div>
@@ -892,9 +651,7 @@
 
       <div class="col-md-6 col-lg-4">
         <div class="soft-panel p-4 h-100 text-center">
-          <div class="icon-badge mx-auto mb-3">
-            <i class="fa-solid fa-file-pen"></i>
-          </div>
+          <div class="icon-badge mx-auto mb-3"><i class="fa-solid fa-file-pen"></i></div>
           <h6 class="fw-bold">Camera Ready Submission</h6>
           <p class="mb-0 text-muted">5 August 2026</p>
         </div>
@@ -902,24 +659,16 @@
 
       <div class="col-md-6 col-lg-4">
         <div class="soft-panel p-4 h-100 text-center border border-warning border-2">
-          <div class="icon-badge mx-auto mb-3">
-            <i class="fa-solid fa-credit-card"></i>
-          </div>
+          <div class="icon-badge mx-auto mb-3"><i class="fa-solid fa-credit-card"></i></div>
           <h6 class="fw-bold">Last Date of Registration</h6>
-          <p class="mb-1 text-muted">
-            <del>Phase 1: 15 August 2026</del>
-          </p>
-          <p class="mb-0 fw-bold text-danger">
-            Phase 2: 25 August 2026
-          </p>
+          <p class="mb-1 text-muted"><del>Phase 1: 15 August 2026</del></p>
+          <p class="mb-0 fw-bold text-danger">Phase 2: 25 August 2026</p>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-4">
         <div class="soft-panel p-4 h-100 text-center border border-success border-2">
-          <div class="icon-badge mx-auto mb-3">
-            <i class="fa-solid fa-mountain-sun"></i>
-          </div>
+          <div class="icon-badge mx-auto mb-3"><i class="fa-solid fa-mountain-sun"></i></div>
           <h6 class="fw-bold">Conference Dates</h6>
           <p class="mb-0 text-muted">
             <strong>11–12 September 2026</strong><br>
@@ -927,6 +676,7 @@
           </p>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -943,28 +693,15 @@
             <h3 class="mb-0 section-title fs-4">Conference Highlights</h3>
           </div>
 
-          <ul class="list-unstyled list-check mb-0" style="color: rgba(15,23,42,.78);">
-            <li><i class="fa-solid fa-check-circle"></i>IEEE Sponsored International Conference with SCOPUS-indexed publication in IEEE Xplore.</li>
-            <li><i class="fa-solid fa-check-circle"></i>Securing the Digital Future through Innovation for Cyber Resilience towards a Safer, Connected World.</li>
-            <li><i class="fa-solid fa-check-circle"></i>
-              Global platform for Cybersecurity & Digital Forensics experts.
-            </li>
-			 <li><i class="fa-solid fa-check-circle"></i>
-              Showcase innovation and research for students and professionals.
-            </li>
-			
-			 <li><i class="fa-solid fa-check-circle"></i>
-              Best Paper Awards & Participation Certificates for all participants.
-            </li>
-			<li><i class="fa-solid fa-check-circle"></i>
-              Expert focus on emerging cyber threats & advanced security solutions.
-            </li>
-			<li><i class="fa-solid fa-check-circle"></i>
-              Strong industry–academia collaboration opportunities.
-            </li>
-			<li><i class="fa-solid fa-check-circle"></i>
-              Foster interdisciplinary research & knowledge exchange.
-            </li>
+          <ul class="list-unstyled list-check mb-0 muted-strong">
+            <li><i class="fa-solid fa-check-circle"></i>IEEE sponsored international conference with SCOPUS-indexed publication in IEEE Xplore.</li>
+            <li><i class="fa-solid fa-check-circle"></i>Securing the digital future through innovation for cyber resilience towards a safer, connected world.</li>
+            <li><i class="fa-solid fa-check-circle"></i>Global platform for cybersecurity and digital forensics experts.</li>
+            <li><i class="fa-solid fa-check-circle"></i>Showcase innovation and research for students and professionals.</li>
+            <li><i class="fa-solid fa-check-circle"></i>Best paper awards and participation certificates for all participants.</li>
+            <li><i class="fa-solid fa-check-circle"></i>Expert focus on emerging cyber threats and advanced security solutions.</li>
+            <li><i class="fa-solid fa-check-circle"></i>Strong industry&ndash;academia collaboration opportunities.</li>
+            <li><i class="fa-solid fa-check-circle"></i>Foster interdisciplinary research and knowledge exchange.</li>
           </ul>
         </div>
       </div>
@@ -976,7 +713,7 @@
             <h3 class="mb-0 section-title fs-4">Objectives</h3>
           </div>
 
-          <ul class="list-unstyled list-check mb-0" style="color: rgba(15,23,42,.78);">
+          <ul class="list-unstyled list-check mb-0 muted-strong">
             <li><i class="fa-solid fa-check-circle"></i>Share knowledge, research findings, and innovative ideas, products, and services.</li>
             <li><i class="fa-solid fa-check-circle"></i>Foster collaboration, partnerships, joint projects, and business opportunities.</li>
             <li><i class="fa-solid fa-check-circle"></i>Discuss and address specific challenges or issues within the cybersecurity industry.</li>
@@ -984,7 +721,7 @@
             <li><i class="fa-solid fa-check-circle"></i>Explore the impact of emerging technologies on cybersecurity.</li>
             <li><i class="fa-solid fa-check-circle"></i>Provide opportunities for skills development and training.</li>
             <li><i class="fa-solid fa-check-circle"></i>Raise awareness about the importance of cybersecurity.</li>
-            <li><i class="fa-solid fa-check-circle"></i>Encourage sharing of threat intelligence and information on latest cyber threats.</li>
+            <li><i class="fa-solid fa-check-circle"></i>Encourage sharing of threat intelligence and information on the latest cyber threats.</li>
             <li><i class="fa-solid fa-check-circle"></i>Promote research and development in cybersecurity.</li>
             <li><i class="fa-solid fa-check-circle"></i>Discuss and promote industry standards, frameworks, and best practices.</li>
             <li><i class="fa-solid fa-check-circle"></i>Provide insights into effective incident response and crisis management strategies.</li>
@@ -996,18 +733,18 @@
   </div>
 </section>
 
+<!-- THEMES -->
 <section id="themes" class="py-5">
   <div class="container">
     <div class="text-center mb-4">
       <h2 class="section-title">Conference Themes</h2>
       <p class="section-subtitle">
-        Core tracks reflecting today’s cybersecurity and digital forensics landscape.
+        Core tracks reflecting today&rsquo;s cybersecurity and digital forensics landscape.
       </p>
     </div>
 
     <div class="row g-4">
 
-      <!-- Cryptography -->
       <div class="col-md-6 col-lg-4">
         <div class="theme-card">
           <h6><i class="fa-solid fa-key me-2 text-success"></i>Advancements in Cryptography</h6>
@@ -1025,21 +762,19 @@
         </div>
       </div>
 
-      <!-- AI & ML -->
       <div class="col-md-6 col-lg-4">
         <div class="theme-card">
-          <h6><i class="fa-solid fa-brain me-2 text-success"></i>AI & ML in Cybersecurity</h6>
+          <h6><i class="fa-solid fa-brain me-2 text-success"></i>AI and ML in Cybersecurity</h6>
           <ul class="theme-list">
             <li>Adversarial behavior modeling</li>
             <li>Cyber vulnerability prioritization and remediation</li>
-            <li>Deep learning / reinforcement learning</li>
+            <li>Deep learning and reinforcement learning</li>
             <li>Interpretable and robust cyber-systems</li>
             <li>Network intrusion detection and mitigation</li>
           </ul>
         </div>
       </div>
 
-      <!-- Blockchain -->
       <div class="col-md-6 col-lg-4">
         <div class="theme-card">
           <h6><i class="fa-solid fa-link me-2 text-success"></i>Blockchain Technology</h6>
@@ -1055,7 +790,6 @@
         </div>
       </div>
 
-      <!-- Cloud Security -->
       <div class="col-md-6 col-lg-4">
         <div class="theme-card">
           <h6><i class="fa-solid fa-cloud me-2 text-success"></i>Cloud Computing Security</h6>
@@ -1069,14 +803,13 @@
         </div>
       </div>
 
-      <!-- CTI -->
       <div class="col-md-6 col-lg-4">
         <div class="theme-card">
           <h6><i class="fa-solid fa-satellite-dish me-2 text-success"></i>Cyber Threat Intelligence</h6>
           <ul class="theme-list">
-            <li>AI/ML-based cyber threat analysis</li>
+            <li>AI and ML-based cyber threat analysis</li>
             <li>CTI sharing and interoperability</li>
-            <li>Dark Web intelligence</li>
+            <li>Dark web intelligence</li>
             <li>Deception technologies</li>
             <li>Dynamic risk management</li>
             <li>Threat hunting</li>
@@ -1085,10 +818,9 @@
         </div>
       </div>
 
-      <!-- Database -->
       <div class="col-md-6 col-lg-4">
         <div class="theme-card">
-          <h6><i class="fa-solid fa-database me-2 text-success"></i>Database & System Security</h6>
+          <h6><i class="fa-solid fa-database me-2 text-success"></i>Database and System Security</h6>
           <ul class="theme-list">
             <li>Database activity monitoring</li>
             <li>Database encryption and access control</li>
@@ -1098,7 +830,6 @@
         </div>
       </div>
 
-      <!-- Digital Forensics -->
       <div class="col-md-6 col-lg-4">
         <div class="theme-card">
           <h6><i class="fa-solid fa-magnifying-glass me-2 text-success"></i>Digital Forensics</h6>
@@ -1112,10 +843,9 @@
         </div>
       </div>
 
-      <!-- Information Hiding -->
       <div class="col-md-6 col-lg-4">
         <div class="theme-card">
-          <h6><i class="fa-solid fa-eye-slash me-2 text-success"></i>Information Hiding & Watermarking</h6>
+          <h6><i class="fa-solid fa-eye-slash me-2 text-success"></i>Information Hiding and Watermarking</h6>
           <ul class="theme-list">
             <li>Digital watermarking</li>
             <li>Reversible data hiding</li>
@@ -1125,7 +855,6 @@
         </div>
       </div>
 
-      <!-- IoT -->
       <div class="col-md-6 col-lg-4">
         <div class="theme-card">
           <h6><i class="fa-solid fa-microchip me-2 text-success"></i>IoT Security</h6>
@@ -1138,23 +867,21 @@
         </div>
       </div>
 
-      <!-- Malware -->
       <div class="col-md-6 col-lg-4">
         <div class="theme-card">
-          <h6><i class="fa-solid fa-bug me-2 text-success"></i>Malware Analysis & Detection</h6>
+          <h6><i class="fa-solid fa-bug me-2 text-success"></i>Malware Analysis and Detection</h6>
           <ul class="theme-list">
             <li>APT detection</li>
             <li>Behavioral analysis</li>
             <li>Ransomware analysis</li>
-            <li>Static vs dynamic analysis</li>
+            <li>Static versus dynamic analysis</li>
           </ul>
         </div>
       </div>
 
-      <!-- Privacy -->
       <div class="col-md-6 col-lg-4">
         <div class="theme-card">
-          <h6><i class="fa-solid fa-user-shield me-2 text-success"></i>Privacy & Information Security</h6>
+          <h6><i class="fa-solid fa-user-shield me-2 text-success"></i>Privacy and Information Security</h6>
           <ul class="theme-list">
             <li>Authentication and authorization</li>
             <li>Encryption and access control</li>
@@ -1165,7 +892,6 @@
         </div>
       </div>
 
-      <!-- Quantum -->
       <div class="col-md-6 col-lg-4">
         <div class="theme-card">
           <h6><i class="fa-solid fa-atom me-2 text-success"></i>Quantum Cryptography</h6>
@@ -1173,17 +899,16 @@
             <li>Device-independent cryptography</li>
             <li>Quantum cryptanalysis</li>
             <li>Quantum hacking</li>
-            <li>Quantum Internet</li>
-            <li>QKD</li>
+            <li>Quantum internet</li>
+            <li>Quantum key distribution</li>
             <li>Secure quantum computing</li>
           </ul>
         </div>
       </div>
 
-      <!-- Security Policies -->
       <div class="col-md-6 col-lg-4">
         <div class="theme-card">
-          <h6><i class="fa-solid fa-scale-balanced me-2 text-success"></i>Security Policies & Assurance</h6>
+          <h6><i class="fa-solid fa-scale-balanced me-2 text-success"></i>Security Policies and Assurance</h6>
           <ul class="theme-list">
             <li>Continuous monitoring frameworks</li>
             <li>Governance and policies</li>
@@ -1193,7 +918,6 @@
         </div>
       </div>
 
-      <!-- Protocols -->
       <div class="col-md-6 col-lg-4">
         <div class="theme-card">
           <h6><i class="fa-solid fa-network-wired me-2 text-success"></i>Security Protocols</h6>
@@ -1206,20 +930,18 @@
         </div>
       </div>
 
-      <!-- Testing -->
       <div class="col-md-6 col-lg-4">
         <div class="theme-card">
-          <h6><i class="fa-solid fa-vial me-2 text-success"></i>Security Testing & Auditing</h6>
+          <h6><i class="fa-solid fa-vial me-2 text-success"></i>Security Testing and Auditing</h6>
           <ul class="theme-list">
             <li>Automated testing tools</li>
             <li>Penetration testing</li>
             <li>Post-breach auditing</li>
-            <li>Red vs Blue Team</li>
+            <li>Red team versus blue team</li>
           </ul>
         </div>
       </div>
 
-      <!-- Software -->
       <div class="col-md-6 col-lg-4">
         <div class="theme-card">
           <h6><i class="fa-solid fa-code me-2 text-success"></i>Software Security</h6>
@@ -1232,14 +954,13 @@
         </div>
       </div>
 
-      <!-- Web -->
       <div class="col-md-6 col-lg-4">
         <div class="theme-card">
           <h6><i class="fa-solid fa-globe me-2 text-success"></i>Web Security</h6>
           <ul class="theme-list">
             <li>API security</li>
             <li>Session management</li>
-            <li>XSS & SQL injection prevention</li>
+            <li>XSS and SQL injection prevention</li>
             <li>HTTPS/TLS, CSP, CSRF</li>
           </ul>
         </div>
@@ -1255,17 +976,15 @@
     <div class="row g-4">
 
       <div class="col-lg-4">
-      <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
-          
-          <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo" style="height:42px;width:auto;">
-        </div> 
-	   <h5 class="fw-bold text-white">ICACSDF 2026</h5>
-        <p class="mb-2">
-          School of Computer Science, UPES Dehradun, Uttarakhand
-        </p>
+        <div class="footer-logos d-flex align-items-center gap-2 mb-3 flex-wrap">
+          <img src="assets/ieee-up.png" alt="IEEE Uttar Pradesh Section">
+          <img src="assets/anrf.jpg" alt="Anusandhan National Research Foundation">
+          <img src="assets/comptia.png" alt="CompTIA">
+          <img src="assets/ieee-up-logo.png" alt="IEEE UP Section conference mark">
+        </div>
 
-        <!-- ✅ Footer logos -->
-        
+        <h5 class="fw-bold text-white">ICACSDF 2026</h5>
+        <p class="mb-2">School of Computer Science, UPES Dehradun, Uttarakhand</p>
 
         <div class="small">
           <div class="mb-2">
@@ -1275,206 +994,138 @@
             <i class="fa-solid fa-certificate me-2"></i> Sponsored by <strong>IEEE UP Section Conference Record #70668</strong>
           </div>
           <div class="mt-2">
-            <div class="mt-2"><i class="fa-solid fa-globe me-2"></i>  <a href = "https://2025.icacsdf.org/"> <strong> ICACSDF2025 Conference </strong> </a> </div>
+            <i class="fa-solid fa-globe me-2"></i>
+            <a href="https://2025.icacsdf.org/"><strong>ICACSDF 2025 Conference</strong></a>
           </div>
-		  </div>
-		  
+        </div>
+
         <h6 class="fw-bold text-white mt-4">Contact Us</h6>
         <p class="small mb-2">
-          Contact UPES, Bidholi Campus, Dehradun<br>
+          UPES, Bidholi Campus, Dehradun<br>
           P.O. Bidholi Via Premnagar, Dehradun-248007
         </p>
       </div>
 
       <div class="col-lg-4">
-<h6 class="fw-bold text-white">Rankings & Recognitions</h6>
-<p class="small mb-2">
-
-  • NIRF 2025: Ranked <strong>45 (Overall)</strong>, 
-  <strong>43 (Engineering)</strong>, 
-  <strong>36 (Management)</strong>, and 
-  <strong>18 (Law)</strong><br>
-
-  • Times Higher Education (THE) 2026: Among the 
-  <strong>Top 5 universities in India</strong>; ranked 
-  <strong>501–600 globally</strong>; 
-  <strong>299 in Research Quality</strong><br>
-
-  • QS World University Rankings 2026: Ranked 
-  <strong>901–950 globally</strong>; 
-  <strong>No. 1 Private University in India for Academic Reputation</strong><br>
-
-  • U.S. News & World Report 2025: Ranked 
-  <strong>919 globally</strong>; 
-  <strong>20 in India</strong><br>
-
-  • Shanghai Ranking (GRAS): Ranked among the 
-  <strong>Top 150 in Telecommunication Engineering</strong>, 
-  <strong>Top 400 in Electrical & Electronic Engineering</strong>, and 
-  <strong>Top 500 in Computer Science & Engineering</strong><br>
-
-  • QS Rating: Awarded <strong>5-Star rating</strong>; placed among the 
-  <strong>Top 2% universities globally</strong><br>
-
-  • NBA-Accredited Programs | Recognised by UGC | Member of AIU
-</p>
-
-
-
-      
+        <h6 class="fw-bold text-white">Rankings and Recognitions</h6>
+        <p class="small mb-2">
+          &bull; NIRF 2025: Ranked <strong>45 (Overall)</strong>, <strong>43 (Engineering)</strong>,
+          <strong>36 (Management)</strong>, and <strong>18 (Law)</strong><br>
+          &bull; Times Higher Education (THE) 2026: Among the <strong>Top 5 universities in India</strong>;
+          ranked <strong>501&ndash;600 globally</strong>; <strong>299 in Research Quality</strong><br>
+          &bull; QS World University Rankings 2026: Ranked <strong>901&ndash;950 globally</strong>;
+          <strong>No. 1 private university in India for academic reputation</strong><br>
+          &bull; U.S. News &amp; World Report 2025: Ranked <strong>919 globally</strong>;
+          <strong>20 in India</strong><br>
+          &bull; Shanghai Ranking (GRAS): Ranked among the <strong>Top 150 in Telecommunication Engineering</strong>,
+          <strong>Top 400 in Electrical and Electronic Engineering</strong>, and
+          <strong>Top 500 in Computer Science and Engineering</strong><br>
+          &bull; QS Rating: Awarded <strong>5-star rating</strong>; placed among the
+          <strong>Top 2% universities globally</strong><br>
+          &bull; NBA-accredited programs | Recognised by UGC | Member of AIU
+        </p>
       </div>
 
-
       <div class="col-lg-4">
-  <h6 class="fw-bold text-white">Important Dates</h6>
-  <div class="small">
-    <div class="d-flex justify-content-between gap-3 footer-date-row">
-      <span><strong>Paper Submission Opens</strong></span>
-      <span class="text-end">18 March 2026</span>
+        <h6 class="fw-bold text-white">Important Dates</h6>
+        <div class="small">
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Paper Submission Opens</strong></span>
+            <span class="text-end">18 March 2026</span>
+          </div>
+
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Submission Deadline</strong></span>
+            <span class="text-end">
+              <del class="text-muted">30 June 2026</del><br>
+              <span class="fw-bold text-danger">8 July 2026 (Hard Deadline)</span>
+            </span>
+          </div>
+
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Notification of Acceptance</strong></span>
+            <span class="text-end">25 July 2026</span>
+          </div>
+
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Camera Ready Submission</strong></span>
+            <span class="text-end">5 August 2026</span>
+          </div>
+
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Last Date of Registration</strong></span>
+            <span class="text-end">
+              <del class="text-muted">Phase 1: 15 August 2026</del><br>
+              <span class="fw-bold text-danger">Phase 2: 25 August 2026</span>
+            </span>
+          </div>
+
+          <div class="d-flex justify-content-between gap-3 pt-2">
+            <span><strong>Conference Date</strong></span>
+            <span class="text-end">11–12 September 2026</span>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="d-flex justify-content-between gap-3 footer-date-row">
-      <span><strong>Submission Deadline</strong></span>
-      <span class="text-end">
-        <del class="text-muted">30 June 2026</del><br>
-        <span class="fw-bold text-danger">8 July 2026 (Hard Deadline)</span>
-      </span>
+    <hr class="border-light opacity-25 mt-4">
+
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <p class="small mb-0 text-start">
+        <strong>&copy; 2026 ICACSDF</strong>. All rights reserved.
+      </p>
+      <p class="small mb-0 text-end">
+        Design and developed by:
+        <a href="https://edcatalyst.in" target="_blank" rel="noopener noreferrer">
+          <strong>Edcatalyst.in</strong>
+        </a>
+      </p>
     </div>
 
-    <div class="d-flex justify-content-between gap-3 footer-date-row">
-      <span><strong>Notification of Acceptance</strong></span>
-      <span class="text-end">25 July 2026</span>
-    </div>
-
-    <div class="d-flex justify-content-between gap-3 footer-date-row">
-      <span><strong>Camera Ready Submission</strong></span>
-      <span class="text-end">5 August 2026</span>
-    </div>
-
-    <div class="d-flex justify-content-between gap-3 footer-date-row">
-      <span><strong>Last Date of Registration</strong></span>
-      <span class="text-end">
-        <del class="text-muted">Phase 1: 15 August 2026</del><br>
-        <span class="fw-bold text-danger">Phase 2: 25 August 2026</span>
-      </span>
-    </div>
-
-    <div class="d-flex justify-content-between gap-3 pt-2">
-      <span><strong>Conference Date</strong></span>
-      <span class="text-end">11–12 September 2026</span>
-    </div>
   </div>
-</div>
-	  
-	  
-    </div>
-
-   <hr class="border-light opacity-25 mt-4">
-
-<div class="d-flex justify-content-between align-items-center">
-  <p class="small mb-0 text-start">
-    <strong>&copy; 2026 ICACSDF</strong>. All Rights Reserved.
-  </p>
-
-  <p class="small mb-0 text-end">
-    Design and Developed by:
-    <a href="https://edcatalyst.in" target="_blank" rel="noopener noreferrer">
-      <strong>Edcatalyst.in</strong>
-    </a>
-  </p>
-</div>
-
 </footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-/* ===============================
-   1) COUNTDOWN TIMER
-   Conference starts: 11 Sep 2026 09:00 IST
-   Change time if needed.
-================================ */
+/* ============================================================
+   Countdown — conference starts 11 Sep 2026, 09:00 IST
+   (09:00 IST = 03:30 UTC)
+   ============================================================ */
 (function(){
-  // IST is UTC+05:30. We create a fixed UTC time for accuracy across timezones.
-  // 11 Sep 2026 09:00 IST = 11 Sep 2026 03:30 UTC
-  const targetUTC = Date.UTC(2026, 8, 11, 3, 30, 0); // month is 0-based => 8 = September
+  var targetUTC = Date.UTC(2026, 8, 11, 3, 30, 0);
 
-  const elDays  = document.getElementById("cd-days");
-  const elHours = document.getElementById("cd-hours");
-  const elMins  = document.getElementById("cd-mins");
-  const elSecs  = document.getElementById("cd-secs");
+  var elDays  = document.getElementById("cd-days");
+  var elHours = document.getElementById("cd-hours");
+  var elMins  = document.getElementById("cd-mins");
+  var elSecs  = document.getElementById("cd-secs");
+
+  if(!elDays) return;
 
   function pad(n){ return String(n).padStart(2, "0"); }
 
   function tick(){
-    const now = Date.now();
-    let diff = targetUTC - now;
+    var diff = targetUTC - Date.now();
 
     if(diff <= 0){
-      elDays.textContent  = "00";
+      elDays.textContent = "00";
       elHours.textContent = "00";
-      elMins.textContent  = "00";
-      elSecs.textContent  = "00";
+      elMins.textContent = "00";
+      elSecs.textContent = "00";
       return;
     }
 
-    const totalSeconds = Math.floor(diff / 1000);
-    const days = Math.floor(totalSeconds / (3600 * 24));
-    const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
-    const mins = Math.floor((totalSeconds % 3600) / 60);
-    const secs = totalSeconds % 60;
-
-    elDays.textContent  = String(days);
-    elHours.textContent = pad(hours);
-    elMins.textContent  = pad(mins);
-    elSecs.textContent  = pad(secs);
+    var total = Math.floor(diff / 1000);
+    elDays.textContent  = String(Math.floor(total / 86400));
+    elHours.textContent = pad(Math.floor((total % 86400) / 3600));
+    elMins.textContent  = pad(Math.floor((total % 3600) / 60));
+    elSecs.textContent  = pad(total % 60);
   }
 
   tick();
   setInterval(tick, 1000);
-})();
-
-
-/* ===============================
-   2) BASIC “NO RIGHT CLICK / INSPECT”
-   IMPORTANT: This is NOT real protection.
-   It only deters casual users.
-================================ */
-(function(){
-  // Disable right click
-  document.addEventListener("contextmenu", function(e){
-    e.preventDefault();
-  }, { passive: false });
-
-  // Block some common devtool shortcuts
-  document.addEventListener("keydown", function(e){
-    const key = e.key.toLowerCase();
-
-    // F12
-    if (e.key === "F12") {
-      e.preventDefault();
-      return false;
-    }
-
-    // Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+Shift+C
-    if (e.ctrlKey && e.shiftKey && (key === "i" || key === "j" || key === "c")) {
-      e.preventDefault();
-      return false;
-    }
-
-    // Ctrl+U (view source)
-    if (e.ctrlKey && key === "u") {
-      e.preventDefault();
-      return false;
-    }
-
-    // Ctrl+S (save page)
-    if (e.ctrlKey && key === "s") {
-      e.preventDefault();
-      return false;
-    }
-  }, { passive: false });
 })();
 </script>
 
