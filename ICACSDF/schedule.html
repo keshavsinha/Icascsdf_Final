@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Technical Programme | ICACSDF 2026</title>
+<meta name="description" content="Full technical programme for ICACSDF 2026 — ten parallel tracks on 11 and 12 September 2026 at UPES Dehradun.">
+<meta name="keywords" content="ICACSDF 2026, UPES, Dehradun, Uttarakhand, Cyber Security, Digital Forensics, IEEE UP Section">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   ICACSDF 2026 — consolidated stylesheet
+   ============================================================ */
+
+:root{
+  --sky:#1e88e5;
+  --forest:#0b5d3b;
+  --slate:#0f172a;
+  --sun:#f59e0b;
+  --snow:#f8fafc;
+}
+
+body{
+  font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  color:#0b1220;
+  background:
+    radial-gradient(900px 500px at 10% 0%,rgba(30,136,229,.10),transparent 60%),
+    radial-gradient(900px 600px at 90% 20%,rgba(11,93,59,.10),transparent 60%),
+    linear-gradient(180deg,#ffffff,#f6fbff);
+}
+
+a:focus-visible,button:focus-visible{
+  outline:3px solid rgba(30,136,229,.55);
+  outline-offset:2px;
+}
+
+/* ---------- Top bar ---------- */
+.top-bar{
+  background:linear-gradient(90deg,var(--slate),#0b2a1b);
+  color:rgba(255,255,255,.92);
+  font-size:.85rem;
+  position:relative;
+  z-index:1031;
+}
+.top-bar a{color:rgba(255,255,255,.92);text-decoration:none;}
+.top-bar a:hover{color:#fff;text-decoration:underline;}
+
+/* ---------- Navbar ---------- */
+.navbar{
+  background:rgba(255,255,255,.95)!important;
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(15,23,42,.08);
+  position:sticky;
+  top:0;
+  z-index:1030;
+}
+.navbar .container{max-width:1320px;}
+.navbar-brand{font-weight:800;letter-spacing:.2px;margin-right:.5rem;}
+
+.brand-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:.55rem;
+  padding:.45rem .75rem;
+  border-radius:999px;
+  background:linear-gradient(135deg,rgba(30,136,229,.10),rgba(11,93,59,.10));
+  border:1px solid rgba(15,23,42,.10);
+  white-space:nowrap;
+}
+
+.navbar-nav{display:flex;gap:2px;}
+@media(min-width:992px){.navbar-nav{flex-wrap:nowrap;}}
+.navbar-nav .nav-link{white-space:nowrap;font-size:.88rem;font-weight:600;}
+@media(min-width:992px) and (max-width:1199.98px){
+  .navbar-nav .nav-link{font-size:.82rem;padding-left:.45rem;padding-right:.45rem;}
+}
+
+/* ---------- Logo group (navbar right + offcanvas + footer) ---------- */
+.brand-logos{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex-shrink:0;
+}
+.brand-logos img{
+  height:48px;
+  width:auto;
+  object-fit:contain;
+}
+.brand-logos .logo-divider{
+  width:1px;
+  height:32px;
+  background:rgba(15,23,42,.15);
+  flex-shrink:0;
+}
+@media(max-width:1199.98px){
+  .brand-logos img{height:42px;}
+}
+
+/* ---------- Secondary strip ---------- */
+.subnav{
+  background:rgba(248,250,252,.94);
+  border-bottom:1px solid rgba(15,23,42,.06);
+  position:sticky;
+  top:0;
+  z-index:1029;
+}
+.subnav .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1.25rem;
+  padding:.6rem 12px;
+  max-width:1320px;
+}
+.subnav-logos{
+  display:flex;
+  align-items:center;
+  gap:26px;
+  flex-shrink:0;
+}
+.subnav-logos img{
+  height:44px;
+  width:auto;
+  object-fit:contain;
+}
+.subnav-links{
+  display:flex;
+  align-items:center;
+  gap:.85rem;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+.subnav-links a{
+  font-size:.8rem;
+  font-weight:700;
+  color:rgba(15,23,42,.62);
+  text-decoration:none;
+  white-space:nowrap;
+}
+.subnav-links a:hover,.subnav-links a.active{color:var(--forest);}
+.subnav .dot{color:rgba(15,23,42,.25);font-size:.7rem;}
+
+@media(max-width:1199.98px){
+  .subnav-logos{gap:20px;}
+  .subnav-logos img{height:38px;}
+}
+@media(max-width:991.98px){
+  .subnav .container{justify-content:center;padding:.7rem 12px;}
+  .subnav-logos{gap:24px;}
+  .subnav-logos img{height:38px;}
+  .subnav-links{display:none;}
+}
+@media(max-width:400px){
+  .subnav-logos{gap:16px;}
+  .subnav-logos img{height:30px;}
+}
+
+/* ---------- Navbar dropdown ---------- */
+.navbar .dropdown-menu{
+  border:1px solid rgba(15,23,42,.10);border-radius:14px;
+  box-shadow:0 16px 40px rgba(2,6,23,.12);padding:.5rem;
+  min-width:240px;margin-top:.4rem;
+}
+.navbar .dropdown-item{
+  border-radius:10px;padding:.6rem .85rem;font-weight:700;font-size:.88rem;
+  color:#0f172a;display:flex;align-items:center;gap:.7rem;
+  transition:background .15s;white-space:normal;
+}
+.navbar .dropdown-item:hover{background:rgba(30,136,229,.08);color:var(--forest);}
+.navbar .dropdown-item .drop-icon{
+  width:30px;height:30px;border-radius:8px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-size:.78rem;
+}
+.navbar .dropdown-item .drop-icon.green{background:rgba(11,93,59,.12);color:var(--forest);}
+.navbar .dropdown-item .drop-icon.sky{background:rgba(30,136,229,.12);color:var(--sky);}
+.navbar .dropdown-divider{margin:.35rem .5rem;opacity:.12;}
+.navbar .dropdown-toggle.active{color:var(--forest);font-weight:800;}
+
+/* ---------- Offcanvas ---------- */
+.offcanvas{background:#ffffff;}
+.offcanvas .nav-link{padding:.6rem 0;font-weight:700;border-bottom:1px solid rgba(15,23,42,.06);}
+.offcanvas .nav-link.active{color:var(--forest);}
+.offcanvas .sub-group{border:1px solid rgba(15,23,42,.08);border-radius:12px;overflow:hidden;margin:.2rem 0 .4rem 0;}
+.offcanvas .sub-link{display:flex;align-items:center;gap:.55rem;padding:.5rem 1rem;font-weight:700;font-size:.85rem;color:#0f172a;text-decoration:none;}
+.offcanvas .sub-link:hover{background:rgba(11,93,59,.06);color:var(--forest);}
+.offcanvas .sub-link + .sub-link{border-top:1px solid rgba(15,23,42,.06);}
+.offcanvas-logos img{height:40px;width:auto;object-fit:contain;}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;overflow:hidden;padding:60px 0 54px;margin-top:0;}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.30),rgba(255,255,255,.95)),
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80");
+  background-size:cover;background-position:center;pointer-events:none;
+}
+.hero::after{
+  content:"";position:absolute;left:0;right:0;bottom:-2px;height:170px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200' preserveAspectRatio='none'%3E%3Cpath d='M0 160 L120 120 L220 150 L340 80 L420 140 L520 60 L640 145 L760 90 L860 160 L980 110 L1200 160 L1200 200 L0 200 Z' fill='%230b5d3b' opacity='0.20'/%3E%3Cpath d='M0 170 L140 130 L250 165 L360 105 L460 155 L560 75 L680 165 L820 115 L940 175 L1200 135 L1200 200 L0 200 Z' fill='%231e88e5' opacity='0.14'/%3E%3C/svg%3E");
+  background-size:cover;background-repeat:no-repeat;pointer-events:none;
+}
+.hero .container{position:relative;z-index:1;}
+.hero-title{font-weight:900;line-height:1.12;color:var(--slate);text-shadow:0 10px 35px rgba(2,6,23,.12);}
+.hero-lead{color:rgba(15,23,42,.78);max-width:980px;margin-inline:auto;}
+
+.chip{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.45rem .85rem;border-radius:999px;
+  background:rgba(255,255,255,.88);border:1px solid rgba(15,23,42,.10);
+  color:var(--slate);font-weight:800;font-size:.88rem;
+}
+.chip i{color:var(--forest);}
+
+/* ---------- Info cards (hero footer row) ---------- */
+.info-card{
+  background:rgba(255,255,255,.90);
+  border:1px solid rgba(15,23,42,.08);
+  border-radius:16px;
+  padding:1rem 1.15rem;
+  height:100%;
+  box-shadow:0 10px 26px rgba(2,6,23,.05);
+}
+.info-card i{color:var(--forest);}
+.info-card strong{color:var(--slate);font-size:.92rem;}
+
+/* ---------- Buttons ---------- */
+.btn-saffron{background:linear-gradient(135deg,var(--sun),#ffb020);border:0;color:#1f2937;font-weight:800;}
+.btn-saffron:hover{filter:brightness(1.03);box-shadow:0 0 0 6px rgba(245,158,11,.18);}
+.btn-forest{background:linear-gradient(135deg,var(--forest),#0a7a4b);border:0;color:#fff;font-weight:800;}
+.btn-forest:hover{filter:brightness(1.03);color:#fff;box-shadow:0 0 0 6px rgba(11,93,59,.16);}
+.btn-outline-sky{border:2px solid rgba(30,136,229,.55);color:var(--slate);font-weight:800;}
+.btn-outline-sky:hover{background:rgba(30,136,229,.10);}
+
+/* ---------- Text ---------- */
+.section-title{font-weight:900;color:var(--slate);}
+.section-subtitle{color:rgba(15,23,42,.70);max-width:980px;margin:0 auto;}
+.muted-strong{color:rgba(15,23,42,.72);}
+
+/* ---------- Panels ---------- */
+.soft-panel{
+  background:rgba(255,255,255,.92);
+  border:1px solid rgba(15,23,42,.08);
+  border-radius:20px;
+  box-shadow:0 16px 40px rgba(2,6,23,.06);
+}
+.icon-badge{
+  width:44px;height:44px;border-radius:14px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,rgba(30,136,229,.12),rgba(11,93,59,.12));
+  border:1px solid rgba(15,23,42,.10);color:var(--forest);
+}
+
+/* ---------- Topic pills ---------- */
+.topic-pill{
+  border:1px solid rgba(15,23,42,.10);background:rgba(255,255,255,.88);
+  border-radius:999px;padding:.45rem .75rem;display:inline-flex;
+  gap:.5rem;align-items:center;font-weight:800;color:rgba(15,23,42,.85);
+  margin:.25rem .25rem 0 0;font-size:.85rem;
+}
+.topic-pill i{color:var(--forest);}
+
+/* ---------- Checklist ---------- */
+.list-check li{margin-bottom:.55rem;}
+.list-check i{color:var(--forest);margin-right:.55rem;}
+
+/* ---------- Theme cards ---------- */
+.theme-card{
+  font-size:1rem;background:#ffffff;
+  border:1px solid rgba(15,23,42,.08);border-radius:18px;
+  padding:1.5rem;box-shadow:0 10px 30px rgba(2,6,23,.06);
+  height:100%;transition:transform .25s ease,box-shadow .25s ease;
+}
+.theme-card:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(2,6,23,.10);}
+.theme-card h6{font-weight:800;margin-bottom:.75rem;color:var(--slate);}
+.theme-list{padding-left:1rem;margin:0;}
+.theme-list li{font-size:.9rem;margin-bottom:.4rem;color:rgba(15,23,42,.75);}
+
+/* ---------- Countdown ---------- */
+.countdown-wrap{
+  max-width:860px;margin:18px auto 0;
+  background:rgba(255,255,255,.82);
+  border:1px solid rgba(15,23,42,.10);
+  border-radius:18px;padding:18px;backdrop-filter:blur(10px);
+}
+.countdown-label{font-weight:800;color:var(--slate);}
+.count-box{
+  background:#fff;border:1px solid rgba(15,23,42,.08);
+  border-radius:16px;padding:14px 10px;
+  box-shadow:0 12px 28px rgba(2,6,23,.06);
+}
+.count-num{font-size:1.55rem;font-weight:900;color:var(--forest);line-height:1;}
+.count-text{font-size:.85rem;color:rgba(15,23,42,.65);margin-top:4px;font-weight:700;}
+
+/* ---------- Footer ---------- */
+footer{background:linear-gradient(90deg,var(--slate),#0b2a1b);color:rgba(255,255,255,.85);}
+footer a{color:rgba(255,255,255,.85);text-decoration:none;}
+footer a:hover{color:#fff;text-decoration:underline;}
+.footer-date-row{border-bottom:1px solid rgba(255,255,255,.20);padding:.55rem 0;}
+.footer-logos img{height:50px;width:auto;object-fit:contain;background:#fff;border-radius:8px;padding:4px 8px;}
+
+/* ---------- Pulse badge ---------- */
+@keyframes pulse-ring{
+  0%{box-shadow:0 0 0 0 rgba(11,93,59,.35);}
+  70%{box-shadow:0 0 0 10px rgba(11,93,59,0);}
+  100%{box-shadow:0 0 0 0 rgba(11,93,59,0);}
+}
+.badge-pulse{animation:pulse-ring 2s infinite;border-radius:999px;}
+
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;}
+}
+
+/* ---------- Mobile ---------- */
+@media(max-width:767px){
+  .hero{padding:40px 0 40px;}
+  .hero-title{font-size:1.6rem!important;}
+  .hero-lead{font-size:.92rem;}
+  .soft-panel{border-radius:14px;}
+  .btn-lg{padding:.55rem 1rem;font-size:.88rem;}
+  .section-title{font-size:1.25rem;}
+  .chip{font-size:.80rem;padding:.38rem .7rem;}
+  .theme-card{padding:1.15rem;}
+}
+@media(max-width:400px){
+  .hero-title{font-size:1.35rem!important;}
+  .top-bar .ieee-label{display:none;}
+}
+</style>
+
+
+<style>
+
+/* ---------- Inaugural minute-to-minute ---------- */
+.inaug{
+  background:#fff;border:1px solid rgba(15,23,42,.10);border-radius:16px;
+  overflow:hidden;box-shadow:0 8px 22px rgba(2,6,23,.05);margin-bottom:1.6rem;
+}
+.inaug-head{
+  background:linear-gradient(135deg,rgba(245,158,11,.16),rgba(11,93,59,.12));
+  border-bottom:1px solid rgba(15,23,42,.10);padding:1rem 1.25rem;
+}
+.inaug-head .ih-title{font-weight:900;color:var(--slate);font-size:1rem;line-height:1.3;}
+.inaug-head .ih-sub{font-size:.82rem;color:rgba(15,23,42,.62);font-weight:600;margin-top:4px;}
+.inaug-head .ih-sub i{color:var(--forest);margin-right:.35rem;}
+.inaug-table{font-size:.86rem;margin:0;}
+.inaug-table thead th{
+  background:rgba(248,250,252,.95);font-size:.68rem;text-transform:uppercase;
+  letter-spacing:.05em;color:rgba(15,23,42,.55);font-weight:800;
+  padding:.55rem .9rem;border-bottom:1px solid rgba(15,23,42,.08);
+}
+.inaug-table td{padding:.65rem .9rem;vertical-align:top;border-color:rgba(15,23,42,.06);}
+.inaug-table .i-time{white-space:nowrap;font-weight:800;color:var(--forest);width:130px;font-variant-numeric:tabular-nums;}
+.inaug-table .i-event{color:rgba(15,23,42,.86);line-height:1.5;}
+.inaug-table .i-event .dur{display:block;font-size:.78rem;color:rgba(15,23,42,.52);font-style:italic;margin-top:1px;}
+.inaug-table .i-event ul{margin:0;padding-left:1.05rem;}
+.inaug-table .i-event li + li{margin-top:.4rem;}
+.inaug-table tr.key-row td{background:rgba(11,93,59,.06);}
+.inaug-table tr.key-row .i-event{font-weight:800;color:var(--slate);}
+@media(max-width:767px){
+  .inaug-table{font-size:.8rem;}
+  .inaug-table .i-time{width:auto;white-space:normal;}
+  .inaug-table td,.inaug-table thead th{padding:.5rem .6rem;}
+}
+
+.inaug-foot{
+  border-top:1px solid rgba(15,23,42,.08);
+  background:rgba(248,250,252,.75);
+  padding:.85rem 1.25rem;
+  font-size:.8rem;color:rgba(15,23,42,.62);font-weight:600;line-height:1.5;
+}
+.inaug-foot i{color:var(--forest);margin-right:.4rem;}
+.inaug-foot strong{color:var(--slate);}
+
+
+/* ---------- Keynote / invited speakers ---------- */
+.kbox{background:#fff;border:1px solid rgba(15,23,42,.10);border-radius:16px;overflow:hidden;box-shadow:0 8px 22px rgba(2,6,23,.05);margin-bottom:1.6rem;}
+.kbox-head{background:linear-gradient(135deg,rgba(30,136,229,.16),rgba(11,93,59,.12));border-bottom:1px solid rgba(15,23,42,.10);padding:1rem 1.25rem;}
+.kbox-head .kh-title{font-weight:900;color:var(--slate);font-size:1rem;}
+.kbox-head .kh-sub{font-size:.82rem;color:rgba(15,23,42,.62);font-weight:600;margin-top:3px;}
+.k-table{font-size:.86rem;margin:0;}
+.k-table thead th{background:rgba(248,250,252,.95);font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;color:rgba(15,23,42,.55);font-weight:800;padding:.55rem .9rem;border-bottom:1px solid rgba(15,23,42,.08);}
+.k-table td{padding:.75rem .9rem;vertical-align:top;border-color:rgba(15,23,42,.06);}
+.k-table .k-time{white-space:nowrap;font-weight:800;color:var(--forest);width:150px;font-size:.82rem;font-variant-numeric:tabular-nums;}
+.k-table .k-who{min-width:230px;}
+.k-table .k-name{display:block;font-weight:800;color:var(--slate);line-height:1.3;}
+.k-table .k-aff{display:block;font-size:.79rem;color:rgba(15,23,42,.6);font-weight:600;margin-top:3px;line-height:1.4;}
+.k-table .k-topic{color:rgba(15,23,42,.86);line-height:1.45;min-width:200px;}
+.k-table .k-topic .tbd{color:rgba(15,23,42,.42);font-style:italic;}
+.k-tag{display:inline-block;border-radius:999px;padding:.22rem .6rem;font-size:.68rem;font-weight:800;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;}
+.k-tag.keynote{background:rgba(11,93,59,.12);color:var(--forest);border:1px solid rgba(11,93,59,.22);}
+.k-tag.invited{background:rgba(30,136,229,.12);color:#1565c0;border:1px solid rgba(30,136,229,.24);}
+@media(max-width:767px){
+  .k-table{font-size:.8rem;}
+  .k-table .k-time{width:auto;white-space:normal;}
+  .k-table td,.k-table thead th{padding:.55rem .6rem;}
+  .k-table .k-who,.k-table .k-topic{min-width:150px;}
+}
+
+/* ---------- Programme page ---------- */
+.page-head{padding:44px 0 22px;}
+.day-tabs{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center;margin-bottom:1.4rem;}
+.day-tab{
+  border:1px solid rgba(15,23,42,.12);background:rgba(255,255,255,.94);
+  border-radius:999px;padding:.7rem 1.4rem;font-weight:800;color:var(--slate);
+  font-size:.92rem;display:inline-flex;align-items:center;gap:.6rem;cursor:pointer;transition:all .18s;
+}
+.day-tab small{display:block;font-weight:600;font-size:.74rem;color:rgba(15,23,42,.55);}
+.day-tab:hover{border-color:rgba(11,93,59,.35);}
+.day-tab.active{background:linear-gradient(135deg,var(--forest),#0a7a4b);border-color:transparent;color:#fff;box-shadow:0 10px 26px rgba(11,93,59,.25);}
+.day-tab.active small{color:rgba(255,255,255,.82);}
+
+.sched-toolbar{display:flex;gap:.75rem;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:1.2rem;}
+.sched-search{flex:1 1 320px;position:relative;}
+.sched-search input{width:100%;border:1px solid rgba(15,23,42,.12);border-radius:999px;padding:.65rem 1rem .65rem 2.6rem;font-size:.9rem;font-weight:600;background:rgba(255,255,255,.95);}
+.sched-search input:focus{outline:none;border-color:rgba(30,136,229,.5);box-shadow:0 0 0 4px rgba(30,136,229,.12);}
+.sched-search i{position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:rgba(15,23,42,.4);}
+.btn-ghost{border:1px solid rgba(15,23,42,.12);background:#fff;border-radius:999px;padding:.6rem 1rem;font-weight:700;font-size:.84rem;color:var(--slate);}
+.btn-ghost:hover{background:rgba(11,93,59,.06);color:var(--forest);}
+
+.day-banner{background:linear-gradient(135deg,var(--forest),#0a7a4b);color:#fff;border-radius:16px;padding:1rem 1.3rem;margin-bottom:1.2rem;}
+.day-banner .db-title{font-weight:900;font-size:1.05rem;}
+.day-banner .db-sub{font-size:.84rem;opacity:.88;font-weight:600;margin-top:2px;}
+
+.pair-row{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-bottom:1.4rem;}
+@media(max-width:991.98px){.pair-row{grid-template-columns:1fr;}}
+
+.trk{background:#fff;border:1px solid rgba(15,23,42,.10);border-radius:14px;overflow:hidden;box-shadow:0 8px 22px rgba(2,6,23,.05);height:100%;}
+.trk-name{
+  background:linear-gradient(135deg,rgba(30,136,229,.12),rgba(11,93,59,.12));
+  border-bottom:1px solid rgba(15,23,42,.10);
+  padding:.75rem 1rem;font-weight:900;color:var(--slate);font-size:.92rem;line-height:1.3;
+}
+.trk-table{font-size:.82rem;margin:0;}
+.trk-table thead th{
+  background:rgba(248,250,252,.95);font-size:.68rem;text-transform:uppercase;
+  letter-spacing:.05em;color:rgba(15,23,42,.55);font-weight:800;
+  white-space:nowrap;padding:.5rem .7rem;border-bottom:1px solid rgba(15,23,42,.08);
+}
+.trk-table td{padding:.6rem .7rem;vertical-align:top;border-color:rgba(15,23,42,.06);}
+.trk-table .c-time{white-space:nowrap;font-weight:800;color:var(--forest);font-size:.78rem;}
+.trk-table .c-pid{white-space:nowrap;font-weight:800;color:var(--slate);font-size:.78rem;font-variant-numeric:tabular-nums;}
+.trk-table .c-paper{white-space:nowrap;font-weight:700;color:rgba(15,23,42,.55);font-size:.78rem;font-variant-numeric:tabular-nums;}
+.trk-table .c-title{color:rgba(15,23,42,.86);line-height:1.4;min-width:230px;}
+.trk-table .tba{color:rgba(15,23,42,.42);font-style:italic;}
+.trk-table .r-break td{background:rgba(245,158,11,.10);font-weight:800;font-size:.76rem;color:#92400e;text-align:center;}
+tr.hide-row{display:none;}
+.trk.hide-trk{display:none;}
+.pair-row.hide-row{display:none;}
+.no-results{text-align:center;padding:2.5rem 1rem;color:rgba(15,23,42,.55);font-weight:700;display:none;}
+.note-panel{background:rgba(255,255,255,.92);border:1px solid rgba(15,23,42,.08);border-radius:16px;padding:1.2rem 1.35rem;margin-top:1.4rem;}
+
+@media(max-width:767px){
+  .trk-table{font-size:.78rem;}
+  .trk-table td,.trk-table thead th{padding:.5rem .55rem;}
+  .trk-table .c-title{min-width:180px;}
+}
+@media print{
+  .top-bar,.navbar,.subnav,footer,.sched-toolbar,.day-tabs{display:none!important;}
+  .day-pane{display:block!important;}
+  .pair-row{page-break-inside:avoid;}
+  .trk{box-shadow:none;border:1px solid #bbb;}
+  .day-banner{background:#0b5d3b!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  body{background:#fff;}
+  .trk-table{font-size:.68rem;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar py-2">
+  <div class="container d-flex justify-content-between flex-wrap gap-2">
+    <div class="small">
+      <i class="fa-solid fa-calendar-days"></i> <strong>11–12 September 2026</strong> &nbsp;|&nbsp;
+      <i class="fa-solid fa-location-dot"></i> UPES Dehradun, Uttarakhand
+    </div>
+    <div class="small">
+      <span class="me-3 ieee-label"><i class="fa-solid fa-certificate"></i> Sponsored by <strong>IEEE UP Section Conference Record #70668</strong></span>
+      <a href="mailto:conference_socs@ddn.upes.ac.in"><i class="fa-solid fa-envelope me-1"></i>conference_socs@ddn.upes.ac.in</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-pill">
+        <i class="fa-solid fa-mountain-sun text-success" aria-hidden="true"></i>
+        ICACSDF 2026
+      </span>
+    </a>
+
+    <button class="navbar-toggler border-0 ms-2" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu" aria-label="Open navigation menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto gap-lg-1 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
+        <li class="nav-item"><a class="nav-link" href="keynotes.html">Speakers &amp; Guests</a></li>
+        <li class="nav-item"><a class="nav-link" href="reg.html">Registration</a></li>
+        <li class="nav-item"><a class="nav-link active fw-bold" href="schedule.html" aria-current="page">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="cmt.html">Committee</a></li>
+
+        <!-- Right-side conference logo -->
+        <li class="nav-item ms-lg-2 d-none d-lg-block">
+          <div class="brand-logos">
+            <span class="logo-divider"></span>
+            <img src="assets/ieee-up-logo.png" alt="IEEE UP Section conference mark">
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- SECONDARY STRIP: sponsor logos + section links -->
+<div class="subnav">
+  <div class="container">
+
+    <div class="subnav-logos">
+      <img src="assets/ieee-up.png" alt="IEEE Uttar Pradesh Section">
+      <img src="assets/anrf.jpg" alt="Anusandhan National Research Foundation">
+      <img src="assets/comptia.png" alt="CompTIA">
+    </div>
+
+    <nav class="subnav-links" aria-label="Secondary">
+      <a href="conferencetheme.html">Themes</a>
+      <span class="dot">&bull;</span>
+      <a href="special_sessions.html">Special Sessions</a>
+      <span class="dot">&bull;</span>
+      <a href="venue.html">Venue</a>
+      <span class="dot">&bull;</span>
+      <a href="sponsor.html">Sponsors</a>
+      <span class="dot">&bull;</span>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </div>
+</div>
+
+<!-- OFFCANVAS MOBILE MENU -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header border-bottom">
+    <div class="d-flex align-items-center gap-2">
+      <i class="fa-solid fa-mountain-sun text-success fs-5" aria-hidden="true"></i>
+      <h5 class="offcanvas-title fw-bold mb-0" id="mobileMenuLabel">ICACSDF 2026</h5>
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+
+    <div class="offcanvas-logos d-flex align-items-center gap-3 mb-3 flex-wrap">
+      <img src="assets/ieee-up.png" alt="IEEE Uttar Pradesh Section">
+      <img src="assets/anrf.jpg" alt="Anusandhan National Research Foundation">
+      <img src="assets/comptia.png" alt="CompTIA">
+      <img src="assets/ieee-up-logo.png" alt="IEEE UP Section conference mark">
+    </div>
+
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
+      <li class="nav-item"><a class="nav-link" href="keynotes.html">Speakers &amp; Guests</a></li>
+      <li class="nav-item"><a class="nav-link" href="reg.html">Registration</a></li>
+      <li class="nav-item"><a class="nav-link active fw-bold" href="schedule.html" aria-current="page">Schedule</a></li>
+      <li class="nav-item"><a class="nav-link" href="cmt.html">Committee</a></li>
+      <li class="nav-item"><a class="nav-link" href="conferencetheme.html">Themes</a></li>
+      <li class="nav-item"><a class="nav-link" href="special_sessions.html">Special Sessions</a></li>
+      <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+      <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+
+    <hr>
+    <p class="small text-muted mb-2">
+      <i class="fa-solid fa-certificate me-1 text-success"></i>
+      Sponsored by <strong>IEEE UP Section Conference Record #70668</strong>
+    </p>
+    <a href="mailto:conference_socs@ddn.upes.ac.in" class="small d-block" style="color:var(--forest);text-decoration:none;">
+      <i class="fa-solid fa-envelope me-1"></i> conference_socs@ddn.upes.ac.in
+    </a>
+  </div>
+</div>
+
+
+<section class="page-head">
+  <div class="container text-center">
+    <div class="chip mb-3"><i class="fa-solid fa-calendar-days"></i> 11&ndash;12 September 2026 &middot; UPES Dehradun</div>
+    <h1 class="section-title display-6 mb-2">Technical Programme</h1>
+    <p class="section-subtitle mb-0">Ten parallel tracks run on each day. Use the search box to find a paper or presentation ID.</p>
+  </div>
+</section>
+
+<section class="pb-5">
+  <div class="container-fluid px-3 px-lg-4">
+
+    <div class="day-tabs">
+      <button class="day-tab active" data-day="d1"><span>Day 1 <small>Friday, 11 September</small></span></button>
+      <button class="day-tab" data-day="d2"><span>Day 2 <small>Saturday, 12 September</small></span></button>
+    </div>
+
+    <div class="sched-toolbar">
+      <div class="sched-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" id="schedSearch" placeholder="Search by presentation ID, paper ID, title or keyword..." aria-label="Search the programme">
+      </div>
+      <button class="btn btn-ghost" onclick="window.print()"><i class="fa-solid fa-print me-2"></i>Print</button>
+    </div>
+
+    <div class="day-pane" id="pane-d1">
+      <div class="day-banner">
+        <div class="db-title">Day 1 &middot; Friday, 11 September 2026</div>
+        <div class="db-sub">Inaugural session from 1100 Hrs, technical sessions from 2:15 PM</div>
+      </div>
+
+      <div class="inaug">
+        <div class="inaug-head">
+          <div class="ih-title">Inaugural Session &mdash; Minute-to-Minute Programme</div>
+          <div class="ih-sub">
+            <i class="fa-solid fa-location-dot"></i>Multipurpose Academic Centre, UPES, Bidholi, Dehradun
+            &nbsp;&middot;&nbsp; <i class="fa-solid fa-clock"></i>1100 Hrs onwards
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table inaug-table mb-0">
+            <thead><tr><th>Timings</th><th>Event</th></tr></thead>
+            <tbody>
+              <tr class="key-row">
+                <td class="i-time">08:30&ndash;10:00 Hrs</td>
+                <td class="i-event">Registration Starts</td>
+              </tr>
+			  <tr class="key-row">
+                <td class="i-time">11:00 Hrs</td>
+                <td class="i-event">Arrival of the Chief Guest, Hon&rsquo;ble Governor, Uttarakhand</td>
+              </tr>
+              <tr>
+                <td class="i-time">11:01&ndash;11:05 Hrs</td>
+                <td class="i-event">
+                  <ul>
+                    <li>National Song &ldquo;Vande Mataram&rdquo;<span class="dur">Duration &ndash; 3 minutes 10 seconds</span></li>
+                    <li>National Anthem<span class="dur">Duration &ndash; 52 seconds</span></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td class="i-time">11:05&ndash;11:10 Hrs</td>
+                <td class="i-event">Conference Overview by Dr Sushabhan Choudhury, Organising Chair</td>
+              </tr>
+              <tr>
+                <td class="i-time">11:10&ndash;11:20 Hrs</td>
+                <td class="i-event">Welcome Address by Prof (Dr) Sunil Rai, Vice-Chancellor, UPES</td>
+              </tr>
+              <tr>
+                <td class="i-time">11:20&ndash;11:30 Hrs</td>
+                <td class="i-event">Address by Guest of Honour Prof (Dr) Durgesh Pant, Director General, UCOST, GoUK</td>
+              </tr>
+              <tr>
+                <td class="i-time">11:30&ndash;11:32 Hrs</td>
+                <td class="i-event">Unveiling of the Conference Souvenir by Hon&rsquo;ble Governor and other dignitaries</td>
+              </tr>
+              <tr class="key-row">
+                <td class="i-time">11:32&ndash;11:47 Hrs</td>
+                <td class="i-event">Address by Hon&rsquo;ble Governor, Uttarakhand</td>
+              </tr>
+              <tr>
+                <td class="i-time">11:47&ndash;11:50 Hrs</td>
+                <td class="i-event">Vote of Thanks by Dr Ram Sharma, President, UPES</td>
+              </tr>
+              <tr>
+                <td class="i-time">11:50&ndash;11:55 Hrs</td>
+                <td class="i-event">
+                  <ul>
+                    <li>National Song &ldquo;Vande Mataram&rdquo;<span class="dur">Duration &ndash; 3 minutes 10 seconds</span></li>
+                    <li>National Anthem<span class="dur">Duration &ndash; 52 seconds</span></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td class="i-time">11:55&ndash;12:05 Hrs</td>
+                <td class="i-event">Media Bite</td>
+              </tr>
+              <tr class="key-row">
+                <td class="i-time">12:05 Hrs</td>
+                <td class="i-event">Departure of the Hon&rsquo;ble Governor, Uttarakhand</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="inaug-foot">
+          <i class="fa-solid fa-circle-check"></i>
+          Approved minute-to-minute programme issued by the <strong>Office of the ADC to the Hon&rsquo;ble Governor,
+          Lok Bhavan, Uttarakhand</strong>. Timings are as approved and are subject to protocol requirements on the day.
+        </div>
+      </div>
+
+
+      <div class="kbox">
+        <div class="kbox-head">
+          <div class="kh-title">Keynote Addresses &mdash; Day 1</div>
+          <div class="kh-sub">Following the inaugural session</div>
+        </div>
+        <div class="table-responsive">
+          <table class="table k-table mb-0">
+            <thead><tr><th>Time</th><th>Category</th><th>Speaker</th><th>Topic</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="k-time">11:10 AM &ndash; 11:40 AM</td>
+                <td><span class="k-tag keynote">Keynote</span></td>
+                <td class="k-who"><span class="k-name">Prof. Goutam Paul</span><span class="k-aff">Professor, Electronics and Communication Sciences Unit (ECSU), Indian Statistical Institute (ISI), Kolkata</span></td>
+                <td class="k-topic"><span class="tbd">Topic to be announced</span></td>
+              </tr>
+              <tr>
+                <td class="k-time">11:45 AM &ndash; 12:15 PM</td>
+                <td><span class="k-tag keynote">Keynote</span></td>
+                <td class="k-who"><span class="k-name">Prof. Steven Galbraith</span><span class="k-aff">Head of Department &amp; Professor, Mathematics Department, Cyber Security Foundry, University of Auckland, New Zealand</span></td>
+                <td class="k-topic"><span class="tbd">Topic to be announced</span></td>
+              </tr>
+              <tr>
+                <td class="k-time">12:20 PM &ndash; 12:50 PM</td>
+                <td><span class="k-tag keynote">Keynote</span></td>
+                <td class="k-who"><span class="k-name">Prof. Sipra Das Bit</span><span class="k-aff">Professor, Department of Computer Science and Technology, Indian Institute of Engineering Science and Technology (IIEST), Shibpur</span></td>
+                <td class="k-topic">Powering Industry 4.0 under the changing threat landscape</td>
+              </tr>
+              <tr>
+                <td class="k-time">12:55 PM &ndash; 1:25 PM</td>
+                <td></td>
+                <td class="k-who"><span class="tbd">To be announced</span></td>
+                <td class="k-topic"><span class="tbd">Topic to be announced</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="day-banner">
+        <div class="db-title">Technical Sessions &middot; Day 1</div>
+        <div class="db-sub">Paper presentations 2:15 PM &ndash; 5:25 PM &middot; ten parallel tracks</div>
+      </div>
+<div class="pair-row">
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 1: AI &amp; ML in Cybersecurity (1/3)</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">2:15-2:30 PM</td><td class="c-pid">ICACSDF_001</td><td class="c-paper">51</td><td class="c-title">Quantum AI War Nexus: The Fusion of Battlefield Simulation, Autonomous Threat Detection, and Superintelligent Combat Assistants</td></tr>
+<tr><td class="c-time">2:30-2:45 PM</td><td class="c-pid">ICACSDF_002</td><td class="c-paper">197</td><td class="c-title">Detecting Deepfakes in Images using Fourier Spectrum Signatures based Forensic Analysis</td></tr>
+<tr><td class="c-time">2:45-3:00 PM</td><td class="c-pid">ICACSDF_003</td><td class="c-paper">294</td><td class="c-title">Federated Learning Approaches for Intrusion Detection in the Cloud Systems</td></tr>
+<tr><td class="c-time">3:00-3:15 PM</td><td class="c-pid">ICACSDF_004</td><td class="c-paper">395</td><td class="c-title">A Privacy-Preserving Offline Attendance System Using Biometric-Gated BLE Advertising, TinyML-Based Presence Classification, and Edge RSSI Intelligence</td></tr>
+<tr><td class="c-time">3:15-3:30 PM</td><td class="c-pid">ICACSDF_005</td><td class="c-paper">417</td><td class="c-title">Self-Evolving Agentic AI Framework for Autonomous Network Defense using Multi-Agent Reinforcement Learning</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (3:30-3:45 PM)</td></tr>
+<tr class="r-break"><td colspan="4">TEA BREAK (3:45-3:55 PM)</td></tr>
+<tr><td class="c-time">3:55-4:10 PM</td><td class="c-pid">ICACSDF_006</td><td class="c-paper">419</td><td class="c-title">Federated Deep Learning–Driven Intelligent Brain–Computer Interface Architecture for Real-Time Adaptive Neural Signal Decoding</td></tr>
+<tr><td class="c-time">4:10-4:25 PM</td><td class="c-pid">ICACSDF_007</td><td class="c-paper">443</td><td class="c-title">A Zero-Trust and Federated Learning-Based Secure IoT Architecture for Smart Applications</td></tr>
+<tr><td class="c-time">4:25-4:40 PM</td><td class="c-pid">ICACSDF_008</td><td class="c-paper">445</td><td class="c-title">DeepSecure-AS: A CNN-Based Intelligent Intrusion Detection Framework for Autonomous Systems</td></tr>
+<tr><td class="c-time">4:40-4:55 PM</td><td class="c-pid">ICACSDF_009</td><td class="c-paper">573</td><td class="c-title">Transforming Cybersecurity Monitoring AI agents for Next-Generation Network Security and Warning Systems</td></tr>
+<tr><td class="c-time">4:55-5:10 PM</td><td class="c-pid">ICACSDF_010</td><td class="c-paper">577</td><td class="c-title">Hybrid Defense Mechanisms Against Backdoor Attacks in Federated Learning Systems</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (5:10-5:25 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 2: AI &amp; ML in Cybersecurity (3/3)</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">2:15-2:30 PM</td><td class="c-pid">ICACSDF_011</td><td class="c-paper">770</td><td class="c-title">Security-Aware Multi-View Graph Contrastive Learning for Network Intrusion Detection</td></tr>
+<tr><td class="c-time">2:30-2:45 PM</td><td class="c-pid">ICACSDF_012</td><td class="c-paper">826</td><td class="c-title">Driving Sustainable Organisational Performance Through HRM Practices: The Mediating Role of AI Readiness in Indian Banking</td></tr>
+<tr><td class="c-time">2:45-3:00 PM</td><td class="c-pid">ICACSDF_013</td><td class="c-paper">848</td><td class="c-title">A Deep Learning–Based Multi-Format File Security Framework for Zero-Day Malware Detection and Image Steganalysis</td></tr>
+<tr><td class="c-time">3:00-3:15 PM</td><td class="c-pid">ICACSDF_014</td><td class="c-paper">865</td><td class="c-title">A Hybrid AI-Based Job Recommendation and Fraud Detection System Using NLP and Machine Learning Techniques</td></tr>
+<tr><td class="c-time">3:15-3:30 PM</td><td class="c-pid">ICACSDF_015</td><td class="c-paper">889</td><td class="c-title">Signal Intelligence-Based Secure Monitoring Using an Efficient Deep Learning Architecture</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (3:30-3:45 PM)</td></tr>
+<tr class="r-break"><td colspan="4">TEA BREAK (3:45-3:55 PM)</td></tr>
+<tr><td class="c-time">3:55-4:10 PM</td><td class="c-pid">ICACSDF_016</td><td class="c-paper">909</td><td class="c-title">AI-Driven Phishing Detection as a Human-Layer Defense for Cyber-Physical Systems</td></tr>
+<tr><td class="c-time">4:10-4:25 PM</td><td class="c-pid">ICACSDF_017</td><td class="c-paper">911</td><td class="c-title">Semantic vs Lexical URL Representations for Phishing Detection: A Comparative Study Using LLM Embeddings, Hybrid Fusion, and Classical Machine Learning</td></tr>
+<tr><td class="c-time">4:25-4:40 PM</td><td class="c-pid">ICACSDF_018</td><td class="c-paper">919</td><td class="c-title">Secure Digital Healthcare Analytics for Early-Stage Diabetes Prediction Using Feature Processing and Supervised Learning</td></tr>
+<tr><td class="c-time">4:40-4:55 PM</td><td class="c-pid">ICACSDF_019</td><td class="c-paper">925</td><td class="c-title">AI-Driven Surveillance Systems: Security Threats and Challenges</td></tr>
+<tr><td class="c-time">4:55-5:10 PM</td><td class="c-pid">ICACSDF_020</td><td class="c-paper">937</td><td class="c-title">Deep Learning–Driven Congestion Control for Reliable Data Transfer in Heterogeneous Networks</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (5:10-5:25 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+</div>
+<div class="pair-row">
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 3: IoT Security (3/3)</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">2:15-2:30 PM</td><td class="c-pid">ICACSDF_021</td><td class="c-paper">774</td><td class="c-title">Federated Learning Based Intrusion Detection in Heterogeneous IoT Networks</td></tr>
+<tr><td class="c-time">2:30-2:45 PM</td><td class="c-pid">ICACSDF_022</td><td class="c-paper">786</td><td class="c-title">ExplainIoT: LLM-Assisted Explainable IoT Device Identification Using Transformer-Based Network Traffic Analysis</td></tr>
+<tr><td class="c-time">2:45-3:00 PM</td><td class="c-pid">ICACSDF_023</td><td class="c-paper">887</td><td class="c-title">Self-Learning Intrusion Response System for IoT Networks Using Online Reinforcement Learning</td></tr>
+<tr><td class="c-time">3:00-3:15 PM</td><td class="c-pid">ICACSDF_024</td><td class="c-paper">897</td><td class="c-title">Design and Implementation of an AI-Driven Zero Trust Architecture for Adaptive, Risk-Based Authentication in Secure Cloud-Based Applications</td></tr>
+<tr><td class="c-time">3:15-3:30 PM</td><td class="c-pid">ICACSDF_025</td><td class="c-paper">916</td><td class="c-title">On Preventing Outage in WSNs Due to Vulnerability Exploitation Using Bayesian Network and Game Theory</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (3:30-3:45 PM)</td></tr>
+<tr class="r-break"><td colspan="4">TEA BREAK (3:45-3:55 PM)</td></tr>
+<tr><td class="c-time">3:55-4:10 PM</td><td class="c-pid">ICACSDF_026</td><td class="c-paper">299</td><td class="c-title">An Integrated Anti-Poaching Alarm System Enhancing Wildlife Conservation through Real-Time Detection and Remote Notification</td></tr>
+<tr><td class="c-time">4:10-4:25 PM</td><td class="c-pid">ICACSDF_027</td><td class="c-paper">808</td><td class="c-title">Evaluating USB HID Trust Gaps in Modern Operating Systems</td></tr>
+<tr><td class="c-time">4:25-4:40 PM</td><td class="c-pid">ICACSDF_028</td><td class="c-paper">881</td><td class="c-title">AI-Based Cybersecurity and Digital Forensics for IoT: Comparative Analytics and Performance Evaluation</td></tr>
+<tr><td class="c-time">4:40-4:55 PM</td><td class="c-pid">ICACSDF_029</td><td class="c-paper">933</td><td class="c-title">Attention-Enhanced MobileNet Deep Feature Extraction for UAV-Based Multi-Species Plant Disease Identification</td></tr>
+<tr><td class="c-time">4:55-5:10 PM</td><td class="c-pid">ICACSDF_030</td><td class="c-paper">935</td><td class="c-title">Agentic AIOps for Network Log Analysis: A ReAct-Based Autonomous Agent for SSH Fault Detection and Remediation</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (5:10-5:25 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 4: Digital Forensics (2/2)</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">2:15-2:30 PM</td><td class="c-pid">ICACSDF_031</td><td class="c-paper">719</td><td class="c-title">Physics-Guided Unrolled Optimization for Single Image Dehazing</td></tr>
+<tr><td class="c-time">2:30-2:45 PM</td><td class="c-pid">ICACSDF_032</td><td class="c-paper">800</td><td class="c-title">FC-Trace: Rapid and Reliable Forensic Timeline Reconstruction from ext4 Fast-Commit Metadata</td></tr>
+<tr><td class="c-time">2:45-3:00 PM</td><td class="c-pid">ICACSDF_033</td><td class="c-paper">803</td><td class="c-title">ARTIFICIAL INTELLIGENCE AND DIGITAL EVIDENCE: REIMAGINING STANDARDS OF AUTHENTICITY AND ADMISSIBILITY IN CRIMINAL PROCEEDINGS</td></tr>
+<tr><td class="c-time">3:00-3:15 PM</td><td class="c-pid">ICACSDF_034</td><td class="c-paper">833</td><td class="c-title">CCTV CAMERA USAGE AND ITS APPLICATION IN DETERMINATION OF PROBABLE VEHICLE INVOLVED IN CASE OF DOUBT: EXTRACTION OF EVIDENCE AND DATA</td></tr>
+<tr><td class="c-time">3:15-3:30 PM</td><td class="c-pid">ICACSDF_035</td><td class="c-paper">841</td><td class="c-title">Unveiling the Invisible: Forensic Reconstruction of Private Browsing Sessions Using Cross-Layer Artifacts</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (3:30-3:45 PM)</td></tr>
+<tr class="r-break"><td colspan="4">TEA BREAK (3:45-3:55 PM)</td></tr>
+<tr><td class="c-time">3:55-4:10 PM</td><td class="c-pid">ICACSDF_036</td><td class="c-paper">869</td><td class="c-title">ML Models for Phishing Website Prediction: A Comparative Study of LR and RF algorithms</td></tr>
+<tr><td class="c-time">4:10-4:25 PM</td><td class="c-pid">ICACSDF_037</td><td class="c-paper">891</td><td class="c-title">AI in QR Code Security: A Detailed Examination of AI-Driven Detection Methods, Rising Threats, and Prospective Research Avenue</td></tr>
+<tr><td class="c-time">4:25-4:40 PM</td><td class="c-pid">ICACSDF_038</td><td class="c-paper">902</td><td class="c-title">Hybrid Transformer–Graph Neural Network Framework for Memory-Based Malware Detection Using KNN Graph Construction</td></tr>
+<tr><td class="c-time">4:40-4:55 PM</td><td class="c-pid">ICACSDF_039</td><td class="c-paper">939</td><td class="c-title">Machine Learning-Based Detection of Remote Access Trojans Using Static and Network Analysis</td></tr>
+<tr><td class="c-time">4:55-5:10 PM</td><td class="c-pid">ICACSDF_040</td><td class="c-paper">920</td><td class="c-title">Unified EvoKAN: An Engineering Framework for Interpretable and Automatically Optimized Multi-Domain Medical Diagnosis</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (5:10-5:25 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+</div>
+<div class="pair-row">
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 5: Malware Analysis &amp; Detection (2/2)</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">2:15-2:30 PM</td><td class="c-pid">ICACSDF_041</td><td class="c-paper">736</td><td class="c-title">OptWeight-Mal:Optuna-Driven Weighted Ensemble Learning for Large Scale Static PE Malware Detection with SHAP Explainability</td></tr>
+<tr><td class="c-time">2:30-2:45 PM</td><td class="c-pid">ICACSDF_042</td><td class="c-paper">768</td><td class="c-title">Design and Development of a Ransomware Resilience and Recovery Model for Critical Healthcare Infrastructure</td></tr>
+<tr><td class="c-time">2:45-3:00 PM</td><td class="c-pid">ICACSDF_043</td><td class="c-paper">783</td><td class="c-title">MemForensics: A Behavior-Based Memory Forensics Framework for Detecting Fileless Malware</td></tr>
+<tr><td class="c-time">3:00-3:15 PM</td><td class="c-pid">ICACSDF_044</td><td class="c-paper">787</td><td class="c-title">LLM-Enhanced Intelligent Flask Application for Malware Classification Using Explainable Artificial Intelligence</td></tr>
+<tr><td class="c-time">3:15-3:30 PM</td><td class="c-pid">ICACSDF_045</td><td class="c-paper">793</td><td class="c-title">FAIM-RD: Forensic Artifact-Driven Interpretable Machine Learning for Ransomware Behavior Detection</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (3:30-3:45 PM)</td></tr>
+<tr class="r-break"><td colspan="4">TEA BREAK (3:45-3:55 PM)</td></tr>
+<tr><td class="c-time">3:55-4:10 PM</td><td class="c-pid">ICACSDF_046</td><td class="c-paper">896</td><td class="c-title">Real-Time Detection of Halo Coronal Mass Ejections from Solar Wind Data</td></tr>
+<tr><td class="c-time">4:10-4:25 PM</td><td class="c-pid">ICACSDF_047</td><td class="c-paper">910</td><td class="c-title">LightGBM-Based Multi-Class Malware Detection via Static PE Feature Fusion</td></tr>
+<tr><td class="c-time">4:25-4:40 PM</td><td class="c-pid">ICACSDF_048</td><td class="c-paper">947</td><td class="c-title">AI in Cybersecurity: Opportunities, Risks, and the Emergence of Agentic AI Systems</td></tr>
+<tr><td class="c-time">4:40-4:55 PM</td><td class="c-pid">ICACSDF_049</td><td class="c-paper">599</td><td class="c-title">Cost-Sensitive Credit Card Fraud Detection Using Machine Learning</td></tr>
+<tr><td class="c-time">4:55-5:10 PM</td><td class="c-pid">ICACSDF_050</td><td class="c-paper">622</td><td class="c-title">AI-Powered Zero-Day Vulnerability Discovery Using Static Analysis and Code Property Graph Neural Networks</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (5:10-5:25 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 6: Privacy &amp; Information Security (2/2)</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">2:15-2:30 PM</td><td class="c-pid">ICACSDF_051</td><td class="c-paper">744</td><td class="c-title">Right to Be Forgotten in AI-Driven Insurance: Limits of Data Erasure in Predictive Risk Modelling</td></tr>
+<tr><td class="c-time">2:30-2:45 PM</td><td class="c-pid">ICACSDF_052</td><td class="c-paper">775</td><td class="c-title">TrustNet-IDS: A Trustworthy Hybrid TransformerXGBoost Framework for Intelligent Intrusion Detection</td></tr>
+<tr><td class="c-time">2:45-3:00 PM</td><td class="c-pid">ICACSDF_053</td><td class="c-paper">789</td><td class="c-title">Explainable and Generalizable Machine Learning for Cyber Threat Intelligence and Intrusion Detection</td></tr>
+<tr><td class="c-time">3:00-3:15 PM</td><td class="c-pid">ICACSDF_054</td><td class="c-paper">828</td><td class="c-title">Multi-Modal Deep Autoencoder for Flow-Based Intrusion Detection</td></tr>
+<tr><td class="c-time">3:15-3:30 PM</td><td class="c-pid">ICACSDF_055</td><td class="c-paper">852</td><td class="c-title">A Multi-Stage Hybrid Intrusion Detection System Integrating Signature-Based Matching and Anomaly-Based Machine Learning Engines</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (3:30-3:45 PM)</td></tr>
+<tr class="r-break"><td colspan="4">TEA BREAK (3:45-3:55 PM)</td></tr>
+<tr><td class="c-time">3:55-4:10 PM</td><td class="c-pid">ICACSDF_056</td><td class="c-paper">932</td><td class="c-title">Explainable Data Analytics and Machine Learning Framework for Graduate Employability Prediction</td></tr>
+<tr><td class="c-time">4:10-4:25 PM</td><td class="c-pid">ICACSDF_057</td><td class="c-paper">938</td><td class="c-title">Adversarial Resilience of Gradient Boosting Ensembles for Multiclass V2V Misbehavior Detection</td></tr>
+<tr><td class="c-time">4:25-4:40 PM</td><td class="c-pid">ICACSDF_058</td><td class="c-paper">943</td><td class="c-title">Scalable Network Traffic Analysis &amp; Anomaly Detection Using Python Libraries &amp; Interactive Dashboard</td></tr>
+<tr><td class="c-time">4:40-4:55 PM</td><td class="c-pid">ICACSDF_059</td><td class="c-paper">582</td><td class="c-title">Lightweight Cryptographic Protocols for Secure Federated Edge Intelligence</td></tr>
+<tr><td class="c-time">4:55-5:10 PM</td><td class="c-pid">ICACSDF_060</td><td class="c-paper">874</td><td class="c-title">A Containerized Data-Driven MLOps Framework for Healthcare AI</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (5:10-5:25 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+</div>
+<div class="pair-row">
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 7: Blockchain Technology (2/2)</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">2:15-2:30 PM</td><td class="c-pid">ICACSDF_061</td><td class="c-paper">690</td><td class="c-title">Blockchain Consensus Mechanisms for Secure and Energy-Efficient Internet of Medical Things (IoMT): A Systematic Review, Statistical Analysis, and Proposed Hybrid Framework</td></tr>
+<tr><td class="c-time">2:30-2:45 PM</td><td class="c-pid">ICACSDF_062</td><td class="c-paper">721</td><td class="c-title">An Explainable AI Framework for Stroke Risk Prediction with Secure Healthcare Data Management</td></tr>
+<tr><td class="c-time">2:45-3:00 PM</td><td class="c-pid">ICACSDF_063</td><td class="c-paper">741</td><td class="c-title">StegoChain: A Decentralised Secure Communication Platform Using Steganography, Blockchain, and Graph AI</td></tr>
+<tr><td class="c-time">3:00-3:15 PM</td><td class="c-pid">ICACSDF_064</td><td class="c-paper">784</td><td class="c-title">A Validator-Based Algorithm with Integrated Slashing for Mitigating Sybil Attacks in Blockchain-Enabled Supply Chain Systems</td></tr>
+<tr><td class="c-time">3:15-3:30 PM</td><td class="c-pid">ICACSDF_065</td><td class="c-paper">794</td><td class="c-title">A Digital Twin-Based Privacy Governance Architecture for Real-Time Monitoring of Personal Data Processing in Artificial Intelligence Systems</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (3:30-3:45 PM)</td></tr>
+<tr class="r-break"><td colspan="4">TEA BREAK (3:45-3:55 PM)</td></tr>
+<tr><td class="c-time">3:55-4:10 PM</td><td class="c-pid">ICACSDF_066</td><td class="c-paper">853</td><td class="c-title">Zero Knowledge Proof-Based Blockchain Framework for Secure Data Sharing in Smart Cities</td></tr>
+<tr><td class="c-time">4:10-4:25 PM</td><td class="c-pid">ICACSDF_067</td><td class="c-paper">867</td><td class="c-title">A Reputation-Based Evolutionary Game-Theoretic Analysis for Incentivizing Honest Participation in Threshold Blockchain Systems for Clinical Trial Data Sharing</td></tr>
+<tr><td class="c-time">4:25-4:40 PM</td><td class="c-pid">ICACSDF_068</td><td class="c-paper">918</td><td class="c-title">A Scalable Blockchain-Based Dual-Layer Crowdsourcing Framework with Secure Reputation Preservation</td></tr>
+<tr><td class="c-time">4:40-4:55 PM</td><td class="c-pid">ICACSDF_069</td><td class="c-paper">574</td><td class="c-title">KalvTech: A Narrative-Driven Security Operations Training Platform</td></tr>
+<tr><td class="c-time">4:55-5:10 PM</td><td class="c-pid">ICACSDF_070</td><td class="c-paper">675</td><td class="c-title">Metasploit Command and Control Framework for Linux Victim Systems</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (5:10-5:25 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 8: Web Security (2/2)</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">2:15-2:30 PM</td><td class="c-pid">ICACSDF_071</td><td class="c-paper">780</td><td class="c-title">A Comparative Study of Routing Protocols for Flying Ad-Hoc Networks</td></tr>
+<tr><td class="c-time">2:30-2:45 PM</td><td class="c-pid">ICACSDF_072</td><td class="c-paper">795</td><td class="c-title">Deepfake Detection using Hybrid Deep Learning–Based Multimodal Forensics</td></tr>
+<tr><td class="c-time">2:45-3:00 PM</td><td class="c-pid">ICACSDF_073</td><td class="c-paper">817</td><td class="c-title">Detecting Adversarial Attacks in Web Security Systems Using Explainable AI</td></tr>
+<tr><td class="c-time">3:00-3:15 PM</td><td class="c-pid">ICACSDF_074</td><td class="c-paper">818</td><td class="c-title">Hybrid CNN–LSTM Framework for Detecting AI-Generated Phishing Attacks in Web Applications</td></tr>
+<tr><td class="c-time">3:15-3:30 PM</td><td class="c-pid">ICACSDF_075</td><td class="c-paper">822</td><td class="c-title">Towards Intelligent and Secure Web 3.0 Ecosystems: Architecture, Enabling Technologies, AI-Based Security, and Future Directions</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (3:30-3:45 PM)</td></tr>
+<tr class="r-break"><td colspan="4">TEA BREAK (3:45-3:55 PM)</td></tr>
+<tr><td class="c-time">3:55-4:10 PM</td><td class="c-pid">ICACSDF_076</td><td class="c-paper">882</td><td class="c-title">A Comparative Study of Centralized, Split, and Federated Learning Models for Privacy-Preserving Online Fraudulent Transaction Detection</td></tr>
+<tr><td class="c-time">4:10-4:25 PM</td><td class="c-pid">ICACSDF_077</td><td class="c-paper">739</td><td class="c-title">Intent-Aware Explainable Detection of AI Generated Phishing Emails Using Psychological Trigger Analysis and Transformer-Based Models</td></tr>
+<tr><td class="c-time">4:25-4:40 PM</td><td class="c-pid">ICACSDF_078</td><td class="c-paper">646</td><td class="c-title">Explainable Hybrid GNN-RNN Framework for Predictive Cyber Attack Propagation Analytics in Dynamic Enterprise Networks</td></tr>
+<tr><td class="c-time">4:40-4:55 PM</td><td class="c-pid">ICACSDF_079</td><td class="c-paper">875</td><td class="c-title">XAI-SecNet: An Explainable AI Framework for Intelligent Threat Detection in Smart Systems</td></tr>
+<tr><td class="c-time">4:55-5:10 PM</td><td class="c-pid">ICACSDF_080</td><td class="c-paper">876</td><td class="c-title">EXPLAINABLE ARTIFICIAL INTELLIGENCE (XAI) IN AUTOMATED CYBER THREAT HUNTING</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (5:10-5:25 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+</div>
+<div class="pair-row">
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 9: Security Governance, Testing &amp; Threat Intelligence</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">2:15-2:30 PM</td><td class="c-pid">ICACSDF_081</td><td class="c-paper">217</td><td class="c-title">Decision-Oriented Credit Card Fraud Detection: A Comparative Study Using Threshold Optimization and Cost-Sensitive Evaluation</td></tr>
+<tr><td class="c-time">2:30-2:45 PM</td><td class="c-pid">ICACSDF_082</td><td class="c-paper">244</td><td class="c-title">A Comprehensive Review of Security and Privacy in Generative Artificial Intelligence</td></tr>
+<tr><td class="c-time">2:45-3:00 PM</td><td class="c-pid">ICACSDF_083</td><td class="c-paper">541</td><td class="c-title">Adaptive Cyber Risk Management Through Real-Time Threat Intelligence and Predictive Analytics</td></tr>
+<tr><td class="c-time">3:00-3:15 PM</td><td class="c-pid">ICACSDF_084</td><td class="c-paper">713</td><td class="c-title">The Human Side of AI and IoT Security Decision-Making: Exploring Rejection Sensitivity and Psychological Hardiness among Higher Education Students</td></tr>
+<tr><td class="c-time">3:15-3:30 PM</td><td class="c-pid">ICACSDF_085</td><td class="c-paper">765</td><td class="c-title">A Hybrid AI-Block Chain Approach To Risk Management: Advancing Corporate Risk Intelligence And Supply Chain Resilence</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (3:30-3:45 PM)</td></tr>
+<tr class="r-break"><td colspan="4">TEA BREAK (3:45-3:55 PM)</td></tr>
+<tr><td class="c-time">3:55-4:10 PM</td><td class="c-pid">ICACSDF_086</td><td class="c-paper">715</td><td class="c-title">MT-OKM: A Mixed-Type Optimized K-Medoid Framework for Trustworthy Unsupervised Cyber Threat Clustering</td></tr>
+<tr><td class="c-time">4:10-4:25 PM</td><td class="c-pid">ICACSDF_087</td><td class="c-paper">755</td><td class="c-title">A Framework for Securing Agentic AI Systems in Indian Public Digital Infrastructure</td></tr>
+<tr><td class="c-time">4:25-4:40 PM</td><td class="c-pid">ICACSDF_088</td><td class="c-paper">777</td><td class="c-title">Healthcare Data Governance in the Age of Autonomous Systems: Addressing Counterfeit Data and Security Risks</td></tr>
+<tr><td class="c-time">4:40-4:55 PM</td><td class="c-pid">ICACSDF_089</td><td class="c-paper">912</td><td class="c-title">Agentic AI in Judicial Systems: Toward an Explainable AI Safeguard Framework</td></tr>
+<tr><td class="c-time">4:55-5:10 PM</td><td class="c-pid">ICACSDF_090</td><td class="c-paper">942</td><td class="c-title">AI-Enabled Market Surveillance and Retail Investors&#x27; Investment Behaviour: A Cybersecurity Perspective on the Indian Stock Market</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (5:10-5:25 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 10: Information Hiding &amp; General Topics</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">2:15-2:30 PM</td><td class="c-pid">ICACSDF_091</td><td class="c-paper">98</td><td class="c-title">Detection and Prevention Strategies for Social Media-Based Fraud in E-Commerce</td></tr>
+<tr><td class="c-time">2:30-2:45 PM</td><td class="c-pid">ICACSDF_092</td><td class="c-paper">511</td><td class="c-title">Bayesian Post-Quantum PRESENT: AI-Optimized High-Throughput Cipher for Secure IoT</td></tr>
+<tr><td class="c-time">2:45-3:00 PM</td><td class="c-pid">ICACSDF_093</td><td class="c-paper">512</td><td class="c-title">CNN-Driven Selective Encryption Using Vectorized SPECK for Real-Time Medical Image Security on Edge Devices</td></tr>
+<tr><td class="c-time">3:00-3:15 PM</td><td class="c-pid">ICACSDF_094</td><td class="c-paper">917</td><td class="c-title">A Lightweight Context-Aware Hybrid Isolation Forest–SVM Framework for Near Real-Time IoT Intrusion Detection</td></tr>
+<tr><td class="c-time">3:15-3:30 PM</td><td class="c-pid">ICACSDF_095</td><td class="c-paper">936</td><td class="c-title">ImageSteg Recognition: Hidden Message Extraction using Steghide</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (3:30-3:45 PM)</td></tr>
+<tr class="r-break"><td colspan="4">TEA BREAK (3:45-3:55 PM)</td></tr>
+<tr><td class="c-time">3:55-4:10 PM</td><td class="c-pid">ICACSDF_096</td><td class="c-paper">578</td><td class="c-title">Adaptive Gradient Compression Techniques for Communication-Efficient Federated Learning</td></tr>
+<tr><td class="c-time">4:10-4:25 PM</td><td class="c-pid">ICACSDF_097</td><td class="c-paper">579</td><td class="c-title">Asynchronous Federated Optimization under Resource-Constrained Distributed Environments</td></tr>
+<tr><td class="c-time">4:25-4:40 PM</td><td class="c-pid">ICACSDF_098</td><td class="c-paper">580</td><td class="c-title">Differential Privacy-Driven Secure Aggregation in Federated Learning for Sensitive Distributed Systems</td></tr>
+<tr><td class="c-time">4:40-4:55 PM</td><td class="c-pid">ICACSDF_099</td><td class="c-paper">581</td><td class="c-title">A Trust-Aware Federated Learning Framework for Detecting Model Poisoning Attacks</td></tr>
+<tr><td class="c-time">4:55-5:10 PM</td><td class="c-pid">ICACSDF_100</td><td class="c-paper">930</td><td class="c-title">AI ML-Based Multimodal Behavioral Analysis System for Deception Cue Detection</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (5:10-5:25 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+</div>
+    </div>
+
+    <div class="day-pane" id="pane-d2" style="display:none;">
+      <div class="day-banner">
+        <div class="db-title">Day 2 &middot; Saturday, 12 September 2026</div>
+        <div class="db-sub">Keynote and invited talks from 9:00 AM, technical sessions from 11:00 AM</div>
+      </div>
+
+      <div class="kbox">
+        <div class="kbox-head">
+          <div class="kh-title">Keynote &amp; Invited / Industrial Track &mdash; Day 2</div>
+          <div class="kh-sub">Morning plenary session</div>
+        </div>
+        <div class="table-responsive">
+          <table class="table k-table mb-0">
+            <thead><tr><th>Time</th><th>Category</th><th>Speaker</th><th>Topic</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="k-time">9:00 AM &ndash; 9:30 AM</td>
+                <td><span class="k-tag keynote">Keynote</span></td>
+                <td class="k-who"><span class="k-name">Prof. Raja Datta</span><span class="k-aff">Professor, Dept. of Electronics &amp; Electrical Communication Engineering, Indian Institute of Technology (IIT) Kharagpur</span></td>
+                <td class="k-topic">Source Location Privacy: Different Perspectives</td>
+              </tr>
+              <tr>
+                <td class="k-time">9:30 AM &ndash; 9:55 AM</td>
+                <td><span class="k-tag invited">Invited</span></td>
+                <td class="k-who"><span class="k-name">Prof. Abhishek Das</span><span class="k-aff">Professor &amp; Former Head, Dept. of Computer Sc. &amp; Engineering, Aliah University, Kolkata</span></td>
+                <td class="k-topic">Securing the Internet of Medical Things: Safeguarding the Transformation of Modern Healthcare</td>
+              </tr>
+              <tr>
+                <td class="k-time">9:55 AM &ndash; 10:05 AM</td>
+                <td><span class="k-tag invited">Invited</span></td>
+                <td class="k-who"><span class="k-name">Mr. Satyam Rastogi</span><span class="k-aff">Director of Information Security &amp; DevOps, BAMKO; Director of Red Team, Superior Group of Companies (SGC)</span></td>
+                <td class="k-topic"><span class="tbd">Topic to be announced</span></td>
+              </tr>
+              <tr>
+                <td class="k-time">10:05 AM &ndash; 10:15 AM</td>
+                <td><span class="k-tag invited">Invited</span></td>
+                <td class="k-who"><span class="k-name">Mr. Harsh Verma</span><span class="k-aff">Principal Software Engineer &ndash; AI/ML, Palo Alto Networks, San Jose, California</span></td>
+                <td class="k-topic"><span class="tbd">Topic to be announced</span></td>
+              </tr>
+              <tr>
+                <td class="k-time">10:20 AM &ndash; 10:50 AM</td>
+                <td><span class="k-tag keynote">Keynote</span></td>
+                <td class="k-who"><span class="k-name">Prof. Edoardo Serra</span><span class="k-aff">Associate Professor &amp; Co-Director, Computing Ph.D. Program, Department of Computer Science, Boise State University, USA</span></td>
+                <td class="k-topic">The AI Cybersecurity Arms Race: When AI Attacks, Defends, and Becomes the Target</td>
+              </tr>
+              <tr>
+                <td class="k-time">10:50 AM &ndash; 11:20 AM</td>
+                <td><span class="k-tag keynote">Keynote</span></td>
+                <td class="k-who"><span class="k-name">Prof. Sanjeev Kumar</span><span class="k-aff">Professor, Department of Mathematics, Indian Institute of Technology (IIT) Roorkee</span></td>
+                <td class="k-topic"><span class="tbd">Topic to be announced</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="day-banner">
+        <div class="db-title">Technical Sessions &middot; Day 2</div>
+        <div class="db-sub">Paper presentations 11:00 AM &ndash; 1:50 PM &middot; ten parallel tracks</div>
+      </div>
+<div class="pair-row">
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 1: AI &amp; ML in Cybersecurity (2/3)</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">11:00-11:15 AM</td><td class="c-pid">ICACSDF_101</td><td class="c-paper">584</td><td class="c-title">AI-Enabled Sustainable Marketing: The Synergy Of Programmatic Advertising, Inventory Management, And Cybersecurity In FMCG Retail</td></tr>
+<tr><td class="c-time">11:15-11:30 AM</td><td class="c-pid">ICACSDF_102</td><td class="c-paper">591</td><td class="c-title">HoneyShield: A Machine Learning-Based Honeypot Detection System in a Network Environment</td></tr>
+<tr><td class="c-time">11:30-11:45 AM</td><td class="c-pid">ICACSDF_103</td><td class="c-paper">604</td><td class="c-title">AI-Driven Autonomous Resource Management and Security Optimization in Cloud Computing Environments</td></tr>
+<tr><td class="c-time">11:45-12:00 PM</td><td class="c-pid">ICACSDF_104</td><td class="c-paper">612</td><td class="c-title">Governing AI-Generated Code Risk Within Enterprise Application Security Programs</td></tr>
+<tr><td class="c-time">12:00-12:15 PM</td><td class="c-pid">ICACSDF_105</td><td class="c-paper">618</td><td class="c-title">Global Research Trends in Deep Learning for DDoS Attack Detection: A Bibliometric Review</td></tr>
+<tr><td class="c-time">12:15-12:30 PM</td><td class="c-pid">ICACSDF_106</td><td class="c-paper">629</td><td class="c-title">Graph Transformer-Based Advanced Persistent Threat Detection in Enterprise Network Traffic</td></tr>
+<tr><td class="c-time">12:30-12:45 PM</td><td class="c-pid">ICACSDF_107</td><td class="c-paper">630</td><td class="c-title">Adversarial Robustness Evaluation of Deep Learning Models Against Physically Realizable Attacks in Autonomous Systems</td></tr>
+<tr><td class="c-time">12:45-1:00 PM</td><td class="c-pid">ICACSDF_108</td><td class="c-paper">703</td><td class="c-title">Cybersecurity in the Digital Twin Ecosystem: A Systematic Literature Review</td></tr>
+<tr><td class="c-time">1:00-1:15 PM</td><td class="c-pid">ICACSDF_109</td><td class="c-paper">718</td><td class="c-title">A Systematic Review of Graph Neural Network-Based Financial Product Recommendation Systems for Smart Decision-Making</td></tr>
+<tr><td class="c-time">1:15-1:30 PM</td><td class="c-pid">ICACSDF_110</td><td class="c-paper">732</td><td class="c-title">Phishing URL Detection Revisited: Temporal Leakage, Benchmark Sensitivity, and SHAP-Based Dataset Bias Analysis</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (1:30-1:50 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 2: IoT Security (1/3)</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">11:00-11:15 AM</td><td class="c-pid">ICACSDF_111</td><td class="c-paper">207</td><td class="c-title">Federated Learning Based Privacy Preserving Framework for Distributed Healthcare Data Analytics</td></tr>
+<tr><td class="c-time">11:15-11:30 AM</td><td class="c-pid">ICACSDF_112</td><td class="c-paper">251</td><td class="c-title">Lightweight Authentication Mechanisms for IoT Networks Resistant to Physical Capture Attacks: A Comprehensive Review</td></tr>
+<tr><td class="c-time">11:30-11:45 AM</td><td class="c-pid">ICACSDF_113</td><td class="c-paper">255</td><td class="c-title">A Proactive IoT Botnet Detection and Prevention Framework Using Hybrid Deep Learning</td></tr>
+<tr><td class="c-time">11:45-12:00 PM</td><td class="c-pid">ICACSDF_114</td><td class="c-paper">297</td><td class="c-title">Detection and Mitigation Approach for Co-Resident Attack in Cloud Computing Environment</td></tr>
+<tr><td class="c-time">12:00-12:15 PM</td><td class="c-pid">ICACSDF_115</td><td class="c-paper">332</td><td class="c-title">SSMAF: A Secure and Scalable Mobile Application Framework for Real-Time Emergency Meeting Management in Academic Institutions</td></tr>
+<tr><td class="c-time">12:15-12:30 PM</td><td class="c-pid">ICACSDF_116</td><td class="c-paper">340</td><td class="c-title">The Integration of Artificial Intelligence (AI) and Internet of Things (IoT) In Smart Electric Vehicles (EVs) Manufacturing</td></tr>
+<tr><td class="c-time">12:30-12:45 PM</td><td class="c-pid">ICACSDF_117</td><td class="c-paper">482</td><td class="c-title">From Reverse Engineering to Semantic Threat Intelligence: A Comprehensive Review of Machine Learning-Based Android Malware Analysis</td></tr>
+<tr><td class="c-time">12:45-1:00 PM</td><td class="c-pid">ICACSDF_118</td><td class="c-paper"></td><td class="c-title"><span class="tba">To be announced</span></td></tr>
+<tr><td class="c-time">1:00-1:15 PM</td><td class="c-pid">ICACSDF_119</td><td class="c-paper"></td><td class="c-title"><span class="tba">To be announced</span></td></tr>
+<tr><td class="c-time">1:15-1:30 PM</td><td class="c-pid">ICACSDF_120</td><td class="c-paper"></td><td class="c-title"><span class="tba">To be announced</span></td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (1:30-1:50 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+</div>
+<div class="pair-row">
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 3: IoT Security (2/3)</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">11:00-11:15 AM</td><td class="c-pid">ICACSDF_121</td><td class="c-paper">529</td><td class="c-title">TAFIC-Edge: Trust-Aware Federated Intrusion Detection with Calibrated Fusion for Secure Edge-IoT Systems</td></tr>
+<tr><td class="c-time">11:15-11:30 AM</td><td class="c-pid">ICACSDF_122</td><td class="c-paper">600</td><td class="c-title">Design and Implementation of an IoT Solution for Vehicle Access Control in residential Environment</td></tr>
+<tr><td class="c-time">11:30-11:45 AM</td><td class="c-pid">ICACSDF_123</td><td class="c-paper">628</td><td class="c-title">Evolution of Artificial Intelligence and Edge Computing Paradigms Integrating Cyber-Physical Systems: A Comprehensive Review</td></tr>
+<tr><td class="c-time">11:45-12:00 PM</td><td class="c-pid">ICACSDF_124</td><td class="c-paper">635</td><td class="c-title">FedIntru-GNN: Privacy-Preserving Federated Graph Neural Network for Distributed Network Intrusion Detection</td></tr>
+<tr><td class="c-time">12:00-12:15 PM</td><td class="c-pid">ICACSDF_125</td><td class="c-paper"></td><td class="c-title"><span class="tba">To be announced</span></td></tr>
+<tr><td class="c-time">12:15-12:30 PM</td><td class="c-pid">ICACSDF_126</td><td class="c-paper">745</td><td class="c-title">Comparison between IEEE and ETSI V2X PKI Architectures: Trust Model and Key Management</td></tr>
+<tr><td class="c-time">12:30-12:45 PM</td><td class="c-pid">ICACSDF_127</td><td class="c-paper">750</td><td class="c-title">Design and Implementation of High Bit Rate Random Number Generator for ECC-Based IoT Security in Wireless Sensor Network</td></tr>
+<tr><td class="c-time">12:45-1:00 PM</td><td class="c-pid">ICACSDF_128</td><td class="c-paper">944</td><td class="c-title">A Single-Agent Adaptive Approach for Emergent Threat Detection in AI-Driven Systems</td></tr>
+<tr><td class="c-time">1:00-1:15 PM</td><td class="c-pid">ICACSDF_129</td><td class="c-paper"></td><td class="c-title"><span class="tba">To be announced</span></td></tr>
+<tr><td class="c-time">1:15-1:30 PM</td><td class="c-pid">ICACSDF_130</td><td class="c-paper"></td><td class="c-title"><span class="tba">To be announced</span></td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (1:30-1:50 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 4: Digital Forensics (1/2)</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">11:00-11:15 AM</td><td class="c-pid">ICACSDF_131</td><td class="c-paper">138</td><td class="c-title">DarkWatch: An Integrated Open-Source Framework for Dark Web Threat Monitoring, Static File Forensics, and .Onion Site Intelligence</td></tr>
+<tr><td class="c-time">11:15-11:30 AM</td><td class="c-pid">ICACSDF_132</td><td class="c-paper">188</td><td class="c-title">Secure Data Leakage Prevention in Decentralized Cloud Storage Using a Rule-Based Middleware Framework</td></tr>
+<tr><td class="c-time">11:30-11:45 AM</td><td class="c-pid">ICACSDF_133</td><td class="c-paper">189</td><td class="c-title">A Comparison of Deep Learning and Machine Learning Models for DDoS Detection Using an RF-NN Hybrid IDS</td></tr>
+<tr><td class="c-time">11:45-12:00 PM</td><td class="c-pid">ICACSDF_134</td><td class="c-paper">330</td><td class="c-title">Early Ransomware Detection using Machine Learning with Real-Time Monitoring and Recovery Mechanism</td></tr>
+<tr><td class="c-time">12:00-12:15 PM</td><td class="c-pid">ICACSDF_135</td><td class="c-paper">333</td><td class="c-title">Unsupervised Behavioural Distillation: A Hybrid Deep Autoencoder and PSO-Optimized Clustering Framework for National-Scale Fraud Detection</td></tr>
+<tr><td class="c-time">12:15-12:30 PM</td><td class="c-pid">ICACSDF_136</td><td class="c-paper">351</td><td class="c-title">Machine Learning-Based Fraud Detection in Cloud Digital Payment Systems-A Comparative Study</td></tr>
+<tr><td class="c-time">12:30-12:45 PM</td><td class="c-pid">ICACSDF_137</td><td class="c-paper">471</td><td class="c-title">Poisoning Attacks in Federated Learning: A Conceptual Security Analysis of Threats, Defenses, and Deployment Trade-Offs</td></tr>
+<tr><td class="c-time">12:45-1:00 PM</td><td class="c-pid">ICACSDF_138</td><td class="c-paper">607</td><td class="c-title">A Novel Spatiotemporal Vision Transformer for Video Deepfake Detection</td></tr>
+<tr><td class="c-time">1:00-1:15 PM</td><td class="c-pid">ICACSDF_139</td><td class="c-paper">616</td><td class="c-title">AUTHENTICATED CALLER DISPLAY SYSTEM FOR ENHANCED PRIVACY</td></tr>
+<tr><td class="c-time">1:15-1:30 PM</td><td class="c-pid">ICACSDF_140</td><td class="c-paper">705</td><td class="c-title">A Provenance-Aware Multi-Modal Forensic Workflow for Detecting and Attributing AI-Generated Images</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (1:30-1:50 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+</div>
+<div class="pair-row">
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 5: Malware Analysis &amp; Detection (1/2)</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">11:00-11:15 AM</td><td class="c-pid">ICACSDF_141</td><td class="c-paper">45</td><td class="c-title">SEC-CLI: A Domain Adaptive Multi-thematic CLI Assistant for cybersecurity practitioners</td></tr>
+<tr><td class="c-time">11:15-11:30 AM</td><td class="c-pid">ICACSDF_142</td><td class="c-paper">141</td><td class="c-title">Post-Incident Cyber Threat Intelligence Framework for Cyber Fraud Detection and Community Alerting</td></tr>
+<tr><td class="c-time">11:30-11:45 AM</td><td class="c-pid">ICACSDF_143</td><td class="c-paper">157</td><td class="c-title">A DFS-Based AST Traversal Approach to Smart Chunking and Early Detection for LLM-Based Malware Analysis</td></tr>
+<tr><td class="c-time">11:45-12:00 PM</td><td class="c-pid">ICACSDF_144</td><td class="c-paper">384</td><td class="c-title">XC-MD: Explainable Cross-Platform Malware Detection Using Stacking Ensemble Learning</td></tr>
+<tr><td class="c-time">12:00-12:15 PM</td><td class="c-pid">ICACSDF_145</td><td class="c-paper">519</td><td class="c-title">Optimizing Android Malware Detection via Hybrid Feature Selection: A Study on Z-Test, MIFS &amp; PSO</td></tr>
+<tr><td class="c-time">12:15-12:30 PM</td><td class="c-pid">ICACSDF_146</td><td class="c-paper">571</td><td class="c-title">Android Malware Detection Using Metaheuristic Feature Selection and ML Techniques</td></tr>
+<tr><td class="c-time">12:30-12:45 PM</td><td class="c-pid">ICACSDF_147</td><td class="c-paper">603</td><td class="c-title">Cybersecurity Incident Response Knowledge Assistant</td></tr>
+<tr><td class="c-time">12:45-1:00 PM</td><td class="c-pid">ICACSDF_148</td><td class="c-paper">632</td><td class="c-title">A Machine Learning Framework for Fileless Malware Detection Using Memory Forensics</td></tr>
+<tr><td class="c-time">1:00-1:15 PM</td><td class="c-pid">ICACSDF_149</td><td class="c-paper">728</td><td class="c-title">Hybrid Ransomware Detection Framework using Static PE Header Analysis, CIC-MalMem Behavioural Features, and Zero-Shot Uncertainty-Aware Classification</td></tr>
+<tr><td class="c-time">1:15-1:30 PM</td><td class="c-pid">ICACSDF_150</td><td class="c-paper"></td><td class="c-title"><span class="tba">To be announced</span></td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (1:30-1:50 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 6: Privacy &amp; Information Security (1/2)</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">11:00-11:15 AM</td><td class="c-pid">ICACSDF_151</td><td class="c-paper">62</td><td class="c-title">Privacy-Preserving Vector Search: A Review of Encryption Techniques and Secure ANN Methods</td></tr>
+<tr><td class="c-time">11:15-11:30 AM</td><td class="c-pid">ICACSDF_152</td><td class="c-paper">71</td><td class="c-title">An Explainable Federated Learning Framework (XFL-Net) for Secure and Privacy-Preserving Medical Image Classification</td></tr>
+<tr><td class="c-time">11:30-11:45 AM</td><td class="c-pid">ICACSDF_153</td><td class="c-paper">146</td><td class="c-title">Password Strength Analyser with Entropy Analysis</td></tr>
+<tr><td class="c-time">11:45-12:00 PM</td><td class="c-pid">ICACSDF_154</td><td class="c-paper">349</td><td class="c-title">CGC-IDS: A Confidence-Guided Cascade Architecture for Zero-Day Intrusion Detection</td></tr>
+<tr><td class="c-time">12:00-12:15 PM</td><td class="c-pid">ICACSDF_155</td><td class="c-paper">366</td><td class="c-title">Nature-Inspired and Machine Learning Hybrid Approach to improve Intrusion Detection System Security</td></tr>
+<tr><td class="c-time">12:15-12:30 PM</td><td class="c-pid">ICACSDF_156</td><td class="c-paper">421</td><td class="c-title">MindMitra – AI Companion for Emotional Well-being.</td></tr>
+<tr><td class="c-time">12:30-12:45 PM</td><td class="c-pid">ICACSDF_157</td><td class="c-paper">528</td><td class="c-title">GPM: A Hybrid Graphical-to-Text Password Manager for Secure Password Management</td></tr>
+<tr><td class="c-time">12:45-1:00 PM</td><td class="c-pid">ICACSDF_158</td><td class="c-paper">565</td><td class="c-title">The Cyber Side of Ghiblification: Privacy, Surveillance, and Data Security Concerns</td></tr>
+<tr><td class="c-time">1:00-1:15 PM</td><td class="c-pid">ICACSDF_159</td><td class="c-paper">934</td><td class="c-title">A Decentralized Middleware Architecture for Differentially Private Query over Distributed Relational Databases</td></tr>
+<tr><td class="c-time">1:15-1:30 PM</td><td class="c-pid">ICACSDF_160</td><td class="c-paper"></td><td class="c-title"><span class="tba">To be announced</span></td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (1:30-1:50 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+</div>
+<div class="pair-row">
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 7: Blockchain Technology (1/2)</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">11:00-11:15 AM</td><td class="c-pid">ICACSDF_161</td><td class="c-paper">210</td><td class="c-title">Enhancing Fraud Detection in Banking: A Comparative Study of Logistic Regression, XGBoost, and K-Means Clustering</td></tr>
+<tr><td class="c-time">11:15-11:30 AM</td><td class="c-pid">ICACSDF_162</td><td class="c-paper">262</td><td class="c-title">Blockchain-Enabled Secure Palmprint Recognition Using Gabor Features and KNN Classification</td></tr>
+<tr><td class="c-time">11:30-11:45 AM</td><td class="c-pid">ICACSDF_163</td><td class="c-paper">295</td><td class="c-title">Securing Decentralized Healthcare Data with a Hybrid Blockchain Architecture</td></tr>
+<tr><td class="c-time">11:45-12:00 PM</td><td class="c-pid">ICACSDF_164</td><td class="c-paper">345</td><td class="c-title">Towards Trustworthy Digital Healthcare: A Blockchain-Enabled Federated Learning Framework with Differential Privacy</td></tr>
+<tr><td class="c-time">12:00-12:15 PM</td><td class="c-pid">ICACSDF_165</td><td class="c-paper">536</td><td class="c-title">Transaction-Level Anomaly Detection in Permissioned Healthcare Blockchains</td></tr>
+<tr><td class="c-time">12:15-12:30 PM</td><td class="c-pid">ICACSDF_166</td><td class="c-paper">540</td><td class="c-title">Blockchain-Enabled Self-Soverign Identity Management: Privacy Mechanisms, Architecture, and Applications</td></tr>
+<tr><td class="c-time">12:30-12:45 PM</td><td class="c-pid">ICACSDF_167</td><td class="c-paper">631</td><td class="c-title">BLOCKCHAIN FOR INCLUSIVE IDENTITY SYSTEMS: SECURING TRANSGENDER IDENTITY IN DIGITAL GOVERNANCE</td></tr>
+<tr><td class="c-time">12:45-1:00 PM</td><td class="c-pid">ICACSDF_168</td><td class="c-paper">688</td><td class="c-title">A Workload-Based Evaluation of Blockchain and Traditional Log Management Systems</td></tr>
+<tr><td class="c-time">1:00-1:15 PM</td><td class="c-pid">ICACSDF_169</td><td class="c-paper"></td><td class="c-title"><span class="tba">To be announced</span></td></tr>
+<tr><td class="c-time">1:15-1:30 PM</td><td class="c-pid">ICACSDF_170</td><td class="c-paper"></td><td class="c-title"><span class="tba">To be announced</span></td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (1:30-1:50 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 8: Web Security (1/2)</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">11:00-11:15 AM</td><td class="c-pid">ICACSDF_171</td><td class="c-paper">731</td><td class="c-title">CTF–CyberRangeX: An Integrated Web and Containerized Capture-the-Flag Training Platform</td></tr>
+<tr><td class="c-time">11:15-11:30 AM</td><td class="c-pid">ICACSDF_172</td><td class="c-paper">733</td><td class="c-title">Hybrid Federated Intelligence for Secure and Scalable Cardiovascular Disease Detection</td></tr>
+<tr><td class="c-time">11:30-11:45 AM</td><td class="c-pid">ICACSDF_173</td><td class="c-paper">743</td><td class="c-title">Transformer Enhanced DDoS Attack Detection: A Self-Attention Approach with Comparative Analysis Against Shepard Interpolation Neural Networks</td></tr>
+<tr><td class="c-time">11:45-12:00 PM</td><td class="c-pid">ICACSDF_174</td><td class="c-paper">749</td><td class="c-title">An Explainable Multi-View Hybrid Framework for Phishing Email Detection Using DeBERTa and LightGBM</td></tr>
+<tr><td class="c-time">12:00-12:15 PM</td><td class="c-pid">ICACSDF_175</td><td class="c-paper">758</td><td class="c-title">Cross-Site Scripting (XSS) Attacks: Detection Mechanisms, Robustness Evaluation, and Future Directions A Comprehensive Review</td></tr>
+<tr><td class="c-time">12:15-12:30 PM</td><td class="c-pid">ICACSDF_176</td><td class="c-paper">771</td><td class="c-title">AdaptiFuse: Adaptive Sparse Feature Selection and Ensemble Fusion for Phishing Email Detection</td></tr>
+<tr><td class="c-time">12:30-12:45 PM</td><td class="c-pid">ICACSDF_177</td><td class="c-paper"></td><td class="c-title"><span class="tba">To be announced</span></td></tr>
+<tr><td class="c-time">12:45-1:00 PM</td><td class="c-pid">ICACSDF_178</td><td class="c-paper"></td><td class="c-title"><span class="tba">To be announced</span></td></tr>
+<tr><td class="c-time">1:00-1:15 PM</td><td class="c-pid">ICACSDF_179</td><td class="c-paper"></td><td class="c-title"><span class="tba">To be announced</span></td></tr>
+<tr><td class="c-time">1:15-1:30 PM</td><td class="c-pid">ICACSDF_180</td><td class="c-paper"></td><td class="c-title"><span class="tba">To be announced</span></td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (1:30-1:50 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+</div>
+<div class="pair-row">
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 9: Cryptography &amp; Quantum Security</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">11:00-11:15 AM</td><td class="c-pid">ICACSDF_181</td><td class="c-paper">60</td><td class="c-title">Blockchain based voting system: Enhancing Scalability, Security, and Trust Through Layer-2 Enabled Ethereum Architecture</td></tr>
+<tr><td class="c-time">11:15-11:30 AM</td><td class="c-pid">ICACSDF_182</td><td class="c-paper">139</td><td class="c-title">Cross-Platform CNN-BiGRU Framework for Open-World Encrypted Traffic Classification</td></tr>
+<tr><td class="c-time">11:30-11:45 AM</td><td class="c-pid">ICACSDF_183</td><td class="c-paper">525</td><td class="c-title">Design and Implementation of a Secure Data Encryption and Email Communication System Using AES-CTR</td></tr>
+<tr><td class="c-time">11:45-12:00 PM</td><td class="c-pid">ICACSDF_184</td><td class="c-paper">613</td><td class="c-title">A Few-Shot Cross-Device AES Side-Channel Attack via Simulated Fine-Tuning Reptile</td></tr>
+<tr><td class="c-time">12:00-12:15 PM</td><td class="c-pid">ICACSDF_185</td><td class="c-paper">726</td><td class="c-title">Quantum-Enabled FANETs: The Future of Intelligent Aerial Networks - A Survey</td></tr>
+<tr><td class="c-time">12:15-12:30 PM</td><td class="c-pid">ICACSDF_186</td><td class="c-paper">751</td><td class="c-title">A Quantum-Resistant Framework for Reversible Data Hiding in Encrypted Images</td></tr>
+<tr><td class="c-time">12:30-12:45 PM</td><td class="c-pid">ICACSDF_187</td><td class="c-paper">766</td><td class="c-title">FPGA-Native Channel Impulse Response Authentication for Secure Quantum Pulse Sequencing</td></tr>
+<tr><td class="c-time">12:45-1:00 PM</td><td class="c-pid">ICACSDF_188</td><td class="c-paper">776</td><td class="c-title">Securing SDN network using Post Quantum Cryptography</td></tr>
+<tr><td class="c-time">1:00-1:15 PM</td><td class="c-pid">ICACSDF_189</td><td class="c-paper">809</td><td class="c-title">Reversible Data Hiding in Quantum-Safe Communication Using QKD and Post-Quantum Encryption</td></tr>
+<tr><td class="c-time">1:15-1:30 PM</td><td class="c-pid">ICACSDF_190</td><td class="c-paper">931</td><td class="c-title">Toward Verifiable Per-Kernel Memory Hygiene on Consumer GPUs: The Local Memory Hygiene Contract and Its Reference Implementation</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (1:30-1:50 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+ <div class="pair-col"><div class="trk">
+ <div class="trk-name">Track 10: Protocols, Systems &amp; Cloud Security</div>
+ <div class="table-responsive">
+  <table class="table trk-table mb-0">
+   <thead><tr><th>Timings</th><th>Presentation ID</th><th>Paper ID</th><th>Paper Title</th></tr></thead>
+   <tbody>
+<tr><td class="c-time">11:00-11:15 AM</td><td class="c-pid">ICACSDF_191</td><td class="c-paper">422</td><td class="c-title">Key Dependent AES Algorithm to Enhance Security</td></tr>
+<tr><td class="c-time">11:15-11:30 AM</td><td class="c-pid">ICACSDF_192</td><td class="c-paper">543</td><td class="c-title">Cloud Security with Generative AI integration: A review</td></tr>
+<tr><td class="c-time">11:30-11:45 AM</td><td class="c-pid">ICACSDF_193</td><td class="c-paper">677</td><td class="c-title">Securing AI Inference Pipelines in Cloud-Native Identity Management: Threat Modeling and Policy Enforcement via Model Context Protocol</td></tr>
+<tr><td class="c-time">11:45-12:00 PM</td><td class="c-pid">ICACSDF_194</td><td class="c-paper">697</td><td class="c-title">Mitigating Structural Information Leakage in Federated Graph Learning Using Dual-Layer Differential Privacy</td></tr>
+<tr><td class="c-time">12:00-12:15 PM</td><td class="c-pid">ICACSDF_195</td><td class="c-paper">706</td><td class="c-title">Machine Learning-Based Anomaly Detection in Cloud-Native and Kubernetes Systems: A Comprehensive Review</td></tr>
+<tr><td class="c-time">12:15-12:30 PM</td><td class="c-pid">ICACSDF_196</td><td class="c-paper">742</td><td class="c-title">A Critical Analysis of Threat Detection in Service Mesh Environments with a Temporal-Aware eBPF Enhancement</td></tr>
+<tr><td class="c-time">12:30-12:45 PM</td><td class="c-pid">ICACSDF_197</td><td class="c-paper">753</td><td class="c-title">Smart Database Query Proxy with Dynamic Risk-Adaptive Collaborative Authorization</td></tr>
+<tr><td class="c-time">12:45-1:00 PM</td><td class="c-pid">ICACSDF_198</td><td class="c-paper"></td><td class="c-title"><span class="tba">To be announced</span></td></tr>
+<tr><td class="c-time">1:00-1:15 PM</td><td class="c-pid">ICACSDF_199</td><td class="c-paper">823</td><td class="c-title">Towards Autonomous Security in Cloud-Edge Continuum: A Neutrosophic and AI-Driven Uncertainty-Aware Framework</td></tr>
+<tr><td class="c-time">1:15-1:30 PM</td><td class="c-pid">ICACSDF_200</td><td class="c-paper">946</td><td class="c-title">Autonomous Secure Cloud Infrastructures using AI A Unified Framework for ML Driven Auto Healing and DevSecOps Threat Detection</td></tr>
+<tr class="r-break"><td colspan="4">Buffer / Q&amp;A (1:30-1:50 PM)</td></tr>
+   </tbody>
+  </table>
+ </div>
+</div></div>
+</div>
+    </div>
+
+    <div class="no-results" id="noResults">
+      <i class="fa-solid fa-magnifying-glass-minus fs-3 d-block mb-2"></i>
+      No sessions match your search.
+    </div>
+
+    <div class="note-panel">
+      <div class="d-flex align-items-start gap-3">
+        <div class="icon-badge"><i class="fa-solid fa-circle-info"></i></div>
+        <div class="small muted-strong">
+          <strong class="d-block mb-2" style="color:var(--slate);">Notes for presenters</strong>
+          Each slot is 15 minutes, including questions. Room allocations will be published closer to the
+          conference. Report to your allotted room at least 15 minutes before your session begins and load
+          your slides during the preceding break. This programme is provisional and may be revised.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-4">
+        <div class="footer-logos d-flex align-items-center gap-2 mb-3 flex-wrap">
+          <img src="assets/ieee-up.png" alt="IEEE Uttar Pradesh Section">
+          <img src="assets/anrf.jpg" alt="Anusandhan National Research Foundation">
+          <img src="assets/comptia.png" alt="CompTIA">
+          <img src="assets/ieee-up-logo.png" alt="IEEE UP Section conference mark">
+        </div>
+
+        <h5 class="fw-bold text-white">ICACSDF 2026</h5>
+        <p class="mb-2">School of Computer Science, UPES Dehradun, Uttarakhand</p>
+
+        <div class="small">
+          <div class="mb-2">
+            <i class="fa-solid fa-calendar-days me-2"></i> <strong>11–12 September 2026</strong>
+          </div>
+          <div>
+            <i class="fa-solid fa-certificate me-2"></i> Sponsored by <strong>IEEE UP Section Conference Record #70668</strong>
+          </div>
+          <div class="mt-2">
+            <i class="fa-solid fa-globe me-2"></i>
+            <a href="https://2025.icacsdf.org/"><strong>ICACSDF 2025 Conference</strong></a>
+          </div>
+        </div>
+
+        <h6 class="fw-bold text-white mt-4">Contact Us</h6>
+        <p class="small mb-2">
+          UPES, Bidholi Campus, Dehradun<br>
+          P.O. Bidholi Via Premnagar, Dehradun-248007
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+        <h6 class="fw-bold text-white">Rankings and Recognitions</h6>
+        <p class="small mb-2">
+          &bull; NIRF 2025: Ranked <strong>45 (Overall)</strong>, <strong>43 (Engineering)</strong>,
+          <strong>36 (Management)</strong>, and <strong>18 (Law)</strong><br>
+          &bull; Times Higher Education (THE) 2026: Among the <strong>Top 5 universities in India</strong>;
+          ranked <strong>501&ndash;600 globally</strong>; <strong>299 in Research Quality</strong><br>
+          &bull; QS World University Rankings 2026: Ranked <strong>901&ndash;950 globally</strong>;
+          <strong>No. 1 private university in India for academic reputation</strong><br>
+          &bull; U.S. News &amp; World Report 2025: Ranked <strong>919 globally</strong>;
+          <strong>20 in India</strong><br>
+          &bull; Shanghai Ranking (GRAS): Ranked among the <strong>Top 150 in Telecommunication Engineering</strong>,
+          <strong>Top 400 in Electrical and Electronic Engineering</strong>, and
+          <strong>Top 500 in Computer Science and Engineering</strong><br>
+          &bull; QS Rating: Awarded <strong>5-star rating</strong>; placed among the
+          <strong>Top 2% universities globally</strong><br>
+          &bull; NBA-accredited programs | Recognised by UGC | Member of AIU
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+        <h6 class="fw-bold text-white">Important Dates</h6>
+        <div class="small">
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Paper Submission Opens</strong></span>
+            <span class="text-end">18 March 2026</span>
+          </div>
+
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Submission Deadline</strong></span>
+            <span class="text-end">
+              <del class="text-muted">30 June 2026</del><br>
+              <span class="fw-bold text-danger">8 July 2026 (Hard Deadline)</span>
+            </span>
+          </div>
+
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Notification of Acceptance</strong></span>
+            <span class="text-end">25 July 2026</span>
+          </div>
+
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Camera Ready Submission</strong></span>
+            <span class="text-end">5 August 2026</span>
+          </div>
+
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Last Date of Registration</strong></span>
+            <span class="text-end">
+              <del class="text-muted">Phase 1: 15 August 2026</del><br>
+              <span class="fw-bold text-danger">Phase 2: 25 August 2026</span>
+            </span>
+          </div>
+
+          <div class="d-flex justify-content-between gap-3 pt-2">
+            <span><strong>Conference Date</strong></span>
+            <span class="text-end">11–12 September 2026</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-light opacity-25 mt-4">
+
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <p class="small mb-0 text-start">
+        <strong>&copy; 2026 ICACSDF</strong>. All rights reserved.
+      </p>
+      <p class="small mb-0 text-end">
+        Design and developed by:
+        <a href="https://edcatalyst.in" target="_blank" rel="noopener noreferrer">
+          <strong>Edcatalyst.in</strong>
+        </a>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+(function(){
+  var tabs=document.querySelectorAll('.day-tab');
+  var panes={d1:document.getElementById('pane-d1'),d2:document.getElementById('pane-d2')};
+  tabs.forEach(function(tab){
+    tab.addEventListener('click',function(){
+      tabs.forEach(function(t){t.classList.remove('active');});
+      tab.classList.add('active');
+      var day=tab.getAttribute('data-day');
+      Object.keys(panes).forEach(function(k){panes[k].style.display=(k===day)?'':'none';});
+      runSearch();
+    });
+  });
+
+  var input=document.getElementById('schedSearch'), noRes=document.getElementById('noResults');
+  function activePane(){
+    return document.querySelector('.day-tab.active').getAttribute('data-day')==='d1'?panes.d1:panes.d2;
+  }
+  function runSearch(){
+    var q=(input.value||'').trim().toLowerCase(), pane=activePane(), any=false;
+    pane.querySelectorAll('.inaug, .kbox').forEach(function(b){b.style.display=q?'none':'';});
+    pane.querySelectorAll('.trk').forEach(function(trk){
+      var nameHit=!q||trk.querySelector('.trk-name').textContent.toLowerCase().indexOf(q)!==-1;
+      var hits=0;
+      trk.querySelectorAll('tbody tr').forEach(function(row){
+        if(row.classList.contains('r-break')){row.classList.toggle('hide-row',!!q);return;}
+        var hit=!q||nameHit||row.textContent.toLowerCase().indexOf(q)!==-1;
+        row.classList.toggle('hide-row',!hit);
+        if(hit)hits++;
+      });
+      trk.classList.toggle('hide-trk',hits===0);
+      if(hits>0)any=true;
+    });
+    pane.querySelectorAll('.pair-row').forEach(function(pr){
+      var vis=pr.querySelectorAll('.trk:not(.hide-trk)').length;
+      pr.classList.toggle('hide-row',vis===0);
+    });
+    noRes.style.display=any?'none':'block';
+  }
+  input.addEventListener('input',runSearch);
+})();
+</script>
+
+</body>
+</html>

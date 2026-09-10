@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Speakers & Guests | ICACSDF 2026 | UPES Dehradun</title>
+<title>Speakers &amp; Guests | ICACSDF 2026 | UPES Dehradun</title>
 <meta name="description" content="Speakers & Guests — Chief Guest, Guest of Honor, Keynote Speakers and Industrial Track — ICACSDF 2026, International Conference on Advancement in Cyber Security and Digital Forensics. UPES Dehradun. Sponsored by IEEE UP Section. 11–12 September 2026.">
 <meta name="keywords" content="ICACSDF 2026, Speakers, Chief Guest, Guest of Honor, Keynote Speakers, Industrial Track, UPES, Dehradun, Uttarakhand, Cyber Security, Digital Forensics, IEEE UP Section">
 
@@ -148,6 +148,7 @@
     background:linear-gradient(135deg,var(--forest),#0a7a4b);
     color:#fff;border-color:transparent;box-shadow:0 8px 20px rgba(11,93,59,.25);
   }
+  .track-tab:focus-visible{outline:3px solid rgba(30,136,229,.45);outline-offset:2px;}
   .track-section{display:none;}
   .track-section.active{display:block;}
   .track-heading{
@@ -200,6 +201,15 @@
     padding:.5rem 0 0;cursor:pointer;
   }
   .read-more-btn:hover{color:var(--forest);text-decoration:underline;}
+
+  /* Chief Guest — full image, no card */
+  .chief-guest-photo{
+    display:block;
+    width:100%;
+    height:auto;
+    border-radius:18px;
+    box-shadow:0 16px 48px rgba(2,6,23,.12);
+  }
 
   .coming-soon-card{
     background:linear-gradient(135deg,rgba(15,23,42,.03),rgba(30,136,229,.05));
@@ -257,11 +267,6 @@
             aria-controls="mobileMenu" aria-label="Open navigation menu">
       <span class="navbar-toggler-icon"></span>
     </button>
-	
-	<div class="brand-logos">
-            <div class="logo-divider"></div>
-            <img src="assets/ieee-up.png" alt="IEEE UP Section Logo">
-          </div>
 
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto gap-lg-1 align-items-lg-center">
@@ -380,17 +385,17 @@
 <section class="pt-2 pb-0">
   <div class="container">
     <div class="d-flex flex-wrap justify-content-center gap-2 mb-1" id="trackTabs">
-      <button class="track-tab" data-target="track-chief-guest" type="button">
+      <button class="track-tab active" data-target="track-chief-guest" type="button">
         <i class="fa-solid fa-star me-1"></i> Chief Guest
       </button>
       <button class="track-tab" data-target="track-guest-of-honor" type="button">
         <i class="fa-solid fa-medal me-1"></i> Guest of Honor
       </button>
-      <button class="track-tab active" data-target="track-keynote" type="button">
+      <button class="track-tab" data-target="track-keynote" type="button">
         <i class="fa-solid fa-microphone-lines me-1"></i> Keynote Speakers
       </button>
       <button class="track-tab" data-target="track-industrial" type="button">
-        <i class="fa-solid fa-industry me-1"></i> Invited & Industrial Track
+        <i class="fa-solid fa-industry me-1"></i> Invited &amp; Industrial Track
       </button>
     </div>
   </div>
@@ -401,19 +406,14 @@
   <div class="container">
 
     <!-- TRACK: CHIEF GUEST -->
-    <div class="track-section" id="track-chief-guest">
+    <div class="track-section active" id="track-chief-guest">
       <div class="track-heading">
         <div class="track-icon"><i class="fa-solid fa-star"></i></div>
         <h2>Chief Guest</h2>
-        <p>To be announced soon. Stay tuned for updates.</p>
       </div>
-      <div class="row g-4 justify-content-center">
-        <div class="col-lg-6">
-          <div class="coming-soon-card">
-            <i class="fa-solid fa-user-plus fs-2 mb-3" style="color:var(--forest);"></i>
-            <div class="fw-bold" style="color:var(--slate);font-size:1.05rem;">Chief Guest</div>
-            <div class="small mt-1" style="color:rgba(15,23,42,.60);">To be announced soon.</div>
-          </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-9">
+          <img src="assets/speakers/Governor.jpg" alt="Chief Guest" class="chief-guest-photo">
         </div>
       </div>
     </div>
@@ -437,7 +437,7 @@
     </div>
 
     <!-- TRACK: KEYNOTE SPEAKERS -->
-    <div class="track-section active" id="track-keynote">
+    <div class="track-section" id="track-keynote">
       <div class="track-heading">
         <div class="track-icon"><i class="fa-solid fa-microphone-lines"></i></div>
         <h2>Keynote Speakers</h2>
@@ -445,38 +445,31 @@
       </div>
       <div class="row g-4 justify-content-center">
 
-
-<!-- Speaker 1: Prof. Steven Galbraith -->
-<div class="col-lg-6">
-  <div class="speaker-card">
-    <div class="speaker-banner sky"></div>
-    <div class="speaker-photo-wrap">
-      <img src="assets/speakers/steven-galbraith.png" alt="Prof. Steven Galbraith" class="speaker-photo">
-    </div>
-    <div class="speaker-body">
-      <div class="speaker-name">Prof. Steven Galbraith</div>
-      <div class="speaker-role">
-        Head of Department &amp; Professor, Mathematics Department,<br>
-        Cyber Security Foundry, University of Auckland, New Zealand
+      <!-- Speaker 1: Prof. Steven Galbraith -->
+      <div class="col-lg-6">
+        <div class="speaker-card">
+          <div class="speaker-banner sky"></div>
+          <div class="speaker-photo-wrap">
+            <img src="assets/speakers/steven-galbraith.png" alt="Prof. Steven Galbraith" class="speaker-photo">
+          </div>
+          <div class="speaker-body">
+            <div class="speaker-name">Prof. Steven Galbraith</div>
+            <div class="speaker-role">
+              Head of Department &amp; Professor, Mathematics Department,<br>
+              Cyber Security Foundry, University of Auckland, New Zealand
+            </div>
+            <div class="speaker-badges">
+              <span class="speaker-badge"><i class="fa-solid fa-atom me-1"></i>Post-Quantum Cryptography</span>
+              <span class="speaker-badge"><i class="fa-solid fa-shapes me-1"></i>Elliptic Curve Cryptography</span>
+              <span class="speaker-badge"><i class="fa-solid fa-calculator me-1"></i>Computational Number Theory</span>
+            </div>
+            <p class="speaker-bio clamped" data-full="Professor Steven Galbraith has a Bachelor degree from the University of Waikato, New Zealand, a Master of Science from Georgia Institute of Technology, USA, and a doctorate from Oxford University, UK. He held research positions at Royal Holloway University of London, UK, the University of Waterloo, Canada, the Institute for Experimental Mathematics, Essen, Germany, and the University of Bristol, UK. He moved to the University of Auckland in 2009 and is currently the Head of the Mathematics Department. His research is in computational number theory, computational algebraic geometry, and applications in public key cryptography. Currently, his main research focus is post-quantum cryptography. He is an international leader in the mathematics of public key cryptography and wrote a major book with this title, published in 2012 by Cambridge University Press. He has supervised more than 15 PhD students, published over 100 papers, chaired several major conferences including ASIACRYPT, and served on more than 50 conference program committees.">
+              Professor Steven Galbraith has a Bachelor degree from the University of Waikato, New Zealand, a Master of Science from Georgia Institute of Technology, USA, and a doctorate from Oxford University, UK. He held research positions at Royal Holloway University of London, the University of Waterloo, the Institute for Experimental Mathematics, Essen, and the University of Bristol...
+            </p>
+            <button class="read-more-btn" type="button">Read full bio <i class="fa-solid fa-chevron-down ms-1"></i></button>
+          </div>
+        </div>
       </div>
-      <div class="speaker-badges">
-       
-        <span class="speaker-badge"><i class="fa-solid fa-atom me-1"></i>Post-Quantum Cryptography</span>
-        <span class="speaker-badge"><i class="fa-solid fa-shapes me-1"></i>Elliptic Curve Cryptography</span>
-        <span class="speaker-badge"><i class="fa-solid fa-calculator me-1"></i>Computational Number Theory</span>
-      </div>
-      <p class="speaker-bio clamped" data-full="Professor Steven Galbraith has a Bachelor degree from the University of Waikato, New Zealand, a Master of Science from Georgia Institute of Technology, USA, and a doctorate from Oxford University, UK. He held research positions at Royal Holloway University of London, UK, the University of Waterloo, Canada, the Institute for Experimental Mathematics, Essen, Germany, and the University of Bristol, UK. He moved to the University of Auckland in 2009 and is currently the Head of the Mathematics Department. His research is in computational number theory, computational algebraic geometry, and applications in public key cryptography. Currently, his main research focus is post-quantum cryptography. He is an international leader in the mathematics of public key cryptography and wrote a major book with this title, published in 2012 by Cambridge University Press. He has supervised more than 15 PhD students, published over 100 papers, chaired several major conferences including ASIACRYPT, and served on more than 50 conference program committees.">
-        Professor Steven Galbraith has a Bachelor degree from the University of Waikato, New Zealand, a Master of Science from Georgia Institute of Technology, USA, and a doctorate from Oxford University, UK. He held research positions at Royal Holloway University of London, the University of Waterloo, the Institute for Experimental Mathematics, Essen, and the University of Bristol...
-      </p>
-      <button class="read-more-btn" type="button">Read full bio <i class="fa-solid fa-chevron-down ms-1"></i></button>
-    </div>
-  </div>
-</div>
-
-
-
-	  
-	  
 
       <!-- Speaker 2: Prof. Edoardo Serra -->
       <div class="col-lg-6">
@@ -504,8 +497,6 @@
         </div>
       </div>
 
-
-      
       <!-- Speaker 3: Prof. Raja Datta -->
       <div class="col-lg-6">
         <div class="speaker-card">
@@ -533,92 +524,61 @@
         </div>
       </div>
 
-
-     <!-- Speaker 4: Prof. Sipra Das Bit -->
-<div class="col-lg-6">
-  <div class="speaker-card">
-    <div class="speaker-banner sky"></div>
-    <div class="speaker-photo-wrap">
-      <img src="assets/speakers/sipra-das-bit.jpg" alt="Prof. Sipra Das Bit" class="speaker-photo">
-    </div>
-    <div class="speaker-body">
-      <div class="speaker-name">Prof. Sipra Das Bit</div>
-      <div class="speaker-role">
-        Professor, Department of Computer Science and Technology,<br>
-        Indian Institute of Engineering Science and Technology (IIEST), Shibpur, India
-      </div>
-      <div class="speaker-badges">
-        <span class="speaker-badge"><i class="fa-solid fa-award me-1"></i>Senior Member, IEEE</span>
-        <span class="speaker-badge"><i class="fa-solid fa-award me-1"></i>AICTE Career Award</span>
-        <span class="speaker-badge"><i class="fa-solid fa-microchip me-1"></i>IoT</span>
-        <span class="speaker-badge"><i class="fa-solid fa-shield-halved me-1"></i>Light-weight Network Security</span>
-        <span class="speaker-badge"><i class="fa-solid fa-tower-broadcast me-1"></i>Wireless Sensor Networks</span>
-        <span class="speaker-badge"><i class="fa-solid fa-satellite-dish me-1"></i>Delay Tolerant Networks</span>
-      </div>
-      <p class="speaker-bio clamped" data-full="Prof. Sipra Das Bit is a Professor in the Department of Computer Science and Technology at the Indian Institute of Engineering Science and Technology (IIEST), Shibpur, India. She also served as a Visiting Professor in the Department of ICT, Asian Institute of Technology (AIT), Bangkok, in 2017. A recipient of the Career Award for Young Teachers from the All India Council for Technical Education (AICTE), she has more than 35 years of teaching and research experience. Prof. Das Bit has published many research papers in reputed journals, including IEEE Transactions on Parallel and Distributed Systems, IEEE Transactions on Industrial Informatics, IEEE Transactions on Network and Service Management, IEEE Transactions on Engineering Management, IEEE Transactions on Systems, Man, and Cybernetics, ACM Transactions on Spatial Algorithms and Systems, and refereed international conference proceedings. She also has four books and monographs to her credit. Her current research interests include IoT, wireless sensor networks, light-weight network security, delay tolerant networks, and mobile computing. She has been a tutorial speaker at many international events, including IEEE TENSYMP and IEEE ANTS conferences. Prof. Das Bit, along with her team, won the Best Survey Paper Award in 2022 from the Journal of Network and Computer Applications, Elsevier. She has served on many Technical Program Committees and has acted as a reviewer for IEEE, Elsevier, and other reputed publishers. She is a Senior Member of IEEE.">
-        Prof. Sipra Das Bit is a Professor in the Department of Computer Science and Technology at the Indian Institute of Engineering Science and Technology (IIEST), Shibpur, India. She also served as a Visiting Professor in the Department of ICT, Asian Institute of Technology (AIT), Bangkok, in 2017. A recipient of the Career Award for Young Teachers from AICTE, she has more than 35 years of teaching and research experience...
-      </p>
-      <button class="read-more-btn" type="button">Read full bio <i class="fa-solid fa-chevron-down ms-1"></i></button>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- Speaker 5: Prof. Goutam Paul -->
-<div class="col-lg-6">
-  <div class="speaker-card">
-    <div class="speaker-banner"></div>
-
-    <div class="speaker-photo-wrap">
-      <img src="assets/speakers/goutam-paul.png"
-           alt="Prof. Goutam Paul"
-           class="speaker-photo">
-    </div>
-
-    <div class="speaker-body">
-      <div class="speaker-name">Prof. Goutam Paul</div>
-
-      <div class="speaker-role">
-        Professor, Electronics and Communication Sciences Unit (ECSU),<br>
-        Indian Statistical Institute (ISI), Kolkata
+      <!-- Speaker 4: Prof. Sipra Das Bit -->
+      <div class="col-lg-6">
+        <div class="speaker-card">
+          <div class="speaker-banner sky"></div>
+          <div class="speaker-photo-wrap">
+            <img src="assets/speakers/sipra-das-bit.jpg" alt="Prof. Sipra Das Bit" class="speaker-photo">
+          </div>
+          <div class="speaker-body">
+            <div class="speaker-name">Prof. Sipra Das Bit</div>
+            <div class="speaker-role">
+              Professor, Department of Computer Science and Technology,<br>
+              Indian Institute of Engineering Science and Technology (IIEST), Shibpur, India
+            </div>
+            <div class="speaker-badges">
+              <span class="speaker-badge"><i class="fa-solid fa-award me-1"></i>Senior Member, IEEE</span>
+              <span class="speaker-badge"><i class="fa-solid fa-award me-1"></i>AICTE Career Award</span>
+              <span class="speaker-badge"><i class="fa-solid fa-microchip me-1"></i>IoT</span>
+              <span class="speaker-badge"><i class="fa-solid fa-shield-halved me-1"></i>Light-weight Network Security</span>
+              <span class="speaker-badge"><i class="fa-solid fa-tower-broadcast me-1"></i>Wireless Sensor Networks</span>
+              <span class="speaker-badge"><i class="fa-solid fa-satellite-dish me-1"></i>Delay Tolerant Networks</span>
+            </div>
+            <p class="speaker-bio clamped" data-full="Prof. Sipra Das Bit is a Professor in the Department of Computer Science and Technology at the Indian Institute of Engineering Science and Technology (IIEST), Shibpur, India. She also served as a Visiting Professor in the Department of ICT, Asian Institute of Technology (AIT), Bangkok, in 2017. A recipient of the Career Award for Young Teachers from the All India Council for Technical Education (AICTE), she has more than 35 years of teaching and research experience. Prof. Das Bit has published many research papers in reputed journals, including IEEE Transactions on Parallel and Distributed Systems, IEEE Transactions on Industrial Informatics, IEEE Transactions on Network and Service Management, IEEE Transactions on Engineering Management, IEEE Transactions on Systems, Man, and Cybernetics, ACM Transactions on Spatial Algorithms and Systems, and refereed international conference proceedings. She also has four books and monographs to her credit. Her current research interests include IoT, wireless sensor networks, light-weight network security, delay tolerant networks, and mobile computing. She has been a tutorial speaker at many international events, including IEEE TENSYMP and IEEE ANTS conferences. Prof. Das Bit, along with her team, won the Best Survey Paper Award in 2022 from the Journal of Network and Computer Applications, Elsevier. She has served on many Technical Program Committees and has acted as a reviewer for IEEE, Elsevier, and other reputed publishers. She is a Senior Member of IEEE.">
+              Prof. Sipra Das Bit is a Professor in the Department of Computer Science and Technology at the Indian Institute of Engineering Science and Technology (IIEST), Shibpur, India. She also served as a Visiting Professor in the Department of ICT, Asian Institute of Technology (AIT), Bangkok, in 2017. A recipient of the Career Award for Young Teachers from AICTE, she has more than 35 years of teaching and research experience...
+            </p>
+            <button class="read-more-btn" type="button">Read full bio <i class="fa-solid fa-chevron-down ms-1"></i></button>
+          </div>
+        </div>
       </div>
 
-      <div class="speaker-badges">
-        <span class="speaker-badge">
-          <i class="fa-solid fa-award me-1"></i>Humboldt Fellow
-        </span>
-
-        <span class="speaker-badge">
-          <i class="fa-solid fa-award me-1"></i>NASI Young Scientist Award
-        </span>
-
-        <span class="speaker-badge">
-          <i class="fa-solid fa-lock me-1"></i>Cryptology
-        </span>
-
-        <span class="speaker-badge">
-          <i class="fa-solid fa-atom me-1"></i>Quantum Cryptography
-        </span>
+      <!-- Speaker 5: Prof. Goutam Paul -->
+      <div class="col-lg-6">
+        <div class="speaker-card">
+          <div class="speaker-banner"></div>
+          <div class="speaker-photo-wrap">
+            <img src="assets/speakers/goutam-paul.png" alt="Prof. Goutam Paul" class="speaker-photo">
+          </div>
+          <div class="speaker-body">
+            <div class="speaker-name">Prof. Goutam Paul</div>
+            <div class="speaker-role">
+              Professor, Electronics and Communication Sciences Unit (ECSU),<br>
+              Indian Statistical Institute (ISI), Kolkata
+            </div>
+            <div class="speaker-badges">
+              <span class="speaker-badge"><i class="fa-solid fa-award me-1"></i>Humboldt Fellow</span>
+              <span class="speaker-badge"><i class="fa-solid fa-award me-1"></i>NASI Young Scientist Award</span>
+              <span class="speaker-badge"><i class="fa-solid fa-lock me-1"></i>Cryptology</span>
+              <span class="speaker-badge"><i class="fa-solid fa-atom me-1"></i>Quantum Cryptography</span>
+            </div>
+            <p class="speaker-bio clamped" data-full="Prof. Goutam Paul is currently a Professor at the Electronics and Communication Sciences Unit (ECSU), Indian Statistical Institute (ISI), Kolkata, and also serves as Visiting Professor at the Centre for Quantum Engineering, Research and Education (CQuERE), TCG CREST, Kolkata. He earlier served as Associate Professor and Head of the Cryptology and Security Research Unit (CSRU) at ISI Kolkata. His research spans Classical and Quantum Cryptography, Information and Coding Theory, and Quantum Information and Computation. He earned his Ph.D. in Cryptology from ISI Kolkata (degree awarded by Jadavpur University, 2009) on the analysis and design of RC4 and its variants under Dr. Subhamoy Maitra, an M.S. in Computer Science from the State University of New York (SUNY) at Albany, USA, and a B.E. in Computer Science &amp; Technology from Bengal Engineering College (now IIEST Shibpur). Among his honours are the Alexander von Humboldt Fellowship, Germany (2012), during which he spent a year in Germany as a guest scientist, a DAAD Fellowship (2012), and the Young Scientist Platinum Jubilee Award from the National Academy of Sciences, India (NASI) in 2013. He has held numerous international visiting scientist positions, including at NUS Singapore, the University of Tokyo, EPFL Switzerland, RWTH Aachen, Lund University, and the University of Waterloo, among others. He serves on the Editorial Board of the IACR Transactions on Symmetric Cryptology (ToSC) and has served as Associate Editor of SN Computer Science (Springer). He has been a Program Committee member for leading cryptology venues including ASIACRYPT, INDOCRYPT, and FSE, and was Program Co-Chair of INDOCRYPT 2013. His work is cited over 3,000 times on Google Scholar.">
+              Prof. Goutam Paul is currently a Professor at the Electronics and Communication Sciences Unit (ECSU), Indian Statistical Institute (ISI), Kolkata, and also serves as Visiting Professor at the Centre for Quantum Engineering, Research and Education (CQuERE), TCG CREST, Kolkata...
+            </p>
+            <button class="read-more-btn" type="button">Read full bio <i class="fa-solid fa-chevron-down ms-1"></i></button>
+          </div>
+        </div>
       </div>
-
-      <p class="speaker-bio clamped"
-         data-full="Prof. Goutam Paul is currently a Professor at the Electronics and Communication Sciences Unit (ECSU), Indian Statistical Institute (ISI), Kolkata, and also serves as Visiting Professor at the Centre for Quantum Engineering, Research and Education (CQuERE), TCG CREST, Kolkata. He earlier served as Associate Professor and Head of the Cryptology and Security Research Unit (CSRU) at ISI Kolkata. His research spans Classical and Quantum Cryptography, Information and Coding Theory, and Quantum Information and Computation. He earned his Ph.D. in Cryptology from ISI Kolkata (degree awarded by Jadavpur University, 2009) on the analysis and design of RC4 and its variants under Dr. Subhamoy Maitra, an M.S. in Computer Science from the State University of New York (SUNY) at Albany, USA, and a B.E. in Computer Science &amp; Technology from Bengal Engineering College (now IIEST Shibpur). Among his honours are the Alexander von Humboldt Fellowship, Germany (2012), during which he spent a year in Germany as a guest scientist, a DAAD Fellowship (2012), and the Young Scientist Platinum Jubilee Award from the National Academy of Sciences, India (NASI) in 2013. He has held numerous international visiting scientist positions, including at NUS Singapore, the University of Tokyo, EPFL Switzerland, RWTH Aachen, Lund University, and the University of Waterloo, among others. He serves on the Editorial Board of the IACR Transactions on Symmetric Cryptology (ToSC) and has served as Associate Editor of SN Computer Science (Springer). He has been a Program Committee member for leading cryptology venues including ASIACRYPT, INDOCRYPT, and FSE, and was Program Co-Chair of INDOCRYPT 2013. His work is cited over 3,000 times on Google Scholar.">
-        Prof. Goutam Paul is currently a Professor at the Electronics and Communication
-        Sciences Unit (ECSU), Indian Statistical Institute (ISI), Kolkata, and also serves
-        as Visiting Professor at the Centre for Quantum Engineering, Research and Education
-        (CQuERE), TCG CREST, Kolkata...
-      </p>
-
-      <button class="read-more-btn" type="button">
-        Read full bio
-        <i class="fa-solid fa-chevron-down ms-1"></i>
-      </button>
-    </div>
-  </div>
-</div>
-	  
-	  
 
       <!-- Speaker 6: Prof. Sanjeev Kumar -->
       <div class="col-lg-6">
@@ -647,10 +607,6 @@
         </div>
       </div>
 
-
-
-      
-
       <!-- More keynote speakers coming soon -->
       <div class="col-lg-6">
         <div class="coming-soon-card">
@@ -667,14 +623,12 @@
     <div class="track-section" id="track-industrial">
       <div class="track-heading">
         <div class="track-icon"><i class="fa-solid fa-industry"></i></div>
-        <h2>Invited & Industrial Track</h2>
+        <h2>Invited &amp; Industrial Track</h2>
         <p>Invited Talk and Industry leaders sharing perspectives from the front lines of applied AI, ML, and security engineering.</p>
       </div>
       <div class="row g-4 justify-content-center">
 
-
-
-<!-- Speaker 1: Prof. Abhishek Das -->
+      <!-- Speaker 1: Prof. Abhishek Das -->
       <div class="col-lg-6">
         <div class="speaker-card">
           <div class="speaker-banner"></div>
@@ -700,10 +654,6 @@
           </div>
         </div>
       </div>
-
-
-
-
 
       <!-- Speaker 2: Harsh Verma -->
       <div class="col-lg-6">
@@ -732,8 +682,7 @@
         </div>
       </div>
 
-
-      <!-- Speaker: Satyam Rastogi -->
+      <!-- Speaker 3: Satyam Rastogi -->
       <div class="col-lg-6">
         <div class="speaker-card">
           <div class="speaker-banner sky"></div>
@@ -781,11 +730,10 @@
     <div class="row g-4">
 
       <div class="col-lg-4">
-      <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
-
+        <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
           <img src="assets/ieee-up-logo.png" alt="IEEE UP Section Logo" style="height:42px;width:auto;">
         </div>
-	   <h5 class="fw-bold text-white">ICACSDF 2026</h5>
+        <h5 class="fw-bold text-white">ICACSDF 2026</h5>
         <p class="mb-2">
           School of Computer Science, UPES Dehradun, Uttarakhand
         </p>
@@ -798,9 +746,9 @@
             <i class="fa-solid fa-certificate me-2"></i> Sponsored by <strong>IEEE UP Section Conference Record #70668</strong>
           </div>
           <div class="mt-2">
-            <div class="mt-2"><i class="fa-solid fa-globe me-2"></i>  <a href="https://2025.icacsdf.org/"> <strong> ICACSDF2025 Conference </strong> </a> </div>
+            <div class="mt-2"><i class="fa-solid fa-globe me-2"></i> <a href="https://2025.icacsdf.org/"><strong>ICACSDF2025 Conference</strong></a></div>
           </div>
-		  </div>
+        </div>
 
         <h6 class="fw-bold text-white mt-4">Contact Us</h6>
         <p class="small mb-2">
@@ -810,97 +758,98 @@
       </div>
 
       <div class="col-lg-4">
-<h6 class="fw-bold text-white">Rankings &amp; Recognitions</h6>
-<p class="small mb-2">
+        <h6 class="fw-bold text-white">Rankings &amp; Recognitions</h6>
+        <p class="small mb-2">
 
-  • NIRF 2025: Ranked <strong>45 (Overall)</strong>,
-  <strong>43 (Engineering)</strong>,
-  <strong>36 (Management)</strong>, and
-  <strong>18 (Law)</strong><br>
+          • NIRF 2025: Ranked <strong>45 (Overall)</strong>,
+          <strong>43 (Engineering)</strong>,
+          <strong>36 (Management)</strong>, and
+          <strong>18 (Law)</strong><br>
 
-  • Times Higher Education (THE) 2026: Among the
-  <strong>Top 5 universities in India</strong>; ranked
-  <strong>501–600 globally</strong>;
-  <strong>299 in Research Quality</strong><br>
+          • Times Higher Education (THE) 2026: Among the
+          <strong>Top 5 universities in India</strong>; ranked
+          <strong>501–600 globally</strong>;
+          <strong>299 in Research Quality</strong><br>
 
-  • QS World University Rankings 2026: Ranked
-  <strong>901–950 globally</strong>;
-  <strong>No. 1 Private University in India for Academic Reputation</strong><br>
+          • QS World University Rankings 2026: Ranked
+          <strong>901–950 globally</strong>;
+          <strong>No. 1 Private University in India for Academic Reputation</strong><br>
 
-  • U.S. News &amp; World Report 2025: Ranked
-  <strong>919 globally</strong>;
-  <strong>20 in India</strong><br>
+          • U.S. News &amp; World Report 2025: Ranked
+          <strong>919 globally</strong>;
+          <strong>20 in India</strong><br>
 
-  • Shanghai Ranking (GRAS): Ranked among the
-  <strong>Top 150 in Telecommunication Engineering</strong>,
-  <strong>Top 400 in Electrical &amp; Electronic Engineering</strong>, and
-  <strong>Top 500 in Computer Science &amp; Engineering</strong><br>
+          • Shanghai Ranking (GRAS): Ranked among the
+          <strong>Top 150 in Telecommunication Engineering</strong>,
+          <strong>Top 400 in Electrical &amp; Electronic Engineering</strong>, and
+          <strong>Top 500 in Computer Science &amp; Engineering</strong><br>
 
-  • QS Rating: Awarded <strong>5-Star rating</strong>; placed among the
-  <strong>Top 2% universities globally</strong><br>
+          • QS Rating: Awarded <strong>5-Star rating</strong>; placed among the
+          <strong>Top 2% universities globally</strong><br>
 
-  • NBA-Accredited Programs | Recognised by UGC | Member of AIU
-</p>
+          • NBA-Accredited Programs | Recognised by UGC | Member of AIU
+        </p>
       </div>
 
       <div class="col-lg-4">
-  <h6 class="fw-bold text-white">Important Dates</h6>
-  <div class="small">
-    <div class="d-flex justify-content-between gap-3 footer-date-row">
-      <span><strong>Paper Submission Opens</strong></span>
-      <span class="text-end">18 March 2026</span>
+        <h6 class="fw-bold text-white">Important Dates</h6>
+        <div class="small">
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Paper Submission Opens</strong></span>
+            <span class="text-end">18 March 2026</span>
+          </div>
+
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Submission Deadline</strong></span>
+            <span class="text-end">
+              <del class="text-muted">30 June 2026</del><br>
+              <span class="fw-bold text-danger">8 July 2026 (Hard Deadline)</span>
+            </span>
+          </div>
+
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Notification of Acceptance</strong></span>
+            <span class="text-end">25 July 2026</span>
+          </div>
+
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Camera Ready Submission</strong></span>
+            <span class="text-end">5 August 2026</span>
+          </div>
+
+          <div class="d-flex justify-content-between gap-3 footer-date-row">
+            <span><strong>Last Date of Registration</strong></span>
+            <span class="text-end">
+              <del class="text-muted">Phase 1: 15 August 2026</del><br>
+              <span class="fw-bold text-danger">Phase 2: 25 August 2026</span>
+            </span>
+          </div>
+
+          <div class="d-flex justify-content-between gap-3 pt-2">
+            <span><strong>Conference Date</strong></span>
+            <span class="text-end">11–12 September 2026</span>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="d-flex justify-content-between gap-3 footer-date-row">
-      <span><strong>Submission Deadline</strong></span>
-      <span class="text-end">
-        <del class="text-muted">30 June 2026</del><br>
-        <span class="fw-bold text-danger">8 July 2026 (Hard Deadline)</span>
-      </span>
+    <hr class="border-light opacity-25 mt-4">
+
+    <div class="d-flex justify-content-between align-items-center">
+      <p class="small mb-0 text-start">
+        <strong>&copy; 2026 ICACSDF</strong>. All Rights Reserved.
+      </p>
+
+      <p class="small mb-0 text-end">
+        Design and Developed by:
+        <a href="https://edcatalyst.in" target="_blank" rel="noopener noreferrer">
+          <strong>Edcatalyst.in</strong>
+        </a>
+      </p>
     </div>
 
-    <div class="d-flex justify-content-between gap-3 footer-date-row">
-      <span><strong>Notification of Acceptance</strong></span>
-      <span class="text-end">25 July 2026</span>
-    </div>
-
-    <div class="d-flex justify-content-between gap-3 footer-date-row">
-      <span><strong>Camera Ready Submission</strong></span>
-      <span class="text-end">5 August 2026</span>
-    </div>
-
-    <div class="d-flex justify-content-between gap-3 footer-date-row">
-      <span><strong>Last Date of Registration</strong></span>
-      <span class="text-end">
-        <del class="text-muted">Phase 1: 15 August 2026</del><br>
-        <span class="fw-bold text-danger">Phase 2: 25 August 2026</span>
-      </span>
-    </div>
-
-    <div class="d-flex justify-content-between gap-3 pt-2">
-      <span><strong>Conference Date</strong></span>
-      <span class="text-end">11–12 September 2026</span>
-    </div>
   </div>
-</div>
-
-    </div>
-
-   <hr class="border-light opacity-25 mt-4">
-
-<div class="d-flex justify-content-between align-items-center">
-  <p class="small mb-0 text-start">
-    <strong>&copy; 2026 ICACSDF</strong>. All Rights Reserved.
-  </p>
-
-  <p class="small mb-0 text-end">
-    Design and Developed by:
-    <a href="https://edcatalyst.in" target="_blank" rel="noopener noreferrer">
-      <strong>Edcatalyst.in</strong>
-    </a>
-  </p>
-</div>
-
 </footer>
 
 <!-- Bootstrap JS -->
@@ -927,10 +876,12 @@
   // Track tab switching
   document.querySelectorAll('.track-tab').forEach(function(tab){
     tab.addEventListener('click', function(){
+      const target = document.getElementById(tab.getAttribute('data-target'));
+      if(!target) return;
       document.querySelectorAll('.track-tab').forEach(t => t.classList.remove('active'));
       document.querySelectorAll('.track-section').forEach(s => s.classList.remove('active'));
       tab.classList.add('active');
-      document.getElementById(tab.getAttribute('data-target')).classList.add('active');
+      target.classList.add('active');
     });
   });
 </script>
